@@ -1,0 +1,42 @@
+#File	stdin.fq
+#Total	918476
+#Matched	9367	1.01984%
+#Name	Reads	ReadsPct
+PhiX_read2_adaptor	1511	0.16451%
+Reverse_adaptor	952	0.10365%
+TruSeq_Adaptor_Index_1_6	641	0.06979%
+Forward_filter	659	0.07175%
+RNA_Adaptor_(RA3)_part_#_15013207	676	0.07360%
+PhiX_read1_adaptor	605	0.06587%
+Reverse_filter	542	0.05901%
+I5_Nextera_Transposase_1	488	0.05313%
+Stop_Oligo_(STP)_8	453	0.04932%
+Illumina 3p RNA Adaptor	390	0.04246%
+RNA_Adaptor_(RA5)_part_#_15013205	318	0.03462%
+TruSeq_Universal_Adaptor	254	0.02765%
+Nextera_LMP_Read2_External_Adaptor	247	0.02689%
+Ad153_5T_1-index_1	189	0.02058%
+Illumina Small RNA v1.5 3p Adaptor	159	0.01731%
+I7_Nextera_Transposase_2	164	0.01786%
+Nextera_LMP_Read1_External_Adaptor	145	0.01579%
+RNA_RT_Primer_(RTP)_part_#_15013981	118	0.01285%
+I5_Nextera_Transposase_2	113	0.01230%
+I7_Nextera_Transposase_1	122	0.01328%
+I7_Adaptor_Nextera_No_Barcode	99	0.01078%
+Bisulfite_R1	100	0.01089%
+Bisulfite_R2	92	0.01002%
+RNA_PCR_Primer_(RP1)_part_#_15013198	93	0.01013%
+I5_Adaptor_Nextera	83	0.00904%
+I7_Primer_Nextera_XT_and_Nextera_Enrichment_N701	87	0.00947%
+I5_Primer_Nextera_XT_and_Nextera_Enrichment_[N/S/E]501	43	0.00468%
+PCR_Primers	4	0.00044%
+Ad153_5T_1-index_32	3	0.00033%
+Ad153_5T_1-index_31	4	0.00044%
+Ad153_5T_1-index_14	2	0.00022%
+Ad153_5T_1-index_113	2	0.00022%
+Ad153_5T_1-index_112	2	0.00022%
+I5_Primer_Nextera_XT_and_Nextera_Enrichment_[N/S/E]502	2	0.00022%
+Ad153_5T_1-index_105	1	0.00011%
+Ad153_5T_1-index_123	1	0.00011%
+Ad153_5T_1-index_79	1	0.00011%
+Ad153_5T_1-index_10	2	0.00022%

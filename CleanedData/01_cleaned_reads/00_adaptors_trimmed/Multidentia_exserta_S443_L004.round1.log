@@ -1,0 +1,31 @@
+Captus' BBDuk Command for BOTH rounds:
+  bbduk.sh -Xmx5456m threads=10 ktrim=r minlength=25 interleaved=f trimpairsevenly=t trimbyoverlap=t overwrite=t ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta in=/home/frieda/Projects/Vanguerieae/OriginalData/sequences/Multidentia_exserta_S443_L004_R#_001.fastq.gz out=stdout.fq ftr=149 k=21 mink=11 hdist=2 stats=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Multidentia_exserta_S443_L004.round1.stats.txt tossbrokenreads=t 2>/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Multidentia_exserta_S443_L004.stdout1.log | bbduk.sh -Xmx5456m threads=10 ktrim=r minlength=25 interleaved=f trimpairsevenly=t trimbyoverlap=t overwrite=t ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta in=stdin.fq out=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Multidentia_exserta_S443_L004_R#_001.fastq.gz k=19 mink=9 hdist=1 stats=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Multidentia_exserta_S443_L004.round2.stats.txt 2>/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Multidentia_exserta_S443_L004.stdout2.log
+
+
+ROUND 1 LOG:
+Executing jgi.BBDuk [-Xmx5456m, threads=10, ktrim=r, minlength=25, interleaved=f, trimpairsevenly=t, trimbyoverlap=t, overwrite=t, ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta, in=/home/frieda/Projects/Vanguerieae/OriginalData/sequences/Multidentia_exserta_S443_L004_R#_001.fastq.gz, out=stdout.fq, ftr=149, k=21, mink=11, hdist=2, stats=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Multidentia_exserta_S443_L004.round1.stats.txt, tossbrokenreads=t]
+Version 39.52
+
+Set INTERLEAVED to false
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.042 seconds.
+Initial:
+Memory: max=5721m, total=5721m, free=5698m, used=23m
+
+Added 11201253 kmers; time: 	5.620 seconds.
+Memory: max=5721m, total=5721m, free=5336m, used=385m
+
+Input is being processed as paired
+Started output streams:	0.054 seconds.
+Processing time:   		28.692 seconds.
+
+Input:                  	919268 reads 		138809468 bases.
+FTrimmed:               	919268 reads (100.00%) 	919268 bases (0.66%)
+KTrimmed:               	508654 reads (55.33%) 	21193750 bases (15.27%)
+Trimmed by overlap:     	87992 reads (9.57%) 	504592 bases (0.36%)
+Total Removed:          	792 reads (0.09%) 	22617610 bases (16.29%)
+Result:                 	918476 reads (99.91%) 	116191858 bases (83.71%)
+
+Time:                         	34.406 seconds.
+Reads Processed:        919k 	26.72k reads/sec
+Bases Processed:        138m 	4.03m bases/sec

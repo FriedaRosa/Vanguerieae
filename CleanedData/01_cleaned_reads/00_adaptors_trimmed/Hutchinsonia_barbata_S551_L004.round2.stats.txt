@@ -1,0 +1,55 @@
+#File	stdin.fq
+#Total	3139212
+#Matched	27788	0.88519%
+#Name	Reads	ReadsPct
+PhiX_read2_adaptor	3457	0.11012%
+Reverse_filter	2278	0.07257%
+Reverse_adaptor	2221	0.07075%
+Forward_filter	2125	0.06769%
+RNA_Adaptor_(RA3)_part_#_15013207	2063	0.06572%
+PhiX_read1_adaptor	1681	0.05355%
+Stop_Oligo_(STP)_8	1510	0.04810%
+RNA_Adaptor_(RA5)_part_#_15013205	1164	0.03708%
+I5_Nextera_Transposase_1	1123	0.03577%
+Illumina 3p RNA Adaptor	1108	0.03530%
+TruSeq_Adaptor_Index_1_6	987	0.03144%
+Ad153_5T_1-index_1	936	0.02982%
+Nextera_LMP_Read2_External_Adaptor	790	0.02517%
+Illumina Small RNA v1.5 3p Adaptor	724	0.02306%
+I7_Nextera_Transposase_2	651	0.02074%
+I5_Nextera_Transposase_2	615	0.01959%
+RNA_RT_Primer_(RTP)_part_#_15013981	603	0.01921%
+I7_Primer_Nextera_XT_and_Nextera_Enrichment_N701	528	0.01682%
+TruSeq_Universal_Adaptor	433	0.01379%
+I5_Adaptor_Nextera	429	0.01367%
+I5_Primer_Nextera_XT_and_Nextera_Enrichment_[N/S/E]501	392	0.01249%
+Bisulfite_R2	380	0.01210%
+Nextera_LMP_Read1_External_Adaptor	390	0.01242%
+I7_Nextera_Transposase_1	303	0.00965%
+RNA_PCR_Primer_(RP1)_part_#_15013198	285	0.00908%
+Bisulfite_R1	242	0.00771%
+I7_Adaptor_Nextera_No_Barcode	238	0.00758%
+Ad153_5T_1-index_119	24	0.00076%
+Ad153_5T_1-index_25	16	0.00051%
+Ad153_5T_1-index_116	17	0.00054%
+Ad153_5T_1-index_22	13	0.00041%
+Ad153_5T_1-index_74	8	0.00025%
+I5_Primer_Nextera_XT_and_Nextera_Enrichment_[N/S/E]506	8	0.00025%
+I5_Primer_Nextera_XT_Index_Kit_v2_S520	10	0.00032%
+Ad153_5T_1-index_10	6	0.00019%
+Ad153_5T_1-index_31	3	0.00010%
+Ad153_5T_1-index_39	4	0.00013%
+TruSeq_Adaptor_Index_7	4	0.00013%
+Ad153_5T_1-index_102	2	0.00006%
+Ad153_5T_1-index_61	2	0.00006%
+Ad153_5T_1-index_67	2	0.00006%
+Ad153_5T_1-index_97	2	0.00006%
+I5_Primer_Nextera_XT_Index_Kit_v2_S513	2	0.00006%
+RNA_PCR_Primer_Index_35_(RPI35)	2	0.00006%
+Ad153_5T_1-index_65	1	0.00003%
+Ad153_5T_1-index_66	1	0.00003%
+I5_Primer_Nextera_XT_and_Nextera_Enrichment_[N/S/E]507	1	0.00003%
+PCR_Primers	1	0.00003%
+RNA_PCR_Primer_Index_20_(RPI20)	1	0.00003%
+pcr_dimer	1	0.00003%
+RNA_PCR_Primer_Index_48_(RPI48)	1	0.00003%
