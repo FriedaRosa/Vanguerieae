@@ -1,0 +1,28 @@
+Captus' BBDuk Command:
+  bbduk.sh -Xmx10912m threads=10 in=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Rytigynia_longipedicellata_S442_L004_R#_001.fastq.gz out=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Rytigynia_longipedicellata_S442_L004_R#_001.fastq.gz ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/phix174_ill.ref.fa.gz,/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/sequencing_artifacts.fasta k=31 hdist=1 qtrim=lr trimq=13 maq=16 ftl=0 ftr=0 minlength=25 maxns=5 ziplevel=5 overwrite=t stats=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Rytigynia_longipedicellata_S442_L004.cleaning.stats.txt 2>/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Rytigynia_longipedicellata_S442_L004.stdout.log
+
+
+Executing jgi.BBDuk [-Xmx10912m, threads=10, in=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Rytigynia_longipedicellata_S442_L004_R#_001.fastq.gz, out=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Rytigynia_longipedicellata_S442_L004_R#_001.fastq.gz, ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/phix174_ill.ref.fa.gz,/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/sequencing_artifacts.fasta, k=31, hdist=1, qtrim=lr, trimq=13, maq=16, ftl=0, ftr=0, minlength=25, maxns=5, ziplevel=5, overwrite=t, stats=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Rytigynia_longipedicellata_S442_L004.cleaning.stats.txt]
+Version 39.52
+
+Allocating kmer table: 	0.024 seconds.
+Initial:
+Memory: max=11442m, total=11442m, free=11409m, used=33m
+
+Added 8403228 kmers; time: 	1.954 seconds.
+Memory: max=11442m, total=11442m, free=11121m, used=321m
+
+Input is being processed as paired
+Started output streams:	0.105 seconds.
+Processing time:   		54.705 seconds.
+
+Input:                  	3902146 reads 		563524674 bases.
+Contaminants:           	2 reads (0.00%) 	302 bases (0.00%)
+QTrimmed:               	159450 reads (4.09%) 	4896381 bases (0.87%)
+Low quality discards:   	31218 reads (0.80%) 	3741538 bases (0.66%)
+Total Removed:          	48238 reads (1.24%) 	8638221 bases (1.53%)
+Result:                 	3853908 reads (98.76%) 	554886453 bases (98.47%)
+
+Time:                         	56.775 seconds.
+Reads Processed:       3902k 	68.73k reads/sec
+Bases Processed:        563m 	9.93m bases/sec

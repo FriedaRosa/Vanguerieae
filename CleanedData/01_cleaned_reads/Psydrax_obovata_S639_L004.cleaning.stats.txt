@@ -1,0 +1,4 @@
+#File	/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Psydrax_obovata_S639_L004_R1_001.fastq.gz	/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Psydrax_obovata_S639_L004_R2_001.fastq.gz
+#Total	6025092
+#Matched	0	0.00000%
+#Name	Reads	ReadsPct

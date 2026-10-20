@@ -1,0 +1,28 @@
+Captus' BBDuk Command:
+  bbduk.sh -Xmx10912m threads=10 in=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Everistia_vacciniifolia_S491_L004_R#_001.fastq.gz out=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Everistia_vacciniifolia_S491_L004_R#_001.fastq.gz ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/phix174_ill.ref.fa.gz,/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/sequencing_artifacts.fasta k=31 hdist=1 qtrim=lr trimq=13 maq=16 ftl=0 ftr=0 minlength=25 maxns=5 ziplevel=5 overwrite=t stats=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Everistia_vacciniifolia_S491_L004.cleaning.stats.txt 2>/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Everistia_vacciniifolia_S491_L004.stdout.log
+
+
+Executing jgi.BBDuk [-Xmx10912m, threads=10, in=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Everistia_vacciniifolia_S491_L004_R#_001.fastq.gz, out=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Everistia_vacciniifolia_S491_L004_R#_001.fastq.gz, ref=/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/phix174_ill.ref.fa.gz,/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/sequencing_artifacts.fasta, k=31, hdist=1, qtrim=lr, trimq=13, maq=16, ftl=0, ftr=0, minlength=25, maxns=5, ziplevel=5, overwrite=t, stats=/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Everistia_vacciniifolia_S491_L004.cleaning.stats.txt]
+Version 39.52
+
+Allocating kmer table: 	0.017 seconds.
+Initial:
+Memory: max=11442m, total=11442m, free=11409m, used=33m
+
+Added 8403228 kmers; time: 	1.254 seconds.
+Memory: max=11442m, total=11442m, free=11121m, used=321m
+
+Input is being processed as paired
+Started output streams:	0.074 seconds.
+Processing time:   		33.294 seconds.
+
+Input:                  	3945230 reads 		567922278 bases.
+Contaminants:           	0 reads (0.00%) 	0 bases (0.00%)
+QTrimmed:               	156030 reads (3.95%) 	4757895 bases (0.84%)
+Low quality discards:   	30830 reads (0.78%) 	3699217 bases (0.65%)
+Total Removed:          	46320 reads (1.17%) 	8457112 bases (1.49%)
+Result:                 	3898910 reads (98.83%) 	559465166 bases (98.51%)
+
+Time:                         	34.631 seconds.
+Reads Processed:       3945k 	113.92k reads/sec
+Bases Processed:        567m 	16.40m bases/sec
