@@ -9,4 +9,4 @@ upscaler::add_folder()
 
 file.create("README.qmd")
 
-reads_raw <- ""
+reads_raw <- "some windows folder path"
