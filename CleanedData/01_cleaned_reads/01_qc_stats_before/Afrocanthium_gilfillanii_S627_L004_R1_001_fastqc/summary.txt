@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+PASS	Per base sequence quality	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+FAIL	Per tile sequence quality	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+PASS	Per sequence quality scores	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+WARN	Per base sequence content	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+WARN	Per sequence GC content	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+PASS	Per base N content	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+PASS	Sequence Length Distribution	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+FAIL	Sequence Duplication Levels	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+PASS	Overrepresented sequences	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz
+FAIL	Adapter Content	Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz

@@ -1,0 +1,370 @@
+
+
+Starting Captus-assembly: CLEAN (2026-10-20 19:59:55)
+-----------------------------------------------------
+    Welcome to the read cleaning step of Captus-assembly. In this step, Captus will perform adaptor trimming and quality filtering/trimming on your input reads using bbduk.sh from BBTools.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./OriginalData/sequences/ -o ./CleanedData/01_cleaned_reads --qc_program fastqc --threads 10
+                   OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 10.7GB (out of 10.8GB)
+         Max. Threads: 10 (out of 14)
+
+         Dependencies:
+              BBTools: v39.52 OK
+                Falco: not used
+               FastQC: v0.12.1 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads
+                       Output directory already exists
+
+
+
+Adaptor Trimming with bbduk.sh (2026-10-20 19:59:56)
+----------------------------------------------------
+    Now Captus will perform two simultaneous rounds of adaptor removal using the specified set of adaptors. Most of the parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+          Adaptor set: ALL /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta
+    Trim poly-A tails: False
+     Min. read length: 25
+      Overwrite files: False
+       Keep all files: False
+      Samples to trim: 31
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed
+                       Output directory successfully created
+
+Trimming adaptors:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: CLEAN (2026-10-20 20:09:29)
+-----------------------------------------------------
+    Welcome to the read cleaning step of Captus-assembly. In this step, Captus will perform adaptor trimming and quality filtering/trimming on your input reads using bbduk.sh from BBTools.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string _R1 in their names and match them with their respective _R2 pairs. If the _R2 can not be found, the sample is treated as single-end. Sample names are derived from the text found before the _R1 string.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus clean -r ./OriginalData/sequences/ -o ./CleanedData/01_cleaned_reads --qc_program fastqc --threads 10
+                   OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 10.7GB (out of 10.8GB)
+         Max. Threads: 10 (out of 14)
+
+         Dependencies:
+              BBTools: v39.52 OK
+                Falco: not used
+               FastQC: v0.12.1 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads
+                       Output directory already exists and files may be overwritten
+
+
+
+Adaptor Trimming with bbduk.sh (2026-10-20 20:09:30)
+----------------------------------------------------
+    Now Captus will perform two simultaneous rounds of adaptor removal using the specified set of adaptors. Most of the parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+          Adaptor set: ALL /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/adaptors_combined.fasta
+    Trim poly-A tails: False
+     Min. read length: 25
+      Overwrite files: False
+       Keep all files: False
+      Samples to trim: 31
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed
+                       Output directory already exists and files may be overwritten
+
+Trimming adaptors:
+'Afrocanthium_gilfillanii_S627_L004': adaptors trimmed [8m 11.8s (491.807s)]
+'Afrocanthium_lactescens_S626_L004': adaptors trimmed [3m 25.7s (205.688s)]
+'Bullockia_fadenii_S514_L004': adaptors trimmed [5m 53.9s (353.897s)]
+'Canthium_inerme_S629_L004': adaptors trimmed [1m 38.8s (98.781s)]
+'Cyclophyllum_henriettae_S376_L004': adaptors trimmed [1m 44.0s (104.001s)]
+'Cyclophyllum_jasminifolium_S377_L004': adaptors trimmed [4m 38.5s (278.468s)]
+'Eriosemopsis_subanisophylla_S489_L004': adaptors trimmed [6m 27.5s (387.482s)]
+'Everistia_vacciniifolia_S490_L004': adaptors trimmed [3m 19.2s (199.239s)]
+'Everistia_vacciniifolia_S491_L004': adaptors trimmed [2m 6.6s (126.574s)]
+'Hutchinsonia_barbata_S551_L004': adaptors trimmed [1m 32.0s (91.991s)]
+'Keetia_gueinzii_S519_L004': adaptors trimmed [1m 41.9s (101.861s)]
+'Keetia_hispida_S383_L004': adaptors trimmed [9m 47.8s (587.767s)]
+'Keetia_lukei_S507_L004': adaptors trimmed [3m 13.0s (192.976s)]
+'Multidentia_exserta_S443_L004': adaptors trimmed [35.666s]
+'Multidentia_sclerocarpa_S374_L004': adaptors trimmed [1m 19.5s (79.513s)]
+'Peponidium_crassifolium_S628_L004': adaptors trimmed [1m 54.9s (114.879s)]
+'Perakanthus_velutinus_S495_L004': adaptors trimmed [4m 21.6s (261.605s)]
+'Plectroniella_armata_S391_L004': adaptors trimmed [3m 20.1s (200.070s)]
+'Plectroniella_armata_S640_L004': adaptors trimmed [3m 45.8s (225.777s)]
+'Psydrax_ankotekonensis_S572_L004': adaptors trimmed [4m 0.6s (240.624s)]
+'Psydrax_dicoccos_S379_L004': adaptors trimmed [4m 34.1s (274.101s)]
+'Psydrax_obovata_S639_L004': adaptors trimmed [3m 4.4s (184.402s)]
+'Pygmaeothamnus_sp_S516_L004': adaptors trimmed [7m 32.0s (451.971s)]
+'Pyrostria_commersonii_S618_L004': adaptors trimmed [8m 46.1s (526.132s)]
+'Pyrostria_hystrix_S641_L004': adaptors trimmed [5m 53.1s (353.075s)]
+'Pyrostria_media_S610_L004': adaptors trimmed [4m 15.9s (255.871s)]
+'Rytigynia_longipedicellata_S442_L004': adaptors trimmed [1m 55.3s (115.277s)]
+'Rytigynia_sambavensis_S493_L004': adaptors trimmed [5m 2.9s (302.928s)]
+'Temnocalyx_nodulosus_S587_L004': adaptors trimmed [10m 2.7s (602.747s)]
+'Vangueria_madagascariensis_S602_L004': adaptors trimmed [29.676s]
+'Vangueriopsis_lanciflora_S446_L004': adaptors trimmed [4m 51.6s (291.601s)]
+ └─→ Adaptor trimming completed for 31 sample(s) [2h 9m 26.5s (7766.486s)]
+
+
+
+Quality Trimming and Filtering with bbduk.sh (2026-10-20 22:18:57)
+------------------------------------------------------------------
+    Now Captus will trim the regions of reads with PHRED quality score lower than '--trimq' and afterwards will remove reads with mean PHRED quality lower than '--maq'. Common sequencing artifacts and reads belonging to the viral genome phiX174 will also be filtered out. Other parameters are hard-coded but can be modified directly in the file: '/home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/captus/settings.py'
+
+                trimq: 13
+                  maq: 16
+                  ftl: 0
+                  ftr: 0
+     Min. read length: 25
+      Overwrite files: False
+       Keep all files: False
+     Samples to clean: 31
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads
+
+Trimming/filtering quality:
+'Afrocanthium_gilfillanii_S627_L004': quality filtered [2m 35.1s (155.101s)]
+'Afrocanthium_lactescens_S626_L004': quality filtered [54.376s]
+'Bullockia_fadenii_S514_L004': quality filtered [1m 26.9s (86.876s)]
+'Canthium_inerme_S629_L004': quality filtered [24.930s]
+'Cyclophyllum_henriettae_S376_L004': quality filtered [31.041s]
+'Cyclophyllum_jasminifolium_S377_L004': quality filtered [1m 27.1s (87.132s)]
+'Eriosemopsis_subanisophylla_S489_L004': quality filtered [2m 23.4s (143.364s)]
+'Everistia_vacciniifolia_S490_L004': quality filtered [1m 15.9s (75.851s)]
+'Everistia_vacciniifolia_S491_L004': quality filtered [34.387s]
+'Hutchinsonia_barbata_S551_L004': quality filtered [24.388s]
+'Keetia_gueinzii_S519_L004': quality filtered [24.735s]
+'Keetia_hispida_S383_L004': quality filtered [3m 39.1s (219.080s)]
+'Keetia_lukei_S507_L004': quality filtered [59.911s]
+'Multidentia_exserta_S443_L004': quality filtered [9.577s]
+'Multidentia_sclerocarpa_S374_L004': quality filtered [24.302s]
+'Peponidium_crassifolium_S628_L004': quality filtered [34.125s]
+'Perakanthus_velutinus_S495_L004': quality filtered [1m 46.3s (106.295s)]
+'Plectroniella_armata_S391_L004': quality filtered [1m 9.5s (69.469s)]
+'Plectroniella_armata_S640_L004': quality filtered [51.609s]
+'Psydrax_ankotekonensis_S572_L004': quality filtered [55.293s]
+'Psydrax_dicoccos_S379_L004': quality filtered [1m 5.5s (65.483s)]
+'Psydrax_obovata_S639_L004': quality filtered [42.673s]
+'Pygmaeothamnus_sp_S516_L004': quality filtered [2m 16.1s (136.050s)]
+'Pyrostria_commersonii_S618_L004': quality filtered [2m 12.3s (132.314s)]
+'Pyrostria_hystrix_S641_L004': quality filtered [1m 33.6s (93.567s)]
+'Pyrostria_media_S610_L004': quality filtered [1m 51.8s (111.801s)]
+'Rytigynia_longipedicellata_S442_L004': quality filtered [55.658s]
+'Rytigynia_sambavensis_S493_L004': quality filtered [2m 1.2s (121.193s)]
+'Temnocalyx_nodulosus_S587_L004': quality filtered [2m 55.7s (175.674s)]
+'Vangueria_madagascariensis_S602_L004': quality filtered [8.434s]
+'Vangueriopsis_lanciflora_S446_L004': quality filtered [1m 32.2s (92.166s)]
+ └─→ Quality trimming/filtering completed for 31 sample(s) [40m 6.9s (2406.877s)]
+
+
+
+Quality Control Statistics: Raw and Clean Reads (2026-10-20 22:59:04)
+---------------------------------------------------------------------
+    Now Captus will run fastqc on the raw reads as well as on the clean reads to obtain QC statistics.
+
+           QC program: fastqc
+   Concurrent samples: 4
+
+      Overwrite files: False
+       Keep all files: False
+     Files to analyze: 124
+
+      BEFORE cleaning: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/01_qc_stats_before
+                       Output directory successfully created
+       AFTER cleaning: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/02_qc_stats_after
+                       Output directory successfully created
+
+Running fastqc:
+'Afrocanthium_lactescens_S626_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 26.7s (266.690s)]
+'Afrocanthium_lactescens_S626_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 37.0s (276.955s)]
+'Bullockia_fadenii_S514_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [8m 14.4s (494.447s)]
+'Bullockia_fadenii_S514_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [8m 18.0s (498.022s)]
+'Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [13m 40.5s (820.481s)]
+'Afrocanthium_gilfillanii_S627_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [13m 55.3s (835.285s)]
+'Canthium_inerme_S629_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 16.0s (136.030s)]
+'Canthium_inerme_S629_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 18.8s (138.753s)]
+'Cyclophyllum_henriettae_S376_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 30.3s (150.285s)]
+'Cyclophyllum_henriettae_S376_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 33.9s (153.930s)]
+'Cyclophyllum_jasminifolium_S377_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [7m 23.6s (443.579s)]
+'Cyclophyllum_jasminifolium_S377_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [7m 26.2s (446.208s)]
+'Eriosemopsis_subanisophylla_S489_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [9m 33.3s (573.338s)]
+'Eriosemopsis_subanisophylla_S489_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [9m 35.1s (575.076s)]
+'Everistia_vacciniifolia_S490_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 17.3s (257.347s)]
+'Everistia_vacciniifolia_S490_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 17.1s (257.133s)]
+'Everistia_vacciniifolia_S491_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 49.5s (169.544s)]
+'Hutchinsonia_barbata_S551_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 14.5s (134.453s)]
+'Everistia_vacciniifolia_S491_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 52.6s (172.551s)]
+'Hutchinsonia_barbata_S551_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 20.6s (140.558s)]
+'Keetia_gueinzii_S519_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 50.6s (170.577s)]
+'Keetia_gueinzii_S519_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 52.2s (172.229s)]
+'Keetia_lukei_S507_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 21.9s (261.868s)]
+'Keetia_lukei_S507_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 24.9s (264.902s)]
+'Multidentia_exserta_S443_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [47.946s]
+'Multidentia_exserta_S443_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [49.790s]
+'Multidentia_sclerocarpa_S374_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 2.2s (122.215s)]
+'Multidentia_sclerocarpa_S374_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 2.5s (122.523s)]
+'Peponidium_crassifolium_S628_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 44.7s (164.723s)]
+'Peponidium_crassifolium_S628_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 49.5s (169.540s)]
+'Keetia_hispida_S383_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [15m 47.3s (947.322s)]
+'Keetia_hispida_S383_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [16m 20.6s (980.585s)]
+'Perakanthus_velutinus_S495_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [5m 56.1s (356.106s)]
+'Perakanthus_velutinus_S495_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [6m 1.2s (361.160s)]
+'Plectroniella_armata_S391_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 24.2s (264.206s)]
+'Plectroniella_armata_S391_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 26.4s (266.379s)]
+'Plectroniella_armata_S640_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 55.6s (295.648s)]
+'Plectroniella_armata_S640_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [5m 0.6s (300.575s)]
+'Psydrax_ankotekonensis_S572_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [5m 9.5s (309.463s)]
+'Psydrax_ankotekonensis_S572_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [5m 12.4s (312.381s)]
+'Psydrax_dicoccos_S379_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [5m 51.3s (351.284s)]
+'Psydrax_obovata_S639_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 9.4s (249.386s)]
+'Psydrax_dicoccos_S379_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [6m 2.1s (362.111s)]
+'Psydrax_obovata_S639_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [4m 18.5s (258.468s)]
+'Pygmaeothamnus_sp_S516_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [10m 50.7s (650.683s)]
+'Pygmaeothamnus_sp_S516_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [10m 58.7s (658.708s)]
+'Pyrostria_commersonii_S618_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [13m 1.8s (781.828s)]
+'Pyrostria_commersonii_S618_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [13m 22.7s (802.650s)]
+'Pyrostria_media_S610_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [6m 16.5s (376.475s)]
+'Pyrostria_hystrix_S641_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [9m 29.4s (569.437s)]
+'Pyrostria_hystrix_S641_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [9m 42.9s (582.945s)]
+'Pyrostria_media_S610_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [6m 28.9s (388.908s)]
+'Rytigynia_longipedicellata_S442_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 50.4s (170.372s)]
+'Rytigynia_longipedicellata_S442_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [2m 51.9s (171.944s)]
+'Rytigynia_sambavensis_S493_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [7m 22.2s (442.250s)]
+'Rytigynia_sambavensis_S493_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [7m 33.2s (453.156s)]
+'Vangueria_madagascariensis_S602_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [43.572s]
+'Vangueria_madagascariensis_S602_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [43.490s]
+'Vangueriopsis_lanciflora_S446_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [6m 54.5s (414.459s)]
+'Vangueriopsis_lanciflora_S446_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [6m 56.9s (416.915s)]
+'Afrocanthium_gilfillanii_S627_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 32.8s (152.770s)]
+'Afrocanthium_gilfillanii_S627_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 33.5s (153.548s)]
+'Temnocalyx_nodulosus_S587_L004_R1_001.fastq.gz' (BEFORE cleaning): fastqc finished [16m 34.9s (994.860s)]
+'Afrocanthium_lactescens_S626_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 6.6s (66.552s)]
+'Afrocanthium_lactescens_S626_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 7.7s (67.728s)]
+'Temnocalyx_nodulosus_S587_L004_R2_001.fastq.gz' (BEFORE cleaning): fastqc finished [17m 11.9s (1031.851s)]
+'Canthium_inerme_S629_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [28.807s]
+'Canthium_inerme_S629_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [28.493s]
+'Bullockia_fadenii_S514_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 38.1s (98.082s)]
+'Cyclophyllum_henriettae_S376_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [33.598s]
+'Bullockia_fadenii_S514_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 36.2s (96.225s)]
+'Cyclophyllum_henriettae_S376_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [34.418s]
+'Cyclophyllum_jasminifolium_S377_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 15.9s (75.894s)]
+'Cyclophyllum_jasminifolium_S377_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 14.2s (74.178s)]
+'Eriosemopsis_subanisophylla_S489_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 41.7s (101.744s)]
+'Eriosemopsis_subanisophylla_S489_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 43.3s (103.313s)]
+'Everistia_vacciniifolia_S490_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 2.8s (62.795s)]
+'Everistia_vacciniifolia_S490_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 2.8s (62.754s)]
+'Everistia_vacciniifolia_S491_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [39.726s]
+'Everistia_vacciniifolia_S491_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [38.519s]
+'Hutchinsonia_barbata_S551_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [34.132s]
+'Hutchinsonia_barbata_S551_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [33.592s]
+'Keetia_gueinzii_S519_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [37.515s]
+'Keetia_gueinzii_S519_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [38.499s]
+'Keetia_lukei_S507_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [54.400s]
+'Keetia_lukei_S507_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [53.505s]
+'Multidentia_exserta_S443_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [13.616s]
+'Multidentia_exserta_S443_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [13.683s]
+'Multidentia_sclerocarpa_S374_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [27.173s]
+'Multidentia_sclerocarpa_S374_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [26.885s]
+'Peponidium_crassifolium_S628_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [34.044s]
+'Peponidium_crassifolium_S628_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [34.706s]
+'Keetia_hispida_S383_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 48.8s (168.762s)]
+'Keetia_hispida_S383_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 43.9s (163.922s)]
+'Perakanthus_velutinus_S495_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 11.2s (71.238s)]
+'Plectroniella_armata_S391_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [53.351s]
+'Perakanthus_velutinus_S495_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 13.1s (73.105s)]
+'Plectroniella_armata_S391_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [55.194s]
+'Plectroniella_armata_S640_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [59.251s]
+'Plectroniella_armata_S640_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [58.402s]
+'Psydrax_ankotekonensis_S572_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 3.9s (63.851s)]
+'Psydrax_ankotekonensis_S572_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 5.1s (65.101s)]
+'Psydrax_obovata_S639_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [49.670s]
+'Psydrax_obovata_S639_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [49.949s]
+'Psydrax_dicoccos_S379_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 18.3s (78.285s)]
+'Psydrax_dicoccos_S379_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 17.8s (77.787s)]
+'Pygmaeothamnus_sp_S516_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 2.3s (122.334s)]
+'Pygmaeothamnus_sp_S516_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 0.7s (120.671s)]
+'Pyrostria_commersonii_S618_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 20.8s (140.842s)]
+'Pyrostria_commersonii_S618_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 20.7s (140.729s)]
+'Pyrostria_hystrix_S641_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 41.6s (101.595s)]
+'Pyrostria_hystrix_S641_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 42.2s (102.212s)]
+'Pyrostria_media_S610_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 14.4s (74.445s)]
+'Pyrostria_media_S610_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 12.1s (72.072s)]
+'Rytigynia_longipedicellata_S442_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [39.371s]
+'Rytigynia_longipedicellata_S442_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [38.642s]
+'Rytigynia_sambavensis_S493_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 29.0s (89.040s)]
+'Rytigynia_sambavensis_S493_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 27.8s (87.806s)]
+'Vangueria_madagascariensis_S602_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [14.574s]
+'Vangueria_madagascariensis_S602_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [13.289s]
+'Vangueriopsis_lanciflora_S446_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 17.6s (77.616s)]
+'Vangueriopsis_lanciflora_S446_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [1m 19.3s (79.301s)]
+'Temnocalyx_nodulosus_S587_L004_R2_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 43.4s (163.441s)]
+'Temnocalyx_nodulosus_S587_L004_R1_001.fastq.gz' (AFTER cleaning): fastqc finished [2m 47.5s (167.472s)]
+ └─→ fastqc analysis completed for 124 file(s) [1h 54m 57.7s (6897.698s)]
+
+
+
+Logs Summarization and File Cleanup (2026-10-21 00:54:02)
+---------------------------------------------------------
+    Now Captus will summarize the logs from 'bbduk.sh' and 'FastQC' or 'Falco' to produce a final report in HTML format. The data tables and individual graphs associated with the HTML report will be placed in a subdirectory  called '03_qc_extras'.
+
+
+       Keep all files: False
+  QC extras directory: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras
+                       Output directory successfully created
+
+    Reads/Bases stats: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/reads_bases.tsv
+   Adaptors 1st round: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/adaptors_round1.tsv
+   Adaptors 2nd round: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/adaptors_round2.tsv
+         Contaminants: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/contaminants.tsv
+  Per base seq. qual.: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/per_base_seq_qual.tsv
+Per seq. qual. scores: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/per_seq_qual_scores.tsv
+Per base seq. content: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/per_base_seq_content.tsv
+  Per seq. GC content: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/per_seq_gc_content.tsv
+   Seq. length distr.: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/seq_len_dist.tsv
+     Seq. duplication: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/seq_dup_levels.tsv
+      Adaptor content: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/03_qc_extras/adaptor_content.tsv
+
+    Generating Sequence Quality Control report...
+
+   Sequence QC report: /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/captus-clean_report.html
+                       Report generated in 2.474s
+
+    Deleting intermediate FASTQ files and other unnecessary files...
+
+    A total of 310 files amounting to 15.18GB were deleted in 0.069s
+
+
+
+Captus-assembly: CLEAN -> successfully completed [4h 44m 38.7s (17078.650s)] (2026-10-21 00:54:07)
+--------------------------------------------------------------------------------------------------
+
