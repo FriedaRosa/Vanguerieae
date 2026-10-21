@@ -6,11 +6,10 @@ conda activate captus
 
 
 captus extract \
--a './data/02_assemblies' \
--o './data/03_extractions' \
+-a './CleanedData/02_assemblies' \
+-o './CleanedData/03_extractions' \
 -n Mega353 \
 -p SeedPlantsPTD \
--m SeedPlantsMIT
-
+-m SeedPlantsMIT 
 
 conda deactivate
