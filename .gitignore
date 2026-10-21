@@ -1,0 +1,11 @@
+*.fastq.gz
+.keep 
+*.qc_stats.log
+!.*tsv
+CleanedData/01_cleaned_reads/01_qc_stats_before/
+CleanedData/01_cleaned_reads/02_qc_stats_after/
+*.fasta
+*.fastg
+*.fa*
+checkpoints.txt
+megahit*
