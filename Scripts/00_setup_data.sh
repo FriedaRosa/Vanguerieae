@@ -14,7 +14,7 @@ lookup="$src/Vanguerieae_Names_lookup.csv"
 # Sequence files on Windows
 src="/mnt/c/Users/frwo0304/Documents/ResearchData/Frieda_Vanguerieae_data/Frieda/"
 
-CHnage change
+
 
 # Read the folder-species mapping from the look up file into an associative array
 declare -A species_by_folder=()
