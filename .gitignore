@@ -10,3 +10,5 @@ CleanedData/01_cleaned_reads/02_qc_stats_after/
 checkpoints.txt
 megahit*
 CleanedData/02_assemblies/
+CleanedData/03_extractions/
+CleanedData/04_alignments/
