@@ -9,7 +9,7 @@ dst="$PROJ/OriginalData/sequences"
 mkdir -p "$dst"
 
 # folder-species names look up file
-lookup="$src/Vanguerieae_Names_lookup.csv"
+lookup="$PROJ/OriginalData/Vanguerieae_Names_lookup.csv"
 
 # Sequence files on Windows
 src="/mnt/c/Users/frwo0304/Documents/ResearchData/Frieda_Vanguerieae_data/Frieda/"

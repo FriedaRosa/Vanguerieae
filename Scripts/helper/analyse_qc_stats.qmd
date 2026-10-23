@@ -1,0 +1,13 @@
+# Analyze QC-stats
+
+
+```{r}
+qc_path <- "data/01_cleaned_reads/03_qc_extras/"
+
+adapts <- read.csv(paste0(qc_path, "adaptor_content.tsv"), sep = "\t", header=TRUE, skip = 2)
+
+head(adapts)
+
+adapts %>%
+pivot_longer(cols= c(5:9))
+```

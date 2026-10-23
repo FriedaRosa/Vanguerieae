@@ -1,0 +1,90 @@
+# Plot and compare trees from different data sources and processing steps
+
+- mitochondrial tree (from 05_phylogeny/mitochondrial_tree.nwk)
+- plastid tree (from 05_phylogeny/plastid_tree.nwk)
+- species tree from wASTRAL with collapsed nodes < 60 UFBoot
+- species tree from wASTRAL without collapsed nodes
+
+## Read in trees
+
+```{r}
+library(ape)
+library(dplyr)
+```
+```{r}
+mit_tree <- read.tree("data/05_phylogeny/concat_mit.treefile") %>%
+root(outgroup = "Spondianthus_preussii") %>%
+ladderize()
+plastid_tree <- read.tree("data/05_phylogeny/concat_ptd.treefile") %>%
+root(outgroup = "Spondianthus_preussii") %>%
+ladderize()
+species_tree_collapsed <- read.tree("data/05_phylogeny/species_tree_wASTRAL/wastral_species_tree_collapsed.nwk") %>%
+root(outgroup = "Spondianthus_preussii") %>%
+ladderize()
+species_tree_uncollapsed <- read.tree("data/05_phylogeny/species_tree_wASTRAL/wastral_species_tree.nwk") %>%
+root(outgroup = "Spondianthus_preussii") %>%
+ladderize()
+```
+
+
+```{r}
+par(mfrow = c(2, 2))
+plot(mit_tree, main="Mitochondrial Tree")
+nodelabels(mit_tree$node.label, cex=0.5)
+plot(plastid_tree, main="Plastid Tree")
+nodelabels(plastid_tree$node.label, cex=0.5)
+plot(species_tree_collapsed, main="Species Tree (Collapsed)")
+nodelabels(species_tree_collapsed$node.label, cex=0.5)
+plot(species_tree_uncollapsed, main="Species Tree (Uncollapsed)")
+nodelabels(species_tree_uncollapsed$node.label, cex=0.5)
+
+```
+
+
+```{r}
+plot_linked_trees <- function(tree_left, tree_right,
+															left_title = "Left tree",
+															right_title = "Right tree") {
+	shared_tips <- intersect(tree_left$tip.label, tree_right$tip.label)
+	if (length(shared_tips) == 0) {
+		stop("The trees do not have any identical tip labels.")
+	}
+
+	old_par <- par(no.readonly = TRUE)
+	on.exit(par(old_par), add = TRUE)
+
+	par(mar = c(1, 1, 3, 1), xpd = NA)
+	layout(matrix(c(1, 2), nrow = 1), widths = c(1, 1))
+
+	plot(tree_left, main = left_title, direction = "rightwards",
+			 cex = 0.65, no.margin = TRUE)
+	left_plot <- get("last_plot.phylo", envir = .PlotPhyloEnv)
+	left_tips <- setNames(seq_along(tree_left$tip.label), tree_left$tip.label)
+	left_ndc <- cbind(
+		grconvertX(left_plot$xx[left_tips[shared_tips]], from = "user", to = "ndc"),
+		grconvertY(left_plot$yy[left_tips[shared_tips]], from = "user", to = "ndc")
+	)
+
+	plot(tree_right, main = right_title, direction = "leftwards",
+			 cex = 0.65, no.margin = TRUE)
+	right_plot <- get("last_plot.phylo", envir = .PlotPhyloEnv)
+	right_tips <- setNames(seq_along(tree_right$tip.label), tree_right$tip.label)
+	right_ndc <- cbind(
+		grconvertX(right_plot$xx[right_tips[shared_tips]], from = "user", to = "ndc"),
+		grconvertY(right_plot$yy[right_tips[shared_tips]], from = "user", to = "ndc")
+	)
+
+	par(fig = c(0, 1, 0, 1), new = TRUE, mar = c(0, 0, 0, 0))
+	plot.new()
+	plot.window(xlim = c(0, 1), ylim = c(0, 1), xaxs = "i", yaxs = "i")
+	segments(left_ndc[, 1], left_ndc[, 2], right_ndc[, 1], right_ndc[, 2],
+					 col = grDevices::adjustcolor("grey35", alpha.f = 0.45), lty = 2)
+}
+
+plot_linked_trees(
+	ladderize(species_tree_uncollapsed),
+	ladderize(species_tree_collapsed),
+	left_title = "Species tree (Uncollapsed)",
+	right_title = "Species tree (Collapsed)"
+)
+```

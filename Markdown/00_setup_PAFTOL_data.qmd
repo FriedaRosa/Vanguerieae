@@ -1,0 +1,109 @@
+---
+title: "Setting up sequence data from PAFTOL"
+subtitle: 'for Vanguerieae'
+date: last-modified
+date-format: long
+author:
+  - name: 'Friederike Wölke'
+    orcid: 0000-0001-9034-4883
+    email: friederike.wolke@su.se
+format: 
+  html:
+    toc: true
+    number-sections: true
+    format-links: [pdf]
+    toc-location: right
+    code-fold: false
+    collapse: true
+    smooth-scroll: true
+    html-math-method: katex
+    search: true
+    repo-url: https://github.com/friedarosa/Vanguerieae/
+self-contained: true
+code-overflow: wrap
+editor: source
+editor_options: 
+  chunk_output_type: console
+---
+
+There have been recent (2026) additions to the Kew tree of Life with more Rubiaceae species! In the following script I have manually created a file with ENA run accession numbers to download (raw sequences) (`OriginalData/PAFTOL_accessions.txt`). In the following script I download these using `wget` and save them in `OriginalData/PAFTOL_raw`. I am using the raw sequences rather than the prepared Angiosperm353 files to be able to do QC myself and to compare it to my own sequences.
+
+The list of URLs contains 61 URLs (60 paired-end reads: R1, R2 for 30 species total) and one Angiosperm353-fasta file for *Dibridsonia conferta* for which I could not find the raw sequence data online. In total there are 31 species.
+
+```{bash}
+#| eval: false
+
+accessions="$PROJ/OriginalData/PAFTOL_accessions.txt"
+dst="$PROJ/OriginalData/PAFTOL_raw"
+
+```
+
+```{bash}
+#| eval: false
+
+downloads=0
+while IFS= read -r url; do
+    case "$url" in
+        ftp://*|http://*|https://*) ;;
+        *)
+            printf 'Unsupported download URL: %s\n' "$url" >&2
+            exit 1
+            ;;
+    esac
+
+    printf 'Downloading %s\n' "$url"
+    wget --continue --directory-prefix "$dst" "$url"
+    ((downloads += 1))
+done < "$url_list"
+
+printf 'Finished downloading %d files to %s\n' "$downloads" "$dst"
+```
+
+Next, I rename the PAFTOL files to have the species name and R1/R2 instead of 1 and 2 for read-indication.
+
+```{bash}
+#| eval: false
+
+# Rename the files using the species_name from column 2 of PAFTOL_accessions.txt. The accession file is UTF-16, so decode it before reading the tab-separated accession and species-name columns.
+accession_map="$(mktemp)"
+if ! iconv -f UTF-16 -t UTF-8 "$accessions" |
+    awk -F '\t' 'NR > 1 && $1 ~ /^[[:alpha:]]+[[:digit:]]+$/ && $2 != "" { print $1 "\t" $2 }' > "$accession_map"; then
+    printf 'Could not extract accession names from %s\n' "$accessions" >&2
+    exit 1
+fi
+
+declare -A species_by_accession
+while IFS=$'\t' read -r accession species_name; do
+    species_by_accession["$accession"]="$species_name"
+done < "$accession_map"
+
+while IFS= read -r url; do
+    filename=$(basename "$url")
+    accession=""
+    for candidate in "${!species_by_accession[@]}"; do
+        if [[ "$url" =~ (^|[^[:alnum:]])${candidate}([^[:alnum:]]|$) ]]; then
+            accession="$candidate"
+            break
+        fi
+    done
+    if [[ -z "$accession" ]]; then
+        printf 'Accession not found for URL: %s\n' "$url" >&2
+        exit 1
+    fi
+    species_name="${species_by_accession[$accession]// /_}"
+    if [[ "$filename" == *_1.fastq.gz || "$filename" == *_R1.fastq.gz ]]; then
+        new_filename="${species_name}_R1.fastq.gz"
+    elif [[ "$filename" == *_2.fastq.gz || "$filename" == *_R2.fastq.gz ]]; then
+        new_filename="${species_name}_R2.fastq.gz"
+    elif [[ "$filename" == *.a353.fasta ]]; then
+        new_filename="${species_name}.a353.fasta"
+    else
+        printf 'Unexpected filename format: %s\n' "$filename" >&2
+        exit 1
+    fi
+    if [[ "$filename" != "$new_filename" ]]; then
+        mv -- "$dst/$filename" "$dst/$new_filename"
+    fi
+    printf 'Renamed %s to %s\n' "$filename" "$new_filename"
+done < "$url_list"
+```

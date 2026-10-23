@@ -1,0 +1,654 @@
+# Finding out why my trees all have low support
+
+Low support in gene trees is usually a symptom of something else. There is either 
+1) too little phylogenetic signal per gene, 
+2) missing/gappy data, 
+3) alignment problems, 
+4) genuine conflict among sites. We can investigat this using CAPTUS output stats from the alignment step.
+
+Low support
+    │
+    ├── Little signal
+    │      └── few informative sites
+    │
+    ├── Poor data
+    │      ├── missing data
+    │      ├── short sequences
+    │      └── alignment problems
+    │
+    ├── Model/data issues
+    │
+    └── Genuine conflicting signal
+           ├── ILS
+           ├── introgression
+           └── other biological processes
+
+
+The most informative plot will probably be 02_PI_sites_vs_UFBoot.pdf. If support rises strongly with the number of parsimony-informative sites, that would suggest that much of your low gene-tree support is caused by limited phylogenetic information within individual loci.
+
+One caveat: mean UFBoot is a convenient diagnostic summary, but it isn't itself a formal measure of “gene quality.” I would use it to investigate patterns rather than immediately remove genes with low means.
+
+Once you run this, you can paste the first ~10 lines of gene_tree_QC.csv and the support_correlations.csv results here, and I can help you interpret what is driving the low support in your Captus gene trees and what that implies for collapsing branches before ASTRAL.
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+# per-gene stats
+aln_stats <- 
+  read.csv("data/04_alignments/captus-align_alignments.tsv", sep = "\t", header = TRUE, skip = 2) %>%
+  mutate_if(is.character, as.factor) %>%
+  group_by(trimmed, paralog_filter, with_refs, marker_type, format, locus)
+
+
+support_stats <- 
+  read.csv("data/05_phylogeny/nuc_gene_trees/gene_support_summary.csv")
+```
+
+
+```{r}
+glimpse(support_stats)
+glimpse(aln_stats)
+```
+
+# Create QC file:
+gene
+number_taxa
+alignment_length
+%_missing
+variable_sites
+parsimony_informative_sites
+mean_UFBoot
+median_UFBoot
+%_branches_UFBoot<50
+%_branches_UFBoot<70
+
+## and Examine the following:
+informative sites  vs  mean UFBoot
+alignment length   vs  mean UFBoot
+missing data       vs  mean UFBoot
+number of taxa     vs  mean UFBoot
+
+# ============================================================
+# Captus gene-tree QC
+#
+# Matches:
+#   4471.faa  <-> 4471.treefile
+#
+# Calculates:
+#   - number of taxa
+#   - alignment length
+#   - missing/gap percentage
+#   - variable sites
+#   - parsimony-informative sites
+#   - number of supported internal branches
+#   - mean/median UFBoot
+#   - percentage UFBoot < 50
+#   - percentage UFBoot < 70
+#   - percentage UFBoot >= 95
+#
+# Produces:
+#   gene_tree_QC.csv
+#   several diagnostic plots
+# ============================================================
+
+
+```{r}
+# ------------------------------------------------------------
+# 1. Packages
+# ------------------------------------------------------------
+install.packages(c(
+  "ape",
+  "ggplot2",
+  "dplyr",
+  "tidyr",
+  "purrr",
+  "stringr"
+))
+
+
+library(ape)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(purrr)
+library(stringr)
+```
+
+
+```{r}
+# ------------------------------------------------------------
+# 2. SET YOUR PATHS HERE
+# ------------------------------------------------------------
+
+PROJ <- "~/CAPTUS_pipeline_2026"
+
+# Change this if your .faa files are somewhere else
+ALIGN_DIR <- file.path(
+  PROJ,
+  "data/04_alignments/03_trimmed/06_informed/01_coding_NUC/02_NT"
+)
+
+# Directory containing your IQ-TREE gene trees
+TREE_DIR <- file.path(
+  PROJ,
+  "data/05_phylogeny/nuc_gene_trees"
+)
+
+# Where QC results will be saved
+OUT_DIR <- file.path(
+  PROJ,
+  "data/05_phylogeny/gene_tree_QC"
+)
+
+dir.create(OUT_DIR, recursive = TRUE, showWarnings = FALSE)
+```
+
+
+```{r}
+
+# ------------------------------------------------------------
+# 3. Find alignment and tree files
+# ------------------------------------------------------------
+
+alignment_files <- list.files(
+  ALIGN_DIR,
+  pattern = "\\.fna$",
+  full.names = TRUE
+)
+
+tree_files <- list.files(
+  TREE_DIR,
+  pattern = "\\.treefile$",
+  full.names = TRUE
+)
+
+cat("Found", length(alignment_files), "FNA alignments\n")
+cat("Found", length(tree_files), "IQ-TREE gene trees\n")
+```
+
+
+```{r}
+# ------------------------------------------------------------
+# 4. Function to calculate alignment statistics
+# ------------------------------------------------------------
+
+get_alignment_stats <- function(file) {
+
+  gene <- basename(file) |>
+    str_remove("\\.fna$")
+
+  # Read protein FASTA
+  aln <- read.FASTA(file, type = "DNA")
+
+  # Convert alignment to character matrix
+seq_list <- as.character(aln)
+
+mat <- do.call(rbind, seq_list)
+
+  n_taxa <- nrow(mat)
+  aln_length <- ncol(mat)
+
+  # Missing characters:
+  # gap (-), unknown (?), X, N
+  missing_chars <- c("-", "?", "X", "x", "N", "n")
+
+  missing_count <- sum(mat %in% missing_chars)
+
+  pct_missing <- 100 * missing_count / length(mat)
+
+  # ----------------------------------------------------------
+  # Variable and parsimony-informative sites
+  # ----------------------------------------------------------
+
+  variable_sites <- 0
+  pi_sites <- 0
+
+  for (i in seq_len(ncol(mat))) {
+
+    site <- mat[, i]
+
+    # Remove gaps / missing states
+    site <- site[!site %in% missing_chars]
+
+    if (length(site) == 0) {
+      next
+    }
+
+    counts <- table(site)
+
+    # Variable site = more than one observed amino acid
+    if (length(counts) > 1) {
+      variable_sites <- variable_sites + 1
+    }
+
+    # Parsimony informative:
+    # at least two states represented >= 2 times
+    if (sum(counts >= 2) >= 2) {
+      pi_sites <- pi_sites + 1
+    }
+  }
+
+    tibble(
+    gene = gene,
+    n_taxa = n_taxa,
+    alignment_length = aln_length,
+    pct_missing = pct_missing,
+    variable_sites = variable_sites,
+    pi_sites = pi_sites,
+    pct_variable = 100 * variable_sites / aln_length,
+    pct_pi = 100 * pi_sites / aln_length
+  )
+}
+```
+
+
+```{r}
+
+# ------------------------------------------------------------
+# 5. Calculate statistics for all alignments
+# ------------------------------------------------------------
+
+cat("\nReading alignments...\n")
+
+alignment_stats <- map_dfr(
+  alignment_files,
+  get_alignment_stats
+)
+
+cat("Finished alignment statistics.\n")
+
+```
+
+
+```{r}
+# ------------------------------------------------------------
+# 6. Function to extract IQ-TREE support values
+#
+# Your tree labels look like:
+#
+#     42.1/59
+#
+# where:
+#     42.1 = SH-aLRT
+#     59   = UFBoot
+#
+# ------------------------------------------------------------
+
+get_tree_stats <- function(file) {
+
+  gene <- basename(file) |>
+    str_remove("\\.treefile$")
+
+  tree <- read.tree(file)
+
+  labels <- tree$node.label
+
+  if (is.null(labels)) {
+
+    return(
+      tibble(
+        gene = gene,
+        n_supported_branches = 0,
+        mean_alrt = NA_real_,
+        median_alrt = NA_real_,
+        mean_ufboot = NA_real_,
+        median_ufboot = NA_real_,
+        pct_ufboot_lt50 = NA_real_,
+        pct_ufboot_lt70 = NA_real_,
+        pct_ufboot_ge95 = NA_real_
+      )
+    )
+  }
+
+
+  # Keep labels containing "/"
+  labels <- labels[str_detect(labels, "/")]
+
+  if (length(labels) == 0) {
+
+    return(
+      tibble(
+        gene = gene,
+        n_supported_branches = 0,
+        mean_alrt = NA_real_,
+        median_alrt = NA_real_,
+        mean_ufboot = NA_real_,
+        median_ufboot = NA_real_,
+        pct_ufboot_lt50 = NA_real_,
+        pct_ufboot_lt70 = NA_real_,
+        pct_ufboot_ge95 = NA_real_
+      )
+    )
+  }
+
+
+  # Split SH-aLRT/UFBoot
+  support <- str_split_fixed(labels, "/", 2)
+
+  alrt <- as.numeric(support[, 1])
+  ufboot <- as.numeric(support[, 2])
+
+
+  tibble(
+    gene = gene,
+
+    n_supported_branches = length(ufboot),
+
+    mean_alrt = mean(alrt, na.rm = TRUE),
+    median_alrt = median(alrt, na.rm = TRUE),
+
+    mean_ufboot = mean(ufboot, na.rm = TRUE),
+    median_ufboot = median(ufboot, na.rm = TRUE),
+
+    pct_ufboot_lt50 =
+      100 * mean(ufboot < 50, na.rm = TRUE),
+
+    pct_ufboot_lt70 =
+      100 * mean(ufboot < 70, na.rm = TRUE),
+
+    pct_ufboot_ge95 =
+      100 * mean(ufboot >= 95, na.rm = TRUE)
+  )
+}
+
+```
+
+
+```{r}
+# ------------------------------------------------------------
+# 7. Calculate tree statistics
+# ------------------------------------------------------------
+
+cat("\nReading gene trees...\n")
+
+tree_stats <- map_dfr(
+  tree_files,
+  get_tree_stats
+)
+
+cat("Finished tree statistics.\n")
+```
+
+
+```{r}
+
+# ------------------------------------------------------------
+# 8. Combine alignment + tree statistics
+# ------------------------------------------------------------
+
+qc <- full_join(
+  alignment_stats,
+  tree_stats,
+  by = "gene"
+)
+
+
+# Sort by mean UFBoot
+qc <- qc |>
+  arrange(mean_ufboot)
+
+```
+
+
+```{r}
+
+# ------------------------------------------------------------
+# 8. Combine alignment + tree statistics
+# ------------------------------------------------------------
+
+qc <- full_join(
+  alignment_stats,
+  tree_stats,
+  by = "gene"
+)
+
+
+# Sort by mean UFBoot
+qc <- qc |>
+  arrange(mean_ufboot)
+
+```
+
+
+```{r}
+# ------------------------------------------------------------
+# 10. Print summary
+# ------------------------------------------------------------
+
+cat("\n==============================\n")
+cat("DATASET SUMMARY\n")
+cat("==============================\n\n")
+
+print(
+  qc |>
+    summarise(
+      genes = n(),
+      median_taxa = median(n_taxa, na.rm = TRUE),
+      median_length = median(alignment_length, na.rm = TRUE),
+      median_missing = median(pct_missing, na.rm = TRUE),
+      median_PI_sites = median(pi_sites, na.rm = TRUE),
+      median_UFBoot = median(mean_ufboot, na.rm = TRUE)
+    )
+)
+
+
+```
+
+
+```{r}
+# ------------------------------------------------------------
+# 12. Informative sites vs UFBoot
+# ------------------------------------------------------------
+
+p2 <- ggplot(
+  qc,
+  aes(x = pi_sites, y = mean_ufboot)
+) +
+
+  geom_point(
+    alpha = 0.6,
+    color = "#2C7FB8"
+  ) +
+
+  geom_smooth(
+    method = "lm",
+    se = TRUE,
+    color = "black"
+  ) +
+
+  theme_classic() +
+
+  labs(
+    x = "Parsimony-informative sites",
+    y = "Mean UFBoot",
+    title = "Phylogenetic information vs gene-tree support"
+  )
+
+
+ggsave(
+  file.path(OUT_DIR, "02_PI_sites_vs_UFBoot.pdf"),
+  p2,
+  width = 7,
+  height = 5
+)
+
+
+# ------------------------------------------------------------
+# 13. Missing data vs UFBoot
+# ------------------------------------------------------------
+
+p3 <- ggplot(
+  qc,
+  aes(x = pct_missing, y = mean_ufboot)
+) +
+
+  geom_point(
+    alpha = 0.6,
+    color = "#D95F02"
+  ) +
+
+  geom_smooth(
+    method = "lm",
+    se = TRUE,
+    color = "black"
+  ) +
+
+  theme_classic() +
+
+  labs(
+    x = "Missing/gap data (%)",
+    y = "Mean UFBoot",
+    title = "Missing data vs gene-tree support"
+  )
+
+
+ggsave(
+  file.path(OUT_DIR, "03_missing_vs_UFBoot.pdf"),
+  p3,
+  width = 7,
+  height = 5
+)
+
+
+# ------------------------------------------------------------
+# 14. Alignment length vs UFBoot
+# ------------------------------------------------------------
+
+p4 <- ggplot(
+  qc,
+  aes(x = alignment_length, y = mean_ufboot)
+) +
+
+  geom_point(
+    alpha = 0.6,
+    color = "#31A354"
+  ) +
+
+  geom_smooth(
+    method = "lm",
+    se = TRUE,
+    color = "black"
+  ) +
+
+  theme_classic() +
+
+  labs(
+    x = "Alignment length (aa)",
+    y = "Mean UFBoot",
+    title = "Alignment length vs gene-tree support"
+  )
+
+
+ggsave(
+  file.path(OUT_DIR, "04_length_vs_UFBoot.pdf"),
+  p4,
+  width = 7,
+  height = 5
+)
+
+
+# ------------------------------------------------------------
+# 15. Number of taxa vs UFBoot
+# ------------------------------------------------------------
+
+p5 <- ggplot(
+  qc,
+  aes(x = n_taxa, y = mean_ufboot)
+) +
+
+  geom_point(
+    alpha = 0.6,
+    color = "#756BB1"
+  ) +
+
+  geom_smooth(
+    method = "lm",
+    se = TRUE,
+    color = "black"
+  ) +
+
+  theme_classic() +
+
+  labs(
+    x = "Number of taxa",
+    y = "Mean UFBoot",
+    title = "Taxon occupancy vs gene-tree support"
+  )
+
+
+ggsave(
+  file.path(OUT_DIR, "05_taxa_vs_UFBoot.pdf"),
+  p5,
+  width = 7,
+  height = 5
+)
+
+```
+
+
+```{r}
+# ------------------------------------------------------------
+# 16. Correlations
+# ------------------------------------------------------------
+
+correlations <- tibble(
+
+  variable = c(
+    "alignment_length",
+    "n_taxa",
+    "pct_missing",
+    "variable_sites",
+    "pi_sites"
+  ),
+
+  correlation_with_mean_UFBoot = c(
+
+    cor(
+      qc$alignment_length,
+      qc$mean_ufboot,
+      use = "complete.obs",
+      method = "spearman"
+    ),
+
+    cor(
+      qc$n_taxa,
+      qc$mean_ufboot,
+      use = "complete.obs",
+      method = "spearman"
+    ),
+
+    cor(
+      qc$pct_missing,
+      qc$mean_ufboot,
+      use = "complete.obs",
+      method = "spearman"
+    ),
+
+    cor(
+      qc$variable_sites,
+      qc$mean_ufboot,
+      use = "complete.obs",
+      method = "spearman"
+    ),
+
+    cor(
+      qc$pi_sites,
+      qc$mean_ufboot,
+      use = "complete.obs",
+      method = "spearman"
+    )
+  )
+)
+
+write.csv(
+  correlations,
+  file.path(OUT_DIR, "support_correlations.csv"),
+  row.names = FALSE
+)
+
+cat("\nCorrelations with mean UFBoot:\n")
+print(correlations)
+
+cat("\nDone!\n")
+```
