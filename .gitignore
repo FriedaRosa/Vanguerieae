@@ -12,3 +12,6 @@ megahit*
 CleanedData/02_assemblies/
 CleanedData/03_extractions/
 CleanedData/04_alignments/
+CleanedData/05_phylogeny_flanking/nuc_gene_trees/*
+CleanedData/01_cleaned_reads/*
+.Rproj.user/
