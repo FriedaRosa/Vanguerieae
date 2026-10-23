@@ -9,12 +9,10 @@ conda activate captus
 PROJ="$HOME/Projects/Vanguerieae"
 cd "$PROJ"
 
-INPUT1="$PROJ/OriginalData/sequences/"
-INPUT2="$PROJ/OriginalData/PAFTOL_raw/"
-
+INPUT="$PROJ/OriginalData/combined_sequences/"
 
 captus clean \
--r "$INPUT2" \
+-r "$INPUT" \
 -o './CleanedData/01_cleaned_reads' \
 --qc_program fastqc \
 --threads 10 
