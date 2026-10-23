@@ -12,7 +12,7 @@ mkdir -p "$dst"
 lookup="$PROJ/OriginalData/Vanguerieae_Names_lookup.csv"
 
 # Sequence files on Windows
-src="/mnt/c/Users/frwo0304/Documents/ResearchData/Frieda_Vanguerieae_data/Frieda/"
+src="/mnt/c/Users/frwo0304/Documents/ResearchData/ResearchData/Frieda_Vanguerieae_data/Frieda/"
 
 
 
@@ -55,6 +55,11 @@ for f in "${fastq_files[@]}"; do
         target_name=${target_name//"$folder_name"/"${species_by_folder[$folder_name]}"}
     done
 
+    # Remove anything after the R1/R2 marker, keeping the FASTQ extension
+    if [[ "$target_name" =~ ^(.*_R[12])[^/]*\.fastq\.gz$ ]]; then
+        target_name="${BASH_REMATCH[1]}.fastq.gz"
+    fi
+
     # Check for duplicate links 
     if [[ -n "${link_names[$target_name]+x}" ]]; then
         printf 'Multiple source files would create the same destination link: %s\n' "$target_name" >&2
@@ -71,6 +76,8 @@ for f in "${fastq_files[@]}"; do
     link_names["$target_name"]=1
     target_names["$f"]=$target_name
 done
+
+
 
 
 # Create symbolic links for each fastq file in the destination folder
