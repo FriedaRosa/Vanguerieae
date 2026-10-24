@@ -33,6 +33,15 @@ megahit*
 *.ssi
 refseq.bin
 refseq_offsets.json
+*.sf
+*json
+*.bin
+CleanedData/02_assemblies/*/01_assembly/00_salmon_index/pre_indexing.log
+CleanedData/02_assemblies/*/01_assembly/depth_stats.tsv
+CleanedData/02_assemblies/*/01_assembly/contigs_depth.tsv
+CleanedData/02_assemblies/*/01_assembly/length_stats.tsv
+CleanedData/02_assemblies/*/01_assembly/contigs_stats.tsv
+CleanedData/02_assemblies/*/01_assembly/duplicate_clusters.tsv
 
 # Alignment and gene prediction intermediates
 *.psl
@@ -59,8 +68,11 @@ fastqc_report.html
 .Rproj.user/
 .Rhistory
 .RData
+*.Rproj
 
 # Keep directory placeholders and TSV summaries available
 !*.tsv
 !*.cleaning.log
 !*.stats.txt
+
+
