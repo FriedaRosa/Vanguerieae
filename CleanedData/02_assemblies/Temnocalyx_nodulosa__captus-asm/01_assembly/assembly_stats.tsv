@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
+Temnocalyx_nodulosa	before	21831	1.365	0.128	0.055	0.018	0.009	0.0	8231452	6.222	2.175	1.616	0.988	0.625	0.0	140	26082	378	307	27.7847	20.0	51.578	390	275	6867	13185
+Temnocalyx_nodulosa	after	20591	1.447	0.136	0.058	0.019	0.01	0.0	7876005	6.503	2.274	1.688	1.032	0.653	0.0	143	26082	383	312	29.3976	21.0	52.149	398	278	6441	12383

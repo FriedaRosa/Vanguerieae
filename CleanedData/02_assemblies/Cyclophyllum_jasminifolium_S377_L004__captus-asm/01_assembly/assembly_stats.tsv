@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
+Cyclophyllum_jasminifolium_S377_L004	before	30713	3.008	0.521	0.062	0.016	0.003	0.0	13968620	11.199	3.996	1.268	0.584	0.202	0.0	182	28267	455	379	30.8217	5.0	40.805	444	345	10153	19130
+Cyclophyllum_jasminifolium_S377_L004	after	21781	4.127	0.735	0.087	0.023	0.005	0.0	10336920	14.874	5.399	1.714	0.789	0.273	0.0	183	28267	475	382	43.0501	8.0	41.252	457	349	6859	13378

@@ -1,0 +1,89 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Vangueriopsis_lanciflora_S446_L004	PTD	accD	QOH92360.1-accD	1-599	prot	599	00	100.00	86.31	0.726	0.745	1440	1440	0	0		1	1	1	1	1	NODE_5353_length_7543_cov_47.4992_k_175_flag_1	-	465-1904	47.4992
+Vangueriopsis_lanciflora_S446_L004	PTD	atpA	AUF33626.1-atpA	1-507	prot	507	00	100.00	97.63	0.953	0.953	1521	1521	0	0		1	1	1	1	1	NODE_7975_length_5953_cov_49.0000_k_175_flag_1	-	35-1555	49.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	atpB	AMD08619.1-atpB	1-498	prot	498	00	100.00	96.79	0.936	0.937	1494	1494	0	0		1	1	1	1	1	NODE_5353_length_7543_cov_47.4992_k_175_flag_1	+	4666-6159	47.4992
+Vangueriopsis_lanciflora_S446_L004	PTD	atpE	AKT93660.1-atpE	1-133	prot	133	00	100.00	93.23	0.865	0.841	396	396	0	0		1	1	1	1	1	NODE_5353_length_7543_cov_47.4992_k_175_flag_1	+	6159-6554	47.4992
+Vangueriopsis_lanciflora_S446_L004	PTD	atpF	AFM92265.1-atpF	1-48;51-184	prot	182	00	98.91	87.91	0.750	0.768	549	549	0	0		2	1	2	1	2	NODE_21888_length_11183_cov_46.9331_k_175_flag_0;NODE_7975_length_5953_cov_49.0000_k_175_flag_1	-;-	231-377;1624-2025	47.9665
+Vangueriopsis_lanciflora_S446_L004	PTD	atpH	BAB47029.1-atpH	1-81	prot	81	00	100.00	98.77	0.975	0.975	243	243	0	0		1	1	1	1	1	NODE_21888_length_11183_cov_46.9331_k_175_flag_0	-	711-953	46.9331
+Vangueriopsis_lanciflora_S446_L004	PTD	atpI	QPL15489.1-atpI	1-247	prot	247	00	100.00	96.36	0.927	0.928	732	732	0	0		1	1	1	1	1	NODE_21888_length_11183_cov_46.9331_k_175_flag_0	-	1944-2675	46.9331
+Vangueriopsis_lanciflora_S446_L004	PTD	ccsA	AJN90553.1-ccsA	1-317	prot	317	00	100.00	82.97	0.659	0.675	966	966	0	0		1	1	1	1	1	NODE_514_length_1778_cov_42.0000_k_175_flag_1	+	627-1592	42.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	cemA	QGM83372.1-cemA	1-229	prot	229	00	100.00	84.28	0.686	0.694	687	687	0	0		1	1	1	1	1	NODE_2371_length_2996_cov_50.0000_k_175_flag_1	+	2255-2941	50.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	clpP1	AJW59646.1-clpP1	25-122,123-196	prot	172	00	87.76	95.93	0.806	0.867	1158	516	642	0		1	1	1	1	0	NODE_21386_length_3440_cov_47.0000_k_175_flag_1	-	2899-3191,2034-2256	47.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	infA	QLF67647.1-infA	1-76	prot	76	00	100.00	96.05	0.921	0.780	231	231	0	0	72	1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	4041-4270	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	matK	AKF78393.1-matK	1-182;212-509	prot	480	00	94.30	78.12	0.530	0.610	1425	1425	0	0		2	1	2	1	2	NODE_25318_length_7567_cov_52.0000_k_175_flag_1;NODE_8541_length_2894_cov_42.0000_k_175_flag_1	-;-	2-532;1985-2878	47.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhA	APU51505.1-ndhA	1-184;185-363	prot	363	00	100.00	94.21	0.884	0.887	2184	1089	1095	0		2	1	2	1	2	NODE_10271_length_3287_cov_49.0000_k_175_flag_1;NODE_4844_length_1418_cov_29.0000_k_175_flag_1	-;-	850-1402;637-1172	39.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhB	CBJ04342.1-ndhB	1-259,260-510	prot	510	00	100.00	98.43	0.969	0.969	2218	1530	688	0		1	1	1	1	1	NODE_20874_length_14983_cov_144.0000_k_175_flag_1	-	12579-13355,11138-11890	144.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhC	ALF03757.1-ndhC	1-120	prot	120	00	100.00	97.50	0.950	0.947	360	360	0	0		1	1	1	1	1	NODE_9760_length_2205_cov_41.0000_k_175_flag_1	+	1166-1525	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhD	QNR91367.1-ndhD	1-500	prot	500	00	100.00	85.00	0.700	0.704	1500	1500	0	0	66	1	1	1	1	1	NODE_1053_length_3463_cov_45.0000_k_175_flag_1	-	65-1563	45.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhE	ABB21008.1-ndhE	1-101	prot	101	00	100.00	96.04	0.921	0.922	303	303	0	0		1	1	1	1	1	NODE_1053_length_3463_cov_45.0000_k_175_flag_1	-	2190-2492	45.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhF	QJS33284.1-ndhF	1-738	prot	738	00	100.00	82.25	0.645	0.672	2217	2217	0	0		1	1	1	1	1	NODE_5574_length_15488_cov_190.3607_k_175_flag_1	-	12622-14838	190.3607
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhG	QKX48822.1-ndhG	1-176	prot	176	00	100.00	86.93	0.739	0.720	528	528	0	0		1	1	1	1	1	NODE_1053_length_3463_cov_45.0000_k_175_flag_1	-	2618-3145	45.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhH	AVL92386.1-ndhH	1-398	prot	398	00	100.00	92.46	0.849	0.855	1185	1185	0	0		1	1	1	1	1	NODE_10271_length_3287_cov_49.0000_k_175_flag_1	-	1407-2591	49.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhI	APA33661.1-ndhI	1-166	prot	166	00	100.00	92.17	0.843	0.850	501	501	0	0		1	1	1	1	1	NODE_4844_length_1418_cov_29.0000_k_175_flag_1	-	49-549	29.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhI	APA33661.1-ndhI	55-166	prot	112	01	67.47	97.32	0.639	0.759	480	480	0	0	192	1	1	1	1	0	NODE_16982_length_2304_cov_59.0000_k_175_flag_1	+	338-816	59.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhJ	ASM42161.1-ndhJ	1-158	prot	158	00	100.00	94.30	0.886	0.881	474	474	0	0		1	1	1	1	1	NODE_9872_length_3447_cov_42.0000_k_175_flag_1	-	2113-2586	42.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhK	ARH08394.1-ndhK	1-222	prot	222	00	100.00	80.63	0.613	0.631	576	576	0	0		1	1	1	1	1	NODE_9760_length_2205_cov_41.0000_k_175_flag_1	+	1586-2161	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ndhK	ARH08394.1-ndhK	124-222	prot	99	01	44.59	82.83	0.293	0.444	312	312	0	0		1	1	1	0	0	NODE_9872_length_3447_cov_42.0000_k_175_flag_1	-	2686-2997	42.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	pafI	BAO01493.1-pafI	1-41,42-168	prot	168	00	100.00	94.64	0.893	0.896	1077	372	705	0		1	1	1	1	1	NODE_26527_length_2076_cov_45.0000_k_175_flag_1	+	759-882,1588-1835	45.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	pafII	ATU07177.1-pafII	1-184	prot	184	00	100.00	91.85	0.837	0.828	552	552	0	0		1	1	1	1	1	NODE_2371_length_2996_cov_50.0000_k_175_flag_1	+	895-1446	50.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	pbf1	CAC88072.1-pbf1	1-43	prot	43	00	100.00	100.00	1.000	1.000	129	129	0	0		1	1	1	1	1	NODE_28078_length_1333_cov_40.0000_k_175_flag_1	-	1064-1192	40.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	petA	QEJ83256.1-petA	63-320	prot	258	00	80.62	94.96	0.725	0.902	771	771	0	0		1	1	1	1	0	NODE_7975_length_5953_cov_49.0000_k_175_flag_1	-	4819-5589	49.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	petB	QGT35023.1-petB	3-218	prot	216	00	99.08	98.61	0.963	0.972	639	639	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	-	7693-8331	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	petD	BAO01524.1-petD	1-160	prot	160	00	100.00	98.12	0.963	0.963	522	522	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	-	6292-6813	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	petG	BAB47052.1-petG	1-37	prot	37	00	100.00	100.00	1.000	1.000	111	111	0	0		1	1	1	1	1	NODE_10207_length_2799_cov_101.0000_k_175_flag_1	+	1014-1124	101.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	petG	BAB47052.1-petG	4-23	prot	20	01	54.05	90.00	0.432	0.596	60	60	0	0		1	1	1	1	0	NODE_7271_length_607_cov_348.0000_k_175_flag_1	-	39-98	348.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	petL	ALD61679.1-petL	1-31	prot	31	00	100.00	90.32	0.806	0.816	93	93	0	0		1	1	1	1	1	NODE_10207_length_2799_cov_101.0000_k_175_flag_1	+	778-870	101.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	petN	BAB47023.1-petN	1-29	prot	29	00	100.00	96.55	0.931	0.932	87	87	0	0		1	1	1	1	1	NODE_24213_length_1381_cov_63.0000_k_175_flag_1	+	777-863	63.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psaA	ABJ89679.1-psaA	1-750	prot	750	00	100.00	99.87	0.997	0.997	2250	2250	0	0		1	1	1	1	1	NODE_21834_length_3080_cov_65.0000_k_175_flag_0	-	359-2608	65.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psaB	AYD72859.1-psaB	1-79;80-734	prot	734	00	100.00	98.23	0.965	0.964	2202	2202	0	0		2	1	2	1	2	NODE_21834_length_3080_cov_65.0000_k_175_flag_0;NODE_21605_length_6977_cov_66.8448_k_175_flag_0	-;+	94-330;83-2047	65.9224
+Vangueriopsis_lanciflora_S446_L004	PTD	psaC	BAO01544.1-psaC	1-81	prot	81	00	100.00	100.00	1.000	1.000	243	243	0	0		1	1	1	1	1	NODE_1053_length_3463_cov_45.0000_k_175_flag_1	-	1680-1922	45.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psaI	AKA94873.1-psaI	1-34	prot	34	00	100.00	91.18	0.824	0.808	99	99	0	0		1	1	1	1	1	NODE_2371_length_2996_cov_50.0000_k_175_flag_1	+	370-468	50.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psaJ	BAE47614.1-psaJ	1-44	prot	44	00	100.00	97.73	0.955	0.955	132	132	0	0		1	1	1	1	1	NODE_10207_length_2799_cov_101.0000_k_175_flag_1	+	1924-2055	101.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbA	ACB86507.1-psbA	1-353	prot	353	00	100.00	98.30	0.966	0.966	1059	1059	0	0		1	1	1	1	1	NODE_8541_length_2894_cov_42.0000_k_175_flag_1	-	400-1458	42.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbB	ALI30725.1-psbB	1-343	prot	343	00	67.52	96.21	0.624	0.902	1017	1017	0	0	902,903	1	1	1	1	0	NODE_10619_length_2570_cov_56.0000_k_175_flag_1	+	1092-2106	56.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbB	ALI30725.1-psbB	272-508	prot	237	01	46.65	97.05	0.439	0.783	711	711	0	0		1	1	1	0	0	NODE_28078_length_1333_cov_40.0000_k_175_flag_1	+	3-713	40.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbC	ADH94339.1-psbC	1-473	prot	473	00	100.00	98.73	0.975	0.975	1419	1419	0	0		1	1	1	1	1	NODE_21605_length_6977_cov_66.8448_k_175_flag_0	-	4050-5468	66.8448
+Vangueriopsis_lanciflora_S446_L004	PTD	psbD	QRN71798.1-psbD	1-353	prot	353	00	100.00	99.43	0.989	0.989	1059	1059	0	0		1	1	1	1	1	NODE_21605_length_6977_cov_66.8448_k_175_flag_0	-	5419-6477	66.8448
+Vangueriopsis_lanciflora_S446_L004	PTD	psbE	AUV64931.1-psbE	1-83	prot	83	00	100.00	97.59	0.952	0.952	249	249	0	0		1	1	1	1	1	NODE_7975_length_5953_cov_49.0000_k_175_flag_1	+	3085-3333	49.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbF	BAL72608.1-psbF	1-39	prot	39	00	100.00	97.44	0.949	0.949	117	117	0	0		1	1	1	1	1	NODE_7975_length_5953_cov_49.0000_k_175_flag_1	+	3346-3462	49.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbH	CBJ04326.1-psbH	1-73	prot	73	00	100.00	100.00	1.000	0.987	219	219	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	-	9243-9461	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbI	BAB47018.1-psbI	1-36	prot	36	00	100.00	100.00	1.000	0.986	108	108	0	0		1	1	1	1	1	NODE_25318_length_7567_cov_52.0000_k_175_flag_1	+	5699-5806	52.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbJ	AAX21043.1-psbJ	1-40	prot	40	00	100.00	95.00	0.900	0.870	120	120	0	0		1	1	1	1	1	NODE_7975_length_5953_cov_49.0000_k_175_flag_1	+	3747-3866	49.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbK	ANY60490.1-psbK	1-59	prot	59	00	100.00	93.22	0.864	0.828	183	183	0	0		1	1	1	1	1	NODE_25318_length_7567_cov_52.0000_k_175_flag_1	+	5081-5263	52.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbL	BAO19729.1-psbL	1-38	prot	38	00	100.00	100.00	1.000	1.000	114	114	0	0		1	1	1	1	1	NODE_7975_length_5953_cov_49.0000_k_175_flag_1	+	3489-3602	49.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbM	CAC88038.1-psbM	1-34	prot	34	00	100.00	97.06	0.941	0.915	102	102	0	0		1	1	1	1	1	NODE_19192_length_3653_cov_47.0000_k_175_flag_1	+	2996-3097	47.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbT	CAD28747.1-psbT	1-35	prot	35	00	100.00	97.14	0.943	0.944	105	105	0	0		1	1	1	1	1	NODE_28078_length_1333_cov_40.0000_k_175_flag_1	+	893-997	40.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	psbZ	BAO01489.1-psbZ	1-62	prot	62	00	100.00	95.16	0.903	0.906	186	186	0	0		1	1	1	1	1	NODE_21605_length_6977_cov_66.8448_k_175_flag_0	-	3245-3430	66.8448
+Vangueriopsis_lanciflora_S446_L004	PTD	rbcL	QQW47350.1-rbcL	1-475	prot	475	00	100.00	96.42	0.928	0.930	1425	1425	0	0		1	1	1	1	1	NODE_5353_length_7543_cov_47.4992_k_175_flag_1	-	2480-3904	47.4992
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl14	ARJ37182.1-rpl14	1-122	prot	122	00	100.00	97.54	0.951	0.940	366	366	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	2971-3336	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl16	BAO01531.1-rpl16	4-135	prot	132	00	97.78	92.42	0.830	0.845	396	396	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	2449-2844	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl2	QRI61044.1-rpl2	1-130,131-275	prot	275	00	100.00	98.18	0.964	0.957	1481	822	659	0		1	1	1	1	1	NODE_20874_length_14983_cov_144.0000_k_175_flag_1	-	1963-2353,873-1303	144.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl20	QJT43266.1-rpl20	1-128	prot	128	00	100.00	92.19	0.844	0.850	357	357	0	0		1	1	1	1	1	NODE_21386_length_3440_cov_47.0000_k_175_flag_1	-	614-970	47.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl22	CAJ32433.1-rpl22	1-155	prot	155	00	100.00	83.87	0.677	0.703	465	465	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	419-883	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl23	BAO01536.1-rpl23	1-93	prot	93	00	100.00	98.92	0.978	0.930	279	279	0	0		1	1	1	1	1	NODE_20874_length_14983_cov_144.0000_k_175_flag_1	-	2375-2653	144.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl32	BAE47643.1-rpl32	1-54	prot	54	00	100.00	87.04	0.741	0.737	162	162	0	0		1	1	1	1	1	NODE_14268_length_461_cov_15.0000_k_175_flag_1	-	186-347	15.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl33	AEY84154.1-rpl33	3-68	prot	66	00	97.06	81.82	0.618	0.664	192	192	0	0		1	1	1	1	1	NODE_10207_length_2799_cov_101.0000_k_175_flag_1	+	2500-2691	101.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpl36	BAX84123.1-rpl36	1-37	prot	37	00	100.00	97.30	0.946	0.947	111	111	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	4393-4503	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpoA	CAJ32426.1-rpoA	1-335	prot	335	00	99.41	87.16	0.739	0.722	1008	1008	0	0	995,996	1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	5099-6104	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpoB	QTJ26579.1-rpoB	1-1059	prot	1059	00	98.42	82.63	0.642	0.665	3147	3147	0	0		1	1	1	1	1	NODE_10874_length_3763_cov_39.0000_k_175_flag_0	-	10-3156	39.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rpoC1	AKM97909.1-rpoC1	1-144,145-681	prot	681	00	100.00	91.04	0.821	0.815	2801	2043	758	0		1	1	1	1	1	NODE_21888_length_11183_cov_46.9331_k_175_flag_0	-	10506-10937,8137-9747	46.9331
+Vangueriopsis_lanciflora_S446_L004	PTD	rpoC2	QIQ57321.1-rpoC2	1-1381	prot	1381	00	100.00	81.03	0.621	0.640	4164	4164	0	0	4001,4002	1	1	1	1	1	NODE_21888_length_11183_cov_46.9331_k_175_flag_0	-	3811-7972	46.9331
+Vangueriopsis_lanciflora_S446_L004	PTD	rps11	QAV58545.1-rps11	1-138	prot	138	00	100.00	91.30	0.826	0.834	414	414	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	4608-5021	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps12_exon_1	CAD28682.1-rps12_exon_1	1-38	prot	38	00	100.00	97.37	0.947	0.948	114	114	0	0		1	1	1	1	1	NODE_21386_length_3440_cov_47.0000_k_175_flag_1	-	1752-1865	47.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps12_exon_2_3	CAD28682.1-rps12_exon_2_3	1-77,78-85	prot	85	00	100.00	98.82	0.976	0.965	781	255	526	0		1	1	1	1	1	NODE_20874_length_14983_cov_144.0000_k_175_flag_1	-	14713-14944,14164-14186	144.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps12_exon_2_3	CAD28682.1-rps12_exon_2_3	1-85	prot	85	01	100.00	83.53	0.671	0.690	231	231	0	0		1	1	1	1	1	NODE_5574_length_15488_cov_190.3607_k_175_flag_1	-	887-1117	190.3607
+Vangueriopsis_lanciflora_S446_L004	PTD	rps12_exon_2_3	CAD28682.1-rps12_exon_2_3	1-85	prot	85	02	100.00	65.88	0.318	0.429	255	255	0	0		1	1	1	1	1	NODE_3968_length_2783_cov_232.4812_k_175_flag_1	+	1789-2043	232.4812
+Vangueriopsis_lanciflora_S446_L004	PTD	rps14	AEJ82553.1-rps14	1-100	prot	100	00	100.00	91.00	0.820	0.808	300	300	0	0		1	1	1	1	1	NODE_21605_length_6977_cov_66.8448_k_175_flag_0	+	2180-2479	66.8448
+Vangueriopsis_lanciflora_S446_L004	PTD	rps15	QIQ56527.1-rps15	1-87	prot	87	00	100.00	89.66	0.793	0.786	261	261	0	0		1	1	1	1	1	NODE_10271_length_3287_cov_49.0000_k_175_flag_1	-	2704-2964	49.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps16	CAC88026.1-rps16	1-14,15-88	prot	88	00	100.00	86.36	0.727	0.714	1106	264	842	0		1	1	1	1	1	NODE_25318_length_7567_cov_52.0000_k_175_flag_1	-	3196-3238,2133-2353	52.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps18	APT42286.1-rps18	1-101	prot	101	00	100.00	93.07	0.861	0.801	294	294	0	0		1	1	1	1	1	NODE_21386_length_3440_cov_47.0000_k_175_flag_1	+	49-342	47.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps19	ADY15391.1-rps19	27-92	prot	66	00	71.74	95.45	0.652	0.904	198	198	0	0		1	1	1	1	0	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	163-360	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps2	QBC66712.1-rps2	1-236	prot	236	00	100.00	95.76	0.915	0.879	708	708	0	0		1	1	1	1	1	NODE_21888_length_11183_cov_46.9331_k_175_flag_0	-	2904-3611	46.9331
+Vangueriopsis_lanciflora_S446_L004	PTD	rps3	QNR93324.1-rps3	1-218	prot	218	00	100.00	86.24	0.725	0.735	654	654	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	871-1524	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps4	ARQ81760.1-rps4	1-201	prot	201	00	100.00	94.03	0.881	0.855	603	603	0	0		1	1	1	1	1	NODE_25164_length_1232_cov_41.0000_k_175_flag_1	-	93-695	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps7	AHY32771.1-rps7	1-155	prot	155	00	100.00	96.77	0.935	0.928	465	465	0	0		1	1	1	1	1	NODE_20874_length_14983_cov_144.0000_k_175_flag_1	-	13644-14108	144.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	rps8	BAA84420.1-rps8	1-134	prot	134	00	100.00	82.09	0.642	0.666	402	402	0	0		1	1	1	1	1	NODE_8025_length_9713_cov_41.0000_k_175_flag_1	+	3506-3907	41.0000
+Vangueriopsis_lanciflora_S446_L004	PTD	ycf1	ABJ89737.1-ycf1	351-1006;1187-1387;1403-1874	prot	1329	00	70.92	88.79	0.550	0.787	3963	3963	0	0		3	2	3	2	0	NODE_1759_length_2164_cov_49.0000_k_175_flag_1;NODE_3565_length_864_cov_16.0000_k_175_flag_1;NODE_29382_length_1425_cov_45.0000_k_175_flag_1	-;+;-	2-1969;233-841;39-1424	36.6667
+Vangueriopsis_lanciflora_S446_L004	PTD	ycf2	AMD38511.1-ycf2	1-194,195-2051	prot	2051	00	100.00	87.96	0.759	0.733	6831	6273	558	0		1	1	1	1	1	NODE_20874_length_14983_cov_144.0000_k_175_flag_1	+	2980-3554,4113-9810	144.0000

@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
+Perakanthus_velutinus_S495_L004	before	19309	3.397	0.357	0.026	0.01	0.01	0.005	8515778	12.591	3.579	1.705	1.505	1.505	1.24	182	105630	442	358	32.4591	6.0	39.873	416	330	6311	12114
+Perakanthus_velutinus_S495_L004	after	16360	3.985	0.422	0.031	0.012	0.012	0.006	7375896	14.478	4.132	1.969	1.738	1.738	1.432	183	105630	451	358	38.1293	7.0	40.124	422	331	5211	10203

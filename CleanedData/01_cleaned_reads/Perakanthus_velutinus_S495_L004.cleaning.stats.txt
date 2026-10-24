@@ -1,5 +1,0 @@
-#File	/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Perakanthus_velutinus_S495_L004_R1_001.fastq.gz	/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Perakanthus_velutinus_S495_L004_R2_001.fastq.gz
-#Total	8641426
-#Matched	1	0.00001%
-#Name	Reads	ReadsPct
-gi|9626372|ref|NC_001422.1| Coliphage phiX174, complete genome	1	0.00001%

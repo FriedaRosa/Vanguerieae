@@ -1,4 +1,0 @@
-#File	/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Pyrostria_commersonii_S618_L004_R1_001.fastq.gz	/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Pyrostria_commersonii_S618_L004_R2_001.fastq.gz
-#Total	19139836
-#Matched	0	0.00000%
-#Name	Reads	ReadsPct

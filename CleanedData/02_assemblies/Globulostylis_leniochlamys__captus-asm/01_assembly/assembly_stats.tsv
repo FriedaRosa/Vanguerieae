@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
+Globulostylis_leniochlamys	before	8065	6.138	0.558	0.037	0.012	0.0	0.0	4172491	16.882	3.374	0.823	0.385	0.0	0.0	181	16070	518	414	107.2783	48.0	52.287	542	378	2449	4780
+Globulostylis_leniochlamys	after	7633	6.485	0.59	0.039	0.013	0.0	0.0	4014331	17.547	3.507	0.855	0.4	0.0	0.0	211	16070	526	421	113.2932	50.0	52.545	552	383	2312	4517

@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
+Multidentia_crassa	before	18378	5.044	0.794	0.049	0.022	0.011	0.0	8650398	17.447	5.546	1.36	0.933	0.619	0.0	181	29385	471	366	49.3592	11.0	39.013	458	339	5462	11032
+Multidentia_crassa	after	12858	7.124	1.135	0.07	0.031	0.016	0.0	6567368	22.791	7.305	1.791	1.229	0.815	0.0	182	29385	511	379	70.1192	16.0	39.069	504	353	3545	7524

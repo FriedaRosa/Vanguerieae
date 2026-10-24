@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
+Fadoginella_rogersii	before	2120	16.509	2.547	0.0	0.0	0.0	0.0	1389085	37.978	9.803	0.0	0.0	0.0	0.0	181	4537	656	476	983.0977	311.0	42.145	820	460	535	1100
+Fadoginella_rogersii	after	1787	19.586	3.022	0.0	0.0	0.0	0.0	1274208	41.402	10.686	0.0	0.0	0.0	0.0	201	4537	714	542	1166.1075	440.0	42.28	878	522	468	929

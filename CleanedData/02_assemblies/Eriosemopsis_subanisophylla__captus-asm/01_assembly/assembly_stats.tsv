@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
+Eriosemopsis_subanisophylla	before	6000	6.517	0.733	0.05	0.017	0.0	0.0	3017541	19.539	4.389	1.02	0.411	0.0	0.0	181	12406	503	383	256.7406	29.0	39.797	529	354	1702	3483
+Eriosemopsis_subanisophylla	after	4737	8.233	0.929	0.063	0.021	0.0	0.0	2599511	22.64	5.095	1.184	0.477	0.0	0.0	187	12406	549	418	324.9272	42.0	39.969	592	384	1335	2713

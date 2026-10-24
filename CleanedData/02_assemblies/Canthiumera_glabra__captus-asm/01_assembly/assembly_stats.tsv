@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
+Canthiumera_glabra	before	942	0.637	0.212	0.0	0.0	0.0	0.0	248862	3.8	1.891	0.0	0.0	0.0	0.0	137	2504	265	237	45.8896	38.5	48.235	247	223	379	645
+Canthiumera_glabra	after	872	0.688	0.229	0.0	0.0	0.0	0.0	229339	4.123	2.052	0.0	0.0	0.0	0.0	199	2504	264	236	49.4933	41.0	47.995	244	223	354	600

@@ -1,0 +1,906 @@
+
+
+Starting Captus-assembly: ASSEMBLE (2026-10-21 06:24:50)
+--------------------------------------------------------
+    Welcome to the de novo assembly step of Captus-assembly. In this step, Captus will use MEGAHIT to assemble your input reads and then Salmon to accurately estimate contig depth. It is also possible to subsample a number of reads using reformat.sh from BBTools prior to assembly, this is useful while performing tests or when including samples with considerably higher sequencing depth in a dataset.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string '_R1' in their names and match them with their respective '_R2' pairs. If the '_R2' can not be found, the sample is treated as single-end. Sample names are derived from the text found before the '_R1' string.The full set of reads per sample will be assembled, no subsampling will be performed.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+                   OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 15.2GB (out of 15.4GB)
+         Max. Threads: 14 (out of 14)
+
+         Dependencies:
+              MEGAHIT: v1.2.9 OK
+      megahit_toolkit: v1.2.9 OK
+              BBTools: not used
+               Salmon: v2.7.0 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies
+                       Output directory successfully created
+
+
+
+Subsampling Reads with reformat.sh (2026-10-21 06:24:52)
+--------------------------------------------------------
+    Now Captus will randomly subsample 0 read pairs (or single-end reads) from each sample prior to de novo assembly with MEGAHIT.
+
+Skipping read subsampling step... (to enable provide a number of reads to subsample with '--sample_reads_target')
+
+
+
+De Novo Assembly with MEGAHIT (2026-10-21 06:24:52)
+---------------------------------------------------
+    Now Captus will perform de novo assembly with your input reads using MEGAHIT. Both '--min_contig_len' (when set to 'auto') and '--k_list' will be adjusted sample-wise according to the mean read length of the sample's FASTQ files.
+
+Concurrent assemblies: 1
+     RAM per assembly: 15.2GB
+ Threads per assembly: 14
+
+               preset: CAPSKIM
+               k_list: 31,39,47,63,79,95,111,127,143,159,175
+            min_count: 2
+          prune_level: 2
+          merge_level: 20,0.95
+       min_contig_len: auto
+        extra_options: None
+              tmp_dir: /home/frieda/captus_megahit_tmp
+        max_contig_gc: 100.0%
+      disable_mapping: False
+     min_contig_depth: 1.5x (auto)
+       redo_filtering: True
+
+      Overwrite files: False
+       Keep all files: False
+  Samples to assemble: 31
+
+   Output directories: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/[Sample_name]__captus-asm/01_assembly
+                       A directory will be created for each sample
+
+De novo assembling with MEGAHIT:
+'Afrocanthium_gilfillanii_S627_L004': assembled [1h 5m 56.8s (3956.768s)]
+'Afrocanthium_lactescens_S626_L004': assembled [12m 45.2s (765.175s)]
+'Bullockia_fadenii_S514_L004': assembled [16m 29.3s (989.287s)]
+'Canthium_inerme_S629_L004': assembled [4m 52.0s (292.004s)]
+'Cyclophyllum_henriettae_S376_L004': assembled [11m 50.1s (710.127s)]
+'Cyclophyllum_jasminifolium_S377_L004': assembled [17m 19.5s (1039.547s)]
+'Eriosemopsis_subanisophylla_S489_L004': assembled [1h 9m 55.1s (4195.086s)]
+'Everistia_vacciniifolia_S490_L004': assembled [30m 10.9s (1810.861s)]
+'Everistia_vacciniifolia_S491_L004': assembled [14m 10.7s (850.743s)]
+'Hutchinsonia_barbata_S551_L004': assembled [6m 56.4s (416.397s)]
+'Keetia_gueinzii_S519_L004': assembled [6m 24.3s (384.348s)]
+'Keetia_hispida_S383_L004': assembled [44m 28.8s (2668.842s)]
+'Keetia_lukei_S507_L004': assembled [22m 32.0s (1352.013s)]
+'Multidentia_exserta_S443_L004': assembled [2m 5.4s (125.405s)]
+'Multidentia_sclerocarpa_S374_L004': assembled [6m 46.1s (406.095s)]
+'Peponidium_crassifolium_S628_L004': assembled [8m 52.4s (532.372s)]
+'Perakanthus_velutinus_S495_L004': assembled [16m 22.0s (981.955s)]
+'Plectroniella_armata_S391_L004': assembled [33m 27.6s (2007.581s)]
+'Plectroniella_armata_S640_L004': assembled [12m 14.3s (734.279s)]
+'Psydrax_ankotekonensis_S572_L004': assembled [27m 30.6s (1650.633s)]
+'Psydrax_dicoccos_S379_L004': assembled [39m 9.1s (2349.143s)]
+'Psydrax_obovata_S639_L004': assembled [17m 5.4s (1025.353s)]
+'Pygmaeothamnus_sp_S516_L004': assembled [41m 34.8s (2494.832s)]
+'Pyrostria_commersonii_S618_L004': assembled [1h 10m 13.0s (4212.995s)]
+'Pyrostria_hystrix_S641_L004': assembled [38m 20.6s (2300.612s)]
+'Pyrostria_media_S610_L004': assembled [50m 49.2s (3049.199s)]
+'Rytigynia_longipedicellata_S442_L004': assembled [23m 59.8s (1439.780s)]
+'Rytigynia_sambavensis_S493_L004': assembled [57m 39.6s (3459.556s)]
+'Temnocalyx_nodulosus_S587_L004': assembled [1h 21m 4.1s (4864.082s)]
+'Vangueria_madagascariensis_S602_L004': assembled [2m 12.0s (132.021s)]
+'Vangueriopsis_lanciflora_S446_L004': assembled [20m 15.9s (1215.879s)]
+ └─→ De novo assembly completed for 31 sample(s) [14h 33m 33.2s (52413.217s)]
+
+Depth of coverage estimation with Salmon:
+'Afrocanthium_gilfillanii_S627_L004': FAILED depth estimation (Salmon output not found)
+'Afrocanthium_lactescens_S626_L004': FAILED depth estimation (Salmon output not found)
+'Bullockia_fadenii_S514_L004': FAILED depth estimation (Salmon output not found)
+'Canthium_inerme_S629_L004': FAILED depth estimation (Salmon output not found)
+'Cyclophyllum_henriettae_S376_L004': FAILED depth estimation (Salmon output not found)
+'Cyclophyllum_jasminifolium_S377_L004': FAILED depth estimation (Salmon output not found)
+'Eriosemopsis_subanisophylla_S489_L004': FAILED depth estimation (Salmon output not found)
+'Everistia_vacciniifolia_S490_L004': FAILED depth estimation (Salmon output not found)
+'Everistia_vacciniifolia_S491_L004': FAILED depth estimation (Salmon output not found)
+'Hutchinsonia_barbata_S551_L004': FAILED depth estimation (Salmon output not found)
+'Keetia_gueinzii_S519_L004': FAILED depth estimation (Salmon output not found)
+'Keetia_hispida_S383_L004': FAILED depth estimation (Salmon output not found)
+'Keetia_lukei_S507_L004': FAILED depth estimation (Salmon output not found)
+'Multidentia_exserta_S443_L004': FAILED depth estimation (Salmon output not found)
+'Multidentia_sclerocarpa_S374_L004': FAILED depth estimation (Salmon output not found)
+'Peponidium_crassifolium_S628_L004': FAILED depth estimation (Salmon output not found)
+'Perakanthus_velutinus_S495_L004': FAILED depth estimation (Salmon output not found)
+'Plectroniella_armata_S391_L004': FAILED depth estimation (Salmon output not found)
+'Plectroniella_armata_S640_L004': FAILED depth estimation (Salmon output not found)
+'Psydrax_ankotekonensis_S572_L004': FAILED depth estimation (Salmon output not found)
+'Psydrax_dicoccos_S379_L004': FAILED depth estimation (Salmon output not found)
+'Psydrax_obovata_S639_L004': FAILED depth estimation (Salmon output not found)
+'Pygmaeothamnus_sp_S516_L004': FAILED depth estimation (Salmon output not found)
+'Pyrostria_commersonii_S618_L004': FAILED depth estimation (Salmon output not found)
+'Pyrostria_hystrix_S641_L004': FAILED depth estimation (Salmon output not found)
+'Pyrostria_media_S610_L004': FAILED depth estimation (Salmon output not found)
+'Rytigynia_longipedicellata_S442_L004': FAILED depth estimation (Salmon output not found)
+'Rytigynia_sambavensis_S493_L004': FAILED depth estimation (Salmon output not found)
+'Temnocalyx_nodulosus_S587_L004': FAILED depth estimation (Salmon output not found)
+'Vangueria_madagascariensis_S602_L004': FAILED depth estimation (Salmon output not found)
+'Vangueriopsis_lanciflora_S446_L004': FAILED depth estimation (Salmon output not found)
+ └─→ Depth of coverage estimation completed for 31 sample(s) [8m 47.8s (527.759s)]
+
+Filtering contigs >100.0% GC and <1.5x (auto) depth:
+'Afrocanthium_gilfillanii_S627_L004': BEFORE 185,246 contigs, total 78,167,011 bp, min 173 bp, max 74,739 bp, mean 422 bp, N50 422 bp
+'Afrocanthium_gilfillanii_S627_L004': AFTER 149,195 contigs, total 63,675,001 bp, min 173 bp, max 74,739 bp, mean 427 bp, N50 423 bp
+'Afrocanthium_gilfillanii_S627_L004': assembly filtered [3.638s]
+'Afrocanthium_lactescens_S626_L004': BEFORE 26,581 contigs, total 11,407,202 bp, min 171 bp, max 33,847 bp, mean 430 bp, N50 415 bp
+'Afrocanthium_lactescens_S626_L004': AFTER 23,757 contigs, total 10,336,134 bp, min 171 bp, max 33,847 bp, mean 436 bp, N50 419 bp
+'Afrocanthium_lactescens_S626_L004': assembly filtered [0.640s]
+'Bullockia_fadenii_S514_L004': BEFORE 23,491 contigs, total 10,759,095 bp, min 182 bp, max 36,221 bp, mean 459 bp, N50 427 bp
+'Bullockia_fadenii_S514_L004': AFTER 19,726 contigs, total 9,254,803 bp, min 186 bp, max 36,221 bp, mean 470 bp, N50 432 bp
+'Bullockia_fadenii_S514_L004': assembly filtered [0.459s]
+'Canthium_inerme_S629_L004': BEFORE 9,618 contigs, total 4,433,628 bp, min 178 bp, max 36,864 bp, mean 461 bp, N50 446 bp
+'Canthium_inerme_S629_L004': AFTER 8,679 contigs, total 4,083,155 bp, min 179 bp, max 36,864 bp, mean 471 bp, N50 458 bp
+'Canthium_inerme_S629_L004': assembly filtered [0.161s]
+'Cyclophyllum_henriettae_S376_L004': BEFORE 15,054 contigs, total 7,090,852 bp, min 182 bp, max 30,924 bp, mean 472 bp, N50 464 bp
+'Cyclophyllum_henriettae_S376_L004': AFTER 10,020 contigs, total 5,069,869 bp, min 183 bp, max 30,924 bp, mean 506 bp, N50 494 bp
+'Cyclophyllum_henriettae_S376_L004': assembly filtered [0.193s]
+'Cyclophyllum_jasminifolium_S377_L004': BEFORE 30,713 contigs, total 13,968,620 bp, min 182 bp, max 28,267 bp, mean 455 bp, N50 444 bp
+'Cyclophyllum_jasminifolium_S377_L004': AFTER 21,781 contigs, total 10,336,920 bp, min 183 bp, max 28,267 bp, mean 475 bp, N50 457 bp
+'Cyclophyllum_jasminifolium_S377_L004': assembly filtered [0.446s]
+'Eriosemopsis_subanisophylla_S489_L004': BEFORE 108,682 contigs, total 47,341,045 bp, min 182 bp, max 79,346 bp, mean 436 bp, N50 426 bp
+'Eriosemopsis_subanisophylla_S489_L004': AFTER 93,287 contigs, total 40,745,753 bp, min 183 bp, max 79,346 bp, mean 437 bp, N50 423 bp
+'Eriosemopsis_subanisophylla_S489_L004': assembly filtered [2.606s]
+'Everistia_vacciniifolia_S490_L004': BEFORE 57,368 contigs, total 25,534,814 bp, min 182 bp, max 17,186 bp, mean 446 bp, N50 438 bp
+'Everistia_vacciniifolia_S490_L004': AFTER 43,176 contigs, total 19,104,067 bp, min 182 bp, max 17,186 bp, mean 443 bp, N50 423 bp
+'Everistia_vacciniifolia_S490_L004': assembly filtered [0.747s]
+'Everistia_vacciniifolia_S491_L004': BEFORE 24,719 contigs, total 11,399,039 bp, min 182 bp, max 23,439 bp, mean 462 bp, N50 459 bp
+'Everistia_vacciniifolia_S491_L004': AFTER 18,013 contigs, total 8,414,607 bp, min 184 bp, max 23,439 bp, mean 468 bp, N50 456 bp
+'Everistia_vacciniifolia_S491_L004': assembly filtered [0.294s]
+'Hutchinsonia_barbata_S551_L004': BEFORE 11,212 contigs, total 4,783,910 bp, min 176 bp, max 26,845 bp, mean 427 bp, N50 419 bp
+'Hutchinsonia_barbata_S551_L004': AFTER 7,902 contigs, total 3,483,938 bp, min 176 bp, max 26,845 bp, mean 441 bp, N50 429 bp
+'Hutchinsonia_barbata_S551_L004': assembly filtered [0.143s]
+'Keetia_gueinzii_S519_L004': BEFORE 23,332 contigs, total 7,434,274 bp, min 144 bp, max 10,352 bp, mean 319 bp, N50 307 bp
+'Keetia_gueinzii_S519_L004': AFTER 18,686 contigs, total 6,035,637 bp, min 145 bp, max 10,352 bp, mean 324 bp, N50 311 bp
+'Keetia_gueinzii_S519_L004': assembly filtered [0.238s]
+'Keetia_hispida_S383_L004': BEFORE 139,748 contigs, total 47,058,094 bp, min 147 bp, max 19,999 bp, mean 337 bp, N50 327 bp
+'Keetia_hispida_S383_L004': AFTER 114,814 contigs, total 39,474,690 bp, min 150 bp, max 19,999 bp, mean 344 bp, N50 334 bp
+'Keetia_hispida_S383_L004': assembly filtered [1.783s]
+'Keetia_lukei_S507_L004': BEFORE 38,170 contigs, total 16,867,373 bp, min 182 bp, max 10,138 bp, mean 442 bp, N50 447 bp
+'Keetia_lukei_S507_L004': AFTER 25,027 contigs, total 11,125,711 bp, min 184 bp, max 10,138 bp, mean 445 bp, N50 442 bp
+'Keetia_lukei_S507_L004': assembly filtered [0.543s]
+'Multidentia_exserta_S443_L004': BEFORE 4,003 contigs, total 1,476,170 bp, min 248 bp, max 8,519 bp, mean 369 bp, N50 357 bp
+'Multidentia_exserta_S443_L004': AFTER 3,737 contigs, total 1,389,940 bp, min 248 bp, max 8,519 bp, mean 372 bp, N50 361 bp
+'Multidentia_exserta_S443_L004': assembly filtered [0.064s]
+'Multidentia_sclerocarpa_S374_L004': BEFORE 11,718 contigs, total 5,313,119 bp, min 179 bp, max 50,534 bp, mean 454 bp, N50 426 bp
+'Multidentia_sclerocarpa_S374_L004': AFTER 10,823 contigs, total 4,941,152 bp, min 255 bp, max 50,534 bp, mean 457 bp, N50 427 bp
+'Multidentia_sclerocarpa_S374_L004': assembly filtered [0.189s]
+'Peponidium_crassifolium_S628_L004': BEFORE 16,829 contigs, total 7,828,856 bp, min 177 bp, max 53,433 bp, mean 466 bp, N50 457 bp
+'Peponidium_crassifolium_S628_L004': AFTER 14,168 contigs, total 6,779,443 bp, min 177 bp, max 53,433 bp, mean 479 bp, N50 472 bp
+'Peponidium_crassifolium_S628_L004': assembly filtered [0.316s]
+'Perakanthus_velutinus_S495_L004': BEFORE 19,309 contigs, total 8,515,778 bp, min 182 bp, max 105,630 bp, mean 442 bp, N50 416 bp
+'Perakanthus_velutinus_S495_L004': AFTER 16,360 contigs, total 7,375,896 bp, min 183 bp, max 105,630 bp, mean 451 bp, N50 422 bp
+'Perakanthus_velutinus_S495_L004': assembly filtered [0.345s]
+'Plectroniella_armata_S391_L004': BEFORE 66,904 contigs, total 29,134,705 bp, min 182 bp, max 110,056 bp, mean 436 bp, N50 425 bp
+'Plectroniella_armata_S391_L004': AFTER 55,029 contigs, total 24,213,099 bp, min 183 bp, max 110,056 bp, mean 441 bp, N50 424 bp
+'Plectroniella_armata_S391_L004': assembly filtered [0.993s]
+'Plectroniella_armata_S640_L004': BEFORE 20,274 contigs, total 8,225,186 bp, min 172 bp, max 27,619 bp, mean 406 bp, N50 384 bp
+'Plectroniella_armata_S640_L004': AFTER 18,775 contigs, total 7,668,960 bp, min 173 bp, max 27,619 bp, mean 409 bp, N50 385 bp
+'Plectroniella_armata_S640_L004': assembly filtered [0.316s]
+'Psydrax_ankotekonensis_S572_L004': BEFORE 41,894 contigs, total 18,551,033 bp, min 182 bp, max 61,256 bp, mean 443 bp, N50 433 bp
+'Psydrax_ankotekonensis_S572_L004': AFTER 30,134 contigs, total 13,754,024 bp, min 182 bp, max 61,256 bp, mean 457 bp, N50 437 bp
+'Psydrax_ankotekonensis_S572_L004': assembly filtered [0.665s]
+'Psydrax_dicoccos_S379_L004': BEFORE 49,632 contigs, total 22,132,731 bp, min 182 bp, max 32,411 bp, mean 446 bp, N50 450 bp
+'Psydrax_dicoccos_S379_L004': AFTER 26,624 contigs, total 12,285,237 bp, min 182 bp, max 32,411 bp, mean 462 bp, N50 455 bp
+'Psydrax_dicoccos_S379_L004': assembly filtered [0.686s]
+'Psydrax_obovata_S639_L004': BEFORE 16,156 contigs, total 7,218,982 bp, min 180 bp, max 16,252 bp, mean 447 bp, N50 437 bp
+'Psydrax_obovata_S639_L004': AFTER 13,814 contigs, total 6,279,179 bp, min 180 bp, max 16,252 bp, mean 455 bp, N50 442 bp
+'Psydrax_obovata_S639_L004': assembly filtered [0.294s]
+'Pygmaeothamnus_sp_S516_L004': BEFORE 62,333 contigs, total 27,495,765 bp, min 182 bp, max 17,054 bp, mean 442 bp, N50 439 bp
+'Pygmaeothamnus_sp_S516_L004': AFTER 44,302 contigs, total 19,609,239 bp, min 182 bp, max 17,054 bp, mean 443 bp, N50 430 bp
+'Pygmaeothamnus_sp_S516_L004': assembly filtered [0.964s]
+'Pyrostria_commersonii_S618_L004': BEFORE 96,539 contigs, total 43,597,082 bp, min 182 bp, max 109,103 bp, mean 452 bp, N50 453 bp
+'Pyrostria_commersonii_S618_L004': AFTER 63,246 contigs, total 29,221,649 bp, min 182 bp, max 109,103 bp, mean 463 bp, N50 453 bp
+'Pyrostria_commersonii_S618_L004': assembly filtered [1.448s]
+'Pyrostria_hystrix_S641_L004': BEFORE 71,059 contigs, total 30,476,857 bp, min 179 bp, max 95,987 bp, mean 429 bp, N50 414 bp
+'Pyrostria_hystrix_S641_L004': AFTER 60,629 contigs, total 26,412,198 bp, min 179 bp, max 95,987 bp, mean 436 bp, N50 418 bp
+'Pyrostria_hystrix_S641_L004': assembly filtered [1.174s]
+'Pyrostria_media_S610_L004': BEFORE 54,784 contigs, total 24,873,991 bp, min 182 bp, max 49,570 bp, mean 455 bp, N50 442 bp
+'Pyrostria_media_S610_L004': AFTER 38,207 contigs, total 18,308,390 bp, min 182 bp, max 49,570 bp, mean 480 bp, N50 459 bp
+'Pyrostria_media_S610_L004': assembly filtered [0.771s]
+'Rytigynia_longipedicellata_S442_L004': BEFORE 35,606 contigs, total 17,747,620 bp, min 182 bp, max 53,868 bp, mean 499 bp, N50 502 bp
+'Rytigynia_longipedicellata_S442_L004': AFTER 26,438 contigs, total 13,824,086 bp, min 182 bp, max 53,868 bp, mean 523 bp, N50 533 bp
+'Rytigynia_longipedicellata_S442_L004': assembly filtered [0.435s]
+'Rytigynia_sambavensis_S493_L004': BEFORE 91,139 contigs, total 46,127,456 bp, min 182 bp, max 60,348 bp, mean 507 bp, N50 485 bp
+'Rytigynia_sambavensis_S493_L004': AFTER 64,008 contigs, total 34,487,695 bp, min 182 bp, max 60,348 bp, mean 539 bp, N50 504 bp
+'Rytigynia_sambavensis_S493_L004': assembly filtered [1.077s]
+'Temnocalyx_nodulosus_S587_L004': BEFORE 108,190 contigs, total 55,667,042 bp, min 182 bp, max 464,750 bp, mean 515 bp, N50 493 bp
+'Temnocalyx_nodulosus_S587_L004': AFTER 56,125 contigs, total 34,737,058 bp, min 182 bp, max 464,750 bp, mean 619 bp, N50 589 bp
+'Temnocalyx_nodulosus_S587_L004': assembly filtered [1.321s]
+'Vangueria_madagascariensis_S602_L004': BEFORE 2,885 contigs, total 1,269,501 bp, min 184 bp, max 8,104 bp, mean 441 bp, N50 439 bp
+'Vangueria_madagascariensis_S602_L004': AFTER 2,559 contigs, total 1,144,598 bp, min 203 bp, max 8,104 bp, mean 448 bp, N50 447 bp
+'Vangueria_madagascariensis_S602_L004': assembly filtered [0.041s]
+'Vangueriopsis_lanciflora_S446_L004': BEFORE 29,569 contigs, total 12,820,844 bp, min 182 bp, max 15,488 bp, mean 434 bp, N50 412 bp
+'Vangueriopsis_lanciflora_S446_L004': AFTER 27,259 contigs, total 11,908,676 bp, min 185 bp, max 15,488 bp, mean 437 bp, N50 413 bp
+'Vangueriopsis_lanciflora_S446_L004': assembly filtered [0.316s]
+ └─→ Filtering completed for 31 sample(s) [24.789s]
+
+  Assembly statistics: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/captus-assemble_assembly_stats.tsv
+     Depth statistics: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/captus-assemble_depth_stats.tsv
+    Length statistics: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/captus-assemble_length_stats.tsv
+
+    Generating Assembly report...
+
+      Assembly report: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/captus-assemble_report.html
+                       Report generated in 1.008s
+
+MEGAHIT temporary directory '/home/frieda/captus_megahit_tmp' deleted
+
+
+
+Captus-assembly: ASSEMBLE -> successfully completed [14h 42m 54.9s (52974.885s)] (2026-10-21 21:07:45)
+------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: ASSEMBLE (2026-10-23 18:08:50)
+--------------------------------------------------------
+    Welcome to the de novo assembly step of Captus-assembly. In this step, Captus will use MEGAHIT to assemble your input reads and then Salmon to accurately estimate contig depth. It is also possible to subsample a number of reads using reformat.sh from BBTools prior to assembly, this is useful while performing tests or when including samples with considerably higher sequencing depth in a dataset.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string '_R1' in their names and match them with their respective '_R2' pairs. If the '_R2' can not be found, the sample is treated as single-end. Sample names are derived from the text found before the '_R1' string.The full set of reads per sample will be assembled, no subsampling will be performed.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+                   OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 15.2GB (out of 15.4GB)
+         Max. Threads: 14 (out of 14)
+
+         Dependencies:
+              MEGAHIT: v1.2.9 OK
+      megahit_toolkit: v1.2.9 OK
+              BBTools: not used
+               Salmon: v2.7.0 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies
+                       Output directory already exists and files may be overwritten
+
+
+
+Subsampling Reads with reformat.sh (2026-10-23 18:08:51)
+--------------------------------------------------------
+    Now Captus will randomly subsample 0 read pairs (or single-end reads) from each sample prior to de novo assembly with MEGAHIT.
+
+Skipping read subsampling step... (to enable provide a number of reads to subsample with '--sample_reads_target')
+
+
+
+De Novo Assembly with MEGAHIT (2026-10-23 18:08:51)
+---------------------------------------------------
+    Now Captus will perform de novo assembly with your input reads using MEGAHIT. Both '--min_contig_len' (when set to 'auto') and '--k_list' will be adjusted sample-wise according to the mean read length of the sample's FASTQ files.
+
+Concurrent assemblies: 1
+     RAM per assembly: 15.2GB
+ Threads per assembly: 14
+
+               preset: CAPSKIM
+               k_list: 31,39,47,63,79,95,111,127,143,159,175
+            min_count: 2
+          prune_level: 2
+          merge_level: 20,0.95
+       min_contig_len: auto
+        extra_options: None
+              tmp_dir: /home/frieda/captus_megahit_tmp
+        max_contig_gc: 100.0%
+      disable_mapping: False
+     min_contig_depth: 1.5x (auto)
+       redo_filtering: True
+
+      Overwrite files: False
+       Keep all files: False
+  Samples to assemble: 61
+
+   Output directories: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/[Sample_name]__captus-asm/01_assembly
+                       A directory will be created for each sample
+
+De novo assembling with MEGAHIT:
+'Africanthium_mundianum': assembled [33m 2.2s (1982.220s)]
+'Afrocanthium_gilfillanii_S627_L004': SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': assembled [7m 50.9s (470.936s)]
+'Bullockia_fadenii_S514_L004': SKIPPED (output files already exist)
+'Bullockia_mombazensis': assembled [7m 26.9s (446.945s)]
+'Canthium_armatum': assembled [18m 57.8s (1137.833s)]
+'Canthium_inerme_S629_L004': SKIPPED (output files already exist)
+'Canthium_sp.': assembled [17m 27.4s (1047.420s)]
+'Canthiumera_glabra': assembled [57.902s]
+'Cuviera_acutiflora': assembled [3m 39.7s (219.660s)]
+'Cyclophyllum_guillauminianum': assembled [20m 23.1s (1223.059s)]
+'Cyclophyllum_henriettae_S376_L004': SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': assembled [18m 47.8s (1127.848s)]
+'Eriosemopsis_subanisophylla_S489_L004': SKIPPED (output files already exist)
+'Everistia_vacciniifolia': assembled [1h 28m 57.5s (5337.469s)]
+'Everistia_vacciniifolia_S490_L004': SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': SKIPPED (output files already exist)
+'Fadogia_ancylantha': assembled [3m 21.5s (201.525s)]
+'Fadoginella_rogersii': assembled [15m 30.9s (930.868s)]
+'Globulostylis_leniochlamys': assembled [7m 12.6s (432.598s)]
+'Hutchinsonia_barbata': assembled [3m 59.0s (239.038s)]
+'Hutchinsonia_barbata_S551_L004': SKIPPED (output files already exist)
+'Ixora_sp': assembled [5m 25.4s (325.376s)]
+'Keetia_gueinzii_S519_L004': SKIPPED (output files already exist)
+'Keetia_hispida': assembled [3m 34.2s (214.194s)]
+'Keetia_hispida_S383_L004': SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': SKIPPED (output files already exist)
+'Meyna_laxiflora': assembled [24.750s]
+'Multidentia_crassa': assembled [16m 41.9s (1001.933s)]
+'Multidentia_exserta_S443_L004': SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': SKIPPED (output files already exist)
+'Peponidium_sp.': assembled [13m 30.2s (810.186s)]
+'Perakanthus_velutinus': assembled [2m 46.2s (166.175s)]
+'Perakanthus_velutinus_S495_L004': SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': SKIPPED (output files already exist)
+'Psydrax_odoratus': assembled [35m 3.8s (2103.801s)]
+'Pygmaeothamnus_sp_S516_L004': SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': assembled [4m 20.4s (260.409s)]
+'Pyrostria_commersonii_S618_L004': SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': SKIPPED (output files already exist)
+'Pyrostria_revoluta': assembled [11m 3.6s (663.632s)]
+'Pyrostria_sp': assembled [16m 20.1s (980.103s)]
+'Robynsia_glabra': assembled [1m 58.9s (118.880s)]
+'Rytigynia_longipedicellata_S442_L004': SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': SKIPPED (output files already exist)
+'Rytigynia_sp.': assembled [11m 20.9s (680.896s)]
+'Temnocalyx_nodulosa': assembled [5m 53.3s (353.298s)]
+'Temnocalyx_nodulosus_S587_L004': SKIPPED (output files already exist)
+'Vangueria_ferruginea': assembled [9m 19.2s (559.215s)]
+'Vangueria_madagascariensis_S602_L004': SKIPPED (output files already exist)
+'Vangueriella_chlorantha': assembled [12m 43.9s (763.857s)]
+'Vangueriopsis_lanciflora': assembled [7m 51.6s (471.568s)]
+'Vangueriopsis_lanciflora_S446_L004': SKIPPED (output files already exist)
+ └─→ De novo assembly completed for 61 sample(s) [6h 45m 53.8s (24353.791s)]
+
+Depth of coverage estimation with Salmon:
+'Africanthium_mundianum': FAILED depth estimation (Salmon output not found)
+'Afrocanthium_gilfillanii_S627_L004': FAILED depth estimation (Salmon output not found)
+'Afrocanthium_lactescens_S626_L004': FAILED depth estimation (Salmon output not found)
+'Bridsonia_chamaedendrum': FAILED depth estimation (Salmon output not found)
+'Bullockia_fadenii_S514_L004': FAILED depth estimation (Salmon output not found)
+'Bullockia_mombazensis': FAILED depth estimation (Salmon output not found)
+'Canthium_armatum': FAILED depth estimation (Salmon output not found)
+'Canthium_inerme_S629_L004': FAILED depth estimation (Salmon output not found)
+'Canthium_sp.': FAILED depth estimation (Salmon output not found)
+'Canthiumera_glabra': FAILED depth estimation (Salmon output not found)
+'Cuviera_acutiflora': FAILED depth estimation (Salmon output not found)
+'Cyclophyllum_guillauminianum': FAILED depth estimation (Salmon output not found)
+'Cyclophyllum_henriettae_S376_L004': FAILED depth estimation (Salmon output not found)
+'Cyclophyllum_jasminifolium_S377_L004': FAILED depth estimation (Salmon output not found)
+'Eriosemopsis_subanisophylla': FAILED depth estimation (Salmon output not found)
+'Eriosemopsis_subanisophylla_S489_L004': FAILED depth estimation (Salmon output not found)
+'Everistia_vacciniifolia': FAILED depth estimation (Salmon output not found)
+'Everistia_vacciniifolia_S490_L004': FAILED depth estimation (Salmon output not found)
+'Everistia_vacciniifolia_S491_L004': FAILED depth estimation (Salmon output not found)
+'Fadogia_ancylantha': FAILED depth estimation (Salmon output not found)
+'Fadoginella_rogersii': FAILED depth estimation (Salmon output not found)
+'Globulostylis_leniochlamys': FAILED depth estimation (Salmon output not found)
+'Hutchinsonia_barbata': FAILED depth estimation (Salmon output not found)
+'Hutchinsonia_barbata_S551_L004': FAILED depth estimation (Salmon output not found)
+'Ixora_sp': FAILED depth estimation (Salmon output not found)
+'Keetia_gueinzii_S519_L004': FAILED depth estimation (Salmon output not found)
+'Keetia_hispida': FAILED depth estimation (Salmon output not found)
+'Keetia_hispida_S383_L004': FAILED depth estimation (Salmon output not found)
+'Keetia_lukei_S507_L004': FAILED depth estimation (Salmon output not found)
+'Meyna_laxiflora': FAILED depth estimation (Salmon output not found)
+'Multidentia_crassa': FAILED depth estimation (Salmon output not found)
+'Multidentia_exserta_S443_L004': FAILED depth estimation (Salmon output not found)
+'Multidentia_sclerocarpa_S374_L004': FAILED depth estimation (Salmon output not found)
+'Peponidium_crassifolium_S628_L004': FAILED depth estimation (Salmon output not found)
+'Peponidium_sp.': FAILED depth estimation (Salmon output not found)
+'Perakanthus_velutinus': FAILED depth estimation (Salmon output not found)
+'Perakanthus_velutinus_S495_L004': FAILED depth estimation (Salmon output not found)
+'Plectroniella_armata_S391_L004': FAILED depth estimation (Salmon output not found)
+'Plectroniella_armata_S640_L004': FAILED depth estimation (Salmon output not found)
+'Psydrax_ankotekonensis_S572_L004': FAILED depth estimation (Salmon output not found)
+'Psydrax_dicoccos_S379_L004': FAILED depth estimation (Salmon output not found)
+'Psydrax_obovata_S639_L004': FAILED depth estimation (Salmon output not found)
+'Psydrax_odoratus': FAILED depth estimation (Salmon output not found)
+'Pygmaeothamnus_sp_S516_L004': FAILED depth estimation (Salmon output not found)
+'Pygmaeothamnus_zeyheri': FAILED depth estimation (Salmon output not found)
+'Pyrostria_commersonii_S618_L004': FAILED depth estimation (Salmon output not found)
+'Pyrostria_hystrix_S641_L004': FAILED depth estimation (Salmon output not found)
+'Pyrostria_media_S610_L004': FAILED depth estimation (Salmon output not found)
+'Pyrostria_revoluta': FAILED depth estimation (Salmon output not found)
+'Pyrostria_sp': FAILED depth estimation (Salmon output not found)
+'Robynsia_glabra': FAILED depth estimation (Salmon output not found)
+'Rytigynia_longipedicellata_S442_L004': FAILED depth estimation (Salmon output not found)
+'Rytigynia_sambavensis_S493_L004': FAILED depth estimation (Salmon output not found)
+'Rytigynia_sp.': FAILED depth estimation (Salmon output not found)
+'Temnocalyx_nodulosa': FAILED depth estimation (Salmon output not found)
+'Temnocalyx_nodulosus_S587_L004': FAILED depth estimation (Salmon output not found)
+'Vangueria_ferruginea': FAILED depth estimation (Salmon output not found)
+'Vangueria_madagascariensis_S602_L004': FAILED depth estimation (Salmon output not found)
+'Vangueriella_chlorantha': FAILED depth estimation (Salmon output not found)
+'Vangueriopsis_lanciflora': FAILED depth estimation (Salmon output not found)
+'Vangueriopsis_lanciflora_S446_L004': FAILED depth estimation (Salmon output not found)
+ └─→ Depth of coverage estimation completed for 61 sample(s) [7m 32.6s (452.630s)]
+
+Filtering contigs >100.0% GC and <1.5x (auto) depth:
+'Africanthium_mundianum': BEFORE 2,772 contigs, total 1,742,575 bp, min 181 bp, max 8,520 bp, mean 629 bp, N50 764 bp
+'Africanthium_mundianum': AFTER 2,346 contigs, total 1,600,781 bp, min 270 bp, max 8,520 bp, mean 683 bp, N50 820 bp
+'Africanthium_mundianum': assembly filtered [0.033s]
+'Afrocanthium_gilfillanii_S627_L004': BEFORE 185,246 contigs, total 78,167,011 bp, min 173 bp, max 74,739 bp, mean 422 bp, N50 422 bp
+'Afrocanthium_gilfillanii_S627_L004': AFTER 149,195 contigs, total 63,675,001 bp, min 173 bp, max 74,739 bp, mean 427 bp, N50 423 bp
+'Afrocanthium_gilfillanii_S627_L004': assembly filtered [2.106s]
+'Afrocanthium_lactescens_S626_L004': BEFORE 26,581 contigs, total 11,407,202 bp, min 171 bp, max 33,847 bp, mean 430 bp, N50 415 bp
+'Afrocanthium_lactescens_S626_L004': AFTER 23,757 contigs, total 10,336,134 bp, min 171 bp, max 33,847 bp, mean 436 bp, N50 419 bp
+'Afrocanthium_lactescens_S626_L004': assembly filtered [0.251s]
+'Bridsonia_chamaedendrum': BEFORE 1,837 contigs, total 1,169,588 bp, min 181 bp, max 4,056 bp, mean 637 bp, N50 750 bp
+'Bridsonia_chamaedendrum': AFTER 1,661 contigs, total 1,114,000 bp, min 205 bp, max 4,056 bp, mean 671 bp, N50 781 bp
+'Bridsonia_chamaedendrum': assembly filtered [0.032s]
+'Bullockia_fadenii_S514_L004': BEFORE 23,491 contigs, total 10,759,095 bp, min 182 bp, max 36,221 bp, mean 459 bp, N50 427 bp
+'Bullockia_fadenii_S514_L004': AFTER 19,726 contigs, total 9,254,803 bp, min 186 bp, max 36,221 bp, mean 470 bp, N50 432 bp
+'Bullockia_fadenii_S514_L004': assembly filtered [0.223s]
+'Bullockia_mombazensis': BEFORE 2,057 contigs, total 1,097,358 bp, min 183 bp, max 3,925 bp, mean 534 bp, N50 588 bp
+'Bullockia_mombazensis': AFTER 1,707 contigs, total 976,564 bp, min 197 bp, max 3,925 bp, mean 573 bp, N50 642 bp
+'Bullockia_mombazensis': assembly filtered [0.024s]
+'Canthium_armatum': BEFORE 12,651 contigs, total 6,192,443 bp, min 181 bp, max 25,784 bp, mean 490 bp, N50 489 bp
+'Canthium_armatum': AFTER 10,050 contigs, total 5,218,077 bp, min 182 bp, max 25,784 bp, mean 520 bp, N50 531 bp
+'Canthium_armatum': assembly filtered [0.116s]
+'Canthium_inerme_S629_L004': BEFORE 9,618 contigs, total 4,433,628 bp, min 178 bp, max 36,864 bp, mean 461 bp, N50 446 bp
+'Canthium_inerme_S629_L004': AFTER 8,679 contigs, total 4,083,155 bp, min 179 bp, max 36,864 bp, mean 471 bp, N50 458 bp
+'Canthium_inerme_S629_L004': assembly filtered [0.097s]
+'Canthium_sp.': BEFORE 20,832 contigs, total 9,368,480 bp, min 182 bp, max 11,604 bp, mean 450 bp, N50 457 bp
+'Canthium_sp.': AFTER 16,922 contigs, total 7,831,972 bp, min 182 bp, max 11,604 bp, mean 463 bp, N50 466 bp
+'Canthium_sp.': assembly filtered [0.175s]
+'Canthiumera_glabra': BEFORE 942 contigs, total 248,862 bp, min 137 bp, max 2,504 bp, mean 265 bp, N50 247 bp
+'Canthiumera_glabra': AFTER 872 contigs, total 229,339 bp, min 199 bp, max 2,504 bp, mean 264 bp, N50 244 bp
+'Canthiumera_glabra': assembly filtered [0.008s]
+'Cuviera_acutiflora': BEFORE 931 contigs, total 426,766 bp, min 200 bp, max 3,135 bp, mean 459 bp, N50 461 bp
+'Cuviera_acutiflora': AFTER 888 contigs, total 412,866 bp, min 272 bp, max 3,135 bp, mean 465 bp, N50 465 bp
+'Cuviera_acutiflora': assembly filtered [0.019s]
+'Cyclophyllum_guillauminianum': BEFORE 19,463 contigs, total 7,681,006 bp, min 172 bp, max 7,434 bp, mean 395 bp, N50 390 bp
+'Cyclophyllum_guillauminianum': AFTER 16,167 contigs, total 6,458,335 bp, min 174 bp, max 7,434 bp, mean 400 bp, N50 392 bp
+'Cyclophyllum_guillauminianum': assembly filtered [0.193s]
+'Cyclophyllum_henriettae_S376_L004': BEFORE 15,054 contigs, total 7,090,852 bp, min 182 bp, max 30,924 bp, mean 472 bp, N50 464 bp
+'Cyclophyllum_henriettae_S376_L004': AFTER 10,020 contigs, total 5,069,869 bp, min 183 bp, max 30,924 bp, mean 506 bp, N50 494 bp
+'Cyclophyllum_henriettae_S376_L004': assembly filtered [0.133s]
+'Cyclophyllum_jasminifolium_S377_L004': BEFORE 30,713 contigs, total 13,968,620 bp, min 182 bp, max 28,267 bp, mean 455 bp, N50 444 bp
+'Cyclophyllum_jasminifolium_S377_L004': AFTER 21,781 contigs, total 10,336,920 bp, min 183 bp, max 28,267 bp, mean 475 bp, N50 457 bp
+'Cyclophyllum_jasminifolium_S377_L004': assembly filtered [0.267s]
+'Eriosemopsis_subanisophylla': BEFORE 6,000 contigs, total 3,017,541 bp, min 181 bp, max 12,406 bp, mean 503 bp, N50 529 bp
+'Eriosemopsis_subanisophylla': AFTER 4,737 contigs, total 2,599,511 bp, min 187 bp, max 12,406 bp, mean 549 bp, N50 592 bp
+'Eriosemopsis_subanisophylla': assembly filtered [0.060s]
+'Eriosemopsis_subanisophylla_S489_L004': BEFORE 108,682 contigs, total 47,341,045 bp, min 182 bp, max 79,346 bp, mean 436 bp, N50 426 bp
+'Eriosemopsis_subanisophylla_S489_L004': AFTER 93,287 contigs, total 40,745,753 bp, min 183 bp, max 79,346 bp, mean 437 bp, N50 423 bp
+'Eriosemopsis_subanisophylla_S489_L004': assembly filtered [1.038s]
+'Everistia_vacciniifolia': BEFORE 154,175 contigs, total 75,837,691 bp, min 181 bp, max 25,518 bp, mean 492 bp, N50 544 bp
+'Everistia_vacciniifolia': AFTER 84,483 contigs, total 48,862,223 bp, min 181 bp, max 25,518 bp, mean 579 bp, N50 637 bp
+'Everistia_vacciniifolia': assembly filtered [1.450s]
+'Everistia_vacciniifolia_S490_L004': BEFORE 57,368 contigs, total 25,534,814 bp, min 182 bp, max 17,186 bp, mean 446 bp, N50 438 bp
+'Everistia_vacciniifolia_S490_L004': AFTER 43,176 contigs, total 19,104,067 bp, min 182 bp, max 17,186 bp, mean 443 bp, N50 423 bp
+'Everistia_vacciniifolia_S490_L004': assembly filtered [0.497s]
+'Everistia_vacciniifolia_S491_L004': BEFORE 24,719 contigs, total 11,399,039 bp, min 182 bp, max 23,439 bp, mean 462 bp, N50 459 bp
+'Everistia_vacciniifolia_S491_L004': AFTER 18,013 contigs, total 8,414,607 bp, min 184 bp, max 23,439 bp, mean 468 bp, N50 456 bp
+'Everistia_vacciniifolia_S491_L004': assembly filtered [0.226s]
+'Fadogia_ancylantha': BEFORE 2,485 contigs, total 1,299,599 bp, min 200 bp, max 10,811 bp, mean 523 bp, N50 555 bp
+'Fadogia_ancylantha': AFTER 2,345 contigs, total 1,247,378 bp, min 200 bp, max 10,811 bp, mean 532 bp, N50 564 bp
+'Fadogia_ancylantha': assembly filtered [0.032s]
+'Fadoginella_rogersii': BEFORE 2,120 contigs, total 1,389,085 bp, min 181 bp, max 4,537 bp, mean 656 bp, N50 820 bp
+'Fadoginella_rogersii': AFTER 1,787 contigs, total 1,274,208 bp, min 201 bp, max 4,537 bp, mean 714 bp, N50 878 bp
+'Fadoginella_rogersii': assembly filtered [0.023s]
+'Globulostylis_leniochlamys': BEFORE 8,065 contigs, total 4,172,491 bp, min 181 bp, max 16,070 bp, mean 518 bp, N50 542 bp
+'Globulostylis_leniochlamys': AFTER 7,633 contigs, total 4,014,331 bp, min 211 bp, max 16,070 bp, mean 526 bp, N50 552 bp
+'Globulostylis_leniochlamys': assembly filtered [0.086s]
+'Hutchinsonia_barbata': BEFORE 2,972 contigs, total 1,571,241 bp, min 185 bp, max 9,213 bp, mean 529 bp, N50 567 bp
+'Hutchinsonia_barbata': AFTER 2,795 contigs, total 1,508,086 bp, min 192 bp, max 9,213 bp, mean 540 bp, N50 583 bp
+'Hutchinsonia_barbata': assembly filtered [0.036s]
+'Hutchinsonia_barbata_S551_L004': BEFORE 11,212 contigs, total 4,783,910 bp, min 176 bp, max 26,845 bp, mean 427 bp, N50 419 bp
+'Hutchinsonia_barbata_S551_L004': AFTER 7,902 contigs, total 3,483,938 bp, min 176 bp, max 26,845 bp, mean 441 bp, N50 429 bp
+'Hutchinsonia_barbata_S551_L004': assembly filtered [0.095s]
+'Ixora_sp': BEFORE 12,673 contigs, total 5,546,556 bp, min 181 bp, max 3,060 bp, mean 438 bp, N50 444 bp
+'Ixora_sp': AFTER 11,287 contigs, total 4,982,106 bp, min 181 bp, max 3,060 bp, mean 442 bp, N50 447 bp
+'Ixora_sp': assembly filtered [0.112s]
+'Keetia_gueinzii_S519_L004': BEFORE 23,332 contigs, total 7,434,274 bp, min 144 bp, max 10,352 bp, mean 319 bp, N50 307 bp
+'Keetia_gueinzii_S519_L004': AFTER 18,686 contigs, total 6,035,637 bp, min 145 bp, max 10,352 bp, mean 324 bp, N50 311 bp
+'Keetia_gueinzii_S519_L004': assembly filtered [0.185s]
+'Keetia_hispida': BEFORE 2,410 contigs, total 1,274,113 bp, min 183 bp, max 8,188 bp, mean 529 bp, N50 582 bp
+'Keetia_hispida': AFTER 2,131 contigs, total 1,181,859 bp, min 184 bp, max 8,188 bp, mean 555 bp, N50 609 bp
+'Keetia_hispida': assembly filtered [0.025s]
+'Keetia_hispida_S383_L004': BEFORE 139,748 contigs, total 47,058,094 bp, min 147 bp, max 19,999 bp, mean 337 bp, N50 327 bp
+'Keetia_hispida_S383_L004': AFTER 114,814 contigs, total 39,474,690 bp, min 150 bp, max 19,999 bp, mean 344 bp, N50 334 bp
+'Keetia_hispida_S383_L004': assembly filtered [1.413s]
+'Keetia_lukei_S507_L004': BEFORE 38,170 contigs, total 16,867,373 bp, min 182 bp, max 10,138 bp, mean 442 bp, N50 447 bp
+'Keetia_lukei_S507_L004': AFTER 25,027 contigs, total 11,125,711 bp, min 184 bp, max 10,138 bp, mean 445 bp, N50 442 bp
+'Keetia_lukei_S507_L004': assembly filtered [0.329s]
+'Meyna_laxiflora': BEFORE 1,433 contigs, total 335,523 bp, min 169 bp, max 2,840 bp, mean 235 bp, N50 226 bp
+'Meyna_laxiflora': AFTER 1,429 contigs, total 334,552 bp, min 169 bp, max 2,840 bp, mean 235 bp, N50 226 bp
+'Meyna_laxiflora': assembly filtered [0.012s]
+'Multidentia_crassa': BEFORE 18,378 contigs, total 8,650,398 bp, min 181 bp, max 29,385 bp, mean 471 bp, N50 458 bp
+'Multidentia_crassa': AFTER 12,858 contigs, total 6,567,368 bp, min 182 bp, max 29,385 bp, mean 511 bp, N50 504 bp
+'Multidentia_crassa': assembly filtered [0.166s]
+'Multidentia_exserta_S443_L004': BEFORE 4,003 contigs, total 1,476,170 bp, min 248 bp, max 8,519 bp, mean 369 bp, N50 357 bp
+'Multidentia_exserta_S443_L004': AFTER 3,737 contigs, total 1,389,940 bp, min 248 bp, max 8,519 bp, mean 372 bp, N50 361 bp
+'Multidentia_exserta_S443_L004': assembly filtered [0.037s]
+'Multidentia_sclerocarpa_S374_L004': BEFORE 11,718 contigs, total 5,313,119 bp, min 179 bp, max 50,534 bp, mean 454 bp, N50 426 bp
+'Multidentia_sclerocarpa_S374_L004': AFTER 10,823 contigs, total 4,941,152 bp, min 255 bp, max 50,534 bp, mean 457 bp, N50 427 bp
+'Multidentia_sclerocarpa_S374_L004': assembly filtered [0.108s]
+'Peponidium_crassifolium_S628_L004': BEFORE 16,829 contigs, total 7,828,856 bp, min 177 bp, max 53,433 bp, mean 466 bp, N50 457 bp
+'Peponidium_crassifolium_S628_L004': AFTER 14,168 contigs, total 6,779,443 bp, min 177 bp, max 53,433 bp, mean 479 bp, N50 472 bp
+'Peponidium_crassifolium_S628_L004': assembly filtered [0.147s]
+'Peponidium_sp.': BEFORE 3,695 contigs, total 2,025,959 bp, min 181 bp, max 7,782 bp, mean 549 bp, N50 667 bp
+'Peponidium_sp.': AFTER 1,893 contigs, total 1,441,248 bp, min 189 bp, max 7,782 bp, mean 762 bp, N50 983 bp
+'Peponidium_sp.': assembly filtered [0.032s]
+'Perakanthus_velutinus': BEFORE 850 contigs, total 306,826 bp, min 231 bp, max 968 bp, mean 361 bp, N50 354 bp
+'Perakanthus_velutinus': AFTER 806 contigs, total 291,433 bp, min 272 bp, max 968 bp, mean 362 bp, N50 354 bp
+'Perakanthus_velutinus': assembly filtered [0.011s]
+'Perakanthus_velutinus_S495_L004': BEFORE 19,309 contigs, total 8,515,778 bp, min 182 bp, max 105,630 bp, mean 442 bp, N50 416 bp
+'Perakanthus_velutinus_S495_L004': AFTER 16,360 contigs, total 7,375,896 bp, min 183 bp, max 105,630 bp, mean 451 bp, N50 422 bp
+'Perakanthus_velutinus_S495_L004': assembly filtered [0.172s]
+'Plectroniella_armata_S391_L004': BEFORE 66,904 contigs, total 29,134,705 bp, min 182 bp, max 110,056 bp, mean 436 bp, N50 425 bp
+'Plectroniella_armata_S391_L004': AFTER 55,029 contigs, total 24,213,099 bp, min 183 bp, max 110,056 bp, mean 441 bp, N50 424 bp
+'Plectroniella_armata_S391_L004': assembly filtered [0.643s]
+'Plectroniella_armata_S640_L004': BEFORE 20,274 contigs, total 8,225,186 bp, min 172 bp, max 27,619 bp, mean 406 bp, N50 384 bp
+'Plectroniella_armata_S640_L004': AFTER 18,775 contigs, total 7,668,960 bp, min 173 bp, max 27,619 bp, mean 409 bp, N50 385 bp
+'Plectroniella_armata_S640_L004': assembly filtered [0.194s]
+'Psydrax_ankotekonensis_S572_L004': BEFORE 41,894 contigs, total 18,551,033 bp, min 182 bp, max 61,256 bp, mean 443 bp, N50 433 bp
+'Psydrax_ankotekonensis_S572_L004': AFTER 30,134 contigs, total 13,754,024 bp, min 182 bp, max 61,256 bp, mean 457 bp, N50 437 bp
+'Psydrax_ankotekonensis_S572_L004': assembly filtered [0.347s]
+'Psydrax_dicoccos_S379_L004': BEFORE 49,632 contigs, total 22,132,731 bp, min 182 bp, max 32,411 bp, mean 446 bp, N50 450 bp
+'Psydrax_dicoccos_S379_L004': AFTER 26,624 contigs, total 12,285,237 bp, min 182 bp, max 32,411 bp, mean 462 bp, N50 455 bp
+'Psydrax_dicoccos_S379_L004': assembly filtered [0.397s]
+'Psydrax_obovata_S639_L004': BEFORE 16,156 contigs, total 7,218,982 bp, min 180 bp, max 16,252 bp, mean 447 bp, N50 437 bp
+'Psydrax_obovata_S639_L004': AFTER 13,814 contigs, total 6,279,179 bp, min 180 bp, max 16,252 bp, mean 455 bp, N50 442 bp
+'Psydrax_obovata_S639_L004': assembly filtered [0.168s]
+'Psydrax_odoratus': BEFORE 88,957 contigs, total 47,133,234 bp, min 182 bp, max 53,663 bp, mean 530 bp, N50 600 bp
+'Psydrax_odoratus': AFTER 45,798 contigs, total 28,752,285 bp, min 182 bp, max 53,663 bp, mean 628 bp, N50 700 bp
+'Psydrax_odoratus': assembly filtered [0.869s]
+'Pygmaeothamnus_sp_S516_L004': BEFORE 62,333 contigs, total 27,495,765 bp, min 182 bp, max 17,054 bp, mean 442 bp, N50 439 bp
+'Pygmaeothamnus_sp_S516_L004': AFTER 44,302 contigs, total 19,609,239 bp, min 182 bp, max 17,054 bp, mean 443 bp, N50 430 bp
+'Pygmaeothamnus_sp_S516_L004': assembly filtered [0.638s]
+'Pygmaeothamnus_zeyheri': BEFORE 4,055 contigs, total 1,645,192 bp, min 169 bp, max 3,018 bp, mean 406 bp, N50 408 bp
+'Pygmaeothamnus_zeyheri': AFTER 3,673 contigs, total 1,521,928 bp, min 171 bp, max 3,018 bp, mean 415 bp, N50 420 bp
+'Pygmaeothamnus_zeyheri': assembly filtered [0.047s]
+'Pyrostria_commersonii_S618_L004': BEFORE 96,539 contigs, total 43,597,082 bp, min 182 bp, max 109,103 bp, mean 452 bp, N50 453 bp
+'Pyrostria_commersonii_S618_L004': AFTER 63,246 contigs, total 29,221,649 bp, min 182 bp, max 109,103 bp, mean 463 bp, N50 453 bp
+'Pyrostria_commersonii_S618_L004': assembly filtered [0.935s]
+'Pyrostria_hystrix_S641_L004': BEFORE 71,059 contigs, total 30,476,857 bp, min 179 bp, max 95,987 bp, mean 429 bp, N50 414 bp
+'Pyrostria_hystrix_S641_L004': AFTER 60,629 contigs, total 26,412,198 bp, min 179 bp, max 95,987 bp, mean 436 bp, N50 418 bp
+'Pyrostria_hystrix_S641_L004': assembly filtered [0.699s]
+'Pyrostria_media_S610_L004': BEFORE 54,784 contigs, total 24,873,991 bp, min 182 bp, max 49,570 bp, mean 455 bp, N50 442 bp
+'Pyrostria_media_S610_L004': AFTER 38,207 contigs, total 18,308,390 bp, min 182 bp, max 49,570 bp, mean 480 bp, N50 459 bp
+'Pyrostria_media_S610_L004': assembly filtered [0.549s]
+'Pyrostria_revoluta': BEFORE 22,795 contigs, total 11,540,269 bp, min 182 bp, max 18,592 bp, mean 507 bp, N50 533 bp
+'Pyrostria_revoluta': AFTER 17,803 contigs, total 9,595,557 bp, min 182 bp, max 18,592 bp, mean 539 bp, N50 566 bp
+'Pyrostria_revoluta': assembly filtered [0.228s]
+'Pyrostria_sp': BEFORE 33,249 contigs, total 15,526,536 bp, min 182 bp, max 8,150 bp, mean 467 bp, N50 488 bp
+'Pyrostria_sp': AFTER 25,279 contigs, total 12,431,666 bp, min 182 bp, max 8,150 bp, mean 492 bp, N50 511 bp
+'Pyrostria_sp': assembly filtered [0.352s]
+'Robynsia_glabra': BEFORE 1,668 contigs, total 868,361 bp, min 186 bp, max 3,506 bp, mean 521 bp, N50 549 bp
+'Robynsia_glabra': AFTER 1,578 contigs, total 839,583 bp, min 272 bp, max 3,506 bp, mean 533 bp, N50 559 bp
+'Robynsia_glabra': assembly filtered [0.025s]
+'Rytigynia_longipedicellata_S442_L004': BEFORE 35,606 contigs, total 17,747,620 bp, min 182 bp, max 53,868 bp, mean 499 bp, N50 502 bp
+'Rytigynia_longipedicellata_S442_L004': AFTER 26,438 contigs, total 13,824,086 bp, min 182 bp, max 53,868 bp, mean 523 bp, N50 533 bp
+'Rytigynia_longipedicellata_S442_L004': assembly filtered [0.443s]
+'Rytigynia_sambavensis_S493_L004': BEFORE 91,139 contigs, total 46,127,456 bp, min 182 bp, max 60,348 bp, mean 507 bp, N50 485 bp
+'Rytigynia_sambavensis_S493_L004': AFTER 64,008 contigs, total 34,487,695 bp, min 182 bp, max 60,348 bp, mean 539 bp, N50 504 bp
+'Rytigynia_sambavensis_S493_L004': assembly filtered [0.892s]
+'Rytigynia_sp.': BEFORE 5,707 contigs, total 3,274,759 bp, min 181 bp, max 10,078 bp, mean 574 bp, N50 633 bp
+'Rytigynia_sp.': AFTER 4,471 contigs, total 2,782,965 bp, min 193 bp, max 10,078 bp, mean 623 bp, N50 729 bp
+'Rytigynia_sp.': assembly filtered [0.066s]
+'Temnocalyx_nodulosa': BEFORE 21,831 contigs, total 8,231,452 bp, min 140 bp, max 26,082 bp, mean 378 bp, N50 390 bp
+'Temnocalyx_nodulosa': AFTER 20,591 contigs, total 7,876,005 bp, min 143 bp, max 26,082 bp, mean 383 bp, N50 398 bp
+'Temnocalyx_nodulosa': assembly filtered [0.212s]
+'Temnocalyx_nodulosus_S587_L004': BEFORE 108,190 contigs, total 55,667,042 bp, min 182 bp, max 464,750 bp, mean 515 bp, N50 493 bp
+'Temnocalyx_nodulosus_S587_L004': AFTER 56,125 contigs, total 34,737,058 bp, min 182 bp, max 464,750 bp, mean 619 bp, N50 589 bp
+'Temnocalyx_nodulosus_S587_L004': assembly filtered [1.102s]
+'Vangueria_ferruginea': BEFORE 20,412 contigs, total 9,071,537 bp, min 182 bp, max 8,392 bp, mean 445 bp, N50 449 bp
+'Vangueria_ferruginea': AFTER 17,653 contigs, total 7,984,632 bp, min 182 bp, max 8,392 bp, mean 453 bp, N50 454 bp
+'Vangueria_ferruginea': assembly filtered [0.202s]
+'Vangueria_madagascariensis_S602_L004': BEFORE 2,885 contigs, total 1,269,501 bp, min 184 bp, max 8,104 bp, mean 441 bp, N50 439 bp
+'Vangueria_madagascariensis_S602_L004': AFTER 2,559 contigs, total 1,144,598 bp, min 203 bp, max 8,104 bp, mean 448 bp, N50 447 bp
+'Vangueria_madagascariensis_S602_L004': assembly filtered [0.040s]
+'Vangueriella_chlorantha': BEFORE 6,758 contigs, total 3,475,893 bp, min 181 bp, max 7,073 bp, mean 515 bp, N50 546 bp
+'Vangueriella_chlorantha': AFTER 3,027 contigs, total 2,085,804 bp, min 190 bp, max 7,073 bp, mean 690 bp, N50 875 bp
+'Vangueriella_chlorantha': assembly filtered [0.069s]
+'Vangueriopsis_lanciflora': BEFORE 2,218 contigs, total 1,141,855 bp, min 182 bp, max 6,993 bp, mean 515 bp, N50 551 bp
+'Vangueriopsis_lanciflora': AFTER 1,936 contigs, total 1,047,000 bp, min 235 bp, max 6,993 bp, mean 541 bp, N50 581 bp
+'Vangueriopsis_lanciflora': assembly filtered [0.027s]
+'Vangueriopsis_lanciflora_S446_L004': BEFORE 29,569 contigs, total 12,820,844 bp, min 182 bp, max 15,488 bp, mean 434 bp, N50 412 bp
+'Vangueriopsis_lanciflora_S446_L004': AFTER 27,259 contigs, total 11,908,676 bp, min 185 bp, max 15,488 bp, mean 437 bp, N50 413 bp
+'Vangueriopsis_lanciflora_S446_L004': assembly filtered [0.305s]
+ └─→ Filtering completed for 61 sample(s) [19.790s]
+
+  Assembly statistics: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/captus-assemble_assembly_stats.tsv
+     Depth statistics: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/captus-assemble_depth_stats.tsv
+    Length statistics: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/captus-assemble_length_stats.tsv
+
+    Generating Assembly report...
+
+      Assembly report: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/captus-assemble_report.html
+                       Report generated in 0.731s
+
+MEGAHIT temporary directory '/home/frieda/captus_megahit_tmp' deleted
+
+
+
+Captus-assembly: ASSEMBLE -> successfully completed [6h 54m 7.1s (24847.081s)] (2026-10-24 01:02:57)
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: ASSEMBLE (2026-10-24 06:40:17)
+--------------------------------------------------------
+    Welcome to the de novo assembly step of Captus-assembly. In this step, Captus will use MEGAHIT to assemble your input reads and then Salmon to accurately estimate contig depth. It is also possible to subsample a number of reads using reformat.sh from BBTools prior to assembly, this is useful while performing tests or when including samples with considerably higher sequencing depth in a dataset.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string '_R1' in their names and match them with their respective '_R2' pairs. If the '_R2' can not be found, the sample is treated as single-end. Sample names are derived from the text found before the '_R1' string.The full set of reads per sample will be assembled, no subsampling will be performed.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+                   OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 15.2GB (out of 15.4GB)
+         Max. Threads: 14 (out of 14)
+
+         Dependencies:
+              MEGAHIT: v1.2.9 OK
+      megahit_toolkit: v1.2.9 OK
+              BBTools: not used
+               Salmon: v2.7.0 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies
+                       Output directory already exists and files may be overwritten
+
+
+
+Subsampling Reads with reformat.sh (2026-10-24 06:40:18)
+--------------------------------------------------------
+    Now Captus will randomly subsample 0 read pairs (or single-end reads) from each sample prior to de novo assembly with MEGAHIT.
+
+Skipping read subsampling step... (to enable provide a number of reads to subsample with '--sample_reads_target')
+
+
+
+De Novo Assembly with MEGAHIT (2026-10-24 06:40:18)
+---------------------------------------------------
+    Now Captus will perform de novo assembly with your input reads using MEGAHIT. Both '--min_contig_len' (when set to 'auto') and '--k_list' will be adjusted sample-wise according to the mean read length of the sample's FASTQ files.
+
+Concurrent assemblies: 1
+     RAM per assembly: 15.2GB
+ Threads per assembly: 14
+
+               preset: CAPSKIM
+               k_list: 31,39,47,63,79,95,111,127,143,159,175
+            min_count: 2
+          prune_level: 2
+          merge_level: 20,0.95
+       min_contig_len: auto
+        extra_options: None
+              tmp_dir: /home/frieda/captus_megahit_tmp
+        max_contig_gc: 100.0%
+      disable_mapping: False
+     min_contig_depth: 1.5x (auto)
+       redo_filtering: True
+
+      Overwrite files: False
+       Keep all files: False
+  Samples to assemble: 61
+
+   Output directories: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/[Sample_name]__captus-asm/01_assembly
+                       A directory will be created for each sample
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: ASSEMBLE (2026-10-24 06:48:13)
+--------------------------------------------------------
+    Welcome to the de novo assembly step of Captus-assembly. In this step, Captus will use MEGAHIT to assemble your input reads and then Salmon to accurately estimate contig depth. It is also possible to subsample a number of reads using reformat.sh from BBTools prior to assembly, this is useful while performing tests or when including samples with considerably higher sequencing depth in a dataset.
+    Since you provided a directory name, Captus will look in that location for all the FASTQ files that contain the string '_R1' in their names and match them with their respective '_R2' pairs. If the '_R2' can not be found, the sample is treated as single-end. Sample names are derived from the text found before the '_R1' string.The full set of reads per sample will be assembled, no subsampling will be performed.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+       Captus version: v1.6.6
+              Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
+                   OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                 Host: emb-lap-frwo
+             Max. RAM: 15.2GB (out of 15.4GB)
+         Max. Threads: 14 (out of 14)
+
+         Dependencies:
+              MEGAHIT: v1.2.9 OK
+      megahit_toolkit: v1.2.9 OK
+              BBTools: not used
+               Salmon: v1.10.3 OK
+
+     Python libraries:
+                numpy: v2.5.3 OK
+               pandas: v3.0.5 OK
+               plotly: v7.0.0 OK
+
+     Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies
+                       Output directory already exists and files may be overwritten
+
+
+
+Subsampling Reads with reformat.sh (2026-10-24 06:48:14)
+--------------------------------------------------------
+    Now Captus will randomly subsample 0 read pairs (or single-end reads) from each sample prior to de novo assembly with MEGAHIT.
+
+Skipping read subsampling step... (to enable provide a number of reads to subsample with '--sample_reads_target')
+
+
+
+De Novo Assembly with MEGAHIT (2026-10-24 06:48:14)
+---------------------------------------------------
+    Now Captus will perform de novo assembly with your input reads using MEGAHIT. Both '--min_contig_len' (when set to 'auto') and '--k_list' will be adjusted sample-wise according to the mean read length of the sample's FASTQ files.
+
+Concurrent assemblies: 1
+     RAM per assembly: 15.2GB
+ Threads per assembly: 14
+
+               preset: CAPSKIM
+               k_list: 31,39,47,63,79,95,111,127,143,159,175
+            min_count: 2
+          prune_level: 2
+          merge_level: 20,0.95
+       min_contig_len: auto
+        extra_options: None
+              tmp_dir: /home/frieda/captus_megahit_tmp
+        max_contig_gc: 100.0%
+      disable_mapping: False
+     min_contig_depth: 1.5x (auto)
+       redo_filtering: True
+
+      Overwrite files: False
+       Keep all files: False
+  Samples to assemble: 61
+
+   Output directories: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/[Sample_name]__captus-asm/01_assembly
+                       A directory will be created for each sample
+
+De novo assembling with MEGAHIT:
+'Africanthium_mundianum': SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': SKIPPED (output files already exist)
+'Bullockia_mombazensis': SKIPPED (output files already exist)
+'Canthium_armatum': SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': SKIPPED (output files already exist)
+'Canthium_sp.': SKIPPED (output files already exist)
+'Canthiumera_glabra': SKIPPED (output files already exist)
+'Cuviera_acutiflora': SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': SKIPPED (output files already exist)
+'Everistia_vacciniifolia': SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': SKIPPED (output files already exist)
+'Fadogia_ancylantha': SKIPPED (output files already exist)
+'Fadoginella_rogersii': SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': SKIPPED (output files already exist)
+'Hutchinsonia_barbata': SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': SKIPPED (output files already exist)
+'Ixora_sp': SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': SKIPPED (output files already exist)
+'Keetia_hispida': SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': SKIPPED (output files already exist)
+'Meyna_laxiflora': SKIPPED (output files already exist)
+'Multidentia_crassa': SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': SKIPPED (output files already exist)
+'Peponidium_sp.': SKIPPED (output files already exist)
+'Perakanthus_velutinus': SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': SKIPPED (output files already exist)
+'Psydrax_odoratus': SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': SKIPPED (output files already exist)
+'Pyrostria_revoluta': SKIPPED (output files already exist)
+'Pyrostria_sp': SKIPPED (output files already exist)
+'Robynsia_glabra': SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': SKIPPED (output files already exist)
+'Rytigynia_sp.': SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': SKIPPED (output files already exist)
+'Vangueria_ferruginea': SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': SKIPPED (output files already exist)
+'Vangueriella_chlorantha': SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': SKIPPED (output files already exist)
+ └─→ De novo assembly completed for 61 sample(s) [0.193s]
+
+Depth of coverage estimation with Salmon:
+'Africanthium_mundianum': depth of coverage estimated [2m 6.3s (126.299s)]
+'Afrocanthium_gilfillanii_S627_L004': depth of coverage estimated [14m 37.7s (877.699s)]
+'Afrocanthium_lactescens_S626_L004': depth of coverage estimated [1m 1.9s (61.857s)]
+'Bridsonia_chamaedendrum': depth of coverage estimated [38.540s]
+'Bullockia_fadenii_S514_L004': depth of coverage estimated [1m 39.5s (99.470s)]
+'Bullockia_mombazensis': depth of coverage estimated [41.417s]
+'Canthium_armatum': depth of coverage estimated [1m 9.6s (69.554s)]
+'Canthium_inerme_S629_L004': depth of coverage estimated [25.572s]
+'Canthium_sp.': depth of coverage estimated [1m 5.3s (65.308s)]
+'Canthiumera_glabra': depth of coverage estimated [8.208s]
+'Cuviera_acutiflora': depth of coverage estimated [17.688s]
+'Cyclophyllum_guillauminianum': depth of coverage estimated [1m 57.9s (117.938s)]
+'Cyclophyllum_henriettae_S376_L004': depth of coverage estimated [21m 29.0s (1288.979s)]
+'Cyclophyllum_jasminifolium_S377_L004': depth of coverage estimated [1m 36.5s (96.532s)]
+'Eriosemopsis_subanisophylla': depth of coverage estimated [1m 50.7s (110.672s)]
+'Eriosemopsis_subanisophylla_S489_L004': depth of coverage estimated [4m 19.8s (259.771s)]
+'Everistia_vacciniifolia': depth of coverage estimated [14m 33.8s (873.786s)]
+'Everistia_vacciniifolia_S490_L004': depth of coverage estimated [3m 1.6s (181.608s)]
+'Everistia_vacciniifolia_S491_L004': depth of coverage estimated [1m 18.4s (78.415s)]
+'Fadogia_ancylantha': depth of coverage estimated [33.887s]
+'Fadoginella_rogersii': depth of coverage estimated [2m 55.7s (175.746s)]
+'Globulostylis_leniochlamys': depth of coverage estimated [1m 7.6s (67.631s)]
+'Hutchinsonia_barbata': depth of coverage estimated [26.978s]
+'Hutchinsonia_barbata_S551_L004': depth of coverage estimated [1m 23.1s (83.093s)]
+'Ixora_sp': depth of coverage estimated [21.661s]
+'Keetia_gueinzii_S519_L004': depth of coverage estimated [3m 58.2s (238.150s)]
+'Keetia_hispida': depth of coverage estimated [32.337s]

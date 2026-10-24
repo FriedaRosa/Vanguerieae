@@ -1,3 +1,11 @@
+# Keep directory placeholders and TSV summaries available
+!*.tsv
+!*.keep
+
+# Keep some log files for benchmarking
+!*.cleaning.log
+!*.stats.txt
+
 # Sequence reads, assemblies, and alignments
 *.fastq
 *.fastq.gz
@@ -22,6 +30,8 @@
 *.list.txt
 checkpoints.txt
 megahit*
+*_scipio_*.log
+*_part*_scipio.log
 
 # Salmon assembly index files
 *.tdct
@@ -74,10 +84,3 @@ fastqc_report.html
 .RData
 *.Rproj
 
-# Keep directory placeholders and TSV summaries available
-!*.tsv
-!*.keep
-
-# Keep some log files for benchmarking
-!*.cleaning.log
-!*.stats.txt

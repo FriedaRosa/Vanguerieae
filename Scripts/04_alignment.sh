@@ -9,7 +9,8 @@ captus align \
 -e './CleanedData/03_extractions' \
 -o './CleanedData/04_alignments' \
 -m ALL \
--f ALL \
+-f GE \
+--filter_method informed \
 --clipkit_method smart-gap
 
 

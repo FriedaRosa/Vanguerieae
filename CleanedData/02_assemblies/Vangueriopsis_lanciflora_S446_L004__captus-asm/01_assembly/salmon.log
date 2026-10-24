@@ -1,0 +1,123 @@
+Captus' Salmon Index Command:
+  salmon index --transcripts /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/assembly.fasta --index /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index --kmerLen 31
+
+
+[2m2026-10-23T23:02:29.925012Z[0m [32m INFO[0m [2msalmon_index[0m[2m:[0m clipped poly-A tails from 24 transcripts
+[2m2026-10-23T23:02:29.925148Z[0m [32m INFO[0m [2msalmon_index[0m[2m:[0m building compacted dBG (k=31, threads=14)
+[2m2026-10-23T23:02:29.931973Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m RSS at start: current=32 MB, peak=220 MB
+[2m2026-10-23T23:02:29.932050Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m Phase 1: Counting minimizer frequencies...
+[2m2026-10-23T23:02:29.932058Z[0m [32m INFO[0m [2mcf1_rs::minimizer[0m[2m:[0m Counting minimizer frequencies with m=15, w=17, k=31
+[2m2026-10-23T23:02:30.112620Z[0m [32m INFO[0m [2mcf1_rs::minimizer[0m[2m:[0m Histogram: 1355453 total minimizer occurrences across 65536 non-empty buckets
+[2m2026-10-23T23:02:30.120231Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m RSS after P1: current=57 MB, peak=220 MB
+[2m2026-10-23T23:02:30.120349Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m Phase 2: Partitioning minimizers and routing super k-mers...
+[2m2026-10-23T23:02:30.120460Z[0m [32m INFO[0m [2mcf1_rs::minimizer[0m[2m:[0m Partitioned into 128 bins (target 10589/bin)
+[2m2026-10-23T23:02:30.120556Z[0m [32m INFO[0m [2mcf1_rs::superkmer[0m[2m:[0m Routing super k-mers to 128 bins with m=15, w=17
+[2m2026-10-23T23:02:30.599122Z[0m [32m INFO[0m [2mcf1_rs::superkmer[0m[2m:[0m Finished routing super k-mers to bin files
+[2m2026-10-23T23:02:30.624200Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m RSS after P2: current=77 MB, peak=220 MB
+[2m2026-10-23T23:02:30.624323Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m Phase 3: Building global MPHF...
+[2m2026-10-23T23:02:30.624342Z[0m [32m INFO[0m [2mcf1_rs::mphf[0m[2m:[0m Reading canonical k-mers from 128 bins
+[2m2026-10-23T23:02:30.653631Z[0m [32m INFO[0m [2mcf1_rs::mphf[0m[2m:[0m P3a: RSS before dedup: current=77 MB, peak=220 MB
+[2m2026-10-23T23:02:31.102000Z[0m [32m INFO[0m [2mcf1_rs::mphf[0m[2m:[0m Total 11131285 distinct canonical k-mers across 128 bins (per-bin: min=77313, max=88987, avg=86963)
+[2m2026-10-23T23:02:31.110809Z[0m [32m INFO[0m [2mcf1_rs::mphf[0m[2m:[0m P3a: RSS after dedup: current=183 MB, peak=220 MB
+[2m2026-10-23T23:02:31.181503Z[0m [32m INFO[0m [2mcf1_rs::mphf[0m[2m:[0m P3b: RSS after consolidation: current=183 MB, peak=220 MB
+[2m2026-10-23T23:02:31.181561Z[0m [32m INFO[0m [2mcf1_rs::mphf[0m[2m:[0m Building global MPHF for 11131285 distinct canonical k-mers (in-memory, threads=14)
+[2m2026-10-23T23:02:31.916056Z[0m [32m INFO[0m [2mcf1_rs::mphf[0m[2m:[0m MPHF construction complete
+[2m2026-10-23T23:02:31.931640Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m RSS after P3 MPHF: current=110 MB, peak=274 MB
+[2m2026-10-23T23:02:31.939537Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m RSS after P3 StateVector: current=114 MB, peak=274 MB
+[2m2026-10-23T23:02:31.944777Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m Phase 4: Classifying k-mer vertices...
+[2m2026-10-23T23:02:31.944821Z[0m [32m INFO[0m [2mcf1_rs::classify[0m[2m:[0m Phase 4: Classifying k-mer vertices
+[2m2026-10-23T23:02:32.390949Z[0m [32m INFO[0m [2mcf1_rs::classify[0m[2m:[0m Classification complete
+[2m2026-10-23T23:02:32.401537Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m RSS after P4: current=127 MB, peak=274 MB
+[2m2026-10-23T23:02:32.401696Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m Phase 5: Extracting unitigs and writing output...
+[2m2026-10-23T23:02:32.401739Z[0m [32m INFO[0m [2mcf1_rs::output[0m[2m:[0m Phase 5: Extracting unitigs and writing output
+[2m2026-10-23T23:02:33.262576Z[0m [32m INFO[0m [2mcf1_rs::output[0m[2m:[0m Extracted 114505 unitigs, 11131285 vertices, avg length 127
+[2m2026-10-23T23:02:33.270414Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m RSS after P5: current=148 MB, peak=274 MB
+[2m2026-10-23T23:02:33.270632Z[0m [32m INFO[0m [2mcf1_rs::output[0m[2m:[0m Wrote JSON output to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/cdbg.json
+[2m2026-10-23T23:02:33.270678Z[0m [32m INFO[0m [2mcf1_rs::pipeline[0m[2m:[0m Pipeline complete.
+[2m2026-10-23T23:02:33.272272Z[0m [32m INFO[0m [2msalmon_index[0m[2m:[0m cDBG: 114505 unitigs, 11131285 distinct k-mers
+[2m2026-10-23T23:02:33.272681Z[0m [32m INFO[0m [2msalmon_index[0m[2m:[0m building piscem index (m=19)
+[2m2026-10-23T23:02:33.272732Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m Parsing segment file: /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/cdbg.cf_seg
+[2m2026-10-23T23:02:33.324386Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   114505 segments
+[2m2026-10-23T23:02:33.324807Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m Building SSHash dictionary (k=31, m=19)
+[2m2026-10-23T23:02:33.325054Z[0m [32m INFO[0m [2mpiscem_rs::index::mem_budget[0m[2m:[0m sshash minimizer-sort RAM budget: 8 GiB (auto-detected; 15 GiB usable)
+[2m2026-10-23T23:02:33.326230Z[0m [32m INFO[0m [2msshash_lib::builder::config[0m[2m:[0m Build Configuration:
+[2m2026-10-23T23:02:33.326287Z[0m [32m INFO[0m [2msshash_lib::builder::config[0m[2m:[0m   k = 31
+[2m2026-10-23T23:02:33.326293Z[0m [32m INFO[0m [2msshash_lib::builder::config[0m[2m:[0m   m = 19
+[2m2026-10-23T23:02:33.326296Z[0m [32m INFO[0m [2msshash_lib::builder::config[0m[2m:[0m   num_threads = all available cores
+[2m2026-10-23T23:02:33.326300Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m Building SSHash Dictionary
+[2m2026-10-23T23:02:33.326302Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m Step 1: Encoding sequences...
+[2m2026-10-23T23:02:33.506734Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m   Encoded 114505 sequences
+[2m2026-10-23T23:02:33.506845Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m   Total bases: 14566435
+[2m2026-10-23T23:02:33.506854Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m Step 2: Extracting and coalescing minimizer tuples (in-memory)...
+[2m2026-10-23T23:02:33.778586Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m   Extracted and coalesced 1694204 tuples
+[2m2026-10-23T23:02:33.778705Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m Step 3: Classifying buckets (in-place)...
+[2m2026-10-23T23:02:33.894801Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m Bucket Statistics:
+[2m2026-10-23T23:02:33.894883Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Total buckets: 1542342
+[2m2026-10-23T23:02:33.894889Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Total k-mers: 11131285
+[2m2026-10-23T23:02:33.894891Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Total positions: 1694204
+[2m2026-10-23T23:02:33.894894Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Singleton buckets: 1478468 (95.86%)
+[2m2026-10-23T23:02:33.894898Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Light buckets (2-64): 63866 (4.14%)
+[2m2026-10-23T23:02:33.894900Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Heavy buckets (>64): 8 (0.00%)
+[2m2026-10-23T23:02:33.894902Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Max bucket size: 672
+[2m2026-10-23T23:02:33.894903Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Positions in light buckets: 214414 (12.66%)
+[2m2026-10-23T23:02:33.894918Z[0m [32m INFO[0m [2msshash_lib::builder::buckets[0m[2m:[0m   Positions in heavy buckets: 1322 (0.08%)
+[2m2026-10-23T23:02:33.894920Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m Step 4: Building minimizers control map...
+[2m2026-10-23T23:02:34.039154Z[0m [32m INFO[0m [2msshash_lib::minimizers_control_map[0m[2m:[0m Building PHast MPHF for 1542342 minimizers (partitioned=true)
+[2m2026-10-23T23:02:35.452757Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m   Built MPHF for 1542342 minimizers
+[2m2026-10-23T23:02:35.452848Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m Step 5: Building sparse and skew index...
+[2m2026-10-23T23:02:35.510207Z[0m [32m INFO[0m [2msshash_lib::sparse_and_skew_index[0m[2m:[0m   Pass 1 (EF build): 0.06s — 1542342 buckets, 1694204 total super-kmers, max_bucket_size=672
+[2m2026-10-23T23:02:35.549325Z[0m [32m INFO[0m [2msshash_lib::sparse_and_skew_index[0m[2m:[0m   Pass 2 (fill offsets): 0.04s — 8 heavy buckets collected
+[2m2026-10-23T23:02:35.549398Z[0m [32m INFO[0m [2msshash_lib::sparse_and_skew_index[0m[2m:[0m     SkewIndex: max_bucket_size=672, num_partitions=4
+[2m2026-10-23T23:02:35.554508Z[0m [32m INFO[0m [2msshash_lib::sparse_and_skew_index[0m[2m:[0m   Pass 3 (skew index): 0.01s
+[2m2026-10-23T23:02:35.554610Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m   Index built successfully
+[2m2026-10-23T23:02:35.554625Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m Dictionary Build Complete
+[2m2026-10-23T23:02:35.554629Z[0m [32m INFO[0m [2msshash_lib::builder::dictionary_builder[0m[2m:[0m Total memory: 9.52 MB
+[2m2026-10-23T23:02:35.555343Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   Dictionary built: 114505 strings
+[2m2026-10-23T23:02:35.559002Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m First pass over /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/cdbg.cf_seq
+[2m2026-10-23T23:02:35.564290Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   processed 10000 references
+[2m2026-10-23T23:02:35.570321Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   processed 20000 references
+[2m2026-10-23T23:02:35.584360Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   29569 references, max_ref_len=15488
+[2m2026-10-23T23:02:35.584423Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m Second pass over /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/cdbg.cf_seq to fill contig entries
+[2m2026-10-23T23:02:35.586311Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   processing reference #0
+[2m2026-10-23T23:02:35.592143Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   processing reference #10000
+[2m2026-10-23T23:02:35.597933Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   processing reference #20000
+[2m2026-10-23T23:02:35.614453Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   ContigTable: 114505 contigs, 244143 entries
+[2m2026-10-23T23:02:35.614511Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m Building equivalence class table
+[2m2026-10-23T23:02:35.640263Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m   EqClassMap: 114505 tiles, 77810 ECs, 196087 label entries
+[2m2026-10-23T23:02:35.640350Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Saving SSHash dictionary to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.ssi
+[2m2026-10-23T23:02:35.649595Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Saving contig table to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.ctab
+[2m2026-10-23T23:02:35.650310Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Saving reference info to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.refinfo
+[2m2026-10-23T23:02:35.652088Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Saving equivalence class table to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.ectab
+[2m2026-10-23T23:02:35.652781Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Index saved to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index
+[2m2026-10-23T23:02:35.652794Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m Index built and saved to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index
+[2m2026-10-23T23:02:35.652798Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m auto dict selection: 11131285 canonical k-mers (100000000 threshold), emitting Tiny artifacts: true
+[2m2026-10-23T23:02:35.652801Z[0m [32m INFO[0m [2mpiscem_rs::index::build[0m[2m:[0m Emitting Tiny index artifacts (.tdct + .tct)
+[2m2026-10-23T23:02:35.652815Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Building and saving TinyDictionary to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.tdct
+[2m2026-10-23T23:02:36.897835Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Building and saving TinyContigTable to /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.tct
+[2m2026-10-23T23:02:36.908038Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Loading SSHash dictionary from /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.ssi
+[2m2026-10-23T23:02:36.916130Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m   k=31, 114505 strings
+[2m2026-10-23T23:02:36.916168Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Loading contig table from /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.ctab
+[2m2026-10-23T23:02:36.916388Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m   114505 contigs, 244143 entries, entry_width=30 bits
+[2m2026-10-23T23:02:36.916474Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Loading reference info from /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.refinfo
+[2m2026-10-23T23:02:36.918076Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m   29569 references, max_ref_len=15488
+[2m2026-10-23T23:02:36.918116Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m Loading equivalence class table from /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index/index.ectab
+[2m2026-10-23T23:02:36.919290Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m   114505 tiles, 77810 ECs, 196087 label entries
+[2m2026-10-23T23:02:36.919386Z[0m [32m INFO[0m [2mpiscem_rs::index::reference_index[0m[2m:[0m   ref_shift=15, pos_mask=0x3fff
+[2m2026-10-23T23:02:37.038030Z[0m [32m INFO[0m [2msalmon_index[0m[2m:[0m index built: 29569 references
+indexed 29569 references (k=31, m=19)
+
+
+
+Captus' Salmon Quant Command:
+  salmon quant --index /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/00_salmon_index --output /home/frieda/Projects/Vanguerieae/CleanedData/02_assemblies/Vangueriopsis_lanciflora_S446_L004__captus-asm/01_assembly/01_salmon_quant --validateMappings --recoverOrphans --minAssignedFrags 1 --threads 14 --libType IU --mates1 /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Vangueriopsis_lanciflora_S446_L004_R1.fastq.gz --mates2 /home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/Vangueriopsis_lanciflora_S446_L004_R2.fastq.gz
+
+
+error: unexpected argument '--minAssignedFrags' found
+
+Usage: salmon quant --output <OUTPUT> --index <INDEX> --validateMappings --recoverOrphans
+
+For more information, try '--help'.
+
+note: salmon 2.0 is the Rust rewrite and changed or removed some command-line options.
+      See the migration guide (MIGRATION.md) for the C++ → 2.0 flag mapping, and note that
+      indices must be rebuilt for 2.0 (the index format changed).

@@ -1,5 +1,0 @@
-#File	/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Afrocanthium_lactescens_S626_L004_R1_001.fastq.gz	/home/frieda/Projects/Vanguerieae/CleanedData/01_cleaned_reads/00_adaptors_trimmed/Afrocanthium_lactescens_S626_L004_R2_001.fastq.gz
-#Total	6669374
-#Matched	2	0.00003%
-#Name	Reads	ReadsPct
-contam_76	2	0.00003%

@@ -1,0 +1,17 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Hutchinsonia_barbata_S551_L004	MIT	atp1	QOX10099.1-atp1	1-64;65-238;277-489	prot	451	00	88.26	95.79	0.808	0.909	1353	1353	0	0		3	2	3	2	0	NODE_1368_length_549_cov_8.0000_k_175_flag_1;NODE_5372_length_524_cov_18.0000_k_175_flag_1;NODE_5091_length_656_cov_11.0000_k_175_flag_1	-;+;+	6-197;1-522;1-639	12.3333
+Hutchinsonia_barbata_S551_L004	MIT	atp8	AWN57626.1-atp8	1-68	prot	68	00	41.98	85.29	0.296	0.658	204	204	0	0		1	1	1	0	0	NODE_10200_length_450_cov_7.0000_k_175_flag_1	+	246-449	7.0000
+Hutchinsonia_barbata_S551_L004	MIT	atp9	AET62949.1-atp9	1-53	prot	53	00	71.62	92.45	0.608	0.855	159	159	0	0		1	1	1	1	0	NODE_9831_length_348_cov_25.0000_k_175_flag_1	+	183-341	25.0000
+Hutchinsonia_barbata_S551_L004	MIT	ccmB	QGX42491.1-ccmB	61-162	prot	102	00	49.51	96.08	0.456	0.866	306	306	0	0		1	1	1	0	0	NODE_2276_length_318_cov_3.0000_k_175_flag_1	-	8-313	3.0000
+Hutchinsonia_barbata_S551_L004	MIT	ccmC	QOI73961.1-ccmC	64-227	prot	164	00	65.34	96.95	0.614	0.916	492	492	0	0	219	1	1	1	1	0	NODE_513_length_502_cov_7.0000_k_175_flag_1	-	8-498	7.0000
+Hutchinsonia_barbata_S551_L004	MIT	cob	QTT60957.1-cob	4-148;333-389	prot	202	00	51.93	93.56	0.452	0.875	615	615	0	0		2	1	2	2	0	NODE_8810_length_440_cov_14.0000_k_175_flag_1;NODE_8660_length_408_cov_15.0000_k_175_flag_1	-;-	1-435;227-406	14.5000
+Hutchinsonia_barbata_S551_L004	MIT	cox1	AIG89850.1-cox1	1-177	prot	177	00	33.59	97.74	0.321	0.955	531	531	0	0		1	1	1	0	0	NODE_3675_length_656_cov_9.0000_k_175_flag_1	-	2-532	9.0000
+Hutchinsonia_barbata_S551_L004	MIT	cox2	AMP43656.1-cox2	1-127;129-234	prot	233	00	89.62	95.28	0.812	0.907	699	699	0	0		2	1	2	2	0	NODE_9833_length_445_cov_6.0000_k_175_flag_1;NODE_4099_length_342_cov_6.0000_k_175_flag_1	-;-	54-434;9-326	6.0000
+Hutchinsonia_barbata_S551_L004	MIT	nad2_exon_3_4_5	QEM24359.1-nad2_exon_3_4_5	118-244;245-274	prot	157	00	51.31	93.63	0.448	0.876	787	471	316	0		2	1	2	2	0	NODE_7512_length_432_cov_8.0000_k_175_flag_1;NODE_8987_length_363_cov_10.0000_k_175_flag_1	-;-	52-432;9-98	9.0000
+Hutchinsonia_barbata_S551_L004	MIT	nad4L	CAQ77604.1-nad4L	1-97	prot	97	00	97.00	96.91	0.910	0.939	291	291	0	0		1	1	1	1	1	NODE_10397_length_300_cov_8.0000_k_175_flag_1	-	8-298	8.0000
+Hutchinsonia_barbata_S551_L004	MIT	nad7	QSJ48341.1-nad7	1-51;126-215	prot	141	00	35.88	97.87	0.344	0.957	423	423	0	0		2	1	2	0	0	NODE_2019_length_277_cov_13.0000_k_175_flag_1;NODE_411_length_272_cov_13.0000_k_175_flag_1	-;-	108-260;2-271	13.0000
+Hutchinsonia_barbata_S551_L004	MIT	rps10	QIV67023.1-rps10	2-120	prot	119	00	99.17	89.08	0.775	0.793	264	264	0	0		1	1	1	1	1	NODE_10936_length_330_cov_4.0000_k_175_flag_1	+	14-277	4.0000
+Hutchinsonia_barbata_S551_L004	MIT	rps12	QIS40626.1-rps12	1-115	prot	115	00	92.00	94.78	0.824	0.898	345	345	0	0		1	1	1	1	1	NODE_2162_length_410_cov_11.0000_k_175_flag_1	+	58-402	11.0000
+Hutchinsonia_barbata_S551_L004	MIT	rps14	AOO96407.1-rps14	36-92,93-100	prot	65	00	65.00	84.62	0.450	0.716	251	195	56	0		1	1	1	1	0	NODE_2388_length_290_cov_13.0000_k_175_flag_1	-	110-280,30-53	13.0000
