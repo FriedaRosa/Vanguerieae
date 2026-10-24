@@ -1,32 +1,3 @@
----
-title: "Phylogenomics of Vanguerieae"
-subtitle: 'Data preparation and phylogenetic workflow'
-date: last-modified
-date-format: long
-author:
-  - name: 'Friederike Wölke'
-    orcid: 0000-0001-9034-4883
-    email: friederike.wolke@su.se
-format: 
-  html:
-    toc: true
-    number-sections: true
-    format-links: [pdf]
-    toc-location: right
-    code-fold: false
-    collapse: true
-    smooth-scroll: true
-    html-math-method: katex
-    search: true
-    repo-url: https://github.com/friedarosa/Vanguerieae/
-self-contained: true
-code-overflow: wrap
-editor: source
-editor_options: 
-  chunk_output_type: console
----
-
-
 # Project overview
 
 This repository contains the working scripts and analysis notes for a phylogenomic study of Vanguerieae (Rubiaceae). It combines locally generated sequence reads with PAFTOL data to recover nuclear, plastid, and mitochondrial loci, infer gene trees and concatenated trees, and estimate nuclear species trees with wASTRAL.
