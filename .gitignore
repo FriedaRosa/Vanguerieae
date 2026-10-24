@@ -43,6 +43,8 @@ CleanedData/02_assemblies/*/01_assembly/length_stats.tsv
 CleanedData/02_assemblies/*/01_assembly/contigs_stats.tsv
 CleanedData/02_assemblies/*/01_assembly/duplicate_clusters.tsv
 
+
+
 # Alignment and gene prediction intermediates
 *.psl
 *.gff
@@ -57,6 +59,8 @@ CleanedData/02_assemblies/*/01_assembly/duplicate_clusters.tsv
 *.ckp.gz
 *.model.gz
 *.iqtree
+CleanedData/05_phylogeny*/nuc_gene_trees/*.log
+
 
 # FastQC outputs (keep other HTML reports and TXT files available)
 *_fastqc.html
@@ -72,7 +76,8 @@ fastqc_report.html
 
 # Keep directory placeholders and TSV summaries available
 !*.tsv
+!*.keep
+
+# Keep some log files for benchmarking
 !*.cleaning.log
 !*.stats.txt
-
-
