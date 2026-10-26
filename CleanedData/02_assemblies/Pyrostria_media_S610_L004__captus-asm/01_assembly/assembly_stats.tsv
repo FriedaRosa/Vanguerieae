@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Pyrostria_media_S610_L004	before	54784	2.554	0.438	0.126	0.064	0.024	0.0	24873991	11.638	5.705	3.79	2.881	1.599	0.0	182	49570	455	372	10.3897	4.0	40.304	442	340	17646	33789
-Pyrostria_media_S610_L004	after	38207	3.499	0.628	0.181	0.092	0.034	0.0	18308390	15.426	7.751	5.15	3.914	2.172	0.0	182	49570	480	379	14.4626	5.0	40.871	459	348	11712	23267
+Pyrostria_media_S610_L004	before	54784	2.554	0.438	0.126	0.064	0.024	0.0	24873991	11.638	5.705	3.79	2.881	1.599	0.0	182	49570	455	372	22.048	10.617	40.304	442	340	17646	33789
+Pyrostria_media_S610_L004	after	52363	2.672	0.458	0.132	0.067	0.025	0.0	24209511	11.958	5.861	3.894	2.96	1.643	0.0	182	49570	463	379	23.0571	11.0117	40.355	449	345	16903	32369

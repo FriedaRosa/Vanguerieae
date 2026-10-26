@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Bullockia_mombazensis	before	2057	7.292	0.535	0.0	0.0	0.0	0.0	1097358	19.183	2.478	0.0	0.0	0.0	0.0	183	3925	534	419	333.1419	131.0	43.593	588	381	598	1179
-Bullockia_mombazensis	after	1707	8.787	0.644	0.0	0.0	0.0	0.0	976564	21.556	2.785	0.0	0.0	0.0	0.0	197	3925	573	464	401.2436	185.0	43.284	642	417	501	972
+Bullockia_mombazensis	before	2057	7.292	0.535	0.0	0.0	0.0	0.0	1097358	19.183	2.478	0.0	0.0	0.0	0.0	183	3925	534	419	488.4143	286.0215	43.593	588	381	598	1179
+Bullockia_mombazensis	after	1976	7.591	0.557	0.0	0.0	0.0	0.0	1075594	19.571	2.528	0.0	0.0	0.0	0.0	184	3925	545	432	508.4256	302.7577	43.599	598	390	580	1137

@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Rytigynia_longipedicellata_S442_L004	before	35606	5.246	0.711	0.09	0.014	0.008	0.003	17747620	16.793	5.022	1.776	0.788	0.62	0.304	182	53868	499	398	8.6125	4.0	46.179	502	362	10785	21277
-Rytigynia_longipedicellata_S442_L004	after	26438	6.85	0.957	0.121	0.019	0.011	0.004	13824086	21.089	6.447	2.279	1.011	0.796	0.39	182	53868	523	399	11.2519	5.0	47.492	533	368	7553	15488
+Rytigynia_longipedicellata_S442_L004	before	35606	5.246	0.711	0.09	0.014	0.008	0.003	17747620	16.793	5.022	1.776	0.788	0.62	0.304	182	53868	499	398	17.0159	8.5958	46.179	502	362	10785	21277
+Rytigynia_longipedicellata_S442_L004	after	34878	5.356	0.725	0.092	0.014	0.009	0.003	17542510	16.99	5.081	1.796	0.797	0.627	0.307	182	53868	503	401	17.3621	8.7325	46.243	506	366	10581	20865

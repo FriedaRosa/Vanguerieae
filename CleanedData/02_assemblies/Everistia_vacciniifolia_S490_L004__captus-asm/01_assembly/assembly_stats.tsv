@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Everistia_vacciniifolia_S490_L004	before	57368	2.127	0.361	0.066	0.012	0.0	0.0	25534814	8.176	3.077	1.161	0.358	0.0	0.0	182	17186	446	376	7.6609	3.0	37.221	438	340	19592	36257
-Everistia_vacciniifolia_S490_L004	after	43176	2.603	0.479	0.088	0.016	0.0	0.0	19104067	10.359	4.113	1.552	0.478	0.0	0.0	182	17186	443	364	9.8498	4.0	37.524	423	333	14429	27283
+Everistia_vacciniifolia_S490_L004	before	57368	2.127	0.361	0.066	0.012	0.0	0.0	25534814	8.176	3.077	1.161	0.358	0.0	0.0	182	17186	446	376	16.7298	7.3459	37.221	438	340	19592	36257
+Everistia_vacciniifolia_S490_L004	after	56570	2.157	0.366	0.067	0.012	0.0	0.0	25294799	8.253	3.107	1.172	0.361	0.0	0.0	182	17186	448	378	16.9567	7.4384	37.227	440	341	19321	35753

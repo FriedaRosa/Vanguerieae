@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Bridsonia_chamaedendrum	before	1837	13.555	1.198	0.0	0.0	0.0	0.0	1169588	30.39	4.961	0.0	0.0	0.0	0.0	181	4056	637	514	435.2975	208.0	43.402	750	476	515	994
-Bridsonia_chamaedendrum	after	1661	14.991	1.325	0.0	0.0	0.0	0.0	1114000	31.906	5.208	0.0	0.0	0.0	0.0	205	4056	671	567	481.3158	252.0	43.581	781	514	479	912
+Bridsonia_chamaedendrum	before	1837	13.555	1.198	0.0	0.0	0.0	0.0	1169588	30.39	4.961	0.0	0.0	0.0	0.0	181	4056	637	514	556.7079	323.3645	43.402	750	476	515	994
+Bridsonia_chamaedendrum	after	1768	14.084	1.244	0.0	0.0	0.0	0.0	1150885	30.884	5.041	0.0	0.0	0.0	0.0	189	4056	651	538	578.4245	344.4307	43.467	762	493	503	965

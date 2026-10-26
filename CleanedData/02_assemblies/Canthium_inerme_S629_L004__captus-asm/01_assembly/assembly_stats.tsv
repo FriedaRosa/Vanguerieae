@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Canthium_inerme_S629_L004	before	9618	4.284	0.821	0.094	0.021	0.021	0.0	4433628	16.613	6.862	2.411	1.295	1.295	0.0	178	36864	461	359	23.2592	7.0	42.829	446	331	2874	5796
-Canthium_inerme_S629_L004	after	8679	4.747	0.91	0.104	0.023	0.023	0.0	4083155	18.039	7.451	2.618	1.406	1.406	0.0	179	36864	471	361	25.6673	7.0	42.827	458	334	2530	5183
+Canthium_inerme_S629_L004	before	9618	4.284	0.821	0.094	0.021	0.021	0.0	4433628	16.613	6.862	2.411	1.295	1.295	0.0	178	36864	461	359	42.1372	16.653	42.829	446	331	2874	5796
+Canthium_inerme_S629_L004	after	9497	4.338	0.832	0.095	0.021	0.021	0.0	4401340	16.735	6.912	2.429	1.304	1.304	0.0	181	36864	464	361	42.6701	16.8777	42.833	448	332	2838	5725

@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Africanthium_mundianum	before	2772	14.25	2.345	0.036	0.0	0.0	0.0	1742575	35.381	10.079	0.489	0.0	0.0	0.0	181	8520	629	447	1019.2279	136.1123	40.707	764	431	689	1460
-Africanthium_mundianum	after	2346	16.837	2.771	0.043	0.0	0.0	0.0	1600781	38.515	10.972	0.532	0.0	0.0	0.0	270	8520	683	502	1204.1235	183.0	40.631	820	481	600	1234
+Africanthium_mundianum	before	2772	14.25	2.345	0.036	0.0	0.0	0.0	1742575	35.381	10.079	0.489	0.0	0.0	0.0	181	8520	629	447	1288.2582	235.632	40.707	764	431	689	1460
+Africanthium_mundianum	after	2631	15.013	2.471	0.038	0.0	0.0	0.0	1700690	36.253	10.327	0.501	0.0	0.0	0.0	181	8520	647	466	1357.2785	259.6026	40.737	777	445	662	1389

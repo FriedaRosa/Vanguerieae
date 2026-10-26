@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Vangueria_madagascariensis_S602_L004	before	2885	2.184	0.139	0.069	0.0	0.0	0.0	1269501	7.399	1.678	1.269	0.0	0.0	0.0	184	8104	441	378	25.8417	9.0	41.562	439	340	985	1809
-Vangueria_madagascariensis_S602_L004	after	2559	2.423	0.156	0.078	0.0	0.0	0.0	1144598	8.113	1.861	1.407	0.0	0.0	0.0	203	8104	448	381	29.006	10.0	41.618	447	343	863	1594
+Vangueria_madagascariensis_S602_L004	before	2885	2.184	0.139	0.069	0.0	0.0	0.0	1269501	7.399	1.678	1.269	0.0	0.0	0.0	184	8104	441	378	46.8044	25.3211	41.562	439	340	985	1809
+Vangueria_madagascariensis_S602_L004	after	2857	2.205	0.14	0.07	0.0	0.0	0.0	1262003	7.443	1.688	1.277	0.0	0.0	0.0	194	8104	442	378	47.2595	25.5932	41.56	440	341	977	1792

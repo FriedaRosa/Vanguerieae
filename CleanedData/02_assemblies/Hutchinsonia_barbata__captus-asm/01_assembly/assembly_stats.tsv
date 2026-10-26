@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Hutchinsonia_barbata	before	2972	6.662	0.505	0.034	0.0	0.0	0.0	1571241	18.021	2.734	0.586	0.0	0.0	0.0	185	9213	529	425	172.625	47.0	46.44	567	385	895	1741
-Hutchinsonia_barbata	after	2795	7.084	0.537	0.036	0.0	0.0	0.0	1508086	18.776	2.849	0.611	0.0	0.0	0.0	192	9213	540	435	183.4936	51.7387	46.437	583	394	842	1634
+Hutchinsonia_barbata	before	2972	6.662	0.505	0.034	0.0	0.0	0.0	1571241	18.021	2.734	0.586	0.0	0.0	0.0	185	9213	529	425	224.5063	77.2045	46.44	567	385	895	1741
+Hutchinsonia_barbata	after	2922	6.776	0.513	0.034	0.0	0.0	0.0	1556914	18.187	2.759	0.592	0.0	0.0	0.0	217	9213	533	428	228.3452	79.5001	46.485	571	389	882	1713

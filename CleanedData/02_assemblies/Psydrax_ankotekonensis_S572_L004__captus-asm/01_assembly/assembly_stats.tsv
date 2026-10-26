@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Psydrax_ankotekonensis_S572_L004	before	41894	2.041	0.356	0.11	0.038	0.01	0.002	18551033	9.169	4.277	2.722	1.575	0.77	0.33	182	61256	443	372	13.7021	3.0	39.885	433	339	14076	26264
-Psydrax_ankotekonensis_S572_L004	after	30134	2.671	0.494	0.153	0.053	0.013	0.003	13754024	11.955	5.769	3.672	2.124	1.038	0.445	182	61256	457	372	18.6586	5.0	40.591	437	341	9809	18791
+Psydrax_ankotekonensis_S572_L004	before	41894	2.041	0.356	0.11	0.038	0.01	0.002	18551033	9.169	4.277	2.722	1.575	0.77	0.33	182	61256	443	372	26.4168	10.1902	39.885	433	339	14076	26264
+Psydrax_ankotekonensis_S572_L004	after	40818	2.095	0.365	0.113	0.039	0.01	0.002	18261987	9.314	4.345	2.765	1.6	0.782	0.335	182	61256	448	376	27.1048	10.4465	39.907	437	342	13745	25641

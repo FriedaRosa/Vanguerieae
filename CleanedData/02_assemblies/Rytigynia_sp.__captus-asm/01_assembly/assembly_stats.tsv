@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Rytigynia_sp.	before	5707	11.074	1.875	0.018	0.018	0.0	0.0	3274759	30.215	9.088	0.308	0.308	0.0	0.0	181	10078	574	416	146.9124	37.0	45.489	633	394	1458	3133
-Rytigynia_sp.	after	4471	13.979	2.393	0.022	0.022	0.0	0.0	2782965	35.255	10.694	0.362	0.362	0.0	0.0	193	10078	623	443	187.2491	50.0	45.271	729	420	1107	2396
+Rytigynia_sp.	before	5707	11.074	1.875	0.018	0.018	0.0	0.0	3274759	30.215	9.088	0.308	0.308	0.0	0.0	181	10078	574	416	225.5553	79.9483	45.489	633	394	1458	3133
+Rytigynia_sp.	after	5426	11.648	1.972	0.018	0.018	0.0	0.0	3196570	30.954	9.311	0.315	0.315	0.0	0.0	185	10078	590	428	237.2257	83.2975	45.51	646	404	1397	2989

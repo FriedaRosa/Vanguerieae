@@ -167,4 +167,52 @@ hits: 854741, hits per frag:  0.861967[A[32mprocessed[31m 1500000 [32mfrag
 hits: 1280352, hits per frag:  0.883976[A[32mprocessed[31m 2000000 [32mfragments[0m
 hits: 1703710, hits per frag:  0.857229[A[32mprocessed[31m 2500000 [32mfragments[0m
 hits: 2129264, hits per frag:  0.856081[A[32mprocessed[31m 3000000 [32mfragments[0m
-hits: 2553034, hits per frag:  0.85571
+hits: 2553034, hits per frag:  0.85571[A[32mprocessed[31m 3500000 [32mfragments[0m
+hits: 2978651, hits per frag:  0.861584[A[32mprocessed[31m 4000000 [32mfragments[0m
+hits: 3404436, hits per frag:  0.860402[A[32mprocessed[31m 4500000 [32mfragments[0m
+hits: 3830812, hits per frag:  0.855215[A[32mprocessed[31m 5000000 [32mfragments[0m
+hits: 4255685, hits per frag:  0.862049[A[32mprocessed[31m 5500000 [32mfragments[0m
+hits: 4680165, hits per frag:  0.856086[A[32mprocessed[31m 6000000 [32mfragments[0m
+hits: 5105441, hits per frag:  0.853675[A[32mprocessed[31m 6500000 [32mfragments[0m
+hits: 5529098, hits per frag:  0.853615[A[32mprocessed[31m 7000000 [32mfragments[0m
+hits: 5949389, hits per frag:  0.858032[A[32mprocessed[31m 7500000 [32mfragments[0m
+hits: 6369904, hits per frag:  0.858226[A[32mprocessed[31m 8000000 [32mfragments[0m
+hits: 6791139, hits per frag:  0.851898[A[32mprocessed[31m 8500000 [32mfragments[0m
+hits: 7211008, hits per frag:  0.856862[A[32mprocessed[31m 9000000 [32mfragments[0m
+hits: 7630296, hits per frag:  0.852032[A[32mprocessed[31m 9500000 [32mfragments[0m
+hits: 8052050, hits per frag:  0.85049[A[32mprocessed[31m 10000000 [32mfragments[0m
+hits: 8471208, hits per frag:  0.850251[A[32mprocessed[31m 10500000 [32mfragments[0m
+hits: 8892828, hits per frag:  0.849382[A[32mprocessed[31m 11000000 [32mfragments[0m
+hits: 9313157, hits per frag:  0.849137[A[32mprocessed[31m 11500000 [32mfragments[0m
+hits: 9733212, hits per frag:  0.848246
+
+
+
+
+
+
+
+
+
+[2026-10-24 08:29:40.293] [jointLog] [info] Computed 324739 rich equivalence classes for further processing
+[2026-10-24 08:29:40.293] [jointLog] [info] Counted 7852123 total reads in the equivalence classes 
+[2026-10-24 08:29:40.305] [jointLog] [warning] 0.0277957% of fragments were shorter than the k used to build the index.
+If this fraction is too large, consider re-building the index with a smaller k.
+The minimum read size found was 25.
+
+
+[2026-10-24 08:29:40.305] [jointLog] [info] Number of orphans recovered using orphan rescue : 207875
+[2026-10-24 08:29:40.305] [jointLog] [info] Number of mappings discarded because of alignment score : 48363901
+[2026-10-24 08:29:40.305] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 1382046
+[2026-10-24 08:29:40.305] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2026-10-24 08:29:40.305] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 303332
+[2026-10-24 08:29:40.305] [jointLog] [info] Mapping rate = 66.806%
+
+[2026-10-24 08:29:40.305] [jointLog] [info] finished quantifyLibrary()
+[2026-10-24 08:29:40.306] [jointLog] [info] Starting optimizer
+[2026-10-24 08:29:40.370] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2026-10-24 08:29:40.381] [jointLog] [info] iteration = 0 | max rel diff. = 4336.19
+[2026-10-24 08:29:42.067] [jointLog] [info] iteration = 100 | max rel diff. = 0.000131135
+[2026-10-24 08:29:42.070] [jointLog] [info] Finished optimizer
+[2026-10-24 08:29:42.070] [jointLog] [info] writing output 
+

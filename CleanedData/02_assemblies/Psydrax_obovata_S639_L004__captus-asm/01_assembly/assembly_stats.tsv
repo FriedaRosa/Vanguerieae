@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Psydrax_obovata_S639_L004	before	16156	3.2	0.279	0.031	0.012	0.0	0.0	7218982	10.432	2.101	0.643	0.366	0.0	0.0	180	16252	447	372	38.0382	6.0	41.597	437	338	5372	10110
-Psydrax_obovata_S639_L004	after	13814	3.699	0.326	0.036	0.014	0.0	0.0	6279179	11.884	2.416	0.739	0.421	0.0	0.0	180	16252	455	372	44.3173	7.0	41.848	442	339	4501	8596
+Psydrax_obovata_S639_L004	before	16156	3.2	0.279	0.031	0.012	0.0	0.0	7218982	10.432	2.101	0.643	0.366	0.0	0.0	180	16252	447	372	59.9019	16.8176	41.597	437	338	5372	10110
+Psydrax_obovata_S639_L004	after	15979	3.235	0.282	0.031	0.013	0.0	0.0	7172473	10.5	2.115	0.647	0.369	0.0	0.0	180	16252	449	373	60.5616	17.0518	41.612	438	339	5319	10008

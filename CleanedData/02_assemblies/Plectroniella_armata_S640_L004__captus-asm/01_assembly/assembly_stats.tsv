@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Plectroniella_armata_S640_L004	before	20274	2.372	0.464	0.044	0.015	0.005	0.0	8225186	9.978	3.82	1.094	0.6	0.336	0.0	172	27619	406	334	36.3368	7.0	42.791	384	305	6786	12837
-Plectroniella_armata_S640_L004	after	18775	2.557	0.501	0.048	0.016	0.005	0.0	7668960	10.687	4.097	1.173	0.644	0.36	0.0	173	27619	409	334	39.1579	7.0	42.87	385	305	6223	11858
+Plectroniella_armata_S640_L004	before	20274	2.372	0.464	0.044	0.015	0.005	0.0	8225186	9.978	3.82	1.094	0.6	0.336	0.0	172	27619	406	334	57.8111	15.4793	42.791	384	305	6786	12837
+Plectroniella_armata_S640_L004	after	20159	2.386	0.466	0.045	0.015	0.005	0.0	8194805	10.015	3.834	1.098	0.603	0.337	0.0	172	27619	407	334	58.1383	15.567	42.804	385	305	6747	12765

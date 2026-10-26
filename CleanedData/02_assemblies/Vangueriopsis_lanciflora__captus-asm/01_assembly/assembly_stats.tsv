@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Vangueriopsis_lanciflora	before	2218	5.951	0.496	0.045	0.0	0.0	0.0	1141855	16.234	2.807	0.612	0.0	0.0	0.0	182	6993	515	422	662.1875	173.0	42.463	551	376	683	1308
-Vangueriopsis_lanciflora	after	1936	6.767	0.568	0.052	0.0	0.0	0.0	1047000	17.607	3.062	0.668	0.0	0.0	0.0	235	6993	541	453	758.4967	250.4688	41.995	581	400	600	1139
+Vangueriopsis_lanciflora	before	2218	5.951	0.496	0.045	0.0	0.0	0.0	1141855	16.234	2.807	0.612	0.0	0.0	0.0	182	6993	515	422	902.1382	355.1875	42.463	551	376	683	1308
+Vangueriopsis_lanciflora	after	2146	6.151	0.513	0.047	0.0	0.0	0.0	1121833	16.524	2.857	0.623	0.0	0.0	0.0	183	6993	523	431	932.3983	390.368	42.416	558	380	665	1269

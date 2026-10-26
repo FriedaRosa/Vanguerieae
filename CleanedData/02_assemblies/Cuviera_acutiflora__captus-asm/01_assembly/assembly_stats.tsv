@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Cuviera_acutiflora	before	931	1.396	0.215	0.0	0.0	0.0	0.0	426766	4.513	1.405	0.0	0.0	0.0	0.0	200	3135	459	411	363.0392	302.0	41.177	461	369	334	593
-Cuviera_acutiflora	after	888	1.464	0.225	0.0	0.0	0.0	0.0	412866	4.665	1.452	0.0	0.0	0.0	0.0	272	3135	465	417	380.5703	316.5	40.957	465	376	320	566
+Cuviera_acutiflora	before	931	1.396	0.215	0.0	0.0	0.0	0.0	426766	4.513	1.405	0.0	0.0	0.0	0.0	200	3135	459	411	561.0113	483.2027	41.177	461	369	334	593
+Cuviera_acutiflora	after	922	1.41	0.217	0.0	0.0	0.0	0.0	424156	4.541	1.414	0.0	0.0	0.0	0.0	200	3135	461	413	566.4853	487.8444	41.181	461	372	332	587

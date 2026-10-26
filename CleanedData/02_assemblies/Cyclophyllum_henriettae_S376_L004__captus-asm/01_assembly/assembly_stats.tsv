@@ -1,5 +1,5 @@
 #Captus v1.6.6
 #Command: /home/frieda/miniconda3/envs/captus/bin/captus assemble -r ./CleanedData/01_cleaned_reads -o ./CleanedData/02_assemblies --threads auto
 sample_name	stage	num_contigs	pct_contigs_1kbp	pct_contigs_2kbp	pct_contigs_5kbp	pct_contigs_10kbp	pct_contigs_20kbp	pct_contigs_50kbp	total_length	pct_length_1kbp	pct_length_2kbp	pct_length_5kbp	pct_length_10kbp	pct_length_20kbp	pct_length_50kbp	shortest_contig	longest_contig	mean_length	median_length	mean_depth	median_depth	gc	N50	N75	L50	L75
-Cyclophyllum_henriettae_S376_L004	before	15054	3.594	0.771	0.173	0.053	0.013	0.0	7090852	15.028	7.214	3.527	1.938	0.746	0.0	182	30924	472	373	14.4972	3.0	40.311	464	343	4557	9056
-Cyclophyllum_henriettae_S376_L004	after	10020	5.269	1.158	0.259	0.08	0.02	0.0	5069869	20.732	10.089	4.932	2.71	1.044	0.0	183	30924	506	375	21.2774	5.0	41.896	494	348	2777	5886
+Cyclophyllum_henriettae_S376_L004	before	15054	3.594	0.771	0.173	0.053	0.013	0.0	7090852	15.028	7.214	3.527	1.938	0.746	0.0	182	30924	472	373	45.9809	12.9375	40.311	464	343	4557	9056
+Cyclophyllum_henriettae_S376_L004	after	14735	3.672	0.787	0.176	0.054	0.014	0.0	7010701	15.2	7.296	3.567	1.96	0.755	0.0	182	30924	476	376	46.9709	13.4047	40.355	468	346	4471	8882
