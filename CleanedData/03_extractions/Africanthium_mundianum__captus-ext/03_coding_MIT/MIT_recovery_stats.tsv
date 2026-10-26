@@ -1,0 +1,8 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Africanthium_mundianum	MIT	atp6	BAM36206.1-atp6	189-261	prot	73	00	27.97	86.30	0.203	0.745	219	219	0	0		1	1	1	0	0	NODE_1868_length_388_cov_105.1546_k_175_flag_1	+	1-219	105.1546
+Africanthium_mundianum	MIT	ccmFC	BAD83536.2-ccmFC	1-100	prot	100	00	22.83	94.00	0.201	0.884	300	300	0	0		1	1	1	0	0	NODE_1512_length_345_cov_140.0_k_175_flag_1	+	45-344	140.0000
+Africanthium_mundianum	MIT	matR	AIG89909.1-matR	115-354	prot	240	00	36.47	91.25	0.301	0.811	720	720	0	0		1	1	1	0	0	NODE_2013_length_721_cov_213.8696_k_175_flag_1	+	1-720	213.8696
+Africanthium_mundianum	MIT	nad5_exon_4_5	AEK01311.1-nad5_exon_4_5	1-113	prot	113	00	62.78	94.69	0.561	0.897	339	339	0	0		1	1	1	1	0	NODE_2370_length_956_cov_880.5439_k_175_flag_1	-	7-345	880.5439
+Africanthium_mundianum	MIT	rps10	QIV67023.1-rps10	87-120	prot	34	00	28.33	91.18	0.233	0.831	102	102	0	0		1	1	1	0	0	NODE_2313_length_608_cov_145.0658_k_175_flag_1	-	339-440	145.0658

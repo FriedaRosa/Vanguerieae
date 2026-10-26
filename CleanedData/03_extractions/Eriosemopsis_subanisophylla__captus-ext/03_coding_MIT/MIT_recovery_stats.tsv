@@ -1,0 +1,7 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Eriosemopsis_subanisophylla	MIT	ccmB	QGX42491.1-ccmB	161-206	prot	46	00	22.33	95.65	0.204	0.915	138	138	0	0		1	1	1	0	0	NODE_2041_length_317_cov_80.4416_k_175_flag_1	-	180-317	80.4416
+Eriosemopsis_subanisophylla	MIT	nad5_exon_4_5	AEK01311.1-nad5_exon_4_5	1-76	prot	76	00	42.22	86.84	0.311	0.754	219	219	0	0		1	1	1	0	0	NODE_5874_length_559_cov_141.688_k_175_flag_1	-	2-220	141.6880
+Eriosemopsis_subanisophylla	MIT	rpl16	AGC78896.1-rpl16	56-171	prot	116	00	67.84	92.24	0.573	0.851	348	348	0	0		1	1	1	1	0	NODE_1547_length_425_cov_70.5882_k_175_flag_1	+	6-353	70.5882
+Eriosemopsis_subanisophylla	MIT	sdh4	ATD51557.1-sdh4	40-137	prot	98	00	71.53	92.86	0.613	0.841	243	243	0	0	225	1	1	1	1	0	NODE_5670_length_539_cov_31.7254_k_175_flag_1	+	6-247	31.7254

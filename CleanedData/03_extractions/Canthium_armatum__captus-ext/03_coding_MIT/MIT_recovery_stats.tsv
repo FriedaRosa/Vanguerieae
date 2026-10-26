@@ -1,0 +1,21 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Canthium_armatum	MIT	atp1	QOX10099.1-atp1	1-79;157-333	prot	256	00	50.10	96.88	0.470	0.938	768	768	0	0		2	1	2	2	0	NODE_2380_length_461_cov_62.3993_k_175_flag_1;NODE_8996_length_534_cov_28.7152_k_175_flag_1	-;+	1-237;3-533	45.5572
+Canthium_armatum	MIT	atp6	BAM36206.1-atp6	81-186	prot	106	00	40.61	85.85	0.291	0.737	318	318	0	0		1	1	1	0	0	NODE_4213_length_332_cov_45.1807_k_175_flag_1	-	9-326	45.1807
+Canthium_armatum	MIT	atp9	AET62949.1-atp9	6-74	prot	69	00	93.24	89.86	0.743	0.807	207	207	0	0		1	1	1	1	1	NODE_7080_length_1038_cov_28.9017_k_175_flag_1	-	829-1035	28.9017
+Canthium_armatum	MIT	ccmC	QOI73961.1-ccmC	1-85;125-222	prot	183	00	72.91	93.44	0.633	0.872	549	549	0	0		2	1	2	2	0	NODE_2047_length_319_cov_41.6238_k_175_flag_1;NODE_349_length_304_cov_39.4737_k_175_flag_1	-;-	2-256;9-302	40.5487
+Canthium_armatum	MIT	cob	QTT60957.1-cob	1-21;151-271	prot	142	00	36.50	97.18	0.344	0.944	426	426	0	0		2	1	2	0	0	NODE_12001_length_321_cov_45.7944_k_175_flag_1;NODE_1080_length_367_cov_37.6022_k_175_flag_1	+;+	258-320;3-365	41.6983
+Canthium_armatum	MIT	cox1	AIG89850.1-cox1	1-207;420-527	prot	315	00	59.77	97.78	0.571	0.955	945	945	0	0		2	1	2	2	0	NODE_9343_length_886_cov_22.3476_k_175_flag_1;NODE_576_length_442_cov_23.0769_k_175_flag_1	+;+	265-885;3-326	22.7122
+Canthium_armatum	MIT	cox2	AMP43656.1-cox2	47-127	prot	81	00	31.15	95.06	0.281	0.904	243	243	0	0		1	1	1	0	0	NODE_7139_length_374_cov_63.369_k_175_flag_1	-	127-369	63.3690
+Canthium_armatum	MIT	matR	AIG89909.1-matR	117-329;462-611	prot	363	00	55.17	93.11	0.476	0.851	1089	1089	0	0		2	1	2	2	0	NODE_10615_length_641_cov_43.0577_k_175_flag_1;NODE_2218_length_457_cov_30.1969_k_175_flag_1	-;+	2-640;1-450	36.6273
+Canthium_armatum	MIT	nad1_exon_4_5	ACV96637.1-nad1_exon_4_5	50-105	prot	56	00	53.33	96.43	0.495	0.930	168	168	0	0		1	1	1	1	0	NODE_11177_length_278_cov_21.5827_k_175_flag_1	-	107-274	21.5827
+Canthium_armatum	MIT	nad4	QEX95970.1-nad4	1-59;216-325;327-353	prot	196	00	39.60	91.84	0.331	0.842	588	588	0	0		3	1	3	0	0	NODE_2713_length_488_cov_31.9672_k_175_flag_1;NODE_9597_length_400_cov_31.5_k_175_flag_1;NODE_6257_length_453_cov_39.7351_k_175_flag_1	-;-;-	2-178;70-399;2-82	34.4008
+Canthium_armatum	MIT	nad4L	CAQ77604.1-nad4L	22-100	prot	79	00	79.00	97.47	0.750	0.950	237	237	0	0		1	1	1	1	0	NODE_6956_length_352_cov_41.7614_k_175_flag_1	-	112-348	41.7614
+Canthium_armatum	MIT	nad5_exon_4_5	AEK01311.1-nad5_exon_4_5	1-126	prot	126	00	70.00	96.83	0.656	0.938	369	369	0	0		1	1	1	1	0	NODE_3550_length_895_cov_44.2126_k_175_flag_1	+	519-887	44.2126
+Canthium_armatum	MIT	nad6	QCQ81896.1-nad6	1-115;133-205	prot	188	00	91.71	94.15	0.810	0.886	543	543	0	0		2	1	2	1	2	NODE_4756_length_689_cov_26.1248_k_175_flag_1;NODE_1076_length_402_cov_32.8358_k_175_flag_1	+;+	345-689;1-198	29.4803
+Canthium_armatum	MIT	nad9	QSJ48311.1-nad9	3-190	prot	188	00	98.95	97.34	0.937	0.916	564	564	0	0		1	1	1	1	1	NODE_506_length_745_cov_40.8588_k_175_flag_1	-	178-741	40.8588
+Canthium_armatum	MIT	rpl5	QHE65829.1-rpl5	123-185	prot	63	00	34.05	98.41	0.330	0.969	189	189	0	0		1	1	1	0	0	NODE_5142_length_473_cov_31.7125_k_175_flag_1	-	284-472	31.7125
+Canthium_armatum	MIT	rps1	QTC06424.1-rps1	113-205	prot	93	00	45.37	86.02	0.327	0.740	264	264	0	0		1	1	1	0	0	NODE_4744_length_353_cov_24.6459_k_175_flag_1	-	89-352	24.6459
+Canthium_armatum	MIT	rps14	AOO96407.1-rps14	1-91	prot	91	00	91.00	85.71	0.650	0.716	273	273	0	0	104,105	1	1	1	1	1	NODE_5142_length_473_cov_31.7125_k_175_flag_1	-	9-279	31.7125
+Canthium_armatum	MIT	rps4	QOI00140.1-rps4	144-390	prot	247	00	62.53	93.52	0.544	0.875	444	444	0	0		1	1	1	1	0	NODE_3633_length_452_cov_35.177_k_175_flag_1	+	1-444	35.1770

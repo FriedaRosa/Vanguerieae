@@ -1,0 +1,30 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Pygmaeothamnus_zeyheri	PTD	atpF	AFM92265.1-atpF	1-49;51-71;77-184	prot	178	00	96.74	88.20	0.739	0.770	537	537	0	0		3	1	3	1	3	NODE_1070_length_342_cov_78.9474_k_159_flag_1;NODE_389_length_508_cov_58.4646_k_159_flag_1;NODE_408_length_348_cov_21.5517_k_159_flag_1	-;+;+	43-192;446-508;8-331	52.9879
+Pygmaeothamnus_zeyheri	PTD	atpI	QPL15489.1-atpI	181-247	prot	67	00	27.13	100.00	0.271	1.000	201	201	0	0		1	1	1	0	0	NODE_424_length_371_cov_51.752_k_159_flag_1	-	170-370	51.7520
+Pygmaeothamnus_zeyheri	PTD	cemA	AZQ08675.1-cemA	1-14,15-20;121-179	prot	79	00	32.64	87.34	0.244	0.762	753	246	507	0		2	1	2	0	0	NODE_1319_length_1183_cov_216.9685_k_159_flag_1;NODE_1238_length_350_cov_70.2163_k_159_flag_1	+;+	253-304,812-828;166-342	143.5924
+Pygmaeothamnus_zeyheri	PTD	matK	QIS90984.1-matK	1-147;194-400	prot	354	00	70.80	77.97	0.396	0.604	1062	1062	0	0		2	1	2	2	0	NODE_2936_length_715_cov_126.0164_k_159_flag_1;NODE_3858_length_643_cov_94.2457_k_159_flag_1	+;+	131-571;21-641	110.1311
+Pygmaeothamnus_zeyheri	PTD	ndhA	APU51505.1-ndhA	185-299;319-363	prot	160	00	44.08	95.00	0.397	0.902	480	480	0	0		2	1	2	0	0	NODE_2028_length_363_cov_91.7355_k_159_flag_1;NODE_138_length_280_cov_53.5714_k_159_flag_1	-;+	7-351;2-136	72.6534
+Pygmaeothamnus_zeyheri	PTD	ndhE	ABB21008.1-ndhE	1-24;81-101	prot	45	00	44.55	93.33	0.386	0.848	159	159	0	0	86,87	2	1	2	0	0	NODE_2847_length_530_cov_100.7547_k_159_flag_1;NODE_1409_length_548_cov_53.1022_k_159_flag_1	-;-	7-78;205-289	76.9284
+Pygmaeothamnus_zeyheri	PTD	ndhG	QKX48822.1-ndhG	130-176	prot	47	00	26.70	89.36	0.210	0.799	141	141	0	0		1	1	1	0	0	NODE_2847_length_530_cov_100.7547_k_159_flag_1	-	211-351	100.7547
+Pygmaeothamnus_zeyheri	PTD	ndhI	APA33661.1-ndhI	1-19;57-127;128-166	prot	129	00	77.71	92.25	0.657	0.849	390	390	0	0		3	1	3	2	0	NODE_138_length_280_cov_53.5714_k_159_flag_1;NODE_175_length_568_cov_63.3803_k_159_flag_1;NODE_23_length_264_cov_47.7273_k_159_flag_1	+;+;+	224-280;344-556;9-128	54.8930
+Pygmaeothamnus_zeyheri	PTD	pafII	ATU07177.1-pafII	1-75	prot	75	00	40.76	89.33	0.321	0.798	225	225	0	0		1	1	1	0	0	NODE_369_length_430_cov_60.6977_k_159_flag_1	+	206-430	60.6977
+Pygmaeothamnus_zeyheri	PTD	petA	QEJ83256.1-petA	248-320	prot	73	00	22.81	94.52	0.203	0.893	219	219	0	0		1	1	1	0	0	NODE_2261_length_359_cov_88.5794_k_159_flag_1	+	1-219	88.5794
+Pygmaeothamnus_zeyheri	PTD	petG	BAB47052.1-petG	1-19	prot	19	00	51.35	100.00	0.514	1.000	57	57	0	0		1	1	1	1	0	NODE_2050_length_260_cov_86.5385_k_159_flag_1	+	169-225	86.5385
+Pygmaeothamnus_zeyheri	PTD	petL	BAB47051.1-petL	24-31	prot	8	00	25.81	100.00	0.258	1.000	24	24	0	0		1	1	1	0	0	NODE_2050_length_260_cov_86.5385_k_159_flag_1	+	4-27	86.5385
+Pygmaeothamnus_zeyheri	PTD	petN	BAB47023.1-petN	11-29	prot	19	00	65.52	100.00	0.655	1.000	57	57	0	0		1	1	1	1	0	NODE_3623_length_397_cov_430.1562_k_159_flag_1	-	338-394	430.1562
+Pygmaeothamnus_zeyheri	PTD	psaC	BAO01544.1-psaC	31-81	prot	51	00	62.96	100.00	0.630	1.000	153	153	0	0		1	1	1	1	0	NODE_226_length_266_cov_63.1579_k_159_flag_1	-	111-263	63.1579
+Pygmaeothamnus_zeyheri	PTD	psaI	AKJ25319.1-psaI	5-23	prot	19	00	52.78	89.47	0.417	0.781	45	45	0	0	29,30	1	1	1	1	0	NODE_2089_length_391_cov_112.7954_k_159_flag_1	+	260-302	112.7954
+Pygmaeothamnus_zeyheri	PTD	psbI	BAB47018.1-psbI	19-36	prot	18	00	50.00	100.00	0.500	1.000	54	54	0	0		1	1	1	1	0	NODE_2731_length_338_cov_45.2663_k_159_flag_1	+	4-57	45.2663
+Pygmaeothamnus_zeyheri	PTD	psbJ	AAX21043.1-psbJ	1-33	prot	33	00	82.50	96.97	0.775	0.900	99	99	0	0		1	1	1	1	0	NODE_2116_length_314_cov_61.1465_k_159_flag_1	-	9-107	61.1465
+Pygmaeothamnus_zeyheri	PTD	psbL	BAO19729.1-psbL	19-38	prot	20	00	52.63	100.00	0.526	1.000	60	60	0	0		1	1	1	1	0	NODE_2116_length_314_cov_61.1465_k_159_flag_1	-	252-311	61.1465
+Pygmaeothamnus_zeyheri	PTD	rpl23	BAO01536.1-rpl23	1-54	prot	54	00	58.06	98.15	0.559	0.858	162	162	0	0		1	1	1	1	0	NODE_3092_length_317_cov_106.9401_k_159_flag_1	+	150-311	106.9401
+Pygmaeothamnus_zeyheri	PTD	rpl36	BAX84123.1-rpl36	25-37	prot	13	00	35.14	92.31	0.297	0.852	39	39	0	0		1	1	1	0	0	NODE_2899_length_280_cov_62.4889_k_159_flag_1	-	238-276	62.4889
+Pygmaeothamnus_zeyheri	PTD	rps11	QAV58545.1-rps11	1-44	prot	44	00	31.88	84.09	0.217	0.707	132	132	0	0		1	1	1	0	0	NODE_2899_length_280_cov_62.4889_k_159_flag_1	-	2-133	62.4889
+Pygmaeothamnus_zeyheri	PTD	rps12_exon_1	CAD28682.1-rps12_exon_1	1-22	prot	22	00	57.89	95.45	0.526	0.911	66	66	0	0		1	1	1	1	0	NODE_3757_length_286_cov_63.986_k_159_flag_1	+	213-278	63.9860
+Pygmaeothamnus_zeyheri	PTD	rps14	AEJ82553.1-rps14	1-75	prot	75	00	75.00	89.33	0.590	0.773	225	225	0	0		1	1	1	1	0	NODE_1332_length_289_cov_71.6263_k_159_flag_1	-	8-232	71.6263
+Pygmaeothamnus_zeyheri	PTD	rps2	QBC66712.1-rps2	162-236	prot	75	00	31.78	96.00	0.292	0.922	225	225	0	0		1	1	1	0	0	NODE_677_length_263_cov_59.3156_k_159_flag_1	+	1-225	59.3156
+Pygmaeothamnus_zeyheri	PTD	rps3	QNR93324.1-rps3	61-179	prot	119	00	54.59	85.71	0.390	0.729	357	357	0	0		1	1	1	1	0	NODE_2612_length_367_cov_49.8638_k_159_flag_1	+	4-360	49.8638
+Pygmaeothamnus_zeyheri	PTD	rps4	ARQ81760.1-rps4	1-66;170-201	prot	98	00	48.76	95.92	0.448	0.919	294	294	0	0		2	1	2	0	0	NODE_117_length_412_cov_47.7794_k_159_flag_1;NODE_1838_length_263_cov_110.6464_k_159_flag_1	-;+	1-198;2-97	79.2129
+Pygmaeothamnus_zeyheri	PTD	rps8	BAA84420.1-rps8	11-63	prot	53	00	39.55	81.13	0.246	0.652	159	159	0	0		1	1	1	0	0	NODE_1311_length_263_cov_42.2053_k_159_flag_1	-	101-259	42.2053

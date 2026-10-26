@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Peponidium_sp.	PTD	psaI	AMB35759.1-psaI	26-33	prot	8	00	22.22	100.00	0.222	1.000	24	24	0	0		1	1	1	0	0	NODE_264_length_666_cov_497.8477_k_175_flag_0	-	154-177	497.8477
+Peponidium_sp.	PTD	rps12_exon_2_3	CAD28682.1-rps12_exon_2_3	34-85	prot	52	00	61.18	92.31	0.518	0.836	141	141	0	0		1	1	1	1	0	NODE_2391_length_308_cov_122.7273_k_175_flag_1	+	4-144	122.7273

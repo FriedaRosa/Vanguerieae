@@ -1,0 +1,22 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Ixora_sp	PTD	petB	QGT35023.1-petB	81-218	prot	138	00	63.30	93.48	0.550	0.874	201	201	0	0		1	1	1	1	0	NODE_2173_length_511_cov_18.7867_k_175_flag_1	+	6-206	18.7867
+Ixora_sp	PTD	petL	BAH11276.1-petL	8-15	prot	8	00	25.81	100.00	0.258	1.000	24	24	0	0		1	1	1	0	0	NODE_9350_length_928_cov_31.0345_k_175_flag_1	-	838-861	31.0345
+Ixora_sp	PTD	psaI	AKA94873.1-psaI	4-14	prot	11	00	32.35	81.82	0.206	0.669	33	33	0	0		1	1	1	0	0	NODE_5068_length_318_cov_4.717_k_175_flag_1	+	253-285	4.7170
+Ixora_sp	PTD	psaJ	BAE47614.1-psaJ	10-44	prot	35	00	79.55	94.29	0.705	0.889	291	291	0	0		1	1	1	1	0	NODE_9667_length_399_cov_5.2632_k_175_flag_1	+	25-315	5.2632
+Ixora_sp	PTD	psbA	ACB86507.1-psbA	115-135;164-236	prot	94	00	26.63	98.94	0.261	0.978	282	282	0	0		2	1	2	0	0	NODE_11612_length_363_cov_2.4793_k_175_flag_1;NODE_9881_length_299_cov_2.0067_k_175_flag_1	+;+	1-63;81-299	2.2430
+Ixora_sp	PTD	psbI	BAB47018.1-psbI	12-30	prot	19	00	52.78	78.95	0.306	0.623	492	492	0	0		1	1	1	1	0	NODE_8873_length_717_cov_5.8577_k_175_flag_0	+	31-522	5.8577
+Ixora_sp	PTD	psbK	CDH98475.2-psbK	14-54	prot	41	00	63.08	95.12	0.569	0.882	54	54	0	0	26,27	1	1	1	1	0	NODE_11244_length_438_cov_7.5342_k_175_flag_1	-	143-194	7.5342
+Ixora_sp	PTD	psbK	CDH98475.2-psbK	17-51	prot	35	01	53.85	100.00	0.538	0.878	108	108	0	0	18,98,99	1	1	1	1	0	NODE_9733_length_528_cov_19.5063_k_175_flag_1	-	350-454	19.5063
+Ixora_sp	PTD	psbK	CDH98475.2-psbK	17-54	prot	38	02	58.46	94.74	0.523	0.821	255	255	0	0	23,24,171	1	1	1	1	0	NODE_9312_length_434_cov_5.53_k_175_flag_1	-	31-282	5.5300
+Ixora_sp	PTD	rpl2	QRI61044.1-rpl2	53-130;140-170;188-275	prot	197	00	71.64	94.92	0.644	0.855	690	690	0	0	381,402	3	2	3	2	0	NODE_4396_length_354_cov_5.0847_k_175_flag_1;NODE_10712_length_634_cov_6.6246_k_175_flag_1;NODE_10595_length_605_cov_5.9504_k_175_flag_1	-;-;+	37-270;440-632;183-443	5.8866
+Ixora_sp	PTD	rpl23	BAO01536.1-rpl23	1-93	prot	93	00	100.00	79.57	0.591	0.602	237	237	0	0		1	1	1	1	1	NODE_4983_length_334_cov_5.3892_k_175_flag_1	+	26-262	5.3892
+Ixora_sp	PTD	rpl33	AEY84154.1-rpl33	1-68	prot	68	00	100.00	89.71	0.794	0.805	87	87	0	0		1	1	1	1	1	NODE_8475_length_409_cov_2.2005_k_175_flag_1	-	4-90	2.2005
+Ixora_sp	PTD	rpl33	AEY84154.1-rpl33	1-63	prot	63	01	92.65	84.13	0.632	0.681	183	183	0	0		1	1	1	1	1	NODE_1745_length_674_cov_3.1157_k_175_flag_1	-	8-190	3.1157
+Ixora_sp	PTD	rps12_exon_1	AII40871.1-rps12_exon_1	1-20	prot	20	00	52.63	85.00	0.368	0.704	201	201	0	0	30	1	1	1	1	0	NODE_12020_length_465_cov_5.8058_k_175_flag_1	+	225-424	5.8058
+Ixora_sp	PTD	rps12_exon_1	AII40871.1-rps12_exon_1	5-19	prot	15	01	39.47	86.67	0.289	0.634	294	294	0	0	278,279	1	1	1	0	0	NODE_7840_length_1049_cov_12.8949_k_175_flag_1	+	362-653	12.8949
+Ixora_sp	PTD	rps12_exon_2_3	AGG39190.1-rps12_exon_2_3	1-41	prot	41	00	50.62	97.56	0.481	0.952	123	123	0	0		1	1	1	1	0	NODE_11678_length_778_cov_14.5377_k_175_flag_1	-	8-130	14.5377
+Ixora_sp	PTD	rps14	AEJ82553.1-rps14	9-87	prot	79	00	79.00	92.41	0.670	0.828	237	237	0	0		1	1	1	1	0	NODE_8171_length_391_cov_5.3708_k_175_flag_1	+	131-367	5.3708
+Ixora_sp	PTD	rps19	ADY15391.1-rps19	1-30	prot	30	00	32.61	90.00	0.261	0.810	90	90	0	0		1	1	1	0	0	NODE_10595_length_605_cov_5.9504_k_175_flag_1	+	509-598	5.9504
+Ixora_sp	PTD	rps8	QKE31461.1-rps8	1-44	prot	44	00	32.12	81.82	0.204	0.669	132	132	0	0		1	1	1	0	0	NODE_4910_length_844_cov_5.3342_k_175_flag_1	-	2-133	5.3342

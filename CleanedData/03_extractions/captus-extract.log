@@ -656,3 +656,1766 @@ Statistics Summarization (2026-10-21 22:53:09)
 Captus-assembly: EXTRACT -> successfully completed [3.360s] (2026-10-21 22:53:10)
 ---------------------------------------------------------------------------------
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: EXTRACT (2026-10-24 09:13:18)
+-------------------------------------------------------
+    Welcome to the marker extraction step of Captus-assembly. In this step, Captus will use Scipio to search within your FASTA assemblies and recover any set of reference proteins provided through '--nuc_refs', '--ptd_refs', and/or '--mit_refs'. Captus includes some reference protein sets to work with Plants like the 'Angiosperms353' protein set for nuclear genes, and two organellar protein reference sets 'SeedPlantsPTD' for plastids, and 'SeedPlantsMIT' for mitochondria.
+    If you have references that are not proteins (e.g. non-coding regions, gene sequences including introns, full mRNAs, etc.) You can provide these miscellaneous DNA references with '--dna_refs' and Captus will use BLAT to find and extract matches in your assemblies.
+    Finally, if you want to explore the usefulness of the contigs that were not hit by any protein or other DNA references after the Captus' extraction process, or simply if you do not have reference sets to test, you can try the option '--cluster_leftovers' to attempt sequence clustering across samples in order to discover homologous markers.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+             Captus version: v1.6.6
+                    Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+                         OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                       Host: emb-lap-frwo
+                   Max. RAM: 15.2GB (out of 15.4GB)
+               Max. Threads: 14 (out of 14)
+
+               Dependencies:
+                  Scipio   : v1.4.1 OK
+                  ├─BioPerl: v1.7.8 OK
+                  └─YAML   : v1.30 OK
+                  BLAT     : v37x1 OK
+                  MMseqs2  : not used
+                  MAFFT    : not used
+
+           Python libraries:
+                      numpy: v2.5.3 OK
+                     pandas: v3.0.5 OK
+                     plotly: v7.0.0 OK
+
+      Assembly dirs checked: 61
+           Valid assemblies: 61
+
+           Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions
+                             Output directory already exists and files may be overwritten
+
+
+
+Protein and DNA Markers Extraction from FASTA assemblies (2026-10-24 09:13:20)
+------------------------------------------------------------------------------
+    Now Captus will search within your FASTA assemblies for the set of reference proteins provided by '--nuc_refs', '--ptd_refs', and/or '--mit_refs' and extract the sequences both in nucleotide and translated to aminoacid using the specified '--nuc_transtable', '--ptd_transtable' and '--mit_transtable' respectively.
+    Additionally, miscellaneous DNA references provided with '--dna_refs' will also be extracted.
+
+Verifying protein reference sets...
+
+            PROTEIN OPTIONS:
+    Max. loci for Scipio x2: 2000
+    Predict dubious introns: False
+     Concurrent extractions: 3
+         RAM per extraction: 5.1GB
+     Threads per extraction: 4
+
+           Nuclear proteins:
+                  reference: Mega353 /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/Mega353.FAA
+             reference info: 353 loci, 15,371 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              nuc_min_score: 0.13
+           nuc_min_identity: 65
+           nuc_min_coverage: 20
+        nuc_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+        Plastidial proteins:
+                  reference: SeedPlantsPTD /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsPTD.FAA
+             reference info: 83 loci, 2,194 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 11
+              ptd_min_score: 0.2
+           ptd_min_identity: 65
+           ptd_min_coverage: 20
+        ptd_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+     Mitochondrial proteins:
+                  reference: SeedPlantsMIT /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsMIT.FAA
+             reference info: 45 loci, 167 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              mit_min_score: 0.2
+           mit_min_identity: 65
+           mit_min_coverage: 20
+        mit_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+
+  MISCELLANEOUS DNA OPTIONS:
+                  reference: not used
+
+
+             OUTPUT OPTIONS:
+   Ignore depth of coverage: False
+   Disable contig stitching: False
+         Max. locus overlap: 5.0%
+ Paralog identity tolerance: 0.66
+ Paralog coverage tolerance: 0.33
+    Paralog depth tolerance: 0.33
+              Max. paralogs: -1 (Keep all paralogs)
+   Max. separate loci files: 0 (Do not write separate loci files per sample)
+            Overwrite files: False
+             Keep all files: False
+
+         Samples to process: 61
+     Extractions to process: 183 protein and 0 nucleotide
+
+           Nuclear proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/01_coding_NUC
+        Plastidial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/02_coding_PTD
+     Mitochondrial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/03_coding_MIT
+       Annotated assemblies: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/06_assembly_annotated
+                             (These output directories will be created for each sample)
+
+   Paths to references used: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_refs.json
+
+Extracting protein-coding markers with Scipio:
+'Afrocanthium_gilfillanii_S627_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': recovered 76 plastidial genes (91.6% of 83), 76.1% of total reference length, 12 paralogs found [4m 8.8s (248.818s)]
+'Keetia_hispida_S383_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': recovered 41 mitochondrial genes (91.1% of 45), 84.0% of total reference length, 1 paralogs found [5m 34.7s (334.719s)]
+'Psydrax_odoratus': recovered 80 plastidial genes (96.4% of 83), 91.1% of total reference length, 9 paralogs found [5m 1.5s (301.484s)]
+'Psydrax_odoratus': recovered 40 mitochondrial genes (88.9% of 45), 88.5% of total reference length, 4 paralogs found [12m 33.7s (753.652s)]
+'Pyrostria_commersonii_S618_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': recovered 345 nuclear genes (97.7% of 353), 76.5% of total reference length, 61 paralogs found [27m 5.3s (1625.262s)]
+'Pyrostria_sp': recovered 28 plastidial genes (33.7% of 83), 14.6% of total reference length, 2 paralogs found [1m 6.7s (66.659s)]
+'Pyrostria_sp': recovered 12 mitochondrial genes (26.7% of 45), 15.4% of total reference length, 0 paralogs found [31.513s]
+'Vangueriopsis_lanciflora_S446_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': recovered 348 nuclear genes (98.6% of 353), 80.4% of total reference length, 97 paralogs found [35m 20.5s (2120.515s)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: EXTRACT (2026-10-24 09:57:45)
+-------------------------------------------------------
+    Welcome to the marker extraction step of Captus-assembly. In this step, Captus will use Scipio to search within your FASTA assemblies and recover any set of reference proteins provided through '--nuc_refs', '--ptd_refs', and/or '--mit_refs'. Captus includes some reference protein sets to work with Plants like the 'Angiosperms353' protein set for nuclear genes, and two organellar protein reference sets 'SeedPlantsPTD' for plastids, and 'SeedPlantsMIT' for mitochondria.
+    If you have references that are not proteins (e.g. non-coding regions, gene sequences including introns, full mRNAs, etc.) You can provide these miscellaneous DNA references with '--dna_refs' and Captus will use BLAT to find and extract matches in your assemblies.
+    Finally, if you want to explore the usefulness of the contigs that were not hit by any protein or other DNA references after the Captus' extraction process, or simply if you do not have reference sets to test, you can try the option '--cluster_leftovers' to attempt sequence clustering across samples in order to discover homologous markers.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+             Captus version: v1.6.6
+                    Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+                         OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                       Host: emb-lap-frwo
+                   Max. RAM: 15.2GB (out of 15.4GB)
+               Max. Threads: 14 (out of 14)
+
+               Dependencies:
+                  Scipio   : v1.4.1 OK
+                  ├─BioPerl: v1.7.8 OK
+                  └─YAML   : v1.30 OK
+                  BLAT     : v37x1 OK
+                  MMseqs2  : not used
+                  MAFFT    : not used
+
+           Python libraries:
+                      numpy: v2.5.3 OK
+                     pandas: v3.0.5 OK
+                     plotly: v7.0.0 OK
+
+      Assembly dirs checked: 61
+           Valid assemblies: 61
+
+           Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions
+                             Output directory already exists and files may be overwritten
+
+
+
+Protein and DNA Markers Extraction from FASTA assemblies (2026-10-24 09:57:46)
+------------------------------------------------------------------------------
+    Now Captus will search within your FASTA assemblies for the set of reference proteins provided by '--nuc_refs', '--ptd_refs', and/or '--mit_refs' and extract the sequences both in nucleotide and translated to aminoacid using the specified '--nuc_transtable', '--ptd_transtable' and '--mit_transtable' respectively.
+    Additionally, miscellaneous DNA references provided with '--dna_refs' will also be extracted.
+
+Verifying protein reference sets...
+
+            PROTEIN OPTIONS:
+    Max. loci for Scipio x2: 2000
+    Predict dubious introns: False
+     Concurrent extractions: 3
+         RAM per extraction: 5.1GB
+     Threads per extraction: 4
+
+           Nuclear proteins:
+                  reference: Mega353 /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/Mega353.FAA
+             reference info: 353 loci, 15,371 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              nuc_min_score: 0.13
+           nuc_min_identity: 65
+           nuc_min_coverage: 20
+        nuc_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+        Plastidial proteins:
+                  reference: SeedPlantsPTD /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsPTD.FAA
+             reference info: 83 loci, 2,194 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 11
+              ptd_min_score: 0.2
+           ptd_min_identity: 65
+           ptd_min_coverage: 20
+        ptd_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+     Mitochondrial proteins:
+                  reference: SeedPlantsMIT /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsMIT.FAA
+             reference info: 45 loci, 167 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              mit_min_score: 0.2
+           mit_min_identity: 65
+           mit_min_coverage: 20
+        mit_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+
+  MISCELLANEOUS DNA OPTIONS:
+                  reference: not used
+
+
+             OUTPUT OPTIONS:
+   Ignore depth of coverage: False
+   Disable contig stitching: False
+         Max. locus overlap: 5.0%
+ Paralog identity tolerance: 0.66
+ Paralog coverage tolerance: 0.33
+    Paralog depth tolerance: 0.33
+              Max. paralogs: -1 (Keep all paralogs)
+   Max. separate loci files: 0 (Do not write separate loci files per sample)
+            Overwrite files: False
+             Keep all files: False
+
+         Samples to process: 61
+     Extractions to process: 183 protein and 0 nucleotide
+
+           Nuclear proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/01_coding_NUC
+        Plastidial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/02_coding_PTD
+     Mitochondrial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/03_coding_MIT
+       Annotated assemblies: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/06_assembly_annotated
+                             (These output directories will be created for each sample)
+
+   Paths to references used: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_refs.json
+
+Extracting protein-coding markers with Scipio:
+'Afrocanthium_gilfillanii_S627_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': recovered 80 plastidial genes (96.4% of 83), 92.3% of total reference length, 2 paralogs found [1m 7.9s (67.941s)]
+'Temnocalyx_nodulosa': recovered 31 mitochondrial genes (68.9% of 45), 39.5% of total reference length, 0 paralogs found [3m 49.9s (229.869s)]
+'Temnocalyx_nodulosa': recovered 325 nuclear genes (92.1% of 353), 59.1% of total reference length, 37 paralogs found [4m 30.8s (270.848s)]
+'Vangueria_ferruginea': recovered 56 plastidial genes (67.5% of 83), 33.1% of total reference length, 2 paralogs found [51.257s]
+'Peponidium_crassifolium_S628_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': recovered 15 mitochondrial genes (33.3% of 45), 20.1% of total reference length, 2 paralogs found [16.146s]
+'Cyclophyllum_guillauminianum': recovered 63 plastidial genes (75.9% of 83), 49.8% of total reference length, 8 paralogs found [1m 8.6s (68.563s)]
+'Cyclophyllum_guillauminianum': recovered 15 mitochondrial genes (33.3% of 45), 18.7% of total reference length, 0 paralogs found [24.382s]
+'Keetia_gueinzii_S519_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': recovered 316 nuclear genes (89.5% of 353), 55.1% of total reference length, 36 paralogs found [5m 19.9s (319.900s)]
+'Canthium_armatum': recovered 72 plastidial genes (86.7% of 83), 78.4% of total reference length, 1 paralogs found [45.968s]
+'Vangueria_ferruginea': recovered 343 nuclear genes (97.2% of 353), 73.7% of total reference length, 42 paralogs found [10m 42.2s (642.226s)]
+'Canthium_armatum': recovered 18 mitochondrial genes (40.0% of 45), 24.3% of total reference length, 0 paralogs found [1m 39.7s (99.708s)]
+'Ixora_sp': recovered 15 plastidial genes (18.1% of 83), 3.8% of total reference length, 4 paralogs found [45.046s]
+'Ixora_sp': recovered 1 mitochondrial genes (2.2% of 45), 0.4% of total reference length, 0 paralogs found [10.928s]
+'Multidentia_sclerocarpa_S374_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Ixora_sp': recovered 231 nuclear genes (65.4% of 353), 28.3% of total reference length, 22 paralogs found [2m 45.5s (165.548s)]
+'Globulostylis_leniochlamys': recovered 72 plastidial genes (86.7% of 83), 69.4% of total reference length, 0 paralogs found [25.609s]
+'Globulostylis_leniochlamys': recovered 7 mitochondrial genes (15.6% of 45), 8.3% of total reference length, 0 paralogs found [25.278s]
+'Canthium_armatum': recovered 348 nuclear genes (98.6% of 353), 76.0% of total reference length, 153 paralogs found [14m 18.7s (858.689s)]
+'Eriosemopsis_subanisophylla': recovered 65 plastidial genes (78.3% of 83), 66.2% of total reference length, 0 paralogs found [1m 12.3s (72.290s)]
+'Eriosemopsis_subanisophylla': recovered 4 mitochondrial genes (8.9% of 45), 2.9% of total reference length, 0 paralogs found [21.784s]
+'Globulostylis_leniochlamys': recovered 341 nuclear genes (96.6% of 353), 71.7% of total reference length, 61 paralogs found [12m 32.3s (752.256s)]
+'Rytigynia_sp.': recovered 29 plastidial genes (34.9% of 83), 18.3% of total reference length, 0 paralogs found [35.421s]
+'Rytigynia_sp.': recovered 2 mitochondrial genes (4.4% of 45), 1.2% of total reference length, 0 paralogs found [13.184s]
+'Eriosemopsis_subanisophylla': recovered 339 nuclear genes (96.0% of 353), 75.4% of total reference length, 176 paralogs found [20m 21.5s (1221.511s)]
+'Vangueriella_chlorantha': recovered 3 plastidial genes (3.6% of 83), 1.5% of total reference length, 0 paralogs found [28.151s]
+'Vangueriella_chlorantha': recovered 1 mitochondrial genes (2.2% of 45), 0.7% of total reference length, 0 paralogs found [11.849s]
+'Rytigynia_sp.': recovered 345 nuclear genes (97.7% of 353), 76.3% of total reference length, 39 paralogs found [32m 24.4s (1944.407s)]
+'Peponidium_sp.': recovered 2 plastidial genes (2.4% of 83), 0.2% of total reference length, 0 paralogs found [24.855s]
+'Peponidium_sp.': FAILED extraction of mitochondrial genes
+'Vangueriella_chlorantha': recovered 344 nuclear genes (97.5% of 353), 77.4% of total reference length, 78 paralogs found [38m 13.7s (2293.721s)]
+'Africanthium_mundianum': recovered 24 plastidial genes (28.9% of 83), 13.8% of total reference length, 1 paralogs found [55.496s]
+'Africanthium_mundianum': recovered 5 mitochondrial genes (11.1% of 45), 4.8% of total reference length, 0 paralogs found [27.724s]
+'Peponidium_sp.': recovered 341 nuclear genes (96.6% of 353), 73.9% of total reference length, 133 paralogs found [45m 40.9s (2740.938s)]
+'Pygmaeothamnus_zeyheri': recovered 317 nuclear genes (89.8% of 353), 56.5% of total reference length, 63 paralogs found [16m 15.0s (974.956s)]
+'Pygmaeothamnus_zeyheri': recovered 27 plastidial genes (32.5% of 83), 8.0% of total reference length, 0 paralogs found [54.152s]
+'Pygmaeothamnus_zeyheri': FAILED extraction of mitochondrial genes
+'Hutchinsonia_barbata': recovered 1 plastidial genes (1.2% of 83), 0.0% of total reference length, 0 paralogs found [38.444s]
+'Hutchinsonia_barbata': FAILED extraction of mitochondrial genes
+'Multidentia_exserta_S443_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Africanthium_mundianum': recovered 342 nuclear genes (96.9% of 353), 77.6% of total reference length, 77 paralogs found [42m 42.1s (2562.104s)]
+'Fadoginella_rogersii': recovered 1 plastidial genes (1.2% of 83), 0.1% of total reference length, 0 paralogs found [18.749s]
+'Fadoginella_rogersii': FAILED extraction of mitochondrial genes
+'Hutchinsonia_barbata': recovered 337 nuclear genes (95.5% of 353), 70.6% of total reference length, 52 paralogs found [20m 9.6s (1209.625s)]
+'Fadogia_ancylantha': recovered 62 plastidial genes (74.7% of 83), 50.9% of total reference length, 2 paralogs found [48.944s]
+'Fadogia_ancylantha': recovered 4 mitochondrial genes (8.9% of 45), 2.1% of total reference length, 0 paralogs found [26.508s]
+'Fadoginella_rogersii': recovered 338 nuclear genes (95.8% of 353), 71.9% of total reference length, 75 paralogs found [24m 33.7s (1473.734s)]
+'Keetia_hispida': recovered 1 plastidial genes (1.2% of 83), 0.1% of total reference length, 0 paralogs found [11.684s]
+'Fadogia_ancylantha': recovered 334 nuclear genes (94.6% of 353), 66.3% of total reference length, 41 paralogs found [10m 35.8s (635.791s)]
+'Vangueria_madagascariensis_S602_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_hispida': FAILED extraction of mitochondrial genes
+'Bridsonia_chamaedendrum': recovered 3 plastidial genes (3.6% of 83), 0.6% of total reference length, 0 paralogs found [17.060s]
+'Bridsonia_chamaedendrum': FAILED extraction of mitochondrial genes
+'Keetia_hispida': recovered 338 nuclear genes (95.8% of 353), 69.3% of total reference length, 100 paralogs found [10m 15.7s (615.741s)]
+'Bullockia_mombazensis': FAILED extraction of plastidial genes
+'Bullockia_mombazensis': FAILED extraction of mitochondrial genes
+'Bullockia_mombazensis': recovered 333 nuclear genes (94.3% of 353), 66.4% of total reference length, 84 paralogs found [10m 0.1s (600.070s)]
+'Vangueriopsis_lanciflora': recovered 1 plastidial genes (1.2% of 83), 0.0% of total reference length, 0 paralogs found [9.387s]
+'Vangueriopsis_lanciflora': FAILED extraction of mitochondrial genes
+'Bridsonia_chamaedendrum': recovered 334 nuclear genes (94.6% of 353), 69.0% of total reference length, 69 paralogs found [11m 31.7s (691.703s)]
+'Robynsia_glabra': recovered 3 plastidial genes (3.6% of 83), 0.5% of total reference length, 0 paralogs found [9.111s]
+'Robynsia_glabra': FAILED extraction of mitochondrial genes
+'Vangueriopsis_lanciflora': recovered 336 nuclear genes (95.2% of 353), 66.8% of total reference length, 88 paralogs found [8m 40.0s (519.997s)]
+'Cuviera_acutiflora': recovered 2 plastidial genes (2.4% of 83), 0.5% of total reference length, 0 paralogs found [7.576s]
+'Cuviera_acutiflora': FAILED extraction of mitochondrial genes
+'Cuviera_acutiflora': recovered 290 nuclear genes (82.2% of 353), 46.2% of total reference length, 51 paralogs found [2m 59.7s (179.678s)]
+'Meyna_laxiflora': recovered 3 plastidial genes (3.6% of 83), 0.7% of total reference length, 0 paralogs found [9.491s]
+'Meyna_laxiflora': FAILED extraction of mitochondrial genes
+'Meyna_laxiflora': recovered 223 nuclear genes (63.2% of 353), 26.3% of total reference length, 12 paralogs found [57.243s]
+'Perakanthus_velutinus': FAILED extraction of plastidial genes
+'Perakanthus_velutinus': recovered 101 nuclear genes (28.6% of 353), 10.5% of total reference length, 4 paralogs found [51.755s]
+'Perakanthus_velutinus': FAILED extraction of mitochondrial genes
+'Canthiumera_glabra': FAILED extraction of plastidial genes
+'Canthiumera_glabra': FAILED extraction of mitochondrial genes
+'Canthiumera_glabra': recovered 124 nuclear genes (35.1% of 353), 12.3% of total reference length, 4 paralogs found [26.104s]
+'Robynsia_glabra': recovered 336 nuclear genes (95.2% of 353), 65.3% of total reference length, 84 paralogs found [6m 0.0s (360.018s)]
+ └─→ Protein-coding markers: finished processing for 183 extraction(s) [2h 5m 58.9s (7558.872s)]
+
+Merging GFFs, summarizing recovery stats, and cleaning up:
+'Afrocanthium_gilfillanii_S627_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': GFF was empty, marker extraction FAILED [0.024s]
+'Temnocalyx_nodulosus_S587_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': GFF was empty, marker extraction FAILED [0.027s]
+'Everistia_vacciniifolia_S490_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_crassa': GFF was empty, marker extraction FAILED [0.047s]
+'Multidentia_sclerocarpa_S374_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Africanthium_mundianum': GFF annotations and recovery stats merged, unnecessary files removed [0.855s]
+'Eriosemopsis_subanisophylla': GFF annotations and recovery stats merged, unnecessary files removed [2.079s]
+'Multidentia_exserta_S443_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Peponidium_sp.': GFF annotations and recovery stats merged, unnecessary files removed [1.202s]
+'Rytigynia_sp.': GFF annotations and recovery stats merged, unnecessary files removed [2.239s]
+'Pygmaeothamnus_zeyheri': GFF annotations and recovery stats merged, unnecessary files removed [1.125s]
+'Vangueria_madagascariensis_S602_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': GFF annotations and recovery stats merged, unnecessary files removed [2.783s]
+'Fadogia_ancylantha': GFF annotations and recovery stats merged, unnecessary files removed [0.884s]
+'Bullockia_mombazensis': GFF annotations and recovery stats merged, unnecessary files removed [0.437s]
+'Fadoginella_rogersii': GFF annotations and recovery stats merged, unnecessary files removed [1.056s]
+'Bridsonia_chamaedendrum': GFF annotations and recovery stats merged, unnecessary files removed [0.872s]
+'Hutchinsonia_barbata': GFF annotations and recovery stats merged, unnecessary files removed [1.287s]
+'Keetia_hispida': GFF annotations and recovery stats merged, unnecessary files removed [1.020s]
+'Vangueriopsis_lanciflora': GFF annotations and recovery stats merged, unnecessary files removed [0.679s]
+'Robynsia_glabra': GFF annotations and recovery stats merged, unnecessary files removed [0.473s]
+'Cuviera_acutiflora': GFF annotations and recovery stats merged, unnecessary files removed [0.393s]
+'Perakanthus_velutinus': GFF annotations and recovery stats merged, unnecessary files removed [0.321s]
+'Canthiumera_glabra': GFF annotations and recovery stats merged, unnecessary files removed [0.335s]
+'Meyna_laxiflora': GFF annotations and recovery stats merged, unnecessary files removed [0.497s]
+'Canthium_armatum': GFF annotations and recovery stats merged, unnecessary files removed [4.099s]
+'Ixora_sp': GFF annotations and recovery stats merged, unnecessary files removed [4.628s]
+'Cyclophyllum_guillauminianum': GFF annotations and recovery stats merged, unnecessary files removed [5.342s]
+'Pyrostria_revoluta': GFF annotations and recovery stats merged, unnecessary files removed [5.791s]
+'Canthium_sp.': GFF annotations and recovery stats merged, unnecessary files removed [5.867s]
+'Psydrax_odoratus': GFF annotations and recovery stats merged, unnecessary files removed [12.180s]
+'Everistia_vacciniifolia': GFF annotations and recovery stats merged, unnecessary files removed [15.533s]
+ └─→ Merged GFF and summary recovery stats created for 61 sample(s) [16.329s]
+
+
+
+Clustering and Extracting Markers Across Samples with MMseqs2/BLAT (2026-10-24 12:04:02)
+----------------------------------------------------------------------------------------
+    Now Captus will cluster the assembly sequences across samples to discover homologous markers. If protein and/or miscellaneous DNA references sequences were extracted in the previous step, the '06_assembly_annotated/leftover_contigs.fasta.gz' files from each sample will be used for clustering, otherwise the '01_assembly/assembly.fasta' files are used. USE WITH CAUTION: Clustering time and/or success will depend on the size of your assembly files, it should be safe to use if you assembled captured data, RNAseq reads, or even genome skimming data.
+    After clustering has been completed, only the clusters with at least '--cl_min_samples' will be considered and a single representative sequence from each cluster will be selected to create a new reference file to perform a final DNA marker extraction across all samples. The extraction of these new markers is done with the same settings chosen for miscellaneous DNA markers.
+
+Skipping clustering step... (to enable use '--cluster_leftovers', and verify that all the software dependencies are correctly installed)
+
+
+
+Statistics Summarization (2026-10-24 12:04:02)
+----------------------------------------------
+    Now Captus will collect the extraction statistics from each sample to compile a comprehensive table and a HTML report for visualization of extraction statistics.
+
+      Extraction statistics: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_stats.tsv
+
+    Generating Marker Extraction report...
+
+          Extraction report: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_report.html
+                             Report generated in 3.114s
+
+
+
+Captus-assembly: EXTRACT -> successfully completed [2h 6m 20.4s (7580.440s)] (2026-10-24 12:04:05)
+--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: EXTRACT (2026-10-24 12:06:59)
+-------------------------------------------------------
+    Welcome to the marker extraction step of Captus-assembly. In this step, Captus will use Scipio to search within your FASTA assemblies and recover any set of reference proteins provided through '--nuc_refs', '--ptd_refs', and/or '--mit_refs'. Captus includes some reference protein sets to work with Plants like the 'Angiosperms353' protein set for nuclear genes, and two organellar protein reference sets 'SeedPlantsPTD' for plastids, and 'SeedPlantsMIT' for mitochondria.
+    If you have references that are not proteins (e.g. non-coding regions, gene sequences including introns, full mRNAs, etc.) You can provide these miscellaneous DNA references with '--dna_refs' and Captus will use BLAT to find and extract matches in your assemblies.
+    Finally, if you want to explore the usefulness of the contigs that were not hit by any protein or other DNA references after the Captus' extraction process, or simply if you do not have reference sets to test, you can try the option '--cluster_leftovers' to attempt sequence clustering across samples in order to discover homologous markers.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+             Captus version: v1.6.6
+                    Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+                         OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                       Host: emb-lap-frwo
+                   Max. RAM: 15.2GB (out of 15.4GB)
+               Max. Threads: 14 (out of 14)
+
+               Dependencies:
+                  Scipio   : v1.4.1 OK
+                  ├─BioPerl: v1.7.8 OK
+                  └─YAML   : v1.30 OK
+                  BLAT     : v37x1 OK
+                  MMseqs2  : not used
+                  MAFFT    : not used
+
+           Python libraries:
+                      numpy: v2.5.3 OK
+                     pandas: v3.0.5 OK
+                     plotly: v7.0.0 OK
+
+      Assembly dirs checked: 61
+           Valid assemblies: 61
+
+           Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions
+                             Output directory already exists and files may be overwritten
+
+
+
+Protein and DNA Markers Extraction from FASTA assemblies (2026-10-24 12:07:05)
+------------------------------------------------------------------------------
+    Now Captus will search within your FASTA assemblies for the set of reference proteins provided by '--nuc_refs', '--ptd_refs', and/or '--mit_refs' and extract the sequences both in nucleotide and translated to aminoacid using the specified '--nuc_transtable', '--ptd_transtable' and '--mit_transtable' respectively.
+    Additionally, miscellaneous DNA references provided with '--dna_refs' will also be extracted.
+
+Verifying protein reference sets...
+
+            PROTEIN OPTIONS:
+    Max. loci for Scipio x2: 2000
+    Predict dubious introns: False
+     Concurrent extractions: 3
+         RAM per extraction: 5.1GB
+     Threads per extraction: 4
+
+           Nuclear proteins:
+                  reference: Mega353 /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/Mega353.FAA
+             reference info: 353 loci, 15,371 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              nuc_min_score: 0.13
+           nuc_min_identity: 65
+           nuc_min_coverage: 20
+        nuc_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+        Plastidial proteins:
+                  reference: SeedPlantsPTD /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsPTD.FAA
+             reference info: 83 loci, 2,194 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 11
+              ptd_min_score: 0.2
+           ptd_min_identity: 65
+           ptd_min_coverage: 20
+        ptd_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+     Mitochondrial proteins:
+                  reference: SeedPlantsMIT /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsMIT.FAA
+             reference info: 45 loci, 167 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              mit_min_score: 0.2
+           mit_min_identity: 65
+           mit_min_coverage: 20
+        mit_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+
+  MISCELLANEOUS DNA OPTIONS:
+                  reference: not used
+
+
+             OUTPUT OPTIONS:
+   Ignore depth of coverage: False
+   Disable contig stitching: False
+         Max. locus overlap: 5.0%
+ Paralog identity tolerance: 0.66
+ Paralog coverage tolerance: 0.33
+    Paralog depth tolerance: 0.33
+              Max. paralogs: -1 (Keep all paralogs)
+   Max. separate loci files: 0 (Do not write separate loci files per sample)
+            Overwrite files: False
+             Keep all files: False
+
+         Samples to process: 61
+     Extractions to process: 183 protein and 0 nucleotide
+
+           Nuclear proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/01_coding_NUC
+        Plastidial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/02_coding_PTD
+     Mitochondrial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/03_coding_MIT
+       Annotated assemblies: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/06_assembly_annotated
+                             (These output directories will be created for each sample)
+
+   Paths to references used: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_refs.json
+
+Extracting protein-coding markers with Scipio:
+'Afrocanthium_gilfillanii_S627_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of nuclear genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of nuclear genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of nuclear genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of nuclear genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of nuclear genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of plastidial genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of nuclear genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of plastidial genes SKIPPED (output files already exist)
+'Peponidium_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Peponidium_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Peponidium_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': extraction of plastidial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': extraction of nuclear genes SKIPPED (output files already exist)
+'Africanthium_mundianum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Africanthium_mundianum': extraction of plastidial genes SKIPPED (output files already exist)
+'Africanthium_mundianum': extraction of nuclear genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': extraction of plastidial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': extraction of plastidial genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': extraction of nuclear genes SKIPPED (output files already exist)
+'Fadogia_ancylantha': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Fadogia_ancylantha': extraction of plastidial genes SKIPPED (output files already exist)
+'Fadogia_ancylantha': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_hispida': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_hispida': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_hispida': extraction of nuclear genes SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': extraction of plastidial genes SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Bullockia_mombazensis': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bullockia_mombazensis': extraction of plastidial genes SKIPPED (output files already exist)
+'Bullockia_mombazensis': extraction of nuclear genes SKIPPED (output files already exist)
+'Robynsia_glabra': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Robynsia_glabra': extraction of plastidial genes SKIPPED (output files already exist)
+'Robynsia_glabra': extraction of nuclear genes SKIPPED (output files already exist)
+'Cuviera_acutiflora': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cuviera_acutiflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Cuviera_acutiflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Meyna_laxiflora': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Meyna_laxiflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Meyna_laxiflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Perakanthus_velutinus': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus': extraction of plastidial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthiumera_glabra': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthiumera_glabra': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthiumera_glabra': extraction of mitochondrial genes SKIPPED (output files already exist)
+ └─→ Protein-coding markers: finished processing for 183 extraction(s) [9.411s]
+
+Merging GFFs, summarizing recovery stats, and cleaning up:
+'Afrocanthium_gilfillanii_S627_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_odoratus': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Everistia_vacciniifolia': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_sp': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_revoluta': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_sp.': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueria_ferruginea': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': GFF was empty, marker extraction FAILED [0.018s]
+'Globulostylis_leniochlamys': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriella_chlorantha': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Peponidium_sp.': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Hutchinsonia_barbata': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Fadoginella_rogersii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Africanthium_mundianum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_sp.': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Fadogia_ancylantha': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bullockia_mombazensis': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_armatum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Meyna_laxiflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Robynsia_glabra': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthiumera_glabra': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Perakanthus_velutinus': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_hispida': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cuviera_acutiflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Ixora_sp': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_crassa': GFF was empty, marker extraction FAILED [0.012s]
+'Keetia_hispida_S383_L004': GFF was empty, marker extraction FAILED [0.027s]
+'Plectroniella_armata_S640_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+ └─→ Merged GFF and summary recovery stats created for 61 sample(s) [0.687s]
+
+
+
+Clustering and Extracting Markers Across Samples with MMseqs2/BLAT (2026-10-24 12:07:16)
+----------------------------------------------------------------------------------------
+    Now Captus will cluster the assembly sequences across samples to discover homologous markers. If protein and/or miscellaneous DNA references sequences were extracted in the previous step, the '06_assembly_annotated/leftover_contigs.fasta.gz' files from each sample will be used for clustering, otherwise the '01_assembly/assembly.fasta' files are used. USE WITH CAUTION: Clustering time and/or success will depend on the size of your assembly files, it should be safe to use if you assembled captured data, RNAseq reads, or even genome skimming data.
+    After clustering has been completed, only the clusters with at least '--cl_min_samples' will be considered and a single representative sequence from each cluster will be selected to create a new reference file to perform a final DNA marker extraction across all samples. The extraction of these new markers is done with the same settings chosen for miscellaneous DNA markers.
+
+Skipping clustering step... (to enable use '--cluster_leftovers', and verify that all the software dependencies are correctly installed)
+
+
+
+Statistics Summarization (2026-10-24 12:07:16)
+----------------------------------------------
+    Now Captus will collect the extraction statistics from each sample to compile a comprehensive table and a HTML report for visualization of extraction statistics.
+
+      Extraction statistics: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_stats.tsv
+
+    Generating Marker Extraction report...
+
+          Extraction report: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_report.html
+                             Report generated in 3.918s
+
+
+
+Captus-assembly: EXTRACT -> successfully completed [21.342s] (2026-10-24 12:07:20)
+----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: EXTRACT (2026-10-24 12:10:00)
+-------------------------------------------------------
+    Welcome to the marker extraction step of Captus-assembly. In this step, Captus will use Scipio to search within your FASTA assemblies and recover any set of reference proteins provided through '--nuc_refs', '--ptd_refs', and/or '--mit_refs'. Captus includes some reference protein sets to work with Plants like the 'Angiosperms353' protein set for nuclear genes, and two organellar protein reference sets 'SeedPlantsPTD' for plastids, and 'SeedPlantsMIT' for mitochondria.
+    If you have references that are not proteins (e.g. non-coding regions, gene sequences including introns, full mRNAs, etc.) You can provide these miscellaneous DNA references with '--dna_refs' and Captus will use BLAT to find and extract matches in your assemblies.
+    Finally, if you want to explore the usefulness of the contigs that were not hit by any protein or other DNA references after the Captus' extraction process, or simply if you do not have reference sets to test, you can try the option '--cluster_leftovers' to attempt sequence clustering across samples in order to discover homologous markers.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+             Captus version: v1.6.6
+                    Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+                         OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                       Host: emb-lap-frwo
+                   Max. RAM: 15.2GB (out of 15.4GB)
+               Max. Threads: 14 (out of 14)
+
+               Dependencies:
+                  Scipio   : v1.4.1 OK
+                  ├─BioPerl: v1.7.8 OK
+                  └─YAML   : v1.30 OK
+                  BLAT     : v37x1 OK
+                  MMseqs2  : not used
+                  MAFFT    : not used
+
+           Python libraries:
+                      numpy: v2.5.3 OK
+                     pandas: v3.0.5 OK
+                     plotly: v7.0.0 OK
+
+      Assembly dirs checked: 61
+           Valid assemblies: 61
+
+           Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions
+                             Output directory already exists and files may be overwritten
+
+
+
+Protein and DNA Markers Extraction from FASTA assemblies (2026-10-24 12:10:01)
+------------------------------------------------------------------------------
+    Now Captus will search within your FASTA assemblies for the set of reference proteins provided by '--nuc_refs', '--ptd_refs', and/or '--mit_refs' and extract the sequences both in nucleotide and translated to aminoacid using the specified '--nuc_transtable', '--ptd_transtable' and '--mit_transtable' respectively.
+    Additionally, miscellaneous DNA references provided with '--dna_refs' will also be extracted.
+
+Verifying protein reference sets...
+
+            PROTEIN OPTIONS:
+    Max. loci for Scipio x2: 2000
+    Predict dubious introns: False
+     Concurrent extractions: 3
+         RAM per extraction: 5.1GB
+     Threads per extraction: 4
+
+           Nuclear proteins:
+                  reference: Mega353 /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/Mega353.FAA
+             reference info: 353 loci, 15,371 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              nuc_min_score: 0.13
+           nuc_min_identity: 65
+           nuc_min_coverage: 20
+        nuc_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+        Plastidial proteins:
+                  reference: SeedPlantsPTD /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsPTD.FAA
+             reference info: 83 loci, 2,194 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 11
+              ptd_min_score: 0.2
+           ptd_min_identity: 65
+           ptd_min_coverage: 20
+        ptd_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+     Mitochondrial proteins:
+                  reference: SeedPlantsMIT /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsMIT.FAA
+             reference info: 45 loci, 167 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              mit_min_score: 0.2
+           mit_min_identity: 65
+           mit_min_coverage: 20
+        mit_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+
+  MISCELLANEOUS DNA OPTIONS:
+                  reference: not used
+
+
+             OUTPUT OPTIONS:
+   Ignore depth of coverage: False
+   Disable contig stitching: False
+         Max. locus overlap: 5.0%
+ Paralog identity tolerance: 0.66
+ Paralog coverage tolerance: 0.33
+    Paralog depth tolerance: 0.33
+              Max. paralogs: -1 (Keep all paralogs)
+   Max. separate loci files: 0 (Do not write separate loci files per sample)
+            Overwrite files: False
+             Keep all files: False
+
+         Samples to process: 61
+     Extractions to process: 183 protein and 0 nucleotide
+
+           Nuclear proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/01_coding_NUC
+        Plastidial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/02_coding_PTD
+     Mitochondrial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/03_coding_MIT
+       Annotated assemblies: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/06_assembly_annotated
+                             (These output directories will be created for each sample)
+
+   Paths to references used: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_refs.json
+
+Extracting protein-coding markers with Scipio:
+'Afrocanthium_gilfillanii_S627_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': recovered 43 mitochondrial genes (95.6% of 45), 92.9% of total reference length, 3 paralogs found [2m 49.9s (169.883s)]
+'Keetia_hispida_S383_L004': recovered 80 plastidial genes (96.4% of 83), 89.5% of total reference length, 10 paralogs found [3m 6.8s (186.788s)]
+'Eriosemopsis_subanisophylla_S489_L004': recovered 80 plastidial genes (96.4% of 83), 92.9% of total reference length, 0 paralogs found [3m 7.8s (187.782s)]
+'Eriosemopsis_subanisophylla_S489_L004': recovered 42 mitochondrial genes (93.3% of 45), 93.2% of total reference length, 2 paralogs found [4m 53.4s (293.393s)]
+'Rytigynia_sambavensis_S493_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of nuclear genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': recovered 347 nuclear genes (98.3% of 353), 78.9% of total reference length, 98 paralogs found [14m 28.0s (867.987s)]
+'Multidentia_crassa': recovered 80 plastidial genes (96.4% of 83), 94.0% of total reference length, 0 paralogs found [54.083s]
+'Multidentia_crassa': recovered 34 mitochondrial genes (75.6% of 45), 53.6% of total reference length, 2 paralogs found [3m 44.5s (224.495s)]
+'Plectroniella_armata_S640_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of nuclear genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of plastidial genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of nuclear genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of plastidial genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of plastidial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Peponidium_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Peponidium_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Peponidium_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': extraction of nuclear genes SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': extraction of plastidial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Africanthium_mundianum': extraction of nuclear genes SKIPPED (output files already exist)
+'Africanthium_mundianum': extraction of plastidial genes SKIPPED (output files already exist)
+'Africanthium_mundianum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': extraction of nuclear genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': extraction of plastidial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': extraction of nuclear genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': extraction of plastidial genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Fadogia_ancylantha': extraction of nuclear genes SKIPPED (output files already exist)
+'Fadogia_ancylantha': extraction of plastidial genes SKIPPED (output files already exist)
+'Fadogia_ancylantha': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_hispida': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_hispida': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_hispida': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': extraction of nuclear genes SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': extraction of plastidial genes SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bullockia_mombazensis': extraction of nuclear genes SKIPPED (output files already exist)
+'Bullockia_mombazensis': extraction of plastidial genes SKIPPED (output files already exist)
+'Bullockia_mombazensis': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Robynsia_glabra': extraction of nuclear genes SKIPPED (output files already exist)
+'Robynsia_glabra': extraction of plastidial genes SKIPPED (output files already exist)
+'Robynsia_glabra': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cuviera_acutiflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Cuviera_acutiflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Cuviera_acutiflora': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Meyna_laxiflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Meyna_laxiflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Meyna_laxiflora': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus': extraction of nuclear genes SKIPPED (output files already exist)
+'Perakanthus_velutinus': extraction of plastidial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthiumera_glabra': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthiumera_glabra': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthiumera_glabra': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': recovered 350 nuclear genes (99.2% of 353), 82.4% of total reference length, 243 paralogs found [22m 41.1s (1361.111s)]
+'Multidentia_crassa': recovered 344 nuclear genes (97.5% of 353), 78.0% of total reference length, 86 paralogs found [14m 46.9s (886.896s)]
+ └─→ Protein-coding markers: finished processing for 183 extraction(s) [26m 4.1s (1564.053s)]
+
+Merging GFFs, summarizing recovery stats, and cleaning up:
+'Everistia_vacciniifolia': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_odoratus': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_sp': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_revoluta': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_sp.': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueria_ferruginea': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_armatum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Ixora_sp': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_sp.': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriella_chlorantha': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Peponidium_sp.': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Africanthium_mundianum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Fadogia_ancylantha': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bullockia_mombazensis': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Perakanthus_velutinus': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Robynsia_glabra': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Meyna_laxiflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthiumera_glabra': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Hutchinsonia_barbata': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cuviera_acutiflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_hispida': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Fadoginella_rogersii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_crassa': GFF annotations and recovery stats merged, unnecessary files removed [1.423s]
+'Eriosemopsis_subanisophylla_S489_L004': GFF annotations and recovery stats merged, unnecessary files removed [6.895s]
+'Keetia_hispida_S383_L004': GFF annotations and recovery stats merged, unnecessary files removed [7.159s]
+ └─→ Merged GFF and summary recovery stats created for 61 sample(s) [7.383s]
+
+
+
+Clustering and Extracting Markers Across Samples with MMseqs2/BLAT (2026-10-24 12:36:13)
+----------------------------------------------------------------------------------------
+    Now Captus will cluster the assembly sequences across samples to discover homologous markers. If protein and/or miscellaneous DNA references sequences were extracted in the previous step, the '06_assembly_annotated/leftover_contigs.fasta.gz' files from each sample will be used for clustering, otherwise the '01_assembly/assembly.fasta' files are used. USE WITH CAUTION: Clustering time and/or success will depend on the size of your assembly files, it should be safe to use if you assembled captured data, RNAseq reads, or even genome skimming data.
+    After clustering has been completed, only the clusters with at least '--cl_min_samples' will be considered and a single representative sequence from each cluster will be selected to create a new reference file to perform a final DNA marker extraction across all samples. The extraction of these new markers is done with the same settings chosen for miscellaneous DNA markers.
+
+Skipping clustering step... (to enable use '--cluster_leftovers', and verify that all the software dependencies are correctly installed)
+
+
+
+Statistics Summarization (2026-10-24 12:36:13)
+----------------------------------------------
+    Now Captus will collect the extraction statistics from each sample to compile a comprehensive table and a HTML report for visualization of extraction statistics.
+
+      Extraction statistics: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_stats.tsv
+
+    Generating Marker Extraction report...
+
+          Extraction report: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_report.html
+                             Report generated in 1.788s
+
+
+
+Captus-assembly: EXTRACT -> successfully completed [26m 15.1s (1575.130s)] (2026-10-24 12:36:15)
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Captus-assembly: EXTRACT (2026-10-24 13:00:14)
+-------------------------------------------------------
+    Welcome to the marker extraction step of Captus-assembly. In this step, Captus will use Scipio to search within your FASTA assemblies and recover any set of reference proteins provided through '--nuc_refs', '--ptd_refs', and/or '--mit_refs'. Captus includes some reference protein sets to work with Plants like the 'Angiosperms353' protein set for nuclear genes, and two organellar protein reference sets 'SeedPlantsPTD' for plastids, and 'SeedPlantsMIT' for mitochondria.
+    If you have references that are not proteins (e.g. non-coding regions, gene sequences including introns, full mRNAs, etc.) You can provide these miscellaneous DNA references with '--dna_refs' and Captus will use BLAT to find and extract matches in your assemblies.
+    Finally, if you want to explore the usefulness of the contigs that were not hit by any protein or other DNA references after the Captus' extraction process, or simply if you do not have reference sets to test, you can try the option '--cluster_leftovers' to attempt sequence clustering across samples in order to discover homologous markers.
+    For more information, please see https://github.com/edgardomortiz/Captus
+
+             Captus version: v1.6.6
+                    Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+                         OS: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+                       Host: emb-lap-frwo
+                   Max. RAM: 15.2GB (out of 15.4GB)
+               Max. Threads: 14 (out of 14)
+
+               Dependencies:
+                  Scipio   : v1.4.1 OK
+                  ├─BioPerl: v1.7.8 OK
+                  └─YAML   : v1.30 OK
+                  BLAT     : v37x1 OK
+                  MMseqs2  : not used
+                  MAFFT    : not used
+
+           Python libraries:
+                      numpy: v2.5.3 OK
+                     pandas: v3.0.5 OK
+                     plotly: v7.0.0 OK
+
+      Assembly dirs checked: 61
+           Valid assemblies: 61
+
+           Output directory: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions
+                             Output directory already exists and files may be overwritten
+
+
+
+Protein and DNA Markers Extraction from FASTA assemblies (2026-10-24 13:00:19)
+------------------------------------------------------------------------------
+    Now Captus will search within your FASTA assemblies for the set of reference proteins provided by '--nuc_refs', '--ptd_refs', and/or '--mit_refs' and extract the sequences both in nucleotide and translated to aminoacid using the specified '--nuc_transtable', '--ptd_transtable' and '--mit_transtable' respectively.
+    Additionally, miscellaneous DNA references provided with '--dna_refs' will also be extracted.
+
+Verifying protein reference sets...
+
+            PROTEIN OPTIONS:
+    Max. loci for Scipio x2: 2000
+    Predict dubious introns: False
+     Concurrent extractions: 3
+         RAM per extraction: 5.1GB
+     Threads per extraction: 4
+
+           Nuclear proteins:
+                  reference: Mega353 /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/Mega353.FAA
+             reference info: 353 loci, 15,371 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              nuc_min_score: 0.13
+           nuc_min_identity: 65
+           nuc_min_coverage: 20
+        nuc_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+        Plastidial proteins:
+                  reference: SeedPlantsPTD /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsPTD.FAA
+             reference info: 83 loci, 2,194 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 11
+              ptd_min_score: 0.2
+           ptd_min_identity: 65
+           ptd_min_coverage: 20
+        ptd_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+     Mitochondrial proteins:
+                  reference: SeedPlantsMIT /home/frieda/miniconda3/envs/captus/lib/python3.14/site-packages/data/SeedPlantsMIT.FAA
+             reference info: 45 loci, 167 sequences (loci names found, detected multiple sequences per locus)
+          translation table: 1
+              mit_min_score: 0.2
+           mit_min_identity: 65
+           mit_min_coverage: 20
+        mit_depth_tolerance: 0.5 (min = 10^(log(depth of the contig with best hit in locus) * 0.5))
+
+
+  MISCELLANEOUS DNA OPTIONS:
+                  reference: not used
+
+
+             OUTPUT OPTIONS:
+   Ignore depth of coverage: False
+   Disable contig stitching: False
+         Max. locus overlap: 5.0%
+ Paralog identity tolerance: 0.66
+ Paralog coverage tolerance: 0.33
+    Paralog depth tolerance: 0.33
+              Max. paralogs: -1 (Keep all paralogs)
+   Max. separate loci files: 0 (Do not write separate loci files per sample)
+            Overwrite files: False
+             Keep all files: False
+
+         Samples to process: 61
+     Extractions to process: 183 protein and 0 nucleotide
+
+           Nuclear proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/01_coding_NUC
+        Plastidial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/02_coding_PTD
+     Mitochondrial proteins: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/03_coding_MIT
+       Annotated assemblies: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/[Sample_name]__captus-ext/06_assembly_annotated
+                             (These output directories will be created for each sample)
+
+   Paths to references used: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_refs.json
+
+Extracting protein-coding markers with Scipio:
+'Afrocanthium_gilfillanii_S627_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': recovered 76 plastidial genes (91.6% of 83), 76.1% of total reference length, 12 paralogs found [4m 56.6s (296.633s)]
+'Keetia_hispida_S383_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla_S489_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia': recovered 41 mitochondrial genes (91.1% of 45), 84.0% of total reference length, 1 paralogs found [7m 9.5s (429.509s)]
+'Rytigynia_sambavensis_S493_L004': recovered 80 plastidial genes (96.4% of 83), 93.4% of total reference length, 0 paralogs found [3m 8.9s (188.857s)]
+'Rytigynia_sambavensis_S493_L004': recovered 42 mitochondrial genes (93.3% of 45), 82.4% of total reference length, 8 paralogs found [7m 0.6s (420.646s)]
+'Pyrostria_commersonii_S618_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_odoratus': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_sp': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of nuclear genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of plastidial genes SKIPPED (output files already exist)
+'Pyrostria_revoluta': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueria_ferruginea': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of nuclear genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of plastidial genes SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_crassa': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Plectroniella_armata_S640_L004': recovered 349 nuclear genes (98.9% of 353), 78.7% of total reference length, 107 paralogs found [14m 26.6s (866.590s)]
+'Plectroniella_armata_S640_L004': recovered 79 plastidial genes (95.2% of 83), 88.8% of total reference length, 4 paralogs found [1m 12.7s (72.720s)]
+'Plectroniella_armata_S640_L004': recovered 41 mitochondrial genes (91.1% of 45), 81.7% of total reference length, 1 paralogs found [1m 30.9s (90.908s)]
+'Peponidium_crassifolium_S628_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_armatum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of nuclear genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of plastidial genes SKIPPED (output files already exist)
+'Ixora_sp': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of nuclear genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of plastidial genes SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of nuclear genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of plastidial genes SKIPPED (output files already exist)
+'Rytigynia_sp.': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriella_chlorantha': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of nuclear genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of plastidial genes SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Rytigynia_sambavensis_S493_L004': recovered 352 nuclear genes (99.7% of 353), 83.4% of total reference length, 52 paralogs found [31m 5.3s (1865.328s)]
+'Peponidium_sp.': recovered 2 plastidial genes (2.4% of 83), 0.2% of total reference length, 0 paralogs found [13.558s]
+'Peponidium_sp.': FAILED extraction of mitochondrial genes
+'Pygmaeothamnus_zeyheri': extraction of nuclear genes SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': extraction of plastidial genes SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': FAILED extraction of mitochondrial genes
+'Africanthium_mundianum': extraction of nuclear genes SKIPPED (output files already exist)
+'Africanthium_mundianum': extraction of plastidial genes SKIPPED (output files already exist)
+'Africanthium_mundianum': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': extraction of nuclear genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': extraction of plastidial genes SKIPPED (output files already exist)
+'Hutchinsonia_barbata': FAILED extraction of mitochondrial genes
+'Multidentia_exserta_S443_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': extraction of nuclear genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': extraction of plastidial genes SKIPPED (output files already exist)
+'Fadoginella_rogersii': FAILED extraction of mitochondrial genes
+'Fadogia_ancylantha': extraction of nuclear genes SKIPPED (output files already exist)
+'Fadogia_ancylantha': extraction of plastidial genes SKIPPED (output files already exist)
+'Fadogia_ancylantha': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': extraction of mitochondrial genes SKIPPED (output files already exist)
+'Keetia_hispida': extraction of nuclear genes SKIPPED (output files already exist)
+'Keetia_hispida': extraction of plastidial genes SKIPPED (output files already exist)
+'Keetia_hispida': FAILED extraction of mitochondrial genes
+'Bridsonia_chamaedendrum': extraction of nuclear genes SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': extraction of plastidial genes SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': FAILED extraction of mitochondrial genes
+'Vangueriopsis_lanciflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': FAILED extraction of mitochondrial genes
+'Bullockia_mombazensis': extraction of nuclear genes SKIPPED (output files already exist)
+'Bullockia_mombazensis': FAILED extraction of plastidial genes
+'Bullockia_mombazensis': FAILED extraction of mitochondrial genes
+'Robynsia_glabra': extraction of nuclear genes SKIPPED (output files already exist)
+'Robynsia_glabra': extraction of plastidial genes SKIPPED (output files already exist)
+'Robynsia_glabra': FAILED extraction of mitochondrial genes
+'Cuviera_acutiflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Cuviera_acutiflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Cuviera_acutiflora': FAILED extraction of mitochondrial genes
+'Meyna_laxiflora': extraction of nuclear genes SKIPPED (output files already exist)
+'Meyna_laxiflora': extraction of plastidial genes SKIPPED (output files already exist)
+'Meyna_laxiflora': FAILED extraction of mitochondrial genes
+'Perakanthus_velutinus': extraction of nuclear genes SKIPPED (output files already exist)
+'Perakanthus_velutinus': FAILED extraction of plastidial genes
+'Perakanthus_velutinus': FAILED extraction of mitochondrial genes
+'Canthiumera_glabra': extraction of nuclear genes SKIPPED (output files already exist)
+'Canthiumera_glabra': FAILED extraction of plastidial genes
+'Canthiumera_glabra': FAILED extraction of mitochondrial genes
+'Everistia_vacciniifolia': recovered 348 nuclear genes (98.6% of 353), 80.4% of total reference length, 100 paralogs found [39m 30.7s (2370.672s)]
+'Peponidium_sp.': recovered 341 nuclear genes (96.6% of 353), 73.9% of total reference length, 135 paralogs found [12m 50.0s (770.045s)]
+ └─→ Protein-coding markers: finished processing for 183 extraction(s) [47m 37.2s (2857.151s)]
+
+Merging GFFs, summarizing recovery stats, and cleaning up:
+'Eriosemopsis_subanisophylla_S489_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_hystrix_S641_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Plectroniella_armata_S391_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S490_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_media_S610_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_longipedicellata_S442_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Temnocalyx_nodulosus_S587_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_commersonii_S618_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_dicoccos_S379_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Everistia_vacciniifolia_S491_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_hispida_S383_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_jasminifolium_S377_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bullockia_fadenii_S514_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Afrocanthium_lactescens_S626_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_lukei_S507_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_sp.': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Afrocanthium_gilfillanii_S627_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pygmaeothamnus_sp_S516_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_guillauminianum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueria_ferruginea': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Temnocalyx_nodulosa': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_gueinzii_S519_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_obovata_S639_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cyclophyllum_henriettae_S376_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_armatum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_crassa': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthium_inerme_S629_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Perakanthus_velutinus_S495_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Rytigynia_sp.': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriella_chlorantha': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Peponidium_crassifolium_S628_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_sp': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Ixora_sp': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_ankotekonensis_S572_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pygmaeothamnus_zeyheri': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Africanthium_mundianum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora_S446_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Fadoginella_rogersii': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueria_madagascariensis_S602_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Keetia_hispida': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bridsonia_chamaedendrum': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Fadogia_ancylantha': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Vangueriopsis_lanciflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Eriosemopsis_subanisophylla': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_exserta_S443_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Robynsia_glabra': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Cuviera_acutiflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Perakanthus_velutinus': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Canthiumera_glabra': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Bullockia_mombazensis': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Globulostylis_leniochlamys': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Pyrostria_revoluta': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Meyna_laxiflora': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Multidentia_sclerocarpa_S374_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Hutchinsonia_barbata': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Psydrax_odoratus': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Hutchinsonia_barbata_S551_L004': cleanup and merging of GFFs and stats SKIPPED (output files already exist)
+'Peponidium_sp.': GFF annotations and recovery stats merged, unnecessary files removed [0.586s]
+'Plectroniella_armata_S640_L004': GFF annotations and recovery stats merged, unnecessary files removed [2.458s]
+'Rytigynia_sambavensis_S493_L004': GFF annotations and recovery stats merged, unnecessary files removed [10.130s]
+'Everistia_vacciniifolia': GFF annotations and recovery stats merged, unnecessary files removed [13.911s]
+ └─→ Merged GFF and summary recovery stats created for 61 sample(s) [14.689s]
+
+
+
+Clustering and Extracting Markers Across Samples with MMseqs2/BLAT (2026-10-24 13:48:11)
+----------------------------------------------------------------------------------------
+    Now Captus will cluster the assembly sequences across samples to discover homologous markers. If protein and/or miscellaneous DNA references sequences were extracted in the previous step, the '06_assembly_annotated/leftover_contigs.fasta.gz' files from each sample will be used for clustering, otherwise the '01_assembly/assembly.fasta' files are used. USE WITH CAUTION: Clustering time and/or success will depend on the size of your assembly files, it should be safe to use if you assembled captured data, RNAseq reads, or even genome skimming data.
+    After clustering has been completed, only the clusters with at least '--cl_min_samples' will be considered and a single representative sequence from each cluster will be selected to create a new reference file to perform a final DNA marker extraction across all samples. The extraction of these new markers is done with the same settings chosen for miscellaneous DNA markers.
+
+Skipping clustering step... (to enable use '--cluster_leftovers', and verify that all the software dependencies are correctly installed)
+
+
+
+Statistics Summarization (2026-10-24 13:48:11)
+----------------------------------------------
+    Now Captus will collect the extraction statistics from each sample to compile a comprehensive table and a HTML report for visualization of extraction statistics.
+
+      Extraction statistics: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_stats.tsv
+
+    Generating Marker Extraction report...
+
+          Extraction report: /home/frieda/Projects/Vanguerieae/CleanedData/03_extractions/captus-extract_report.html
+                             Report generated in 5.007s
+
+
+
+Captus-assembly: EXTRACT -> successfully completed [48m 2.5s (2882.484s)] (2026-10-24 13:48:17)
+-----------------------------------------------------------------------------------------------
+

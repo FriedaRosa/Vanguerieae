@@ -1,0 +1,23 @@
+## Species for which extraction was interrupted:
+
+-Rytigynia_sambavensis_S493_L004		# REDONE +++
+-Eriosemopsis_subanisophylla_S489_L004  	# redone
+-Eriosemopsis_subanisophylla_S489_L004 		# redone
+-Everistia_vacciniifolia			# REDONE +++
+-Keetia_hispida_S383_L004 			# redone
+-Multidentia_crassa 				# redone
+-Plectroniella_armata_S640_L004			# REDONE +++
+
+- Peponidium sp.				# REDONE +++ (MIT failed)
+- Pygmaeothamnus_zeyheri (MIT)			# REDONE + (failed)
+- Hutchinsonia_barbata (MIT)			# REDONE + (failed)
+- Fadoginella_rogersii (MIT)			# REDONE + (failed)
+- Keetia_hispida (MIT)				# REDONE + (failed)
+- Bridsonia_chamaedendrum (MIT)			# REDONE + (failed)
+- Bullockia_mombazensis (MIT, PTD)		# REDONE ++ (both failed)
+- Vangueriopsis_lanciflora (MIT)		# REDONE + (failed)
+- Robynsia_glabra (MIT)				# REDONE + (failed)
+- Cuviera_acutiflora (MIT)			# REDONE + (failed)
+- Meyna_laxiflora (MIT)				# REDONE + (failed)
+- Perakanthus_velutinus (MIT, PTD)		# REDONE ++ (both failed)
+- Canthiumera_glabra (MIT, PTD)			# REDONE ++ (both failed)

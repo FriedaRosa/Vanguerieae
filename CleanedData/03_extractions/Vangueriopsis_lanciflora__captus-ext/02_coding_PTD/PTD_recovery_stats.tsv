@@ -1,0 +1,4 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Vangueriopsis_lanciflora	PTD	petG	BAB47052.1-petG	3-13	prot	11	00	29.73	100.00	0.297	1.000	33	33	0	0		1	1	1	0	0	NODE_1029_length_456_cov_570.3947_k_175_flag_1	-	7-39	570.3947

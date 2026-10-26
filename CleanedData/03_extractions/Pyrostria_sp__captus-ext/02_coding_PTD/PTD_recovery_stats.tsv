@@ -1,0 +1,33 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Pyrostria_sp	PTD	accD	QST20036.1-accD	269-384	prot	116	00	25.66	90.52	0.208	0.819	348	348	0	0		1	1	1	0	0	NODE_3007_length_355_cov_10.0000_k_175_flag_1	-	8-355	10.0000
+Pyrostria_sp	PTD	atpA	AUF33626.1-atpA	26-159	prot	134	00	26.43	99.25	0.260	0.985	402	402	0	0		1	1	1	0	0	NODE_10800_length_407_cov_6.0000_k_175_flag_1	-	1-402	6.0000
+Pyrostria_sp	PTD	atpE	AKT93660.1-atpE	68-133	prot	66	00	49.62	93.94	0.436	0.876	195	195	0	0		1	1	1	0	0	NODE_31939_length_416_cov_5.0000_k_175_flag_1	+	6-200	5.0000
+Pyrostria_sp	PTD	atpF	AFM92265.1-atpF	83-184	prot	102	00	55.43	87.25	0.413	0.761	306	306	0	0		1	1	1	1	0	NODE_17554_length_682_cov_5.0000_k_175_flag_1	+	6-311	5.0000
+Pyrostria_sp	PTD	atpH	BAB47029.1-atpH	12-81	prot	70	00	86.42	100.00	0.864	1.000	210	210	0	0		1	1	1	1	0	NODE_5734_length_318_cov_6.0000_k_175_flag_1	-	104-313	6.0000
+Pyrostria_sp	PTD	ndhB	CBJ04342.1-ndhB	161-260;343-490	prot	248	00	48.63	99.19	0.478	0.983	744	744	0	0		2	1	2	0	0	NODE_16388_length_493_cov_9.0000_k_175_flag_1;NODE_21848_length_453_cov_10.0000_k_175_flag_1	-;+	193-492;2-445	9.5000
+Pyrostria_sp	PTD	ndhK	ARH08394.1-ndhK	110-211	prot	102	00	45.95	85.29	0.324	0.728	312	312	0	0		1	1	1	0	0	NODE_28857_length_320_cov_7.0000_k_175_flag_1	+	3-314	7.0000
+Pyrostria_sp	PTD	pafI	BAO01493.1-pafI	118-168	prot	51	00	30.36	92.16	0.256	0.849	153	153	0	0		1	1	1	0	0	NODE_16279_length_285_cov_3.0000_k_175_flag_1	-	42-194	3.0000
+Pyrostria_sp	PTD	petA	QEJ83256.1-petA	123-231	prot	109	00	34.06	95.41	0.309	0.910	327	327	0	0		1	1	1	0	0	NODE_10554_length_420_cov_7.0000_k_175_flag_1	+	69-395	7.0000
+Pyrostria_sp	PTD	petA	QEJ83256.1-petA	63-159	prot	97	01	30.31	87.63	0.228	0.689	309	309	0	0	171,270	1	1	1	0	0	NODE_24893_length_661_cov_33.0000_k_175_flag_1	-	1-307	33.0000
+Pyrostria_sp	PTD	petL	AEX99626.1-petL	1-19	prot	19	00	61.29	68.42	0.226	0.445	90	90	0	0		1	1	1	1	0	NODE_2484_length_846_cov_13.0000_k_175_flag_1	-	541-630	13.0000
+Pyrostria_sp	PTD	petN	BAB47023.1-petN	1-26	prot	26	00	89.66	100.00	0.897	1.000	78	78	0	0		1	1	1	1	0	NODE_28167_length_586_cov_11.0000_k_175_flag_1	-	7-84	11.0000
+Pyrostria_sp	PTD	psaB	AYD72859.1-psaB	456-734	prot	279	00	38.01	94.27	0.337	0.889	684	684	0	0		1	1	1	0	0	NODE_19144_length_692_cov_6.0000_k_175_flag_1	+	1-684	6.0000
+Pyrostria_sp	PTD	psaI	AWH11713.1-psaI	1-14;26-38	prot	27	00	71.05	74.07	0.342	0.534	210	210	0	0	101,102	2	1	2	2	0	NODE_23126_length_578_cov_49.0000_k_175_flag_1;NODE_29786_length_520_cov_30.0000_k_175_flag_1	+;-	491-571;157-283	39.5000
+Pyrostria_sp	PTD	psaJ	AEX99628.1-psaJ	32-44	prot	13	00	29.55	84.62	0.205	0.716	531	531	0	0		1	1	1	0	0	NODE_7157_length_1140_cov_17.0000_k_175_flag_1	-	369-899	17.0000
+Pyrostria_sp	PTD	psbB	ALI30725.1-psbB	1-104;184-295;467-508	prot	258	00	50.79	97.29	0.480	0.945	774	774	0	0		3	2	3	3	0	NODE_30226_length_444_cov_3.0000_k_175_flag_1;NODE_1957_length_338_cov_7.0000_k_175_flag_1;NODE_31194_length_420_cov_8.0000_k_175_flag_1	-;+;+	1-312;3-338;2-127	6.0000
+Pyrostria_sp	PTD	psbC	ADH94339.1-psbC	1-221;377-473	prot	318	00	67.23	98.74	0.655	0.974	756	756	0	0		2	1	2	2	0	NODE_13089_length_611_cov_7.0000_k_175_flag_1;NODE_21550_length_307_cov_3.0000_k_175_flag_1	-;+	147-611;2-292	5.0000
+Pyrostria_sp	PTD	psbD	QRN71798.1-psbD	1-307	prot	307	00	86.97	99.02	0.853	0.981	921	921	0	0		1	1	1	1	0	NODE_22635_length_1356_cov_8.0000_k_175_flag_1	-	8-928	8.0000
+Pyrostria_sp	PTD	psbJ	AAX21043.1-psbJ	12-40	prot	29	00	72.50	96.55	0.675	0.887	87	87	0	0		1	1	1	1	0	NODE_11655_length_585_cov_5.0000_k_175_flag_1	-	495-581	5.0000
+Pyrostria_sp	PTD	psbT	CAD28747.1-psbT	1-35	prot	35	00	100.00	97.14	0.943	0.944	105	105	0	0		1	1	1	1	1	NODE_31194_length_420_cov_8.0000_k_175_flag_1	+	301-405	8.0000
+Pyrostria_sp	PTD	rbcL	QQW47350.1-rbcL	16-134;436-475	prot	159	00	33.47	93.08	0.288	0.866	477	477	0	0		2	1	2	0	0	NODE_14624_length_362_cov_6.0000_k_175_flag_1;NODE_599_length_468_cov_9.0000_k_175_flag_1	+;-	6-362;347-466	7.5000
+Pyrostria_sp	PTD	rpl2	QRI61044.1-rpl2	9-130;136-275	prot	262	00	95.27	98.09	0.916	0.949	783	783	0	0		2	1	2	1	2	NODE_14472_length_487_cov_9.0000_k_175_flag_1;NODE_2800_length_829_cov_8.7920_k_175_flag_1	-;-	117-482;412-828	8.8960
+Pyrostria_sp	PTD	rpoA	CAJ32426.1-rpoA	113-229;230-311	prot	199	00	59.05	82.41	0.383	0.678	938	618	320	0		2	1	2	2	0	NODE_31952_length_601_cov_18.0000_k_175_flag_1;NODE_2041_length_345_cov_7.0000_k_175_flag_1	-;+	228-599;94-339	12.5000
+Pyrostria_sp	PTD	rps11	QAV58545.1-rps11	5-138	prot	134	00	97.10	94.78	0.870	0.892	165	165	0	0		1	1	1	1	1	NODE_105_length_683_cov_12.0000_k_175_flag_1	-	43-207	12.0000
+Pyrostria_sp	PTD	rps11	QAV58545.1-rps11	5-116	prot	112	01	81.16	91.96	0.681	0.767	336	336	0	0		1	1	1	1	0	NODE_15699_length_348_cov_4.0000_k_175_flag_1	-	8-343	4.0000
+Pyrostria_sp	PTD	rps12_exon_2_3	CAD28682.1-rps12_exon_2_3	1-85	prot	85	00	100.00	82.35	0.647	0.674	237	237	0	0		1	1	1	1	1	NODE_13531_length_4501_cov_423.0000_k_175_flag_1	+	4059-4295	423.0000
+Pyrostria_sp	PTD	rps15	QIQ56527.1-rps15	1-87	prot	87	00	100.00	89.66	0.793	0.786	261	261	0	0		1	1	1	1	1	NODE_19517_length_705_cov_47.0000_k_175_flag_1	-	78-338	47.0000
+Pyrostria_sp	PTD	rps16	CAC88026.1-rps16	15-88	prot	74	00	84.09	86.49	0.614	0.711	222	222	0	0		1	1	1	1	0	NODE_30879_length_681_cov_26.0000_k_175_flag_1	+	102-323	26.0000
+Pyrostria_sp	PTD	rps2	QBC66712.1-rps2	1-139	prot	139	00	58.90	97.84	0.564	0.950	417	417	0	0		1	1	1	1	0	NODE_18119_length_962_cov_7.0000_k_175_flag_1	+	546-962	7.0000
+Pyrostria_sp	PTD	rps8	BAA84420.1-rps8	39-134	prot	96	00	71.64	84.38	0.493	0.701	288	288	0	0		1	1	1	1	0	NODE_74_length_355_cov_5.0000_k_175_flag_1	+	4-291	5.0000

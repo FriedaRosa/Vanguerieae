@@ -1,0 +1,5 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Cuviera_acutiflora	PTD	petG	BAB47052.1-petG	3-23	prot	21	00	56.76	90.48	0.459	0.819	63	63	0	0		1	1	1	1	0	NODE_739_length_326_cov_439.8773_k_175_flag_1	-	9-71	439.8773
+Cuviera_acutiflora	PTD	rps7	AHY32771.1-rps7	59-155	prot	97	00	62.58	97.94	0.600	0.954	291	291	0	0		1	1	1	1	0	NODE_922_length_443_cov_200.4515_k_175_flag_1	-	149-439	200.4515

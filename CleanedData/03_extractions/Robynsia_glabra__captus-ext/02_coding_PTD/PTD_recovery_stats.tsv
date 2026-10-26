@@ -1,0 +1,6 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Robynsia_glabra	PTD	petG	BAB47052.1-petG	3-23	prot	21	00	56.76	95.24	0.514	0.907	63	63	0	0		1	1	1	1	0	NODE_944_length_437_cov_179.1762_k_175_flag_1	+	362-424	179.1762
+Robynsia_glabra	PTD	psaI	QBB10747.1-psaI	1-10	prot	10	00	30.30	90.00	0.242	0.810	72	72	0	0		1	1	1	0	0	NODE_1382_length_1248_cov_584.2519_k_175_flag_1	+	827-898	584.2519
+Robynsia_glabra	PTD	rpoA	CAJ32426.1-rpoA	186-277	prot	92	00	27.30	86.96	0.202	0.756	276	276	0	0		1	1	1	0	0	NODE_290_length_284_cov_13.7324_k_175_flag_1	-	9-284	13.7324

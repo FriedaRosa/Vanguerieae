@@ -1,0 +1,10 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Globulostylis_leniochlamys	MIT	atp1	QOX10099.1-atp1	114-237;365-449	prot	209	00	40.90	88.52	0.315	0.783	627	627	0	0		2	1	2	0	0	NODE_5992_length_373_cov_61.126_k_175_flag_1;NODE_507_length_344_cov_27.0349_k_175_flag_1	-;+	1-372;3-257	44.0804
+Globulostylis_leniochlamys	MIT	atp6	BAM36206.1-atp6	38-261	prot	224	00	85.82	84.82	0.598	0.719	672	672	0	0		1	1	1	1	0	NODE_1428_length_882_cov_50.6803_k_175_flag_1	-	206-877	50.6803
+Globulostylis_leniochlamys	MIT	nad2_exon_1_2	QEM24359.1-nad2_exon_1_2	1-119	prot	119	00	65.38	84.87	0.456	0.720	252	252	0	0		1	1	1	1	0	NODE_6653_length_295_cov_63.0508_k_175_flag_1	-	7-258	63.0508
+Globulostylis_leniochlamys	MIT	nad5_exon_1_2_3	AEK01311.1-nad5_exon_1_2_3	110-217	prot	108	00	22.13	96.30	0.205	0.927	324	324	0	0		1	1	1	0	0	NODE_5873_length_326_cov_26.6871_k_175_flag_1	+	1-324	26.6871
+Globulostylis_leniochlamys	MIT	nad5_exon_4_5	AEK01311.1-nad5_exon_4_5	1-98	prot	98	00	54.44	94.90	0.489	0.901	285	285	0	0		1	1	1	1	0	NODE_1684_length_820_cov_246.5854_k_175_flag_1	+	528-812	246.5854
+Globulostylis_leniochlamys	MIT	nad6	QCQ81896.1-nad6	1-105	prot	105	00	51.22	95.24	0.463	0.907	315	315	0	0		1	1	1	1	0	NODE_3664_length_429_cov_37.3517_k_175_flag_1	-	2-316	37.3517
+Globulostylis_leniochlamys	MIT	rpl2	QGW55192.1-rpl2	139-246	prot	108	00	32.43	94.44	0.288	0.892	318	318	0	0		1	1	1	0	0	NODE_6010_length_320_cov_62.8125_k_175_flag_1	+	1-318	62.8125

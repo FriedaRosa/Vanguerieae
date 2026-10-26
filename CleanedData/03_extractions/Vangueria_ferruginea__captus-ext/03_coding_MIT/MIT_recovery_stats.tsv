@@ -1,0 +1,20 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Vangueria_ferruginea	MIT	atp9	AET62949.1-atp9	1-74	prot	74	00	100.00	93.24	0.865	0.869	159	159	0	0		1	1	1	1	1	NODE_5138_length_661_cov_8.0000_k_175_flag_1	+	412-570	8.0000
+Vangueria_ferruginea	MIT	atp9	AET62949.1-atp9	50-74	prot	25	01	33.78	84.00	0.230	0.410	69	69	0	0		1	1	1	0	0	NODE_11223_length_591_cov_21.0000_k_175_flag_1	-	41-109	21.0000
+Vangueria_ferruginea	MIT	ccmB	QGX42491.1-ccmB	1-86	prot	86	00	41.75	95.35	0.379	0.909	258	258	0	0		1	1	1	0	0	NODE_2188_length_306_cov_3.0000_k_175_flag_1	+	47-304	3.0000
+Vangueria_ferruginea	MIT	ccmFC	BAD83536.2-ccmFC	1-257	prot	257	00	58.68	90.27	0.473	0.815	771	771	0	0		1	1	1	1	0	NODE_19941_length_809_cov_13.0000_k_175_flag_1	-	29-799	13.0000
+Vangueria_ferruginea	MIT	ccmFN	QEX95847.1-ccmFN	1-148;405-525	prot	269	00	46.62	91.82	0.390	0.842	807	807	0	0		2	1	2	0	0	NODE_7491_length_466_cov_7.0000_k_175_flag_1;NODE_2127_length_373_cov_7.0000_k_175_flag_1	-;-	1-444;9-371	7.0000
+Vangueria_ferruginea	MIT	cox3	QGW53590.1-cox3	1-74	prot	74	00	27.92	95.95	0.257	0.921	222	222	0	0		1	1	1	0	0	NODE_2251_length_426_cov_8.0000_k_175_flag_1	-	3-224	8.0000
+Vangueria_ferruginea	MIT	matR	AIG89909.1-matR	136-353;442-621	prot	398	00	60.49	92.46	0.514	0.840	1194	1194	0	0		2	1	2	2	0	NODE_3702_length_655_cov_96.0000_k_175_flag_1;NODE_10844_length_549_cov_28.0000_k_175_flag_1	+;-	1-654;9-548	62.0000
+Vangueria_ferruginea	MIT	nad1_exon_4_5	ACV96637.1-nad1_exon_4_5	1-19;21-102	prot	101	00	96.19	97.03	0.905	0.941	303	303	0	0		2	1	2	1	2	NODE_7153_length_275_cov_6.0000_k_175_flag_1;NODE_12879_length_617_cov_19.0000_k_175_flag_1	+;+	141-197;366-611	12.5000
+Vangueria_ferruginea	MIT	nad5_exon_1_2_3	AEK01311.1-nad5_exon_1_2_3	227-275;315-488	prot	223	00	45.70	90.58	0.371	0.820	651	651	0	0		2	1	2	0	0	NODE_11366_length_366_cov_11.0000_k_175_flag_1;NODE_17616_length_1127_cov_13.0000_k_175_flag_1	+;+	105-251;3-506	12.0000
+Vangueria_ferruginea	MIT	nad7	QSJ48341.1-nad7	116-225	prot	110	00	27.99	100.00	0.280	1.000	330	330	0	0		1	1	1	0	0	NODE_14778_length_332_cov_3.0000_k_175_flag_1	-	3-332	3.0000
+Vangueria_ferruginea	MIT	rpl2	QGW55192.1-rpl2	1-193	prot	193	00	57.96	90.67	0.471	0.822	573	573	0	0		1	1	1	1	0	NODE_2193_length_1286_cov_112.0000_k_175_flag_1	+	713-1285	112.0000
+Vangueria_ferruginea	MIT	rpl5	QHE65829.1-rpl5	148-185	prot	38	00	20.54	100.00	0.205	1.000	114	114	0	0		1	1	1	0	0	NODE_9421_length_543_cov_17.0000_k_175_flag_1	-	429-542	17.0000
+Vangueria_ferruginea	MIT	rps10	QIV67023.1-rps10	33-120	prot	88	00	73.33	89.77	0.583	0.806	171	171	0	0		1	1	1	1	0	NODE_513_length_370_cov_39.0000_k_175_flag_1	+	4-174	39.0000
+Vangueria_ferruginea	MIT	rps10	QIV67023.1-rps10	87-120	prot	34	01	28.33	91.18	0.233	0.517	102	102	0	0		1	1	1	0	0	NODE_18737_length_545_cov_20.0000_k_175_flag_1	+	139-240	20.0000
+Vangueria_ferruginea	MIT	rps14	AOO96407.1-rps14	1-92,93-100	prot	100	00	100.00	87.00	0.740	0.738	356	300	56	0	104,105	1	1	1	1	1	NODE_9421_length_543_cov_17.0000_k_175_flag_1	-	151-424,71-94	17.0000
+Vangueria_ferruginea	MIT	rps3	QMQ97381.1-rps3	72-194;421-551	prot	254	00	44.80	91.34	0.370	0.833	756	756	0	0		2	1	2	0	0	NODE_14345_length_379_cov_16.0000_k_175_flag_1;NODE_2461_length_401_cov_4.0000_k_175_flag_1	+;-	5-367;8-400	10.0000
+Vangueria_ferruginea	MIT	tatC	ABG65646.1-tatC	7-93	prot	87	00	31.87	88.51	0.245	0.764	264	264	0	0	30	1	1	1	0	0	NODE_8444_length_356_cov_5.0000_k_175_flag_1	-	1-263	5.0000

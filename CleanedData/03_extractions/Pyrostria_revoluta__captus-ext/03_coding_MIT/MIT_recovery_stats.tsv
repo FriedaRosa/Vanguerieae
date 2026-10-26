@@ -1,0 +1,35 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Pyrostria_revoluta	MIT	atp4	AIG90002.1-atp4	1-50	prot	50	00	25.25	96.00	0.232	0.922	150	150	0	0		1	1	1	0	0	NODE_13259_length_481_cov_18.8358_k_175_flag_1	+	331-480	18.8358
+Pyrostria_revoluta	MIT	atp6	BAM36206.1-atp6	1-63;147-243;245-261	prot	177	00	67.82	80.79	0.418	0.651	666	666	0	0		3	1	2	2	0	NODE_21942_length_428_cov_12.7009_k_175_flag_1;NODE_20534_length_301_cov_13.0432_k_175_flag_1;NODE_13139_length_292_cov_17.5822_k_175_flag_1	+;+;-	105-428;2-292;242-292	14.4421
+Pyrostria_revoluta	MIT	atp8	AET62907.1-atp8	1-120	prot	120	00	75.00	85.00	0.525	0.717	360	360	0	0		1	1	1	1	0	NODE_14273_length_781_cov_27.4545_k_175_flag_1	+	414-773	27.4545
+Pyrostria_revoluta	MIT	atp9	AET62949.1-atp9	1-74	prot	74	00	100.00	90.54	0.811	0.820	222	222	0	0		1	1	1	1	1	NODE_8484_length_981_cov_28.0143_k_175_flag_1	-	26-247	28.0143
+Pyrostria_revoluta	MIT	ccmB	QGX42491.1-ccmB	41-135	prot	95	00	46.12	94.74	0.413	0.898	285	285	0	0		1	1	1	0	0	NODE_17351_length_299_cov_27.0265_k_175_flag_1	-	9-293	27.0265
+Pyrostria_revoluta	MIT	ccmFC	BAD83536.2-ccmFC	17-254	prot	238	00	54.34	90.76	0.443	0.800	714	714	0	0		1	1	1	1	0	NODE_22659_length_719_cov_42.4228_k_175_flag_1	-	1-714	42.4228
+Pyrostria_revoluta	MIT	ccmFN	QEX95847.1-ccmFN	1-97;329-577	prot	346	00	59.97	92.77	0.513	0.860	1038	1038	0	0		2	1	2	2	0	NODE_22315_length_390_cov_13.1641_k_175_flag_1;NODE_20044_length_1190_cov_13.4504_k_175_flag_1	-;-	2-292;442-1188	13.3072
+Pyrostria_revoluta	MIT	cob	QTT60957.1-cob	1-107;167-389	prot	330	00	84.83	96.67	0.792	0.910	981	981	0	0	963	2	1	2	1	0	NODE_11635_length_1496_cov_18.81_k_175_flag_1;NODE_12811_length_1481_cov_12.1987_k_175_flag_1	+;+	1174-1494;2-660	15.5043
+Pyrostria_revoluta	MIT	cox1	AIG89850.1-cox1	1-112	prot	112	00	21.25	99.11	0.209	0.982	336	336	0	0		1	1	1	0	0	NODE_17928_length_1636_cov_52.61_k_175_flag_1	-	1-336	52.6100
+Pyrostria_revoluta	MIT	cox2	AMP43656.1-cox2	1-127;129-201	prot	200	00	76.92	96.00	0.708	0.921	600	600	0	0		2	1	2	2	0	NODE_9308_length_557_cov_13.5548_k_175_flag_1;NODE_16371_length_653_cov_20.3492_k_175_flag_1	+;+	162-542;429-647	16.9520
+Pyrostria_revoluta	MIT	cox3	QGW53590.1-cox3	1-87;154-265	prot	199	00	75.09	97.99	0.721	0.959	597	597	0	0		2	1	2	2	0	NODE_3848_length_423_cov_11.6309_k_175_flag_1;NODE_4045_length_351_cov_17.208_k_175_flag_1	+;-	162-422;15-350	14.4194
+Pyrostria_revoluta	MIT	matR	AIG89909.1-matR	1-90;91-658	prot	658	00	100.00	93.01	0.860	0.821	1908	1908	0	0		2	1	2	1	2	NODE_1819_length_716_cov_12.6865_k_175_flag_1;NODE_793_length_2172_cov_125.2663_k_175_flag_1	+;-	433-701;534-2172	68.9764
+Pyrostria_revoluta	MIT	nad1_exon_2_3	ACV96637.1-nad1_exon_2_3	1-27,28-83	prot	83	00	91.21	100.00	0.912	1.000	1585	249	1336	0		1	1	1	1	1	NODE_22882_length_2108_cov_23.352_k_175_flag_1	+	518-598,1935-2102	23.3520
+Pyrostria_revoluta	MIT	nad1_exon_4_5	ACV96637.1-nad1_exon_4_5	21-105	prot	85	00	80.95	96.47	0.752	0.931	255	255	0	0		1	1	1	1	0	NODE_793_length_2172_cov_125.2663_k_175_flag_1	-	51-305	125.2663
+Pyrostria_revoluta	MIT	nad2_exon_1_2	QEM24359.1-nad2_exon_1_2	1-51	prot	51	00	28.02	100.00	0.280	0.922	153	153	0	0		1	1	1	0	0	NODE_1168_length_291_cov_10.378_k_175_flag_1	+	9-161	10.3780
+Pyrostria_revoluta	MIT	nad2_exon_1_2	QEM24359.1-nad2_exon_1_2	46-51,52-105	prot	60	01	32.97	85.00	0.231	0.722	522	180	342	0		1	1	1	0	0	NODE_11352_length_563_cov_7.8541_k_175_flag_1	-	513-530,9-170	7.8541
+Pyrostria_revoluta	MIT	nad2_exon_3_4_5	QEM24359.1-nad2_exon_3_4_5	1-53;75-168;245-306	prot	209	00	68.30	96.17	0.631	0.923	627	627	0	0		3	2	3	2	0	NODE_19904_length_514_cov_14.1012_k_175_flag_1;NODE_1179_length_286_cov_6.3378_k_175_flag_1;NODE_20217_length_1553_cov_44.5319_k_175_flag_1	+;-;-	273-431;1-282;157-342	21.6570
+Pyrostria_revoluta	MIT	nad4L	CAQ77604.1-nad4L	55-100	prot	46	00	46.00	97.83	0.440	0.947	138	138	0	0		1	1	1	0	0	NODE_13259_length_481_cov_18.8358_k_175_flag_1	+	4-141	18.8358
+Pyrostria_revoluta	MIT	nad5_exon_4_5	AEK01311.1-nad5_exon_4_5	1-180	prot	180	00	100.00	86.67	0.733	0.751	459	459	0	0		1	1	1	1	1	NODE_12875_length_1894_cov_43.5301_k_175_flag_1	-	721-1179	43.5301
+Pyrostria_revoluta	MIT	nad6	QCQ81896.1-nad6	1-48;196-205	prot	58	00	28.29	93.10	0.244	0.866	171	171	0	0		2	1	2	0	0	NODE_5816_length_1150_cov_50.6835_k_175_flag_1;NODE_15535_length_2277_cov_68.9565_k_175_flag_1	-;-	4-147;667-693	59.8200
+Pyrostria_revoluta	MIT	nad7	QSJ48341.1-nad7	39-48,49-71;146-308;319-393	prot	271	00	68.96	99.26	0.679	0.983	1703	813	890	0		3	1	3	2	0	NODE_3216_length_1964_cov_43.055_k_175_flag_1;NODE_4359_length_915_cov_21.1235_k_175_flag_1;NODE_5245_length_364_cov_14.9341_k_175_flag_1	+;-;+	4-32,923-992;427-915;2-226	26.3709
+Pyrostria_revoluta	MIT	nad9	QSJ48311.1-nad9	1-85	prot	85	00	44.74	100.00	0.447	1.000	255	255	0	0		1	1	1	0	0	NODE_22483_length_291_cov_10.3531_k_175_flag_1	-	1-255	10.3531
+Pyrostria_revoluta	MIT	rpl10	AMP43670.1-rpl10	1-142	prot	142	00	87.65	92.96	0.753	0.835	426	426	0	0		1	1	1	1	0	NODE_15286_length_1115_cov_14.3552_k_175_flag_1	-	8-433	14.3552
+Pyrostria_revoluta	MIT	rpl2	QGW55192.1-rpl2	1-248;261-293,294-333	prot	321	00	96.40	91.90	0.808	0.844	2096	945	1151	0		2	1	2	1	2	NODE_3080_length_1659_cov_196.6004_k_175_flag_1;NODE_15711_length_1396_cov_30.2865_k_175_flag_1	+;-	925-1659;1297-1395,35-145	113.4434
+Pyrostria_revoluta	MIT	rpl5	QHE65829.1-rpl5	1-133	prot	133	00	71.89	89.47	0.568	0.780	396	396	0	0		1	1	1	1	0	NODE_11649_length_1238_cov_559.3586_k_175_flag_1	+	837-1232	559.3586
+Pyrostria_revoluta	MIT	rps1	QTC06424.1-rps1	99-205	prot	107	00	52.20	86.92	0.385	0.755	306	306	0	0		1	1	1	1	0	NODE_15252_length_320_cov_7.55_k_175_flag_1	+	2-307	7.5500
+Pyrostria_revoluta	MIT	rps10	QIV67023.1-rps10	37-84,85-120	prot	84	00	70.00	89.29	0.550	0.762	1117	252	865	0		1	1	1	1	0	NODE_17928_length_1636_cov_52.61_k_175_flag_1	-	1488-1631,515-622	52.6100
+Pyrostria_revoluta	MIT	rps12	QIS40626.1-rps12	88-125	prot	38	00	30.40	97.37	0.288	0.948	114	114	0	0		1	1	1	0	0	NODE_2226_length_466_cov_11.0172_k_175_flag_1	+	2-115	11.0172
+Pyrostria_revoluta	MIT	rps13	AOW70633.1-rps13	1-30	prot	30	00	25.86	93.33	0.224	0.871	90	90	0	0		1	1	1	0	0	NODE_227_length_1734_cov_88.1269_k_175_flag_1	-	2-91	88.1269
+Pyrostria_revoluta	MIT	rps3	QMQ97381.1-rps3	25-188	prot	164	00	28.92	92.68	0.247	0.859	495	495	0	0		1	1	1	0	0	NODE_20844_length_1475_cov_56.1622_k_175_flag_1	+	981-1475	56.1622
+Pyrostria_revoluta	MIT	sdh4	QRV60029.1-sdh4	1-28;103-129	prot	55	00	42.64	94.55	0.380	0.871	189	189	0	0	120	2	1	2	0	0	NODE_4045_length_351_cov_17.208_k_175_flag_1;NODE_2226_length_466_cov_11.0172_k_175_flag_1	-;+	1-84;163-266	14.1126
+Pyrostria_revoluta	MIT	tatC	ABG65646.1-tatC	170-273	prot	104	00	38.10	84.62	0.264	0.716	312	312	0	0		1	1	1	0	0	NODE_13118_length_1654_cov_16.4329_k_175_flag_1	+	3-314	16.4329

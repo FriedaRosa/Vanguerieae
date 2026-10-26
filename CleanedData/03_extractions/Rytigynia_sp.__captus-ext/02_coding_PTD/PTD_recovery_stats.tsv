@@ -1,0 +1,32 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Rytigynia_sp.	PTD	accD	QCW94660.1-accD	251-358	prot	108	00	27.69	87.04	0.205	0.758	324	324	0	0		1	1	1	0	0	NODE_5402_length_330_cov_93.6364_k_175_flag_1	+	1-324	93.6364
+Rytigynia_sp.	PTD	atpB	AMD08619.1-atpB	130-443	prot	314	00	63.05	98.41	0.610	0.968	942	942	0	0		1	1	1	1	0	NODE_1660_length_962_cov_84.5114_k_175_flag_1	-	7-948	84.5114
+Rytigynia_sp.	PTD	infA	QLF67647.1-infA	1-65	prot	65	00	85.53	92.31	0.724	0.778	198	198	0	0		1	1	1	1	0	NODE_3060_length_297_cov_64.6465_k_175_flag_1	-	9-206	64.6465
+Rytigynia_sp.	PTD	ndhA	APU51505.1-ndhA	27-131	prot	105	00	28.93	92.38	0.245	0.853	315	315	0	0		1	1	1	0	0	NODE_5141_length_318_cov_35.8491_k_175_flag_1	-	1-315	35.8491
+Rytigynia_sp.	PTD	ndhE	ABB21008.1-ndhE	1-47	prot	47	00	46.53	100.00	0.465	1.000	141	141	0	0		1	1	1	0	0	NODE_1339_length_424_cov_82.783_k_175_flag_1	-	9-149	82.7830
+Rytigynia_sp.	PTD	ndhF	QJS33284.1-ndhF	78-168;247-452	prot	297	00	40.24	92.26	0.340	0.850	891	891	0	0		2	1	2	0	0	NODE_1227_length_275_cov_61.0909_k_175_flag_1;NODE_1189_length_620_cov_68.2258_k_175_flag_1	+;+	4-275;1-619	64.6583
+Rytigynia_sp.	PTD	ndhG	QKX48822.1-ndhG	127-176	prot	50	00	28.41	88.00	0.216	0.774	150	150	0	0		1	1	1	0	0	NODE_1339_length_424_cov_82.783_k_175_flag_1	-	275-424	82.7830
+Rytigynia_sp.	PTD	ndhH	AVL92386.1-ndhH	145-341	prot	197	00	49.50	89.85	0.394	0.807	597	597	0	0		1	1	1	0	0	NODE_4821_length_605_cov_71.405_k_175_flag_1	-	8-604	71.4050
+Rytigynia_sp.	PTD	ndhI	APA33661.1-ndhI	1-58	prot	58	00	34.94	91.38	0.289	0.835	174	174	0	0		1	1	1	0	0	NODE_1983_length_290_cov_86.8966_k_175_flag_1	+	116-289	86.8966
+Rytigynia_sp.	PTD	ndhK	ARH08394.1-ndhK	31-119;124-217	prot	183	00	82.43	88.52	0.635	0.783	555	555	0	0		2	1	2	2	0	NODE_2756_length_274_cov_89.7646_k_175_flag_1;NODE_5553_length_319_cov_17.8194_k_175_flag_1	+;+	6-272;14-301	53.7920
+Rytigynia_sp.	PTD	pbf1	CAC88072.1-pbf1	1-43	prot	43	00	100.00	100.00	1.000	1.000	129	129	0	0		1	1	1	1	1	NODE_2913_length_577_cov_51.4731_k_175_flag_1	-	353-481	51.4731
+Rytigynia_sp.	PTD	petA	QEJ83256.1-petA	35-146	prot	112	00	35.00	94.64	0.312	0.888	336	336	0	0		1	1	1	0	0	NODE_990_length_347_cov_81.268_k_175_flag_1	-	1-336	81.2680
+Rytigynia_sp.	PTD	petL	ALD84706.1-petL	22-30	prot	9	00	29.03	88.89	0.226	0.790	27	27	0	0		1	1	1	0	0	NODE_2607_length_1158_cov_145.8329_k_175_flag_1	+	1048-1074	145.8329
+Rytigynia_sp.	PTD	psaA	ABJ89679.1-psaA	25-197;283-372;566-664	prot	362	00	48.27	99.45	0.477	0.987	1086	1086	0	0		3	2	3	0	0	NODE_1719_length_525_cov_96.5714_k_175_flag_1;NODE_563_length_272_cov_136.7647_k_175_flag_1;NODE_5592_length_304_cov_31.5789_k_175_flag_1	-;+;+	2-520;2-271;2-298	88.3050
+Rytigynia_sp.	PTD	psbA	ACB86507.1-psbA	1-53;132-291;292-353	prot	275	00	77.90	97.82	0.745	0.955	827	825	2	0		3	1	3	2	0	NODE_2730_length_292_cov_50.3425_k_175_flag_1;NODE_1395_length_483_cov_91.3894_k_175_flag_1;NODE_2314_length_1025_cov_60.9831_k_175_flag_1	+;+;+	134-292;3-481;8-194	67.5717
+Rytigynia_sp.	PTD	psbE	AUV64931.1-psbE	1-83	prot	83	00	100.00	97.59	0.952	0.952	249	249	0	0		1	1	1	1	1	NODE_3081_length_570_cov_112.1053_k_175_flag_1	-	267-515	112.1053
+Rytigynia_sp.	PTD	psbF	BAL72608.1-psbF	1-39	prot	39	00	100.00	97.44	0.949	0.949	117	117	0	0		1	1	1	1	1	NODE_3081_length_570_cov_112.1053_k_175_flag_1	-	138-254	112.1053
+Rytigynia_sp.	PTD	psbH	CBJ04326.1-psbH	57-73	prot	17	00	23.29	100.00	0.233	1.000	51	51	0	0		1	1	1	0	0	NODE_3954_length_304_cov_29.6053_k_175_flag_1	-	250-300	29.6053
+Rytigynia_sp.	PTD	psbL	BAO19729.1-psbL	1-35	prot	35	00	92.11	100.00	0.921	1.000	105	105	0	0		1	1	1	1	1	NODE_3081_length_570_cov_112.1053_k_175_flag_1	-	7-111	112.1053
+Rytigynia_sp.	PTD	psbT	CAD28747.1-psbT	1-35	prot	35	00	100.00	97.14	0.943	0.944	105	105	0	0		1	1	1	1	1	NODE_2913_length_577_cov_51.4731_k_175_flag_1	+	182-286	51.4731
+Rytigynia_sp.	PTD	rbcL	QQW47350.1-rbcL	80-189;195-318	prot	234	00	49.26	97.44	0.467	0.948	702	702	0	0		2	1	2	0	0	NODE_3435_length_337_cov_43.7226_k_175_flag_1;NODE_3716_length_375_cov_64.708_k_175_flag_1	+;+	6-335;2-373	54.2153
+Rytigynia_sp.	PTD	rpl2	QRI61044.1-rpl2	1-130;131-275	prot	275	00	100.00	98.18	0.964	0.963	904	822	82	0		2	1	2	1	2	NODE_612_length_503_cov_63.8171_k_175_flag_1;NODE_2314_length_1025_cov_60.9831_k_175_flag_1	-;-	47-437;559-989	62.4001
+Rytigynia_sp.	PTD	rpl20	QJT43266.1-rpl20	1-42	prot	42	00	32.81	95.24	0.297	0.907	126	126	0	0		1	1	1	0	0	NODE_4201_length_563_cov_42.0959_k_175_flag_1	-	7-132	42.0959
+Rytigynia_sp.	PTD	rpl32	BAH11179.1-rpl32	5-26,27-31	prot	27	00	58.70	70.37	0.239	0.483	647	87	560	0	48	1	1	1	1	0	NODE_3104_length_1048_cov_90.1168_k_175_flag_1	+	361-431,992-1006	90.1168
+Rytigynia_sp.	PTD	rpl33	QHN53310.1-rpl33	19-66	prot	48	00	72.73	83.33	0.485	0.674	144	144	0	0		1	1	1	1	0	NODE_3860_length_272_cov_54.0441_k_175_flag_1	+	6-149	54.0441
+Rytigynia_sp.	PTD	rps11	QAV58545.1-rps11	39-138	prot	100	00	72.46	94.00	0.638	0.884	300	300	0	0		1	1	1	1	0	NODE_265_length_512_cov_55.0781_k_175_flag_1	+	4-303	55.0781
+Rytigynia_sp.	PTD	rps12_exon_2_3	CAD28682.1-rps12_exon_2_3	1-85	prot	85	00	100.00	95.29	0.906	0.903	240	240	0	0		1	1	1	1	1	NODE_3703_length_665_cov_87.0677_k_175_flag_1	+	227-466	87.0677
+Rytigynia_sp.	PTD	rps14	AEJ82553.1-rps14	1-64	prot	64	00	64.00	90.62	0.520	0.744	192	192	0	0		1	1	1	1	0	NODE_2936_length_403_cov_72.9529_k_175_flag_1	-	7-198	72.9529
+Rytigynia_sp.	PTD	ycf2	QJQ74327.1-ycf2	4-116;284-436;463-538;551-697;924-1075;1076-1174;1301-1701	prot	1141	00	63.49	90.45	0.514	0.813	3462	3459	3	0		7	3	6	5	0	NODE_807_length_950_cov_165.4737_k_175_flag_1;NODE_5125_length_700_cov_91.2857_k_175_flag_1;NODE_4082_length_275_cov_41.4545_k_175_flag_1;NODE_5560_length_462_cov_27.2727_k_175_flag_1;NODE_3015_length_454_cov_61.4537_k_175_flag_1;NODE_2047_length_382_cov_43.9791_k_175_flag_1;NODE_2399_length_1206_cov_93.5323_k_175_flag_1	+;-;-;-;-;-;+	35-373;74-511;3-260;1-462;4-453;74-382;3-1205	74.9217

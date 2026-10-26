@@ -1,0 +1,6 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Meyna_laxiflora	PTD	cemA	QGM83372.1-cemA	170-229	prot	60	00	26.20	88.33	0.201	0.780	180	180	0	0		1	1	1	0	0	NODE_1351_length_216_cov_33.3333_k_111_flag_1	-	35-214	33.3333
+Meyna_laxiflora	PTD	clpP1	AJW59646.1-clpP1	43-104	prot	62	00	31.63	96.77	0.296	0.937	186	186	0	0		1	1	1	0	0	NODE_647_length_189_cov_30.1587_k_111_flag_1	+	4-189	30.1587
+Meyna_laxiflora	PTD	psbZ	BAO01489.1-psbZ	9-62	prot	54	00	87.10	94.44	0.774	0.892	162	162	0	0		1	1	1	1	0	NODE_774_length_215_cov_46.0465_k_111_flag_1	+	4-165	46.0465

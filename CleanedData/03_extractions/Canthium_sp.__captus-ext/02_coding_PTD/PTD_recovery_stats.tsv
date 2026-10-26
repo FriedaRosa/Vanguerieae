@@ -1,0 +1,52 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Canthium_sp.	PTD	accD	AIW05329.1-accD	119-522	prot	404	00	77.39	86.63	0.567	0.751	1122	1122	0	0		1	1	1	1	0	NODE_4315_length_1290_cov_13.3442_k_175_flag_1	+	11-1132	13.3442
+Canthium_sp.	PTD	atpA	AUF33626.1-atpA	137-304	prot	168	00	33.14	100.00	0.331	1.000	504	504	0	0		1	1	1	0	0	NODE_2070_length_508_cov_7.1339_k_175_flag_1	-	3-506	7.1339
+Canthium_sp.	PTD	atpB	AMD08619.1-atpB	134-248;267-397;405-498	prot	340	00	68.27	94.71	0.610	0.895	960	960	0	0		3	2	3	3	0	NODE_20212_length_348_cov_6.9425_k_175_flag_1;NODE_2793_length_393_cov_9.9898_k_175_flag_1;NODE_19421_length_395_cov_9.9392_k_175_flag_1	+;-;-	3-347;1-393;173-394	8.9572
+Canthium_sp.	PTD	cemA	ATG26784.1-cemA	1-107	prot	107	00	46.52	79.44	0.274	0.625	321	321	0	0		1	1	1	0	0	NODE_8642_length_761_cov_13.0959_k_175_flag_1	-	1-321	13.0959
+Canthium_sp.	PTD	clpP1	AJW59646.1-clpP1	1-23;25-41;122-182;184-196	prot	114	00	58.16	95.61	0.531	0.911	342	342	0	0		4	1	4	3	0	NODE_2229_length_491_cov_5.5356_k_175_flag_1;NODE_1588_length_322_cov_6.5652_k_175_flag_1;NODE_9697_length_361_cov_9.2022_k_175_flag_1;NODE_12569_length_503_cov_4.8032_k_175_flag_1	+;+;+;-	228-296;270-320;172-354;465-503	6.5266
+Canthium_sp.	PTD	ndhB	CBJ04342.1-ndhB	1-94;187-259;260-473	prot	381	00	74.71	98.69	0.727	0.972	1790	1143	647	0		3	1	3	2	0	NODE_2240_length_825_cov_10.2497_k_175_flag_1;NODE_6236_length_573_cov_10.014_k_175_flag_1;NODE_9430_length_943_cov_8.9671_k_175_flag_1	+;-;+	543-824;355-573;294-935	9.7436
+Canthium_sp.	PTD	ndhC	ALF03757.1-ndhC	81-120	prot	40	00	33.33	95.00	0.300	0.902	120	120	0	0		1	1	1	0	0	NODE_7255_length_322_cov_8.441_k_175_flag_1	-	198-317	8.4410
+Canthium_sp.	PTD	ndhD	QNR91367.1-ndhD	1-183	prot	183	00	36.60	85.25	0.258	0.727	549	549	0	0		1	1	1	0	0	NODE_2577_length_613_cov_11.8238_k_175_flag_1	-	3-551	11.8238
+Canthium_sp.	PTD	ndhE	ABB21008.1-ndhE	1-101	prot	101	00	100.00	94.06	0.881	0.885	207	207	0	0		1	1	1	1	1	NODE_833_length_314_cov_4.8089_k_175_flag_1	+	1-207	4.8089
+Canthium_sp.	PTD	ndhF	QJS33284.1-ndhF	198-542;671-738	prot	413	00	55.96	83.54	0.375	0.692	1248	1248	0	0		2	1	2	2	0	NODE_18414_length_1058_cov_11.1323_k_175_flag_1;NODE_16787_length_1475_cov_42.1776_k_175_flag_1	+;-	2-1051;1278-1475	26.6549
+Canthium_sp.	PTD	ndhH	AVL92386.1-ndhH	1-100	prot	100	00	25.13	93.00	0.216	0.865	285	285	0	0		1	1	1	0	0	NODE_17304_length_950_cov_42.6955_k_175_flag_1	-	1-285	42.6955
+Canthium_sp.	PTD	ndhI	APA33661.1-ndhI	1-91	prot	91	00	54.82	95.60	0.500	0.914	273	273	0	0		1	1	1	1	0	NODE_6189_length_303_cov_6.9769_k_175_flag_1	+	23-295	6.9769
+Canthium_sp.	PTD	ndhK	ARH08394.1-ndhK	1-49;76-191	prot	165	00	74.32	90.91	0.608	0.826	495	495	0	0		2	1	2	1	0	NODE_7255_length_322_cov_8.441_k_175_flag_1;NODE_11624_length_356_cov_7.6348_k_175_flag_1	-;-	1-147;8-355	8.0379
+Canthium_sp.	PTD	petA	QEJ83256.1-petA	1-72;80-273	prot	266	00	83.12	93.23	0.719	0.868	795	795	0	0		2	1	2	1	0	NODE_18371_length_406_cov_7.4384_k_175_flag_1;NODE_15470_length_590_cov_14.8441_k_175_flag_1	-;+	3-218;6-584	11.1412
+Canthium_sp.	PTD	petB	QGT35023.1-petB	3-94	prot	92	00	42.20	98.91	0.413	0.978	276	276	0	0		1	1	1	0	0	NODE_5246_length_709_cov_8.945_k_175_flag_1	-	3-278	8.9450
+Canthium_sp.	PTD	petG	BAB47052.1-petG	8-37	prot	30	00	81.08	100.00	0.811	0.939	90	90	0	0		1	1	1	1	0	NODE_7435_length_288_cov_8.3889_k_175_flag_1	-	195-284	8.3889
+Canthium_sp.	PTD	petG	BAB47052.1-petG	3-16;18-37	prot	34	01	91.89	91.18	0.757	0.830	90	90	0	0		2	1	2	1	2	NODE_15271_length_565_cov_99.954_k_175_flag_1;NODE_6564_length_521_cov_34.1996_k_175_flag_1	+;-	518-559;88-135	67.0768
+Canthium_sp.	PTD	petL	BAH11276.1-petL	8-23	prot	16	00	51.61	87.50	0.387	0.637	99	99	0	0	27	1	1	1	1	0	NODE_12866_length_469_cov_38.4223_k_175_flag_1	-	205-302	38.4223
+Canthium_sp.	PTD	petL	BAH11276.1-petL	10-31	prot	22	01	70.97	68.18	0.258	0.453	351	351	0	0	230,231	1	1	1	1	0	NODE_20106_length_475_cov_12.7177_k_175_flag_1	-	37-385	12.7177
+Canthium_sp.	PTD	petL	BAH11276.1-petL	6-23	prot	18	02	58.06	72.22	0.258	0.449	69	69	0	0	36,53,54	1	1	1	1	0	NODE_16525_length_764_cov_36.8816_k_175_flag_1	+	236-301	36.8816
+Canthium_sp.	PTD	petN	BAB47023.1-petN	1-15	prot	15	00	51.72	100.00	0.517	0.719	45	45	0	0		1	1	1	1	0	NODE_16557_length_774_cov_31.2145_k_175_flag_1	-	7-51	31.2145
+Canthium_sp.	PTD	psaA	ABJ89679.1-psaA	1-52;63-396;490-615	prot	512	00	68.27	99.80	0.680	0.994	1536	1536	0	0		3	1	3	2	0	NODE_7604_length_278_cov_8.6906_k_175_flag_1;NODE_20139_length_1008_cov_17.9762_k_175_flag_1;NODE_12659_length_382_cov_4.7435_k_175_flag_1	-;-;-	3-158;2-1003;3-380	10.4701
+Canthium_sp.	PTD	psaI	AKA94873.1-psaI	1-8	prot	8	00	23.53	100.00	0.235	1.000	24	24	0	0		1	1	1	0	0	NODE_1907_length_449_cov_51.7906_k_175_flag_1	-	270-293	51.7906
+Canthium_sp.	PTD	psaJ	BAE47614.1-psaJ	1-44	prot	44	00	100.00	93.18	0.864	0.868	132	132	0	0		1	1	1	1	1	NODE_12667_length_828_cov_18.6014_k_175_flag_1	-	665-796	18.6014
+Canthium_sp.	PTD	psbA	ACB86507.1-psbA	86-207;223-331	prot	231	00	65.44	98.70	0.637	0.973	693	693	0	0		2	1	2	2	0	NODE_14714_length_368_cov_9.028_k_175_flag_1;NODE_341_length_335_cov_9.0149_k_175_flag_1	-;-	2-367;7-333	9.0215
+Canthium_sp.	PTD	psbB	ALI30725.1-psbB	1-143;298-343	prot	189	00	37.20	96.83	0.348	0.937	567	567	0	0		2	1	2	0	0	NODE_20255_length_505_cov_15.5485_k_175_flag_1;NODE_13974_length_749_cov_24.1923_k_175_flag_1	+;-	76-504;612-749	19.8704
+Canthium_sp.	PTD	psbC	ADH94339.1-psbC	29-163;178-361;412-473	prot	381	00	80.55	98.43	0.780	0.967	1143	1143	0	0		3	2	3	2	0	NODE_5547_length_408_cov_12.5833_k_175_flag_1;NODE_3634_length_554_cov_7.6318_k_175_flag_1;NODE_5773_length_537_cov_5.6238_k_175_flag_1	-;-;+	1-405;3-554;1-186	8.6130
+Canthium_sp.	PTD	psbF	BAL72608.1-psbF	1-19	prot	19	00	48.72	100.00	0.487	1.000	57	57	0	0		1	1	1	0	0	NODE_11067_length_412_cov_17.5922_k_175_flag_1	+	348-404	17.5922
+Canthium_sp.	PTD	psbJ	AMR73808.1-psbJ	4-12;27-39	prot	22	00	56.41	95.45	0.513	0.910	66	66	0	0		2	1	2	2	0	NODE_16613_length_700_cov_27.18_k_175_flag_1;NODE_2540_length_866_cov_19.1801_k_175_flag_1	-;-	540-566;445-483	23.1801
+Canthium_sp.	PTD	psbK	ANY60490.1-psbK	1-59	prot	59	00	100.00	93.22	0.864	0.855	183	183	0	0		1	1	1	1	1	NODE_14976_length_336_cov_4.494_k_175_flag_1	-	123-305	4.4940
+Canthium_sp.	PTD	psbT	CAD28747.1-psbT	1-35	prot	35	00	100.00	97.14	0.943	0.944	105	105	0	0		1	1	1	1	1	NODE_20514_length_295_cov_9.2136_k_175_flag_1	-	34-138	9.2136
+Canthium_sp.	PTD	psbT	CAD28747.1-psbT	1-23	prot	23	01	65.71	73.91	0.314	0.410	441	441	0	0	107,108,384,396	1	1	1	1	0	NODE_15342_length_508_cov_73.3206_k_175_flag_0	+	2-438	73.3206
+Canthium_sp.	PTD	rbcL	QQW47350.1-rbcL	352-475	prot	124	00	26.11	92.74	0.223	0.860	372	372	0	0		1	1	1	0	0	NODE_20119_length_678_cov_12.9174_k_175_flag_1	+	3-374	12.9174
+Canthium_sp.	PTD	rpl16	BAO01531.1-rpl16	4-45	prot	42	00	31.11	92.86	0.267	0.862	126	126	0	0		1	1	1	0	0	NODE_17948_length_392_cov_13.8673_k_175_flag_1	-	1-126	13.8673
+Canthium_sp.	PTD	rpl2	QRI61044.1-rpl2	1-117;130-275	prot	263	00	95.64	97.72	0.913	0.954	786	786	0	0		2	1	2	1	2	NODE_19100_length_469_cov_36.7036_k_175_flag_1;NODE_10852_length_465_cov_16.8665_k_175_flag_1	+;+	117-467;1-435	26.7850
+Canthium_sp.	PTD	rpl23	BAO01536.1-rpl23	64-93	prot	30	00	32.26	100.00	0.323	1.000	90	90	0	0		1	1	1	0	0	NODE_19100_length_469_cov_36.7036_k_175_flag_1	+	6-95	36.7036
+Canthium_sp.	PTD	rpl32	BAH11179.1-rpl32	5-22	prot	18	00	39.13	83.33	0.261	0.677	174	174	0	0	72	1	1	1	0	0	NODE_13573_length_853_cov_27.8435_k_175_flag_0	+	650-822	27.8435
+Canthium_sp.	PTD	rpl33	ASA36158.1-rpl33	1-63	prot	63	00	100.00	84.13	0.683	0.676	198	198	0	0		1	1	1	1	1	NODE_12667_length_828_cov_18.6014_k_175_flag_1	-	3-200	18.6014
+Canthium_sp.	PTD	rps11	QAV58545.1-rps11	71-138	prot	68	00	49.28	97.06	0.464	0.721	204	204	0	0		1	1	1	0	0	NODE_522_length_310_cov_10.7161_k_175_flag_1	+	5-208	10.7161
+Canthium_sp.	PTD	rps11	QAV58545.1-rps11	1-116	prot	116	01	84.06	80.17	0.507	0.596	327	327	0	0	69,108,243	1	1	1	1	0	NODE_12218_length_334_cov_9.0419_k_175_flag_1	+	3-326	9.0419
+Canthium_sp.	PTD	rps12_exon_1	CAD28682.1-rps12_exon_1	1-38	prot	38	00	100.00	97.37	0.947	0.948	114	114	0	0		1	1	1	1	1	NODE_12569_length_503_cov_4.8032_k_175_flag_1	-	198-311	4.8032
+Canthium_sp.	PTD	rps12_exon_2_3	QCB91996.1-rps12_exon_2_3	1-38	prot	38	00	47.50	97.37	0.450	0.948	114	114	0	0		1	1	1	0	0	NODE_12711_length_11604_cov_734.1656_k_175_flag_1	-	9-122	734.1656
+Canthium_sp.	PTD	rps14	AEJ82553.1-rps14	1-75	prot	75	00	75.00	90.67	0.610	0.796	225	225	0	0		1	1	1	1	0	NODE_11517_length_487_cov_14.883_k_175_flag_1	-	9-233	14.8830
+Canthium_sp.	PTD	rps15	QIQ56527.1-rps15	1-87	prot	87	00	100.00	89.66	0.793	0.795	261	261	0	0		1	1	1	1	1	NODE_17304_length_950_cov_42.6955_k_175_flag_1	-	406-666	42.6955
+Canthium_sp.	PTD	rps16	CAC88026.1-rps16	53-88	prot	36	00	40.91	86.11	0.295	0.742	108	108	0	0		1	1	1	0	0	NODE_5129_length_554_cov_40.3394_k_175_flag_1	-	442-549	40.3394
+Canthium_sp.	PTD	rps18	APT42286.1-rps18	9-101	prot	93	00	92.08	94.62	0.822	0.839	270	270	0	0		1	1	1	1	1	NODE_1364_length_331_cov_3.6495_k_175_flag_1	+	6-275	3.6495
+Canthium_sp.	PTD	rps2	QBC66712.1-rps2	1-96;97-199	prot	199	00	84.32	96.98	0.792	0.894	599	597	2	0		2	1	2	2	0	NODE_10767_length_459_cov_10.5272_k_175_flag_1;NODE_15519_length_318_cov_16.1447_k_175_flag_1	+;+	172-459;3-311	13.3360
+Canthium_sp.	PTD	rps7	AHY32771.1-rps7	76-155	prot	80	00	51.61	98.75	0.503	0.969	240	240	0	0		1	1	1	1	0	NODE_2240_length_825_cov_10.2497_k_175_flag_1	+	5-244	10.2497
+Canthium_sp.	PTD	rps8	BAA84420.1-rps8	21-117	prot	97	00	72.39	82.47	0.470	0.663	291	291	0	0		1	1	1	1	0	NODE_11950_length_308_cov_9.8052_k_175_flag_1	+	11-301	9.8052

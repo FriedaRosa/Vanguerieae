@@ -1,0 +1,6 @@
+#Captus v1.6.6
+#Command: /home/frieda/miniconda3/envs/captus/bin/captus extract -a ./CleanedData/02_assemblies -o ./CleanedData/03_extractions -n Mega353 -p SeedPlantsPTD -m SeedPlantsMIT
+sample_name	marker_type	locus	ref_name	ref_coords	ref_type	ref_len_matched	hit	pct_recovered	pct_identity	score	wscore	hit_len	cds_len	intron_len	flanks_len	frameshifts	hit_contigs	hit_l50	hit_l90	hit_lg50	hit_lg90	ctg_names	ctg_strands	ctg_coords	ctg_mean_depth
+Bridsonia_chamaedendrum	PTD	petA	QEJ83256.1-petA	24-121	prot	98	00	30.63	93.88	0.269	0.881	294	294	0	0		1	1	1	0	0	NODE_451_length_297_cov_112.1212_k_175_flag_1	-	1-294	112.1212
+Bridsonia_chamaedendrum	PTD	petG	BAB47052.1-petG	3-14	prot	12	00	32.43	100.00	0.324	1.000	36	36	0	0		1	1	1	0	0	NODE_1548_length_576_cov_338.0208_k_175_flag_1	-	7-42	338.0208
+Bridsonia_chamaedendrum	PTD	psbM	QEQ14257.1-psbM	6-34	prot	29	00	85.29	100.00	0.853	1.000	21	21	0	0		1	1	1	1	0	NODE_1363_length_1240_cov_5308.4257_k_175_flag_1	+	135-155	5308.4257
