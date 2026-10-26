@@ -1,0 +1,2068 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Apr  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    emb-lap-frwo (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -p /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked -m MFP --ufboot 1000 -pre concat_mit -T AUTO
+Seed:    670779 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Oct 25 19:11:18 2026
+Kernel:  AVX+FMA - auto-detect threads (14 CPU cores detected)
+
+Reading 43 alignment files in directory /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/atp1.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 32 sequences with 1600 columns, 232 distinct patterns
+23 parsimony-informative, 73 singleton sites, 1504 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       73.38%    failed      0.66%
+   2  Bullockia_fadenii_S514_L004              9.06%    passed     97.60%
+   3  Cyclophyllum_henriettae_S376_L004       19.38%    passed     54.05%
+   4  Everistia_vacciniifolia_S490_L004        5.50%    passed     98.96%
+   5  Everistia_vacciniifolia_S491_L004       46.75%    passed     33.71%
+   6  Psydrax_odoratus                         4.56%    passed     98.86%
+   7  Peponidium_crassifolium_S628_L004        4.56%    passed     98.79%
+   8  Pyrostria_commersonii_S618_L004          4.56%    passed     98.41%
+   9  Pyrostria_hystrix_S641_L004              4.56%    passed     98.41%
+  10  Pyrostria_media_S610_L004                4.56%    passed     98.41%
+  11  Canthium_inerme_S629_L004               37.94%    passed     60.06%
+  12  Multidentia_sclerocarpa_S374_L004        0.00%    passed     93.06%
+  13  Rytigynia_longipedicellata_S442_L004    13.00%    passed     90.15%
+  14  Temnocalyx_nodulosus_S587_L004           4.56%    passed     96.85%
+  15  Pygmaeothamnus_sp_S516_L004              5.69%    passed     93.88%
+  16  Vangueriopsis_lanciflora_S446_L004      25.19%    passed     68.12%
+  17  Eriosemopsis_subanisophylla_S489_L004    4.56%    passed     97.51%
+  18  Plectroniella_armata_S640_L004           6.25%    passed     98.96%
+  19  Plectroniella_armata_S391_L004          35.31%    passed     74.55%
+  20  Keetia_hispida_S383_L004                 4.56%    passed     95.95%
+  21  Keetia_lukei_S507_L004                  14.69%    passed     77.67%
+  22  Everistia_vacciniifolia                  6.06%    passed     98.32%
+  23  Psydrax_ankotekonensis_S572_L004        13.75%    passed     97.68%
+  24  Cyclophyllum_jasminifolium_S377_L004    21.94%    passed     16.10%
+  25  Psydrax_dicoccos_S379_L004              19.75%    passed     87.59%
+  26  Rytigynia_sambavensis_S493_L004          8.88%    passed     99.19%
+  27  Psydrax_obovata_S639_L004               24.94%    passed     32.51%
+  28  Hutchinsonia_barbata_S551_L004          15.44%    passed     98.09%
+  29  Keetia_gueinzii_S519_L004               32.56%    passed     18.15%
+  30  Multidentia_crassa                      13.56%    passed     84.49%
+  31  Canthium_armatum                        52.00%    passed     90.54%
+  32  Globulostylis_leniochlamys              72.31%    passed     61.23%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   19.06%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/atp4.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 27 sequences with 585 columns, 65 distinct patterns
+4 parsimony-informative, 11 singleton sites, 570 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Bullockia_fadenii_S514_L004              0.00%    passed     98.84%
+   2  Everistia_vacciniifolia                 41.03%    passed     73.69%
+   3  Psydrax_dicoccos_S379_L004              49.23%    passed     69.83%
+   4  Cyclophyllum_jasminifolium_S377_L004    25.64%    passed     76.50%
+   5  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.60%
+   6  Psydrax_obovata_S639_L004               52.82%    passed      8.32%
+   7  Pyrostria_commersonii_S618_L004          0.00%    passed     99.60%
+   8  Pyrostria_hystrix_S641_L004              0.00%    passed     99.60%
+   9  Pyrostria_media_S610_L004                0.00%    passed     99.60%
+  10  Rytigynia_longipedicellata_S442_L004     0.00%    passed     98.20%
+  11  Pygmaeothamnus_sp_S516_L004             24.10%    passed     73.28%
+  12  Canthium_inerme_S629_L004                0.00%    passed     99.22%
+  13  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.22%
+  14  Plectroniella_armata_S391_L004           0.00%    passed     99.22%
+  15  Vangueriopsis_lanciflora_S446_L004      23.59%    passed     73.18%
+  16  Perakanthus_velutinus_S495_L004          0.00%    passed     99.30%
+  17  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.30%
+  18  Keetia_hispida_S383_L004                 0.00%    passed     99.76%
+  19  Psydrax_odoratus                         0.00%    passed     98.80%
+  20  Cyclophyllum_henriettae_S376_L004        0.00%    passed     98.84%
+  21  Peponidium_crassifolium_S628_L004        0.00%    passed     99.89%
+  22  Temnocalyx_nodulosus_S587_L004           0.00%    passed     98.23%
+  23  Multidentia_sclerocarpa_S374_L004       16.41%    passed     96.53%
+  24  Plectroniella_armata_S640_L004          21.54%    passed     91.76%
+  25  Everistia_vacciniifolia_S490_L004        9.23%    passed     99.12%
+  26  Everistia_vacciniifolia_S491_L004       23.59%    passed     77.21%
+  27  Multidentia_exserta_S443_L004           65.64%    passed     18.74%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   13.07%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/atp6.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 28 sequences with 826 columns, 188 distinct patterns
+4 parsimony-informative, 86 singleton sites, 736 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Bullockia_fadenii_S514_L004              0.00%    passed     99.52%
+   2  Pyrostria_media_S610_L004                0.00%    passed     99.52%
+   3  Pyrostria_hystrix_S641_L004              0.00%    passed     99.40%
+   4  Pyrostria_commersonii_S618_L004          0.00%    passed     98.85%
+   5  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     98.70%
+   6  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.40%
+   7  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.00%
+   8  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     98.81%
+   9  Temnocalyx_nodulosus_S587_L004           0.00%    passed     96.43%
+  10  Globulostylis_leniochlamys              18.64%    passed     93.19%
+  11  Plectroniella_armata_S391_L004           8.47%    passed     97.25%
+  12  Rytigynia_longipedicellata_S442_L004     8.47%    passed     97.25%
+  13  Cyclophyllum_jasminifolium_S377_L004     8.84%    passed     94.74%
+  14  Keetia_hispida_S383_L004                 0.12%    passed     99.27%
+  15  Psydrax_dicoccos_S379_L004              36.08%    passed     79.75%
+  16  Perakanthus_velutinus_S495_L004         15.38%    passed     94.41%
+  17  Canthium_inerme_S629_L004                1.09%    passed     99.83%
+  18  Everistia_vacciniifolia                  4.00%    passed     92.50%
+  19  Plectroniella_armata_S640_L004          48.67%    passed     45.33%
+  20  Cyclophyllum_henriettae_S376_L004        9.81%    passed     99.59%
+  21  Canthium_armatum                        61.50%    passed     87.45%
+  22  Peponidium_crassifolium_S628_L004       25.91%    passed     93.30%
+  23  Rytigynia_sambavensis_S493_L004         38.98%    passed     95.84%
+  24  Pygmaeothamnus_sp_S516_L004             17.31%    passed     79.96%
+  25  Everistia_vacciniifolia_S491_L004       15.01%    passed     86.61%
+  26  Psydrax_obovata_S639_L004               26.27%    passed     65.46%
+  27  Pyrostria_revoluta                      30.51%    passed     96.22%
+  28  Temnocalyx_nodulosa                     23.12%    passed     70.49%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   14.22%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/atp8.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 31 sequences with 1284 columns, 112 distinct patterns
+2 parsimony-informative, 58 singleton sites, 1224 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Bullockia_fadenii_S514_L004             62.85%    passed     99.67%
+   2  Canthium_inerme_S629_L004               76.87%    passed     99.63%
+   3  Cyclophyllum_henriettae_S376_L004       62.85%    passed     99.67%
+   4  Cyclophyllum_jasminifolium_S377_L004    67.76%    passed     99.12%
+   5  Eriosemopsis_subanisophylla_S489_L004   62.85%    passed     99.67%
+   6  Hutchinsonia_barbata_S551_L004          84.11%    passed     79.39%
+   7  Keetia_hispida_S383_L004                62.85%    passed     99.67%
+   8  Multidentia_sclerocarpa_S374_L004       82.24%    passed     92.72%
+   9  Peponidium_crassifolium_S628_L004       62.85%    passed     99.67%
+  10  Plectroniella_armata_S391_L004          62.85%    passed     99.67%
+  11  Psydrax_ankotekonensis_S572_L004        62.85%    passed     99.67%
+  12  Pyrostria_commersonii_S618_L004         62.85%    passed     99.67%
+  13  Pyrostria_hystrix_S641_L004             62.85%    passed     99.67%
+  14  Pyrostria_revoluta                      71.96%    passed     87.94%
+  15  Rytigynia_longipedicellata_S442_L004    62.85%    passed     99.67%
+  16  Temnocalyx_nodulosus_S587_L004          62.85%    passed     99.67%
+  17  Vangueriopsis_lanciflora_S446_L004      62.85%    passed     99.67%
+  18  Cyclophyllum_guillauminianum            75.00%    passed     75.94%
+  19  Temnocalyx_nodulosa                     80.37%    passed     94.32%
+  20  Everistia_vacciniifolia                 62.85%    passed     99.88%
+  21  Psydrax_odoratus                        56.78%    passed     90.24%
+  22  Perakanthus_velutinus_S495_L004         62.85%    passed     99.67%
+  23  Everistia_vacciniifolia_S490_L004       62.85%    passed     99.97%
+  24  Everistia_vacciniifolia_S491_L004       83.64%    passed     82.84%
+  25  Psydrax_dicoccos_S379_L004              79.44%    passed     88.74%
+  26  Rytigynia_sambavensis_S493_L004         64.25%    passed     99.78%
+  27  Pygmaeothamnus_sp_S516_L004             68.22%    passed     98.68%
+  28  Multidentia_crassa                      62.31%    passed     98.78%
+  29  Pyrostria_media_S610_L004               63.08%    passed     97.05%
+  30  Plectroniella_armata_S640_L004           8.33%    passed     62.16%
+  31  Psydrax_obovata_S639_L004               69.86%    passed     95.87%
+WARNING: 30 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   65.71%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/atp9.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 38 sequences with 204 columns, 44 distinct patterns
+7 parsimony-informative, 9 singleton sites, 188 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       10.29%    passed     97.62%
+   2  Bullockia_fadenii_S514_L004              0.00%    passed    100.00%
+   3  Canthium_inerme_S629_L004                0.00%    passed    100.00%
+   4  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed    100.00%
+   5  Everistia_vacciniifolia                  0.00%    passed    100.00%
+   6  Everistia_vacciniifolia_S490_L004        0.00%    passed    100.00%
+   7  Everistia_vacciniifolia_S491_L004        0.00%    passed    100.00%
+   8  Keetia_gueinzii_S519_L004                0.00%    passed    100.00%
+   9  Keetia_lukei_S507_L004                   0.00%    passed    100.00%
+  10  Peponidium_crassifolium_S628_L004        0.00%    passed    100.00%
+  11  Perakanthus_velutinus_S495_L004          0.00%    passed    100.00%
+  12  Plectroniella_armata_S391_L004           0.00%    passed    100.00%
+  13  Plectroniella_armata_S640_L004           0.00%    passed    100.00%
+  14  Psydrax_ankotekonensis_S572_L004         0.00%    passed    100.00%
+  15  Psydrax_dicoccos_S379_L004               0.00%    passed    100.00%
+  16  Psydrax_obovata_S639_L004                0.00%    passed    100.00%
+  17  Psydrax_odoratus                         0.00%    passed    100.00%
+  18  Pyrostria_commersonii_S618_L004          0.00%    passed    100.00%
+  19  Pyrostria_hystrix_S641_L004              0.00%    passed    100.00%
+  20  Pyrostria_media_S610_L004                0.00%    passed    100.00%
+  21  Pyrostria_revoluta                       0.00%    passed    100.00%
+  22  Pyrostria_sp                             0.00%    passed    100.00%
+  23  Keetia_hispida_S383_L004                 0.00%    passed    100.00%
+  24  Multidentia_sclerocarpa_S374_L004        0.00%    passed     99.88%
+  25  Pygmaeothamnus_sp_S516_L004              0.00%    passed     99.88%
+  26  Rytigynia_longipedicellata_S442_L004     0.00%    passed     99.88%
+  27  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.88%
+  28  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.88%
+  29  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     99.88%
+  30  Canthium_armatum                         7.35%    passed     96.38%
+  31  Canthium_sp.                            10.29%    passed     97.95%
+  32  Hutchinsonia_barbata_S551_L004          22.06%    passed     96.73%
+  33  Cyclophyllum_guillauminianum            26.47%    passed     89.99%
+  34  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.81%
+  35  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     99.81%
+  36  Vangueria_ferruginea                    22.06%    passed     86.73%
+  37  Multidentia_crassa                      23.53%    passed     86.14%
+  38  Temnocalyx_nodulosa                     64.71%    passed     56.52%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                    4.91%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/ccmB.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 32 sequences with 498 columns, 79 distinct patterns
+3 parsimony-informative, 7 singleton sites, 488 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       10.84%    passed     99.29%
+   2  Bullockia_fadenii_S514_L004              0.00%    passed     99.97%
+   3  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.97%
+   4  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     99.97%
+   5  Hutchinsonia_barbata_S551_L004          38.55%    passed     31.60%
+   6  Peponidium_crassifolium_S628_L004        3.61%    passed     99.92%
+   7  Psydrax_obovata_S639_L004                6.02%    passed     99.90%
+   8  Pyrostria_commersonii_S618_L004          0.00%    passed     99.97%
+   9  Pyrostria_hystrix_S641_L004              0.00%    passed     99.97%
+  10  Pyrostria_media_S610_L004                0.00%    passed     99.97%
+  11  Everistia_vacciniifolia                  0.00%    passed     99.97%
+  12  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.97%
+  13  Keetia_hispida_S383_L004                 0.00%    passed     99.97%
+  14  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.97%
+  15  Psydrax_dicoccos_S379_L004              49.40%    passed     90.71%
+  16  Psydrax_odoratus                         0.00%    passed     99.97%
+  17  Everistia_vacciniifolia_S491_L004       12.65%    passed     96.97%
+  18  Pyrostria_revoluta                      42.77%    passed     83.94%
+  19  Canthium_inerme_S629_L004                0.00%    passed     99.96%
+  20  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.96%
+  21  Perakanthus_velutinus_S495_L004          0.00%    passed     99.96%
+  22  Plectroniella_armata_S640_L004           0.00%    passed     99.96%
+  23  Rytigynia_longipedicellata_S442_L004     0.00%    passed     99.96%
+  24  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.96%
+  25  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     99.96%
+  26  Plectroniella_armata_S391_L004           0.00%    passed     99.96%
+  27  Multidentia_crassa                      59.04%    passed     96.59%
+  28  Multidentia_sclerocarpa_S374_L004        0.00%    passed     99.85%
+  29  Rytigynia_sambavensis_S493_L004         12.65%    passed     95.40%
+  30  Pygmaeothamnus_sp_S516_L004              4.22%    passed     97.60%
+  31  Keetia_gueinzii_S519_L004               14.46%    passed     98.38%
+  32  Temnocalyx_nodulosa                     24.10%    passed     79.31%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                    8.70%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/ccmC.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 34 sequences with 726 columns, 140 distinct patterns
+4 parsimony-informative, 20 singleton sites, 702 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       11.57%    passed     99.88%
+   2  Keetia_gueinzii_S519_L004               41.74%    passed     75.76%
+   3  Rytigynia_sambavensis_S493_L004         16.53%    passed     99.54%
+   4  Vangueriopsis_lanciflora_S446_L004      33.06%    passed     82.68%
+   5  Bullockia_fadenii_S514_L004              0.00%    passed     99.70%
+   6  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.70%
+   7  Pyrostria_hystrix_S641_L004              0.00%    passed     99.70%
+   8  Pyrostria_media_S610_L004                0.00%    passed     99.70%
+   9  Pyrostria_commersonii_S618_L004          0.00%    passed     99.70%
+  10  Everistia_vacciniifolia                 16.53%    passed     98.98%
+  11  Psydrax_ankotekonensis_S572_L004         4.13%    passed     93.40%
+  12  Psydrax_dicoccos_S379_L004              42.15%    passed     82.23%
+  13  Psydrax_obovata_S639_L004               26.45%    passed     96.00%
+  14  Psydrax_odoratus                         0.00%    passed     99.70%
+  15  Peponidium_crassifolium_S628_L004        0.00%    passed     99.09%
+  16  Canthium_inerme_S629_L004                0.00%    passed     99.98%
+  17  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.98%
+  18  Plectroniella_armata_S391_L004           0.00%    passed     99.98%
+  19  Rytigynia_longipedicellata_S442_L004     0.00%    passed     99.98%
+  20  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.98%
+  21  Keetia_hispida_S383_L004                 1.24%    passed     99.60%
+  22  Everistia_vacciniifolia_S491_L004        0.00%    passed     99.70%
+  23  Cyclophyllum_jasminifolium_S377_L004     6.61%    passed     93.78%
+  24  Multidentia_exserta_S443_L004           66.53%    passed     14.07%
+  25  Canthium_armatum                        25.62%    passed     51.72%
+  26  Plectroniella_armata_S640_L004           9.23%    passed     83.58%
+  27  Multidentia_sclerocarpa_S374_L004        9.50%    passed     91.07%
+  28  Everistia_vacciniifolia_S490_L004       17.36%    passed     81.95%
+  29  Pygmaeothamnus_sp_S516_L004             18.32%    passed     80.62%
+  30  Temnocalyx_nodulosa                      3.31%    passed     97.68%
+  31  Hutchinsonia_barbata_S551_L004          32.37%    passed     76.12%
+  32  Multidentia_crassa                      20.25%    passed     79.09%
+  33  Perakanthus_velutinus_S495_L004         14.88%    passed     37.87%
+  34  Cyclophyllum_guillauminianum            59.92%    passed      7.64%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   14.04%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/ccmFC.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 33 sequences with 24375 columns, 221 distinct patterns
+15 parsimony-informative, 489 singleton sites, 23871 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Cyclophyllum_henriettae_S376_L004       94.87%    passed     21.13%
+   2  Cyclophyllum_jasminifolium_S377_L004    95.11%    passed     16.02%
+   3  Afrocanthium_lactescens_S626_L004       90.81%    passed      8.84%
+   4  Everistia_vacciniifolia                 90.81%    passed      8.84%
+   5  Psydrax_ankotekonensis_S572_L004        90.81%    passed      8.84%
+   6  Pyrostria_commersonii_S618_L004         90.81%    passed      8.84%
+   7  Pyrostria_hystrix_S641_L004             90.81%    passed      8.84%
+   8  Peponidium_crassifolium_S628_L004       90.81%    passed      9.90%
+   9  Bullockia_fadenii_S514_L004             90.81%    passed      9.59%
+  10  Keetia_hispida_S383_L004                90.81%    passed      7.17%
+  11  Everistia_vacciniifolia_S490_L004       90.81%    passed      8.81%
+  12  Pyrostria_media_S610_L004               90.81%    passed      9.60%
+  13  Keetia_lukei_S507_L004                  90.85%    passed      8.58%
+  14  Canthium_inerme_S629_L004               90.81%    passed      5.90%
+  15  Eriosemopsis_subanisophylla_S489_L004   90.81%    passed      6.47%
+  16  Vangueriopsis_lanciflora_S446_L004      90.81%    passed      6.47%
+  17  Multidentia_sclerocarpa_S374_L004       90.81%    passed      6.22%
+  18  Pygmaeothamnus_sp_S516_L004             91.18%    failed      4.43%
+  19  Temnocalyx_nodulosus_S587_L004          90.81%    passed      5.83%
+  20  Plectroniella_armata_S640_L004          90.99%    failed      4.16%
+  21  Everistia_vacciniifolia_S491_L004       94.78%    passed      9.60%
+  22  Psydrax_odoratus                        90.80%    passed      5.77%
+  23  Plectroniella_armata_S391_L004          94.63%    passed      7.40%
+  24  Rytigynia_sambavensis_S493_L004         94.62%    passed      7.89%
+  25  Perakanthus_velutinus_S495_L004         94.87%    passed      6.08%
+  26  Rytigynia_longipedicellata_S442_L004    94.61%    passed     11.50%
+  27  Psydrax_dicoccos_S379_L004              94.19%    passed     10.27%
+  28  Psydrax_obovata_S639_L004               95.22%    passed     15.75%
+  29  Vangueria_ferruginea                    96.84%    passed     13.47%
+  30  Pyrostria_revoluta                      97.07%    passed     30.24%
+  31  Pyrostria_sp                            97.02%    passed     30.33%
+  32  Keetia_gueinzii_S519_L004               92.02%    failed      0.35%
+  33  Multidentia_crassa                       1.80%    failed      0.00%
+WARNING: 32 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   89.81%  4 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/ccmFN.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 34 sequences with 1614 columns, 144 distinct patterns
+16 parsimony-informative, 30 singleton sites, 1568 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004        2.97%    passed     97.45%
+   2  Keetia_gueinzii_S519_L004               42.94%    passed     21.05%
+   3  Bullockia_fadenii_S514_L004              0.00%    passed     99.99%
+   4  Peponidium_crassifolium_S628_L004        0.00%    passed     99.99%
+   5  Pyrostria_commersonii_S618_L004          0.00%    passed     99.99%
+   6  Pyrostria_hystrix_S641_L004              0.00%    passed     99.99%
+   7  Psydrax_obovata_S639_L004               34.39%    passed     53.23%
+   8  Pyrostria_media_S610_L004                0.00%    passed     99.93%
+   9  Everistia_vacciniifolia                  0.00%    passed     99.98%
+  10  Everistia_vacciniifolia_S491_L004        7.06%    passed     93.21%
+  11  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.98%
+  12  Psydrax_odoratus                         0.00%    passed     99.98%
+  13  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.90%
+  14  Keetia_hispida_S383_L004                 0.00%    passed     99.98%
+  15  Keetia_lukei_S507_L004                  32.53%    passed     51.33%
+  16  Canthium_inerme_S629_L004                0.00%    passed     99.97%
+  17  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.97%
+  18  Multidentia_sclerocarpa_S374_L004        9.85%    passed     90.13%
+  19  Perakanthus_velutinus_S495_L004          0.00%    passed     99.97%
+  20  Plectroniella_armata_S391_L004           8.92%    passed     91.58%
+  21  Rytigynia_longipedicellata_S442_L004     0.00%    passed     99.97%
+  22  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.97%
+  23  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.97%
+  24  Pygmaeothamnus_sp_S516_L004             10.04%    passed     82.43%
+  25  Plectroniella_armata_S640_L004           0.00%    passed     99.92%
+  26  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.54%
+  27  Cyclophyllum_jasminifolium_S377_L004     0.37%    passed     99.84%
+  28  Vangueriopsis_lanciflora_S446_L004       0.74%    passed    100.00%
+  29  Psydrax_dicoccos_S379_L004              11.90%    passed     94.45%
+  30  Multidentia_crassa                       8.36%    passed     89.33%
+  31  Pyrostria_revoluta                      35.69%    passed     72.26%
+  32  Cyclophyllum_guillauminianum            60.59%    passed     82.09%
+  33  Vangueria_ferruginea                    50.00%    passed     14.94%
+  34  Temnocalyx_nodulosa                     49.44%    passed     92.70%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   10.76%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/cob.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 32 sequences with 1324 columns, 190 distinct patterns
+11 parsimony-informative, 11 singleton sites, 1302 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       41.31%    passed     91.14%
+   2  Bullockia_fadenii_S514_L004             11.71%    passed     99.42%
+   3  Peponidium_crassifolium_S628_L004       15.11%    passed     98.26%
+   4  Cyclophyllum_guillauminianum            45.17%    passed     85.07%
+   5  Cyclophyllum_jasminifolium_S377_L004    11.18%    passed    100.00%
+   6  Psydrax_dicoccos_S379_L004              59.44%    passed     48.70%
+   7  Pyrostria_commersonii_S618_L004         14.12%    passed     98.78%
+   8  Psydrax_ankotekonensis_S572_L004        11.71%    passed     99.99%
+   9  Keetia_hispida_S383_L004                11.71%    passed     99.99%
+  10  Pyrostria_hystrix_S641_L004              0.08%    passed     92.64%
+  11  Pyrostria_media_S610_L004                0.08%    passed     92.33%
+  12  Eriosemopsis_subanisophylla_S489_L004   12.61%    passed     99.78%
+  13  Plectroniella_armata_S391_L004          22.96%    passed     98.74%
+  14  Plectroniella_armata_S640_L004          12.61%    passed     99.78%
+  15  Temnocalyx_nodulosa                     49.47%    passed     89.66%
+  16  Temnocalyx_nodulosus_S587_L004          11.18%    passed     99.94%
+  17  Multidentia_sclerocarpa_S374_L004       12.61%    passed     99.82%
+  18  Vangueriopsis_lanciflora_S446_L004      11.18%    passed     99.99%
+  19  Pygmaeothamnus_sp_S516_L004             21.68%    passed     93.11%
+  20  Cyclophyllum_henriettae_S376_L004       12.84%    passed     98.96%
+  21  Psydrax_odoratus                        13.75%    passed     99.96%
+  22  Canthium_armatum                        67.82%    passed     17.65%
+  23  Perakanthus_velutinus_S495_L004         39.05%    passed     99.31%
+  24  Everistia_vacciniifolia_S491_L004       16.69%    passed     96.64%
+  25  Everistia_vacciniifolia_S490_L004       11.18%    passed    100.00%
+  26  Pyrostria_revoluta                      25.98%    passed     86.46%
+  27  Psydrax_obovata_S639_L004               50.15%    passed     73.25%
+  28  Rytigynia_longipedicellata_S442_L004    26.81%    passed     97.07%
+  29  Rytigynia_sambavensis_S493_L004         32.25%    passed     92.94%
+  30  Everistia_vacciniifolia                 50.91%    passed     80.92%
+  31  Hutchinsonia_barbata_S551_L004          53.55%    passed     82.56%
+  32  Canthium_inerme_S629_L004               58.61%    passed     87.22%
+WARNING: 6 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   26.11%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/cox1.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 30 sequences with 2537 columns, 278 distinct patterns
+19 parsimony-informative, 29 singleton sites, 2489 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       26.29%    passed     96.40%
+   2  Vangueriopsis_lanciflora_S446_L004      28.38%    passed     95.96%
+   3  Pyrostria_hystrix_S641_L004             24.56%    passed     96.63%
+   4  Canthium_inerme_S629_L004               32.44%    passed     86.46%
+   5  Cyclophyllum_jasminifolium_S377_L004    32.36%    passed     74.46%
+   6  Hutchinsonia_barbata_S551_L004          79.07%    passed     71.00%
+   7  Multidentia_sclerocarpa_S374_L004       49.86%    passed     66.11%
+   8  Everistia_vacciniifolia_S490_L004       38.98%    passed     82.85%
+   9  Psydrax_ankotekonensis_S572_L004        37.68%    passed     67.76%
+  10  Psydrax_odoratus                        39.22%    passed     66.29%
+  11  Keetia_hispida_S383_L004                39.22%    passed     63.20%
+  12  Perakanthus_velutinus_S495_L004         57.90%    passed     76.80%
+  13  Everistia_vacciniifolia_S491_L004       42.53%    passed     79.71%
+  14  Pygmaeothamnus_sp_S516_L004             23.22%    passed     95.19%
+  15  Bullockia_fadenii_S514_L004             22.74%    passed     98.50%
+  16  Rytigynia_sambavensis_S493_L004         48.88%    passed     39.30%
+  17  Psydrax_obovata_S639_L004               54.59%    passed     61.59%
+  18  Peponidium_crassifolium_S628_L004       49.03%    passed     78.30%
+  19  Multidentia_crassa                      50.81%    passed     89.36%
+  20  Cyclophyllum_henriettae_S376_L004        2.05%    passed     31.30%
+  21  Pyrostria_commersonii_S618_L004          0.00%    passed     16.16%
+  22  Pyrostria_media_S610_L004                0.00%    passed     12.45%
+  23  Temnocalyx_nodulosus_S587_L004           0.00%    passed     15.10%
+  24  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     13.52%
+  25  Plectroniella_armata_S391_L004           6.15%    passed      8.81%
+  26  Canthium_armatum                        62.75%    passed     60.41%
+  27  Plectroniella_armata_S640_L004          48.29%    passed     98.00%
+  28  Rytigynia_longipedicellata_S442_L004    62.40%    passed     65.39%
+  29  Psydrax_dicoccos_S379_L004              70.56%    passed     78.27%
+  30  Temnocalyx_nodulosa                     50.69%    passed     92.85%
+WARNING: 8 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   36.02%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/cox2.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 33 sequences with 1181 columns, 142 distinct patterns
+4 parsimony-informative, 32 singleton sites, 1145 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       55.55%    passed     70.67%
+   2  Psydrax_obovata_S639_L004               55.04%    passed     72.82%
+   3  Rytigynia_longipedicellata_S442_L004    50.21%    passed     63.45%
+   4  Bullockia_fadenii_S514_L004             34.21%    passed     61.48%
+   5  Cyclophyllum_jasminifolium_S377_L004    44.62%    passed     34.89%
+   6  Peponidium_crassifolium_S628_L004       49.45%    passed     37.01%
+   7  Perakanthus_velutinus_S495_L004         55.29%    passed     41.18%
+   8  Pyrostria_revoluta                      49.20%    passed     38.35%
+   9  Hutchinsonia_barbata_S551_L004          40.81%    passed     33.72%
+  10  Temnocalyx_nodulosus_S587_L004           0.00%    passed     89.47%
+  11  Canthium_inerme_S629_L004                0.00%    passed     89.06%
+  12  Plectroniella_armata_S391_L004           0.00%    passed     90.96%
+  13  Pyrostria_commersonii_S618_L004          0.00%    passed     91.77%
+  14  Pyrostria_hystrix_S641_L004              0.00%    passed     91.77%
+  15  Pyrostria_media_S610_L004                0.00%    passed     92.25%
+  16  Everistia_vacciniifolia                  0.00%    passed     92.16%
+  17  Psydrax_ankotekonensis_S572_L004         0.00%    passed     92.16%
+  18  Everistia_vacciniifolia_S491_L004        0.00%    passed     93.59%
+  19  Everistia_vacciniifolia_S490_L004        0.00%    passed     94.42%
+  20  Psydrax_odoratus                         2.79%    passed     81.49%
+  21  Multidentia_sclerocarpa_S374_L004        0.00%    passed     90.30%
+  22  Rytigynia_sambavensis_S493_L004         10.16%    passed     89.07%
+  23  Pyrostria_sp                            68.76%    passed     68.15%
+  24  Eriosemopsis_subanisophylla_S489_L004    3.30%    passed     91.69%
+  25  Keetia_hispida_S383_L004                 1.02%    passed     89.02%
+  26  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     90.30%
+  27  Plectroniella_armata_S640_L004          24.13%    passed     78.31%
+  28  Cyclophyllum_henriettae_S376_L004       23.37%    passed     85.87%
+  29  Multidentia_crassa                      44.62%    passed     42.94%
+  30  Pygmaeothamnus_sp_S516_L004             52.84%    passed      9.19%
+  31  Keetia_lukei_S507_L004                  49.96%    passed     77.10%
+  32  Temnocalyx_nodulosa                     60.88%    passed     50.56%
+  33  Psydrax_dicoccos_S379_L004               8.64%    passed     82.75%
+WARNING: 7 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   23.78%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/cox3.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 33 sequences with 795 columns, 109 distinct patterns
+3 parsimony-informative, 16 singleton sites, 776 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004        0.00%    passed     99.94%
+   2  Canthium_sp.                            53.58%    passed     99.00%
+   3  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     99.94%
+   4  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.94%
+   5  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.94%
+   6  Pyrostria_commersonii_S618_L004          0.00%    passed     99.94%
+   7  Pyrostria_hystrix_S641_L004              0.00%    passed     99.94%
+   8  Pyrostria_media_S610_L004                0.00%    passed     99.94%
+   9  Psydrax_dicoccos_S379_L004               6.04%    passed     99.73%
+  10  Bullockia_fadenii_S514_L004              0.00%    passed     99.97%
+  11  Canthium_inerme_S629_L004                0.00%    passed     99.97%
+  12  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.97%
+  13  Perakanthus_velutinus_S495_L004          0.00%    passed     99.97%
+  14  Plectroniella_armata_S640_L004           0.00%    passed     99.97%
+  15  Multidentia_sclerocarpa_S374_L004        0.00%    passed     99.87%
+  16  Pygmaeothamnus_sp_S516_L004             33.58%    passed     90.65%
+  17  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     99.87%
+  18  Keetia_hispida_S383_L004                 0.00%    passed     99.90%
+  19  Psydrax_odoratus                         0.00%    passed     99.93%
+  20  Rytigynia_longipedicellata_S442_L004     4.91%    passed     99.72%
+  21  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.82%
+  22  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.82%
+  23  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.94%
+  24  Plectroniella_armata_S391_L004           0.00%    passed     99.99%
+  25  Cyclophyllum_guillauminianum            12.45%    passed     99.94%
+  26  Everistia_vacciniifolia                  6.04%    passed     99.52%
+  27  Peponidium_crassifolium_S628_L004       29.69%    passed     81.80%
+  28  Multidentia_crassa                      21.13%    passed     92.90%
+  29  Psydrax_obovata_S639_L004               47.92%    passed     95.74%
+  30  Temnocalyx_nodulosa                     28.68%    passed     66.29%
+  31  Keetia_gueinzii_S519_L004               51.32%    passed     76.27%
+  32  Everistia_vacciniifolia_S491_L004       41.13%    passed     91.52%
+  33  Pyrostria_revoluta                      24.91%    passed     68.52%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   10.95%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/matR.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 37 sequences with 1859 columns, 161 distinct patterns
+15 parsimony-informative, 23 singleton sites, 1821 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Africanthium_mundianum                  61.27%    passed     95.70%
+   2  Everistia_vacciniifolia                  0.00%    passed     99.87%
+   3  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.87%
+   4  Everistia_vacciniifolia_S491_L004        0.00%    passed     99.87%
+   5  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.87%
+   6  Psydrax_obovata_S639_L004                5.97%    passed     99.99%
+   7  Psydrax_odoratus                         0.00%    passed     99.87%
+   8  Keetia_hispida_S383_L004                 0.00%    passed     99.88%
+   9  Keetia_lukei_S507_L004                   0.00%    passed     99.88%
+  10  Bullockia_fadenii_S514_L004              0.00%    passed     99.91%
+  11  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     99.91%
+  12  Peponidium_crassifolium_S628_L004        0.00%    passed     99.91%
+  13  Pyrostria_commersonii_S618_L004          0.00%    passed     99.91%
+  14  Pyrostria_revoluta                       0.00%    passed     99.91%
+  15  Pyrostria_sp                            18.02%    passed     90.60%
+  16  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.76%
+  17  Pyrostria_media_S610_L004                0.00%    passed     99.88%
+  18  Pyrostria_hystrix_S641_L004              0.00%    passed     99.76%
+  19  Multidentia_sclerocarpa_S374_L004        7.75%    passed     99.79%
+  20  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.96%
+  21  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     99.96%
+  22  Pygmaeothamnus_sp_S516_L004              0.00%    passed     99.90%
+  23  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.91%
+  24  Rytigynia_longipedicellata_S442_L004     0.32%    passed     99.99%
+  25  Canthium_sp.                             6.40%    passed     96.88%
+  26  Canthium_inerme_S629_L004                0.00%    passed     99.89%
+  27  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.98%
+  28  Plectroniella_armata_S391_L004           0.00%    passed     99.98%
+  29  Plectroniella_armata_S640_L004           0.00%    passed     99.93%
+  30  Psydrax_dicoccos_S379_L004               1.78%    passed     99.08%
+  31  Perakanthus_velutinus_S495_L004          2.80%    passed     99.63%
+  32  Afrocanthium_lactescens_S626_L004        4.52%    passed     99.44%
+  33  Keetia_gueinzii_S519_L004               11.62%    passed     98.62%
+  34  Multidentia_crassa                      28.35%    passed     81.12%
+  35  Vangueria_ferruginea                    36.15%    passed     94.92%
+  36  Canthium_armatum                        41.42%    passed     96.10%
+  37  Cyclophyllum_guillauminianum            42.55%    passed     78.26%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                    7.27%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad1_exon_1.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 28 sequences with 387 columns, 112 distinct patterns
+2 parsimony-informative, 23 singleton sites, 362 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       58.91%    passed     66.62%
+   2  Bullockia_fadenii_S514_L004              0.00%    passed     99.98%
+   3  Canthium_inerme_S629_L004                0.00%    passed     99.98%
+   4  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.98%
+   5  Everistia_vacciniifolia                 52.71%    passed     60.58%
+   6  Keetia_hispida_S383_L004                22.48%    passed     91.71%
+   7  Plectroniella_armata_S640_L004           0.00%    passed     99.98%
+   8  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.98%
+   9  Pyrostria_commersonii_S618_L004          0.00%    passed     99.98%
+  10  Pyrostria_hystrix_S641_L004              0.00%    passed     99.98%
+  11  Pyrostria_media_S610_L004                0.00%    passed     99.98%
+  12  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     99.73%
+  13  Peponidium_crassifolium_S628_L004       48.84%    passed     58.68%
+  14  Temnocalyx_nodulosa                     10.85%    passed     92.36%
+  15  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.70%
+  16  Multidentia_crassa                       0.00%    passed     99.70%
+  17  Perakanthus_velutinus_S495_L004         36.43%    passed     67.03%
+  18  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.70%
+  19  Cyclophyllum_henriettae_S376_L004       14.73%    passed     92.22%
+  20  Plectroniella_armata_S391_L004           6.98%    passed     99.88%
+  21  Rytigynia_longipedicellata_S442_L004    35.66%    passed     95.29%
+  22  Everistia_vacciniifolia_S490_L004       11.63%    passed     97.82%
+  23  Keetia_lukei_S507_L004                  66.67%    passed     44.45%
+  24  Everistia_vacciniifolia_S491_L004       34.88%    passed     84.65%
+  25  Vangueriopsis_lanciflora_S446_L004      20.16%    passed     97.76%
+  26  Pygmaeothamnus_sp_S516_L004             30.23%    passed     76.54%
+  27  Vangueria_madagascariensis_S602_L004    49.35%    passed     29.65%
+  28  Multidentia_sclerocarpa_S374_L004       58.91%    passed     60.81%
+WARNING: 4 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   19.98%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad1_exon_2_3.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 24 sequences with 4687 columns, 125 distinct patterns
+26 parsimony-informative, 263 singleton sites, 4398 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       65.67%    passed     48.23%
+   2  Everistia_vacciniifolia                 65.67%    passed     45.34%
+   3  Psydrax_ankotekonensis_S572_L004        65.67%    passed     45.34%
+   4  Psydrax_odoratus                        65.67%    passed     45.34%
+   5  Psydrax_obovata_S639_L004               65.67%    passed     48.01%
+   6  Canthium_inerme_S629_L004               65.67%    passed     48.27%
+   7  Eriosemopsis_subanisophylla_S489_L004   65.67%    passed     48.27%
+   8  Plectroniella_armata_S391_L004          65.67%    passed     48.27%
+   9  Plectroniella_armata_S640_L004          65.67%    passed     48.27%
+  10  Keetia_hispida_S383_L004                65.67%    passed     45.37%
+  11  Keetia_lukei_S507_L004                  65.67%    passed     45.34%
+  12  Bullockia_fadenii_S514_L004             65.67%    passed     54.00%
+  13  Peponidium_crassifolium_S628_L004       65.67%    passed     54.00%
+  14  Pyrostria_commersonii_S618_L004         65.67%    passed     54.00%
+  15  Pyrostria_media_S610_L004               65.67%    passed     54.00%
+  16  Pyrostria_hystrix_S641_L004             65.67%    passed     56.79%
+  17  Pyrostria_revoluta                      66.18%    passed     38.94%
+  18  Cyclophyllum_henriettae_S376_L004       66.08%    passed     42.57%
+  19  Rytigynia_longipedicellata_S442_L004    67.85%    passed     46.18%
+  20  Temnocalyx_nodulosus_S587_L004          67.85%    passed     48.57%
+  21  Vangueriopsis_lanciflora_S446_L004      65.67%    passed     53.91%
+  22  Cyclophyllum_jasminifolium_S377_L004    58.46%    passed     14.94%
+  23  Everistia_vacciniifolia_S491_L004       67.14%    passed     31.04%
+  24  Temnocalyx_nodulosa                     20.25%    failed      0.00%
+WARNING: 23 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   63.76%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad1_exon_4_5.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 19 sequences with 3107 columns, 61 distinct patterns
+26 parsimony-informative, 29 singleton sites, 3052 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Bullockia_fadenii_S514_L004              0.19%    passed     99.33%
+   2  Pyrostria_hystrix_S641_L004              0.19%    passed     99.02%
+   3  Everistia_vacciniifolia                  0.00%    passed     99.98%
+   4  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.98%
+   5  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.98%
+   6  Psydrax_odoratus                         0.00%    passed     99.98%
+   7  Everistia_vacciniifolia_S491_L004        2.90%    passed     92.50%
+   8  Keetia_lukei_S507_L004                   0.00%    passed     99.96%
+   9  Keetia_hispida_S383_L004                13.90%    passed     59.00%
+  10  Pyrostria_media_S610_L004                0.00%    passed     99.86%
+  11  Pygmaeothamnus_sp_S516_L004              0.00%    passed     99.95%
+  12  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.98%
+  13  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.86%
+  14  Pyrostria_commersonii_S618_L004          0.00%    passed     99.85%
+  15  Canthium_inerme_S629_L004                0.00%    passed     99.73%
+  16  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.78%
+  17  Plectroniella_armata_S391_L004           0.00%    passed     99.78%
+  18  Plectroniella_armata_S640_L004           0.00%    passed     99.75%
+  19  Multidentia_crassa                      69.46%    failed      0.37%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                    4.56%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad2_exon_1_2.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 30 sequences with 1699 columns, 127 distinct patterns
+7 parsimony-informative, 37 singleton sites, 1655 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004        8.48%    passed     63.24%
+   2  Keetia_gueinzii_S519_L004                6.71%    passed     89.69%
+   3  Perakanthus_velutinus_S495_L004          0.00%    passed     99.99%
+   4  Psydrax_odoratus                         5.12%    passed     93.95%
+   5  Everistia_vacciniifolia_S490_L004        1.24%    passed     99.35%
+   6  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.99%
+   7  Pyrostria_commersonii_S618_L004          0.00%    passed     99.99%
+   8  Pyrostria_hystrix_S641_L004              0.00%    passed     99.99%
+   9  Pyrostria_media_S610_L004                0.00%    passed     99.99%
+  10  Keetia_lukei_S507_L004                   0.00%    passed    100.00%
+  11  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed    100.00%
+  12  Plectroniella_armata_S391_L004           0.00%    passed     99.99%
+  13  Bullockia_fadenii_S514_L004              0.00%    passed     99.96%
+  14  Everistia_vacciniifolia_S491_L004       60.27%    passed     19.16%
+  15  Everistia_vacciniifolia                  0.00%    passed     99.94%
+  16  Keetia_hispida_S383_L004                 0.00%    passed     99.98%
+  17  Plectroniella_armata_S640_L004           4.94%    passed     94.99%
+  18  Multidentia_sclerocarpa_S374_L004       10.06%    passed     54.35%
+  19  Peponidium_crassifolium_S628_L004        0.00%    passed     99.99%
+  20  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     99.91%
+  21  Pygmaeothamnus_sp_S516_L004              6.36%    passed     97.62%
+  22  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.96%
+  23  Canthium_inerme_S629_L004                2.12%    passed     99.14%
+  24  Cyclophyllum_henriettae_S376_L004        1.41%    passed     99.85%
+  25  Vangueriopsis_lanciflora_S446_L004       2.30%    passed     97.80%
+  26  Psydrax_obovata_S639_L004               13.60%    passed     22.54%
+  27  Rytigynia_sambavensis_S493_L004         60.86%    passed     17.17%
+  28  Multidentia_crassa                      60.98%    passed      7.00%
+  29  Rytigynia_longipedicellata_S442_L004    19.07%    passed     73.32%
+  30  Psydrax_dicoccos_S379_L004              46.14%    failed      1.62%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   10.32%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad2_exon_3_4_5.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 25 sequences with 2388 columns, 119 distinct patterns
+25 parsimony-informative, 20 singleton sites, 2343 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       66.46%    failed      1.46%
+   2  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.78%
+   3  Cyclophyllum_jasminifolium_S377_L004     1.26%    passed     99.77%
+   4  Keetia_hispida_S383_L004                 0.00%    passed     99.63%
+   5  Everistia_vacciniifolia                  0.00%    passed     99.77%
+   6  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.51%
+   7  Psydrax_odoratus                         0.00%    passed     99.61%
+   8  Everistia_vacciniifolia_S490_L004       13.44%    passed     47.77%
+   9  Everistia_vacciniifolia_S491_L004        4.02%    passed     85.46%
+  10  Bullockia_fadenii_S514_L004              0.00%    passed     99.76%
+  11  Peponidium_crassifolium_S628_L004        0.00%    passed     99.82%
+  12  Pyrostria_hystrix_S641_L004              0.00%    passed     99.82%
+  13  Pyrostria_media_S610_L004                0.00%    passed     99.52%
+  14  Pyrostria_commersonii_S618_L004          0.00%    passed     99.82%
+  15  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.87%
+  16  Plectroniella_armata_S391_L004           0.00%    passed     99.87%
+  17  Multidentia_sclerocarpa_S374_L004        0.00%    passed     99.93%
+  18  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.98%
+  19  Rytigynia_longipedicellata_S442_L004     0.00%    passed    100.00%
+  20  Canthium_inerme_S629_L004                5.78%    passed     94.23%
+  21  Pygmaeothamnus_sp_S516_L004              0.25%    passed     98.86%
+  22  Perakanthus_velutinus_S495_L004         68.22%    failed      1.82%
+  23  Keetia_lukei_S507_L004                  12.56%    passed     52.34%
+  24  Rytigynia_sambavensis_S493_L004         13.57%    passed     67.14%
+  25  Hutchinsonia_barbata_S551_L004          68.01%    passed     44.94%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   10.14%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad3.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 29 sequences with 354 columns, 69 distinct patterns
+4 parsimony-informative, 60 singleton sites, 290 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004        0.00%    passed     99.93%
+   2  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.85%
+   3  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     99.85%
+   4  Everistia_vacciniifolia                  0.00%    passed     99.85%
+   5  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.85%
+   6  Everistia_vacciniifolia_S491_L004        0.00%    passed     99.85%
+   7  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.85%
+   8  Psydrax_dicoccos_S379_L004               0.00%    passed     99.85%
+   9  Psydrax_obovata_S639_L004               32.20%    passed     57.54%
+  10  Psydrax_odoratus                         0.00%    passed     99.85%
+  11  Pyrostria_commersonii_S618_L004          0.00%    passed     99.85%
+  12  Pyrostria_hystrix_S641_L004              0.00%    passed     99.85%
+  13  Pyrostria_media_S610_L004                0.00%    passed     99.85%
+  14  Keetia_hispida_S383_L004                 0.00%    passed     99.96%
+  15  Canthium_inerme_S629_L004                0.00%    passed     99.47%
+  16  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.46%
+  17  Plectroniella_armata_S391_L004           0.00%    passed     99.46%
+  18  Multidentia_crassa                      29.66%    passed     49.88%
+  19  Pygmaeothamnus_sp_S516_L004              0.00%    passed     99.84%
+  20  Rytigynia_longipedicellata_S442_L004     0.00%    passed     99.84%
+  21  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.84%
+  22  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     99.84%
+  23  Multidentia_sclerocarpa_S374_L004        0.00%    passed     99.85%
+  24  Temnocalyx_nodulosa                     38.98%    passed     63.87%
+  25  Bullockia_fadenii_S514_L004              0.00%    passed     99.78%
+  26  Peponidium_crassifolium_S628_L004       33.05%    passed     43.54%
+  27  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.85%
+  28  Plectroniella_armata_S640_L004          23.73%    passed     93.62%
+  29  Rytigynia_sp.                           57.06%    failed      0.01%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                    7.40%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad4.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 26 sequences with 6071 columns, 249 distinct patterns
+29 parsimony-informative, 61 singleton sites, 5981 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       58.16%    passed     13.39%
+   2  Bullockia_fadenii_S514_L004              0.00%    passed     66.35%
+   3  Pyrostria_hystrix_S641_L004              1.38%    passed     71.13%
+   4  Pyrostria_media_S610_L004                0.00%    passed     72.24%
+   5  Pyrostria_commersonii_S618_L004          0.00%    passed     70.88%
+   6  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     75.28%
+   7  Psydrax_ankotekonensis_S572_L004         0.00%    passed     73.72%
+   8  Everistia_vacciniifolia                  5.09%    passed     23.66%
+   9  Everistia_vacciniifolia_S490_L004        1.38%    passed     76.34%
+  10  Everistia_vacciniifolia_S491_L004       54.36%    failed      1.63%
+  11  Keetia_hispida_S383_L004                 0.13%    passed     74.53%
+  12  Plectroniella_armata_S391_L004          56.04%    failed      1.32%
+  13  Temnocalyx_nodulosus_S587_L004           0.20%    passed     72.60%
+  14  Psydrax_odoratus                         0.40%    passed     65.94%
+  15  Multidentia_sclerocarpa_S374_L004        1.80%    passed     75.00%
+  16  Cyclophyllum_jasminifolium_S377_L004     2.87%    passed     45.43%
+  17  Pygmaeothamnus_sp_S516_L004              4.99%    passed     30.42%
+  18  Rytigynia_sambavensis_S493_L004          1.86%    passed     51.57%
+  19  Plectroniella_armata_S640_L004          59.30%    passed     28.14%
+  20  Rytigynia_longipedicellata_S442_L004    71.11%    failed      0.06%
+  21  Canthium_inerme_S629_L004               57.62%    passed     18.47%
+  22  Cyclophyllum_henriettae_S376_L004       54.06%    failed      3.55%
+  23  Keetia_lukei_S507_L004                  62.07%    passed     39.53%
+  24  Peponidium_crassifolium_S628_L004       56.98%    passed     22.97%
+  25  Psydrax_dicoccos_S379_L004              69.23%    failed      0.25%
+  26  Vangueriopsis_lanciflora_S446_L004      60.52%    failed      0.00%
+WARNING: 11 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   26.14%  6 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad4L.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 30 sequences with 237 columns, 43 distinct patterns
+0 parsimony-informative, 4 singleton sites, 233 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       49.37%    passed     79.66%
+   2  Bullockia_fadenii_S514_L004              0.00%    passed     99.70%
+   3  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.70%
+   4  Cyclophyllum_jasminifolium_S377_L004    27.85%    passed     76.90%
+   5  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.70%
+   6  Everistia_vacciniifolia                  0.00%    passed     99.70%
+   7  Keetia_hispida_S383_L004                 0.00%    passed     99.70%
+   8  Keetia_lukei_S507_L004                  63.29%    passed     99.71%
+   9  Multidentia_sclerocarpa_S374_L004        0.00%    passed     99.70%
+  10  Perakanthus_velutinus_S495_L004          0.00%    passed     99.70%
+  11  Plectroniella_armata_S391_L004           0.00%    passed     99.70%
+  12  Plectroniella_armata_S640_L004          18.99%    passed     86.84%
+  13  Psydrax_ankotekonensis_S572_L004        18.99%    passed     86.84%
+  14  Psydrax_dicoccos_S379_L004               0.00%    passed     99.70%
+  15  Psydrax_odoratus                         0.00%    passed     99.70%
+  16  Pygmaeothamnus_sp_S516_L004              0.00%    passed     99.70%
+  17  Pyrostria_commersonii_S618_L004          0.00%    passed     99.70%
+  18  Pyrostria_hystrix_S641_L004              0.00%    passed     99.70%
+  19  Pyrostria_media_S610_L004                0.00%    passed     99.70%
+  20  Pyrostria_revoluta                      41.77%    passed     78.20%
+  21  Rytigynia_longipedicellata_S442_L004     0.00%    passed     99.70%
+  22  Rytigynia_sambavensis_S493_L004          3.80%    passed     99.57%
+  23  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.70%
+  24  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     99.70%
+  25  Hutchinsonia_barbata_S551_L004           3.80%    passed     99.72%
+  26  Canthium_inerme_S629_L004                0.00%    passed     99.31%
+  27  Canthium_armatum                         0.00%    passed     99.31%
+  28  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.70%
+  29  Everistia_vacciniifolia_S491_L004       12.66%    passed     98.71%
+  30  Psydrax_obovata_S639_L004               34.18%    passed     83.24%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                    9.16%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad5_exon_1_2_3.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 28 sequences with 2465 columns, 166 distinct patterns
+13 parsimony-informative, 61 singleton sites, 2391 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004        6.65%    passed     99.98%
+   2  Cyclophyllum_henriettae_S376_L004        6.49%    passed     99.95%
+   3  Pyrostria_commersonii_S618_L004          6.49%    passed     99.95%
+   4  Pyrostria_hystrix_S641_L004              6.49%    passed     99.95%
+   5  Pyrostria_media_S610_L004                6.49%    passed     99.92%
+   6  Bullockia_fadenii_S514_L004              6.49%    passed     99.84%
+   7  Everistia_vacciniifolia                  6.49%    passed    100.00%
+   8  Multidentia_crassa                      61.30%    failed      0.27%
+   9  Multidentia_sclerocarpa_S374_L004        4.87%    passed     95.92%
+  10  Temnocalyx_nodulosus_S587_L004           6.82%    passed     99.90%
+  11  Rytigynia_sambavensis_S493_L004          6.82%    passed     99.97%
+  12  Rytigynia_longipedicellata_S442_L004     8.48%    passed     99.18%
+  13  Keetia_hispida_S383_L004                 6.77%    passed     99.99%
+  14  Canthium_inerme_S629_L004                6.77%    passed     99.89%
+  15  Eriosemopsis_subanisophylla_S489_L004    6.77%    passed     99.89%
+  16  Plectroniella_armata_S391_L004           6.77%    passed     99.89%
+  17  Perakanthus_velutinus_S495_L004          6.77%    passed    100.00%
+  18  Psydrax_ankotekonensis_S572_L004         6.49%    passed     99.86%
+  19  Psydrax_odoratus                         6.49%    passed     99.71%
+  20  Psydrax_dicoccos_S379_L004              51.08%    failed      0.01%
+  21  Plectroniella_armata_S640_L004           8.36%    passed     97.56%
+  22  Everistia_vacciniifolia_S490_L004        8.80%    passed     99.89%
+  23  Pygmaeothamnus_sp_S516_L004              9.01%    passed     98.05%
+  24  Peponidium_crassifolium_S628_L004       12.94%    passed     97.84%
+  25  Vangueriopsis_lanciflora_S446_L004      16.19%    passed     70.20%
+  26  Everistia_vacciniifolia_S491_L004        5.96%    passed     99.74%
+  27  Cyclophyllum_jasminifolium_S377_L004    23.53%    passed     52.15%
+  28  Keetia_lukei_S507_L004                  19.84%    passed     64.77%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   12.02%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad5_exon_4_5.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 38 sequences with 2896 columns, 155 distinct patterns
+11 parsimony-informative, 27 singleton sites, 2858 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Africanthium_mundianum                  88.29%    failed      4.93%
+   2  Afrocanthium_lactescens_S626_L004       84.15%    passed     45.27%
+   3  Keetia_gueinzii_S519_L004               53.00%    passed     84.83%
+   4  Keetia_hispida_S383_L004                53.00%    passed     84.83%
+   5  Bullockia_fadenii_S514_L004             41.78%    passed     97.94%
+   6  Everistia_vacciniifolia_S491_L004       84.15%    passed     48.22%
+   7  Pyrostria_commersonii_S618_L004          1.45%    passed     16.06%
+   8  Everistia_vacciniifolia_S490_L004       41.78%    passed     94.85%
+   9  Psydrax_ankotekonensis_S572_L004        41.78%    passed     94.85%
+  10  Cyclophyllum_henriettae_S376_L004       41.78%    passed     96.97%
+  11  Pyrostria_revoluta                      84.15%    passed     45.27%
+  12  Psydrax_odoratus                        41.78%    passed     95.06%
+  13  Everistia_vacciniifolia                 41.57%    passed     95.56%
+  14  Keetia_lukei_S507_L004                  42.30%    passed     94.15%
+  15  Pyrostria_media_S610_L004               40.78%    passed     98.47%
+  16  Canthium_armatum                        87.26%    passed     13.44%
+  17  Canthium_inerme_S629_L004               84.46%    passed     51.81%
+  18  Eriosemopsis_subanisophylla_S489_L004   53.31%    passed     78.94%
+  19  Plectroniella_armata_S391_L004          54.66%    passed     71.87%
+  20  Rytigynia_sp.                           94.20%    passed     19.34%
+  21  Multidentia_sclerocarpa_S374_L004       53.59%    passed     76.40%
+  22  Perakanthus_velutinus_S495_L004         85.39%    passed     31.87%
+  23  Rytigynia_longipedicellata_S442_L004    54.11%    passed     68.53%
+  24  Temnocalyx_nodulosus_S587_L004          54.11%    passed     68.53%
+  25  Globulostylis_leniochlamys              90.16%    failed      3.45%
+  26  Rytigynia_sambavensis_S493_L004         84.43%    passed     51.78%
+  27  Pyrostria_hystrix_S641_L004             41.61%    passed     96.50%
+  28  Vangueriopsis_lanciflora_S446_L004      85.19%    passed     73.30%
+  29  Multidentia_crassa                      84.56%    passed     46.71%
+  30  Plectroniella_armata_S640_L004          85.60%    passed     31.47%
+  31  Peponidium_crassifolium_S628_L004       42.02%    passed     90.26%
+  32  Pygmaeothamnus_sp_S516_L004             54.97%    passed     70.38%
+  33  Eriosemopsis_subanisophylla             92.44%    failed      0.62%
+  34  Temnocalyx_nodulosa                     85.43%    passed      5.33%
+  35  Vangueriella_chlorantha                 91.40%    failed      3.07%
+  36  Cyclophyllum_jasminifolium_S377_L004    91.37%    passed      5.16%
+  37  Psydrax_dicoccos_S379_L004              92.92%    passed      6.61%
+  38  Psydrax_obovata_S639_L004               92.40%    passed     12.73%
+WARNING: 27 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   66.25%  4 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad6.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 33 sequences with 932 columns, 125 distinct patterns
+17 parsimony-informative, 7 singleton sites, 908 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       59.44%    passed     63.48%
+   2  Canthium_inerme_S629_L004               65.24%    passed     19.54%
+   3  Globulostylis_leniochlamys              66.20%    passed     10.13%
+   4  Pyrostria_sp                            80.36%    passed      7.10%
+   5  Everistia_vacciniifolia_S491_L004       58.15%    passed     68.23%
+   6  Rytigynia_sambavensis_S493_L004         56.87%    passed     62.71%
+   7  Canthium_armatum                        41.74%    passed     81.29%
+   8  Bullockia_fadenii_S514_L004             29.51%    passed     96.44%
+   9  Everistia_vacciniifolia                 29.51%    passed     96.44%
+  10  Perakanthus_velutinus_S495_L004         51.39%    passed     82.80%
+  11  Psydrax_ankotekonensis_S572_L004        29.51%    passed     96.44%
+  12  Psydrax_odoratus                        29.51%    passed     96.44%
+  13  Pyrostria_commersonii_S618_L004         29.51%    passed     96.44%
+  14  Pyrostria_hystrix_S641_L004             29.51%    passed     96.44%
+  15  Pyrostria_media_S610_L004               29.51%    passed     96.44%
+  16  Eriosemopsis_subanisophylla_S489_L004   36.27%    passed     97.43%
+  17  Plectroniella_armata_S391_L004          36.27%    passed     97.43%
+  18  Temnocalyx_nodulosus_S587_L004          33.37%    passed     67.08%
+  19  Vangueriopsis_lanciflora_S446_L004      33.37%    passed     67.08%
+  20  Keetia_hispida_S383_L004                29.51%    passed     97.53%
+  21  Psydrax_dicoccos_S379_L004              34.12%    passed     99.95%
+  22  Pygmaeothamnus_sp_S516_L004             33.37%    passed     71.68%
+  23  Peponidium_crassifolium_S628_L004       35.62%    passed     95.76%
+  24  Multidentia_sclerocarpa_S374_L004       39.81%    passed     69.64%
+  25  Psydrax_obovata_S639_L004               28.65%    passed     94.77%
+  26  Cyclophyllum_jasminifolium_S377_L004    35.73%    passed     99.85%
+  27  Rytigynia_longipedicellata_S442_L004    35.30%    passed     73.84%
+  28  Plectroniella_armata_S640_L004          65.56%    passed     37.10%
+  29  Temnocalyx_nodulosa                     71.03%    passed     14.00%
+  30  Multidentia_crassa                      75.21%    passed     27.09%
+  31  Cyclophyllum_henriettae_S376_L004       47.21%    passed     81.61%
+  32  Everistia_vacciniifolia_S490_L004        9.66%    failed      0.09%
+  33  Keetia_gueinzii_S519_L004               75.00%    passed     64.66%
+WARNING: 11 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   43.67%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad7.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 30 sequences with 2922 columns, 143 distinct patterns
+12 parsimony-informative, 13 singleton sites, 2897 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       38.36%    passed     11.72%
+   2  Bullockia_fadenii_S514_L004              0.00%    passed     99.28%
+   3  Everistia_vacciniifolia                  0.00%    passed     99.48%
+   4  Pyrostria_commersonii_S618_L004          0.00%    passed     99.28%
+   5  Pyrostria_media_S610_L004                0.00%    passed     99.28%
+   6  Peponidium_crassifolium_S628_L004        0.00%    passed     99.28%
+   7  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.51%
+   8  Psydrax_odoratus                         0.00%    passed     99.28%
+   9  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.65%
+  10  Pyrostria_hystrix_S641_L004              0.00%    passed     99.28%
+  11  Cyclophyllum_henriettae_S376_L004       37.00%    passed     36.96%
+  12  Canthium_inerme_S629_L004                0.00%    passed     99.33%
+  13  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.33%
+  14  Plectroniella_armata_S391_L004           0.00%    passed     99.33%
+  15  Plectroniella_armata_S640_L004           0.10%    passed     99.24%
+  16  Multidentia_sclerocarpa_S374_L004        0.51%    passed     98.01%
+  17  Rytigynia_longipedicellata_S442_L004     0.17%    passed     99.20%
+  18  Rytigynia_sambavensis_S493_L004         30.08%    passed     81.84%
+  19  Temnocalyx_nodulosus_S587_L004           0.17%    passed     99.27%
+  20  Pygmaeothamnus_sp_S516_L004             35.15%    passed     74.31%
+  21  Keetia_gueinzii_S519_L004                0.92%    passed     99.10%
+  22  Psydrax_obovata_S639_L004               38.84%    passed     34.87%
+  23  Pyrostria_revoluta                      41.72%    passed     28.60%
+  24  Cyclophyllum_jasminifolium_S377_L004     2.36%    passed     97.71%
+  25  Keetia_hispida_S383_L004                 0.10%    passed     99.48%
+  26  Keetia_lukei_S507_L004                  39.49%    passed     18.05%
+  27  Vangueriopsis_lanciflora_S446_L004       1.95%    passed     94.40%
+  28  Psydrax_dicoccos_S379_L004              69.20%    failed      1.21%
+  29  Perakanthus_velutinus_S495_L004         63.55%    failed      1.37%
+  30  Everistia_vacciniifolia_S491_L004       65.71%    failed      3.59%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   15.51%  3 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/nad9.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 30 sequences with 534 columns, 99 distinct patterns
+10 parsimony-informative, 35 singleton sites, 489 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004        0.56%    passed     99.86%
+   2  Keetia_gueinzii_S519_L004               56.18%    passed     63.98%
+   3  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.86%
+   4  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.86%
+   5  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     99.86%
+   6  Bullockia_fadenii_S514_L004              0.00%    passed     99.99%
+   7  Cyclophyllum_jasminifolium_S377_L004    19.10%    passed     85.16%
+   8  Keetia_hispida_S383_L004                 0.00%    passed     99.99%
+   9  Peponidium_crassifolium_S628_L004       41.57%    passed     51.41%
+  10  Psydrax_odoratus                        29.21%    passed     77.45%
+  11  Pyrostria_commersonii_S618_L004          0.00%    passed     99.99%
+  12  Pyrostria_hystrix_S641_L004              0.00%    passed     99.99%
+  13  Pyrostria_media_S610_L004                0.00%    passed     99.99%
+  14  Pyrostria_revoluta                      58.99%    passed     41.72%
+  15  Multidentia_sclerocarpa_S374_L004        1.12%    passed     99.72%
+  16  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.86%
+  17  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.86%
+  18  Everistia_vacciniifolia_S491_L004        0.00%    passed     99.86%
+  19  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.86%
+  20  Everistia_vacciniifolia                  3.93%    passed     99.42%
+  21  Perakanthus_velutinus_S495_L004          3.37%    passed     96.27%
+  22  Rytigynia_longipedicellata_S442_L004    59.55%    passed     23.18%
+  23  Pygmaeothamnus_sp_S516_L004              3.37%    passed     99.33%
+  24  Canthium_armatum                         0.00%    passed     98.87%
+  25  Plectroniella_armata_S391_L004          25.28%    passed     78.20%
+  26  Plectroniella_armata_S640_L004           0.00%    passed     99.54%
+  27  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     98.87%
+  28  Psydrax_obovata_S639_L004               11.80%    passed     99.31%
+  29  Canthium_inerme_S629_L004               12.92%    passed     99.68%
+  30  Temnocalyx_nodulosa                     26.97%    passed     34.68%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   11.80%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rpl10.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 29 sequences with 1121 columns, 134 distinct patterns
+2 parsimony-informative, 68 singleton sites, 1051 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       65.21%    passed     98.88%
+   2  Pygmaeothamnus_sp_S516_L004             62.80%    passed     80.51%
+   3  Bullockia_fadenii_S514_L004             56.65%    passed     98.98%
+   4  Cyclophyllum_henriettae_S376_L004       56.65%    passed     98.98%
+   5  Everistia_vacciniifolia_S491_L004       60.12%    passed     98.43%
+   6  Keetia_hispida_S383_L004                56.65%    passed     98.98%
+   7  Peponidium_crassifolium_S628_L004       56.65%    passed     98.98%
+   8  Perakanthus_velutinus_S495_L004         56.65%    passed     98.98%
+   9  Psydrax_ankotekonensis_S572_L004        56.65%    passed     98.98%
+  10  Pyrostria_commersonii_S618_L004         56.65%    passed     98.98%
+  11  Pyrostria_hystrix_S641_L004             56.65%    passed     98.98%
+  12  Pyrostria_media_S610_L004               56.65%    passed     98.98%
+  13  Pyrostria_revoluta                      62.00%    passed     84.26%
+  14  Psydrax_obovata_S639_L004               64.67%    passed     84.29%
+  15  Psydrax_odoratus                        56.65%    passed     96.52%
+  16  Multidentia_sclerocarpa_S374_L004       58.52%    passed     99.73%
+  17  Vangueriopsis_lanciflora_S446_L004      70.56%    passed     61.94%
+  18  Canthium_inerme_S629_L004               63.34%    passed     79.48%
+  19  Eriosemopsis_subanisophylla_S489_L004   56.65%    passed     99.50%
+  20  Plectroniella_armata_S640_L004          64.41%    passed     94.71%
+  21  Rytigynia_sambavensis_S493_L004         56.65%    passed     98.04%
+  22  Temnocalyx_nodulosus_S587_L004          56.65%    passed     98.04%
+  23  Rytigynia_longipedicellata_S442_L004    57.98%    passed     94.45%
+  24  Multidentia_crassa                      56.74%    passed     97.53%
+  25  Cyclophyllum_jasminifolium_S377_L004    57.72%    passed     97.33%
+  26  Everistia_vacciniifolia                 60.39%    passed     97.48%
+  27  Temnocalyx_nodulosa                     70.83%    passed     67.55%
+  28  Psydrax_dicoccos_S379_L004              73.51%    passed     44.53%
+  29  Everistia_vacciniifolia_S490_L004       19.80%    failed      0.00%
+WARNING: 28 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   58.79%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rpl16.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 31 sequences with 615 columns, 83 distinct patterns
+3 parsimony-informative, 21 singleton sites, 591 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       40.00%    passed     94.41%
+   2  Bullockia_fadenii_S514_L004             16.59%    passed     99.96%
+   3  Canthium_sp.                            74.15%    passed     97.35%
+   4  Eriosemopsis_subanisophylla             43.41%    passed     92.63%
+   5  Pyrostria_media_S610_L004               16.59%    passed     99.96%
+   6  Cyclophyllum_jasminifolium_S377_L004    16.59%    passed    100.00%
+   7  Eriosemopsis_subanisophylla_S489_L004   16.59%    passed    100.00%
+   8  Multidentia_sclerocarpa_S374_L004       16.59%    passed    100.00%
+   9  Perakanthus_velutinus_S495_L004         16.59%    passed    100.00%
+  10  Pyrostria_commersonii_S618_L004         16.59%    passed    100.00%
+  11  Pyrostria_hystrix_S641_L004             16.59%    passed    100.00%
+  12  Rytigynia_longipedicellata_S442_L004    16.59%    passed    100.00%
+  13  Rytigynia_sambavensis_S493_L004         16.59%    passed    100.00%
+  14  Temnocalyx_nodulosus_S587_L004          16.59%    passed    100.00%
+  15  Peponidium_crassifolium_S628_L004       18.05%    passed     99.95%
+  16  Vangueriopsis_lanciflora_S446_L004      16.59%    passed     99.90%
+  17  Everistia_vacciniifolia                 16.59%    passed     99.96%
+  18  Everistia_vacciniifolia_S491_L004       22.44%    passed     97.18%
+  19  Psydrax_ankotekonensis_S572_L004        16.59%    passed     99.96%
+  20  Psydrax_dicoccos_S379_L004              16.59%    passed     99.96%
+  21  Keetia_gueinzii_S519_L004               40.00%    passed     95.58%
+  22  Canthium_inerme_S629_L004               35.61%    passed     94.56%
+  23  Cyclophyllum_henriettae_S376_L004       16.42%    passed     99.99%
+  24  Pygmaeothamnus_sp_S516_L004             16.59%    passed     96.89%
+  25  Everistia_vacciniifolia_S490_L004       16.59%    passed     99.95%
+  26  Keetia_hispida_S383_L004                22.93%    passed     97.95%
+  27  Psydrax_odoratus                        16.59%    passed     95.01%
+  28  Plectroniella_armata_S640_L004          20.98%    passed     97.60%
+  29  Plectroniella_armata_S391_L004          20.98%    passed     99.66%
+  30  Multidentia_crassa                      29.27%    passed     90.97%
+  31  Keetia_lukei_S507_L004                  30.89%    passed     19.65%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   23.02%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rpl2.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 32 sequences with 2132 columns, 134 distinct patterns
+19 parsimony-informative, 102 singleton sites, 2011 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       67.64%    passed     96.60%
+   2  Psydrax_obovata_S639_L004               59.05%    passed     93.50%
+   3  Bullockia_fadenii_S514_L004              0.00%    passed     98.83%
+   4  Pyrostria_commersonii_S618_L004          0.00%    passed     99.33%
+   5  Pyrostria_hystrix_S641_L004              0.00%    passed     99.39%
+   6  Pyrostria_media_S610_L004                0.00%    passed     99.39%
+   7  Peponidium_crassifolium_S628_L004        0.00%    passed     98.96%
+   8  Pyrostria_revoluta                       1.69%    passed     97.79%
+   9  Canthium_inerme_S629_L004                0.00%    passed     99.67%
+  10  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.62%
+  11  Plectroniella_armata_S391_L004           0.00%    passed     99.62%
+  12  Plectroniella_armata_S640_L004           0.00%    passed     99.82%
+  13  Everistia_vacciniifolia                  0.00%    passed     99.09%
+  14  Keetia_lukei_S507_L004                   0.00%    passed     99.09%
+  15  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.09%
+  16  Keetia_hispida_S383_L004                 0.00%    passed     99.28%
+  17  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     98.83%
+  18  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.80%
+  19  Everistia_vacciniifolia_S491_L004        0.00%    passed     99.80%
+  20  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.28%
+  21  Pygmaeothamnus_sp_S516_L004              0.19%    passed     99.45%
+  22  Multidentia_sclerocarpa_S374_L004       59.05%    passed     91.61%
+  23  Rytigynia_longipedicellata_S442_L004    59.05%    passed     88.30%
+  24  Rytigynia_sambavensis_S493_L004         59.05%    passed     88.30%
+  25  Psydrax_odoratus                         0.38%    passed     98.89%
+  26  Pyrostria_sp                            69.32%    passed     37.61%
+  27  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     96.28%
+  28  Cyclophyllum_henriettae_S376_L004       59.05%    passed     91.85%
+  29  Psydrax_dicoccos_S379_L004              56.66%    passed     62.04%
+  30  Perakanthus_velutinus_S495_L004         61.44%    passed     95.41%
+  31  Keetia_gueinzii_S519_L004               68.76%    passed     64.83%
+  32  Temnocalyx_nodulosa                     63.51%    passed      8.97%
+WARNING: 11 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   21.40%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rpl5.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 31 sequences with 508 columns, 143 distinct patterns
+8 parsimony-informative, 66 singleton sites, 434 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004        2.95%    passed     98.36%
+   2  Bullockia_fadenii_S514_L004              0.00%    passed     99.98%
+   3  Everistia_vacciniifolia                  0.00%    passed     99.98%
+   4  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.98%
+   5  Pyrostria_media_S610_L004                0.00%    passed     99.98%
+   6  Canthium_inerme_S629_L004                0.00%    passed     99.89%
+   7  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.89%
+   8  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.89%
+   9  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.97%
+  10  Keetia_hispida_S383_L004                 0.00%    passed     99.97%
+  11  Peponidium_crassifolium_S628_L004        0.00%    passed     99.83%
+  12  Pyrostria_commersonii_S618_L004          0.00%    passed     99.26%
+  13  Pyrostria_hystrix_S641_L004              0.00%    passed     98.19%
+  14  Rytigynia_sambavensis_S493_L004         20.67%    passed     90.29%
+  15  Perakanthus_velutinus_S495_L004         12.99%    passed     91.05%
+  16  Psydrax_obovata_S639_L004               49.61%    passed     87.74%
+  17  Psydrax_dicoccos_S379_L004              21.26%    passed     97.39%
+  18  Canthium_armatum                        66.14%    passed     93.71%
+  19  Everistia_vacciniifolia_S491_L004       24.80%    passed     97.35%
+  20  Cyclophyllum_henriettae_S376_L004       47.44%    passed     91.95%
+  21  Psydrax_odoratus                         0.00%    passed     99.65%
+  22  Pyrostria_revoluta                      27.36%    passed     94.27%
+  23  Cyclophyllum_jasminifolium_S377_L004    50.39%    passed     91.54%
+  24  Multidentia_crassa                      11.42%    passed     99.64%
+  25  Multidentia_sclerocarpa_S374_L004        7.87%    passed     99.94%
+  26  Vangueriopsis_lanciflora_S446_L004       8.46%    passed     99.99%
+  27  Plectroniella_armata_S391_L004          25.00%    passed     98.11%
+  28  Plectroniella_armata_S640_L004          36.22%    passed     97.89%
+  29  Temnocalyx_nodulosa                     59.84%    passed     91.68%
+  30  Pygmaeothamnus_sp_S516_L004             44.49%    passed     89.62%
+  31  Rytigynia_longipedicellata_S442_L004     6.89%    passed     72.82%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   16.90%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps1.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 26 sequences with 600 columns, 81 distinct patterns
+2 parsimony-informative, 6 singleton sites, 592 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       14.00%    passed     92.78%
+   2  Canthium_armatum                        56.00%    passed     77.00%
+   3  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.89%
+   4  Plectroniella_armata_S640_L004           0.00%    passed     99.89%
+   5  Multidentia_sclerocarpa_S374_L004       14.00%    passed     98.20%
+   6  Rytigynia_longipedicellata_S442_L004     0.00%    passed     99.90%
+   7  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.90%
+   8  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.90%
+   9  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     99.90%
+  10  Perakanthus_velutinus_S495_L004          3.50%    passed     99.30%
+  11  Everistia_vacciniifolia                  6.50%    passed     99.42%
+  12  Everistia_vacciniifolia_S490_L004       20.00%    passed     81.14%
+  13  Keetia_hispida_S383_L004                 0.00%    passed     99.93%
+  14  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.93%
+  15  Psydrax_obovata_S639_L004               44.00%    passed     64.81%
+  16  Everistia_vacciniifolia_S491_L004        1.50%    passed     99.92%
+  17  Peponidium_crassifolium_S628_L004        6.50%    passed     99.67%
+  18  Pyrostria_revoluta                      49.00%    passed     93.78%
+  19  Psydrax_odoratus                         0.00%    passed     99.99%
+  20  Multidentia_crassa                       9.50%    passed     96.57%
+  21  Keetia_gueinzii_S519_L004               21.00%    passed     88.74%
+  22  Multidentia_exserta_S443_L004           45.50%    passed     95.67%
+  23  Temnocalyx_nodulosa                      4.50%    passed     95.16%
+  24  Plectroniella_armata_S391_L004           0.50%    passed     99.68%
+  25  Keetia_lukei_S507_L004                   9.50%    passed     98.00%
+  26  Pygmaeothamnus_sp_S516_L004             25.50%    passed     91.97%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   12.73%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps10.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 20 sequences with 1406 columns, 90 distinct patterns
+11 parsimony-informative, 32 singleton sites, 1363 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Bullockia_fadenii_S514_L004             12.73%    passed     99.29%
+   2  Peponidium_crassifolium_S628_L004        8.39%    passed     94.16%
+   3  Pyrostria_commersonii_S618_L004         12.87%    passed     99.33%
+   4  Pyrostria_hystrix_S641_L004             12.66%    passed     99.53%
+   5  Pyrostria_revoluta                      20.55%    passed     94.59%
+   6  Temnocalyx_nodulosus_S587_L004          13.09%    passed     99.03%
+   7  Canthium_inerme_S629_L004               12.45%    passed     96.26%
+   8  Pyrostria_sp                            19.70%    passed     95.04%
+   9  Pyrostria_media_S610_L004                8.46%    passed     95.11%
+  10  Everistia_vacciniifolia                 13.02%    passed     98.97%
+  11  Plectroniella_armata_S391_L004          13.02%    passed     98.97%
+  12  Plectroniella_armata_S640_L004          23.90%    passed     76.52%
+  13  Psydrax_ankotekonensis_S572_L004         7.82%    passed     96.86%
+  14  Psydrax_odoratus                         8.53%    passed     99.14%
+  15  Pygmaeothamnus_sp_S516_L004             13.02%    passed     98.48%
+  16  Rytigynia_sambavensis_S493_L004         14.94%    passed     99.35%
+  17  Eriosemopsis_subanisophylla_S489_L004    8.32%    passed     34.87%
+  18  Cyclophyllum_henriettae_S376_L004       12.80%    passed     98.66%
+  19  Everistia_vacciniifolia_S491_L004       18.85%    passed     91.55%
+  20  Vangueriopsis_lanciflora_S446_L004      14.51%    passed     96.83%
+****  TOTAL                                   13.48%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps12.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 30 sequences with 899 columns, 98 distinct patterns
+49 parsimony-informative, 9 singleton sites, 841 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Bullockia_fadenii_S514_L004             58.29%    passed     99.52%
+   2  Cyclophyllum_henriettae_S376_L004       58.29%    passed     99.52%
+   3  Cyclophyllum_jasminifolium_S377_L004    58.29%    passed     99.52%
+   4  Everistia_vacciniifolia_S490_L004       58.29%    passed     99.52%
+   5  Everistia_vacciniifolia_S491_L004       58.29%    passed     99.52%
+   6  Everistia_vacciniifolia                 58.29%    passed     99.52%
+   7  Multidentia_sclerocarpa_S374_L004       58.29%    passed     99.52%
+   8  Psydrax_odoratus                        58.29%    passed     99.52%
+   9  Pygmaeothamnus_sp_S516_L004             58.29%    passed     99.52%
+  10  Pyrostria_commersonii_S618_L004         58.29%    passed     99.52%
+  11  Pyrostria_hystrix_S641_L004             58.29%    passed     99.52%
+  12  Pyrostria_media_S610_L004               58.29%    passed     99.52%
+  13  Rytigynia_longipedicellata_S442_L004    58.29%    passed     99.52%
+  14  Rytigynia_sambavensis_S493_L004         58.29%    passed     99.52%
+  15  Temnocalyx_nodulosus_S587_L004          58.29%    passed     99.52%
+  16  Vangueriopsis_lanciflora_S446_L004      58.29%    passed     99.52%
+  17  Eriosemopsis_subanisophylla_S489_L004   58.29%    passed     99.30%
+  18  Plectroniella_armata_S391_L004          58.29%    passed     99.30%
+  19  Plectroniella_armata_S640_L004          58.29%    passed     99.30%
+  20  Keetia_hispida_S383_L004                58.29%    passed     99.30%
+  21  Psydrax_ankotekonensis_S572_L004        58.29%    passed     98.88%
+  22  Hutchinsonia_barbata_S551_L004          61.62%    passed     97.29%
+  23  Psydrax_obovata_S639_L004               63.29%    passed     96.59%
+  24  Canthium_inerme_S629_L004               78.98%    passed     69.09%
+  25  Psydrax_dicoccos_S379_L004              81.31%    passed     66.15%
+  26  Perakanthus_velutinus_S495_L004         61.96%    passed     95.78%
+  27  Pyrostria_revoluta                      87.32%    passed     85.04%
+  28  Temnocalyx_nodulosa                     64.63%    passed     99.00%
+  29  Keetia_gueinzii_S519_L004               80.76%    passed     40.45%
+  30  Fadogia_ancylantha                      20.13%    failed      0.18%
+WARNING: 29 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   60.80%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps13.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 30 sequences with 347 columns, 66 distinct patterns
+1 parsimony-informative, 8 singleton sites, 338 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Bullockia_fadenii_S514_L004              0.00%    passed     99.98%
+   2  Canthium_inerme_S629_L004               23.34%    passed     99.93%
+   3  Cyclophyllum_henriettae_S376_L004        0.00%    passed     99.98%
+   4  Cyclophyllum_jasminifolium_S377_L004     0.00%    passed     99.98%
+   5  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     99.98%
+   6  Everistia_vacciniifolia                  0.00%    passed     99.98%
+   7  Everistia_vacciniifolia_S490_L004        0.00%    passed     99.98%
+   8  Everistia_vacciniifolia_S491_L004        0.00%    passed     99.98%
+   9  Keetia_hispida_S383_L004                 0.00%    passed     99.98%
+  10  Multidentia_sclerocarpa_S374_L004        0.00%    passed     99.98%
+  11  Peponidium_crassifolium_S628_L004        0.00%    passed     99.98%
+  12  Plectroniella_armata_S391_L004           0.00%    passed     99.98%
+  13  Psydrax_ankotekonensis_S572_L004         0.00%    passed     99.98%
+  14  Psydrax_obovata_S639_L004                0.00%    passed     99.98%
+  15  Pyrostria_commersonii_S618_L004          0.00%    passed     99.98%
+  16  Pyrostria_hystrix_S641_L004              0.00%    passed     99.98%
+  17  Pyrostria_media_S610_L004                0.00%    passed     99.98%
+  18  Rytigynia_longipedicellata_S442_L004     0.00%    passed     99.98%
+  19  Rytigynia_sambavensis_S493_L004          0.00%    passed     99.98%
+  20  Temnocalyx_nodulosus_S587_L004           0.00%    passed     99.98%
+  21  Cyclophyllum_guillauminianum            11.24%    passed     99.69%
+  22  Perakanthus_velutinus_S495_L004          0.00%    passed     99.95%
+  23  Multidentia_crassa                      24.78%    passed     93.29%
+  24  Plectroniella_armata_S640_L004           8.36%    passed     99.49%
+  25  Psydrax_dicoccos_S379_L004               1.73%    passed     99.95%
+  26  Pygmaeothamnus_sp_S516_L004              0.00%    passed     99.98%
+  27  Temnocalyx_nodulosa                     13.83%    passed     97.29%
+  28  Psydrax_odoratus                         6.92%    passed     99.59%
+  29  Keetia_lukei_S507_L004                  26.51%    passed     91.78%
+  30  Vangueriopsis_lanciflora_S446_L004      39.48%    passed     67.64%
+****  TOTAL                                    5.21%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps14.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 32 sequences with 326 columns, 50 distinct patterns
+30 parsimony-informative, 6 singleton sites, 290 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       36.20%    passed     81.37%
+   2  Bullockia_fadenii_S514_L004             24.23%    passed     34.68%
+   3  Cyclophyllum_henriettae_S376_L004       24.23%    passed     34.68%
+   4  Everistia_vacciniifolia_S490_L004       24.23%    passed     34.68%
+   5  Everistia_vacciniifolia_S491_L004       24.23%    passed     34.68%
+   6  Peponidium_crassifolium_S628_L004       24.23%    passed     34.68%
+   7  Psydrax_ankotekonensis_S572_L004        24.23%    passed     34.68%
+   8  Psydrax_odoratus                        24.23%    passed     34.68%
+   9  Pyrostria_commersonii_S618_L004         24.23%    passed     34.68%
+  10  Pyrostria_media_S610_L004               24.23%    passed     34.68%
+  11  Cyclophyllum_jasminifolium_S377_L004    54.60%    passed     48.36%
+  12  Canthium_armatum                        16.87%    passed     95.58%
+  13  Canthium_inerme_S629_L004                0.00%    passed     93.62%
+  14  Everistia_vacciniifolia                 60.12%    passed     26.55%
+  15  Keetia_gueinzii_S519_L004                0.00%    passed     93.62%
+  16  Keetia_hispida_S383_L004                 0.00%    passed     93.62%
+  17  Perakanthus_velutinus_S495_L004          0.00%    passed     93.62%
+  18  Plectroniella_armata_S391_L004           0.00%    passed     93.62%
+  19  Plectroniella_armata_S640_L004           0.00%    passed     93.62%
+  20  Pyrostria_hystrix_S641_L004             54.60%    passed     41.73%
+  21  Rytigynia_sambavensis_S493_L004          0.00%    passed     80.35%
+  22  Temnocalyx_nodulosa                      5.52%    passed     64.10%
+  23  Temnocalyx_nodulosus_S587_L004           0.00%    passed     80.35%
+  24  Vangueria_ferruginea                     0.00%    passed     80.35%
+  25  Multidentia_exserta_S443_L004           31.60%    passed      6.87%
+  26  Multidentia_sclerocarpa_S374_L004        0.00%    passed     80.35%
+  27  Rytigynia_longipedicellata_S442_L004     0.00%    passed     80.35%
+  28  Vangueriopsis_lanciflora_S446_L004       0.00%    passed     80.35%
+  29  Multidentia_crassa                       0.00%    passed     80.35%
+  30  Hutchinsonia_barbata_S551_L004          31.60%    passed      7.49%
+  31  Pygmaeothamnus_sp_S516_L004              0.00%    passed     83.53%
+  32  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed     96.14%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   15.91%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps19.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 10 sequences with 426 columns, 103 distinct patterns
+27 parsimony-informative, 88 singleton sites, 311 constant sites
+                                      Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004      31.46%    passed     64.56%
+   2  Cyclophyllum_guillauminianum           49.30%    passed     89.22%
+   3  Cyclophyllum_jasminifolium_S377_L004   31.46%    passed     67.93%
+   4  Keetia_hispida_S383_L004               54.93%    passed     79.93%
+   5  Pyrostria_commersonii_S618_L004        42.02%    passed     98.86%
+   6  Pyrostria_sp                           41.78%    passed     98.02%
+   7  Pyrostria_hystrix_S641_L004             5.63%    passed     84.93%
+   8  Pyrostria_media_S610_L004              38.03%    passed     80.65%
+   9  Bullockia_fadenii_S514_L004             1.64%    passed     86.17%
+  10  Cyclophyllum_henriettae_S376_L004      69.01%    passed     15.48%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                  36.53%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps3.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 35 sequences with 3227 columns, 247 distinct patterns
+17 parsimony-informative, 48 singleton sites, 3162 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       49.43%    passed     16.52%
+   2  Bullockia_fadenii_S514_L004             51.75%    passed     49.70%
+   3  Keetia_hispida_S383_L004                53.52%    passed     58.61%
+   4  Keetia_gueinzii_S519_L004               76.94%    passed     23.02%
+   5  Everistia_vacciniifolia_S490_L004       51.10%    passed     31.29%
+   6  Everistia_vacciniifolia_S491_L004       49.43%    passed     19.79%
+   7  Psydrax_ankotekonensis_S572_L004        49.43%    passed     19.79%
+   8  Psydrax_dicoccos_S379_L004              52.87%    passed      7.61%
+   9  Psydrax_odoratus                         0.00%    passed     74.53%
+  10  Pyrostria_commersonii_S618_L004         49.43%    passed     25.78%
+  11  Keetia_lukei_S507_L004                  54.26%    passed     54.12%
+  12  Pyrostria_revoluta                      84.66%    passed     65.62%
+  13  Psydrax_obovata_S639_L004               55.47%    passed     34.44%
+  14  Perakanthus_velutinus_S495_L004         52.59%    passed     23.17%
+  15  Canthium_inerme_S629_L004               26.31%    failed      0.86%
+  16  Plectroniella_armata_S391_L004           7.07%    passed     26.51%
+  17  Canthium_sp.                            59.96%    failed      0.05%
+  18  Peponidium_crassifolium_S628_L004        3.63%    passed     51.71%
+  19  Pyrostria_hystrix_S641_L004              0.00%    passed     74.90%
+  20  Pyrostria_media_S610_L004                0.00%    passed     73.17%
+  21  Pyrostria_sp                            64.74%    failed      0.38%
+  22  Everistia_vacciniifolia                  0.37%    passed     77.79%
+  23  Cyclophyllum_henriettae_S376_L004        0.84%    passed     75.29%
+  24  Eriosemopsis_subanisophylla_S489_L004    0.56%    passed     90.21%
+  25  Multidentia_sclerocarpa_S374_L004        2.60%    passed     71.72%
+  26  Pygmaeothamnus_sp_S516_L004             58.82%    passed     83.96%
+  27  Rytigynia_longipedicellata_S442_L004     0.28%    passed     82.34%
+  28  Temnocalyx_nodulosus_S587_L004           0.46%    passed     82.80%
+  29  Multidentia_crassa                      68.11%    passed     86.99%
+  30  Cyclophyllum_jasminifolium_S377_L004    51.66%    passed     27.25%
+  31  Plectroniella_armata_S640_L004          53.70%    passed     24.76%
+  32  Rytigynia_sambavensis_S493_L004         69.97%    passed     24.12%
+  33  Vangueria_ferruginea                    76.57%    passed     14.24%
+  34  Vangueriopsis_lanciflora_S446_L004      55.56%    failed      3.64%
+  35  Temnocalyx_nodulosa                     77.22%    passed     46.24%
+WARNING: 19 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   40.27%  4 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps4.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 32 sequences with 6992 columns, 294 distinct patterns
+113 parsimony-informative, 241 singleton sites, 6638 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       89.19%    passed      9.27%
+   2  Canthium_armatum                        93.65%    passed     11.06%
+   3  Bullockia_fadenii_S514_L004             87.34%    passed     39.78%
+   4  Pyrostria_commersonii_S618_L004         87.34%    passed     42.84%
+   5  Pyrostria_hystrix_S641_L004             87.34%    passed     42.84%
+   6  Keetia_hispida_S383_L004                87.34%    passed     45.78%
+   7  Psydrax_ankotekonensis_S572_L004        87.34%    passed     35.37%
+   8  Psydrax_odoratus                        87.34%    passed     35.37%
+   9  Multidentia_sclerocarpa_S374_L004       87.34%    passed     40.67%
+  10  Eriosemopsis_subanisophylla_S489_L004   87.34%    passed     43.99%
+  11  Plectroniella_armata_S391_L004          87.34%    passed     41.04%
+  12  Pyrostria_media_S610_L004               87.30%    passed     46.17%
+  13  Cyclophyllum_henriettae_S376_L004       87.39%    passed     42.28%
+  14  Everistia_vacciniifolia                 87.69%    passed     17.69%
+  15  Canthium_inerme_S629_L004               88.29%    passed     77.51%
+  16  Peponidium_crassifolium_S628_L004       87.41%    passed     40.64%
+  17  Keetia_lukei_S507_L004                  92.36%    passed     47.93%
+  18  Plectroniella_armata_S640_L004          87.60%    passed     34.36%
+  19  Vangueriopsis_lanciflora_S446_L004      94.21%    passed     90.17%
+  20  Rytigynia_longipedicellata_S442_L004    87.21%    passed     32.38%
+  21  Temnocalyx_nodulosus_S587_L004          87.26%    passed     30.14%
+  22  Rytigynia_sambavensis_S493_L004         90.09%    passed     64.06%
+  23  Everistia_vacciniifolia_S490_L004       88.11%    passed     32.84%
+  24  Psydrax_obovata_S639_L004               96.14%    passed     24.76%
+  25  Keetia_gueinzii_S519_L004               96.01%    passed     41.03%
+  26  Cyclophyllum_jasminifolium_S377_L004    89.83%    passed     15.65%
+  27  Everistia_vacciniifolia_S491_L004       93.86%    passed     25.98%
+  28  Pygmaeothamnus_sp_S516_L004             87.76%    failed      1.25%
+  29  Multidentia_exserta_S443_L004           95.92%    passed     64.16%
+  30  Perakanthus_velutinus_S495_L004         90.60%    passed     29.02%
+  31  Multidentia_crassa                       2.07%    failed      0.00%
+  32  Psydrax_dicoccos_S379_L004               1.20%    failed      0.00%
+WARNING: 30 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   83.98%  3 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/rps7.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 29 sequences with 2628 columns, 115 distinct patterns
+3 parsimony-informative, 43 singleton sites, 2582 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       90.18%    passed     86.06%
+   2  Bullockia_fadenii_S514_L004             83.11%    passed     58.04%
+   3  Cyclophyllum_henriettae_S376_L004       83.11%    passed     58.04%
+   4  Cyclophyllum_jasminifolium_S377_L004    83.11%    passed     58.04%
+   5  Everistia_vacciniifolia                 83.11%    passed     58.04%
+   6  Everistia_vacciniifolia_S491_L004       83.11%    passed     58.04%
+   7  Psydrax_ankotekonensis_S572_L004        83.11%    passed     58.04%
+   8  Psydrax_odoratus                        83.11%    passed     58.04%
+   9  Pyrostria_commersonii_S618_L004         83.11%    passed     58.04%
+  10  Pyrostria_hystrix_S641_L004             83.11%    passed     58.04%
+  11  Pyrostria_media_S610_L004               83.11%    passed     58.04%
+  12  Keetia_hispida_S383_L004                83.90%    passed     54.59%
+  13  Eriosemopsis_subanisophylla_S489_L004   83.11%    passed     52.29%
+  14  Plectroniella_armata_S391_L004          83.11%    passed     52.29%
+  15  Rytigynia_sambavensis_S493_L004         83.11%    passed     52.29%
+  16  Temnocalyx_nodulosus_S587_L004          83.11%    passed     52.29%
+  17  Rytigynia_longipedicellata_S442_L004    82.91%    passed     36.67%
+  18  Vangueriopsis_lanciflora_S446_L004      82.95%    passed     54.25%
+  19  Peponidium_crassifolium_S628_L004       86.76%    passed     66.83%
+  20  Psydrax_dicoccos_S379_L004              84.13%    passed     42.61%
+  21  Everistia_vacciniifolia_S490_L004       84.59%    passed     72.66%
+  22  Multidentia_sclerocarpa_S374_L004       89.38%    passed     79.45%
+  23  Perakanthus_velutinus_S495_L004         83.90%    passed     47.66%
+  24  Plectroniella_armata_S640_L004          85.62%    passed     77.69%
+  25  Multidentia_crassa                      88.01%    passed     90.43%
+  26  Canthium_inerme_S629_L004               93.95%    passed     59.23%
+  27  Pygmaeothamnus_sp_S516_L004              4.07%    failed      0.02%
+  28  Temnocalyx_nodulosa                     91.67%    passed     15.63%
+  29  Cyclophyllum_guillauminianum            94.18%    passed     57.21%
+WARNING: 28 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   82.40%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/sdh3.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 25 sequences with 339 columns, 65 distinct patterns
+9 parsimony-informative, 15 singleton sites, 315 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Bullockia_fadenii_S514_L004              8.26%    passed     99.80%
+   2  Cyclophyllum_jasminifolium_S377_L004     8.26%    passed     99.80%
+   3  Keetia_hispida_S383_L004                 7.37%    passed     99.75%
+   4  Multidentia_sclerocarpa_S374_L004       25.96%    passed     56.06%
+   5  Peponidium_crassifolium_S628_L004        7.37%    passed     99.75%
+   6  Pyrostria_media_S610_L004                8.26%    passed     99.80%
+   7  Pygmaeothamnus_sp_S516_L004              8.26%    passed     99.94%
+   8  Psydrax_ankotekonensis_S572_L004         8.26%    passed     99.61%
+   9  Pyrostria_commersonii_S618_L004          8.26%    passed     99.61%
+  10  Pyrostria_hystrix_S641_L004              7.37%    passed     99.55%
+  11  Canthium_inerme_S629_L004               60.18%    passed     39.17%
+  12  Cyclophyllum_henriettae_S376_L004       30.09%    passed     72.28%
+  13  Vangueriopsis_lanciflora_S446_L004       7.37%    passed     98.90%
+  14  Everistia_vacciniifolia                  8.26%    passed     99.27%
+  15  Everistia_vacciniifolia_S491_L004        7.37%    passed     98.58%
+  16  Psydrax_odoratus                         8.26%    passed     99.21%
+  17  Multidentia_crassa                      50.74%    passed     65.72%
+  18  Rytigynia_longipedicellata_S442_L004     9.44%    passed     97.62%
+  19  Rytigynia_sambavensis_S493_L004         10.32%    passed     99.18%
+  20  Eriosemopsis_subanisophylla_S489_L004    7.37%    passed     95.34%
+  21  Plectroniella_armata_S640_L004           7.37%    passed     95.34%
+  22  Plectroniella_armata_S391_L004           3.54%    passed     95.69%
+  23  Temnocalyx_nodulosa                     33.63%    passed     74.22%
+  24  Temnocalyx_nodulosus_S587_L004          10.03%    passed     99.04%
+  25  Everistia_vacciniifolia_S490_L004       33.63%    passed     77.45%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   15.41%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/sdh4.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 34 sequences with 6177 columns, 219 distinct patterns
+49 parsimony-informative, 185 singleton sites, 5943 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       96.54%    passed     28.80%
+   2  Keetia_gueinzii_S519_L004               97.22%    passed     31.49%
+   3  Pygmaeothamnus_sp_S516_L004              1.21%    passed     33.11%
+   4  Bullockia_fadenii_S514_L004             93.36%    failed      3.53%
+   5  Pyrostria_commersonii_S618_L004         93.36%    failed      3.67%
+   6  Pyrostria_hystrix_S641_L004             93.36%    failed      3.67%
+   7  Pyrostria_media_S610_L004               93.36%    failed      4.57%
+   8  Rytigynia_longipedicellata_S442_L004    93.46%    failed      3.36%
+   9  Multidentia_exserta_S443_L004           95.87%    passed     41.46%
+  10  Psydrax_dicoccos_S379_L004              93.65%    failed      3.98%
+  11  Canthium_inerme_S629_L004               94.32%    failed      4.08%
+  12  Eriosemopsis_subanisophylla_S489_L004   94.32%    failed      4.08%
+  13  Plectroniella_armata_S640_L004          94.32%    failed      4.08%
+  14  Psydrax_ankotekonensis_S572_L004        94.32%    failed      4.70%
+  15  Psydrax_odoratus                        94.32%    failed      4.70%
+  16  Rytigynia_sambavensis_S493_L004         94.32%    failed      4.70%
+  17  Cyclophyllum_guillauminianum            94.32%    passed      5.57%
+  18  Multidentia_crassa                      90.17%    passed     17.17%
+  19  Multidentia_sclerocarpa_S374_L004       90.17%    passed     17.17%
+  20  Peponidium_crassifolium_S628_L004       94.46%    passed      9.82%
+  21  Cyclophyllum_henriettae_S376_L004       90.04%    failed      0.05%
+  22  Cyclophyllum_jasminifolium_S377_L004    94.19%    failed      3.40%
+  23  Everistia_vacciniifolia                 94.19%    failed      3.39%
+  24  Everistia_vacciniifolia_S490_L004       94.19%    failed      3.39%
+  25  Everistia_vacciniifolia_S491_L004       94.19%    failed      3.39%
+  26  Psydrax_obovata_S639_L004               94.19%    failed      3.39%
+  27  Temnocalyx_nodulosa                     94.19%    failed      4.69%
+  28  Temnocalyx_nodulosus_S587_L004          94.19%    failed      4.69%
+  29  Vangueriopsis_lanciflora_S446_L004      94.19%    failed      4.08%
+  30  Plectroniella_armata_S391_L004          94.19%    failed      2.96%
+  31  Keetia_hispida_S383_L004                94.29%    failed      3.32%
+  32  Eriosemopsis_subanisophylla             96.08%    failed      0.32%
+  33  Pyrostria_revoluta                      96.96%    passed      7.60%
+  34  Perakanthus_velutinus_S495_L004         97.15%    failed      2.66%
+WARNING: 33 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   91.43%  25 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/04_genes_flanked/tatC.fna ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 31 sequences with 717 columns, 83 distinct patterns
+1 parsimony-informative, 7 singleton sites, 709 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+   1  Afrocanthium_lactescens_S626_L004       38.49%    passed     63.66%
+   2  Bullockia_fadenii_S514_L004              0.00%    passed    100.00%
+   3  Canthium_inerme_S629_L004                6.69%    passed     93.66%
+   4  Eriosemopsis_subanisophylla_S489_L004    0.00%    passed    100.00%
+   5  Everistia_vacciniifolia                  0.00%    passed    100.00%
+   6  Multidentia_sclerocarpa_S374_L004        0.00%    passed    100.00%
+   7  Peponidium_crassifolium_S628_L004        0.00%    passed    100.00%
+   8  Perakanthus_velutinus_S495_L004          0.00%    passed    100.00%
+   9  Psydrax_ankotekonensis_S572_L004         0.00%    passed    100.00%
+  10  Psydrax_dicoccos_S379_L004              18.83%    passed     99.11%
+  11  Psydrax_obovata_S639_L004               56.07%    passed     43.46%
+  12  Psydrax_odoratus                         0.00%    passed    100.00%
+  13  Pyrostria_media_S610_L004                0.00%    passed    100.00%
+  14  Pyrostria_revoluta                      56.49%    passed     47.18%
+  15  Rytigynia_longipedicellata_S442_L004     0.00%    passed    100.00%
+  16  Temnocalyx_nodulosus_S587_L004           0.00%    passed    100.00%
+  17  Vangueriopsis_lanciflora_S446_L004       0.00%    passed    100.00%
+  18  Everistia_vacciniifolia_S491_L004       21.76%    passed     45.36%
+  19  Everistia_vacciniifolia_S490_L004        0.00%    passed    100.00%
+  20  Cyclophyllum_jasminifolium_S377_L004     0.84%    passed     99.96%
+  21  Plectroniella_armata_S640_L004           0.00%    passed     99.93%
+  22  Cyclophyllum_henriettae_S376_L004        0.84%    passed     99.96%
+  23  Pyrostria_commersonii_S618_L004          0.00%    passed    100.00%
+  24  Pyrostria_hystrix_S641_L004              0.00%    passed    100.00%
+  25  Temnocalyx_nodulosa                     31.80%    passed     94.95%
+  26  Keetia_hispida_S383_L004                 0.00%    passed     99.93%
+  27  Plectroniella_armata_S391_L004           0.00%    passed     99.93%
+  28  Rytigynia_sambavensis_S493_L004         33.05%    passed     99.56%
+  29  Cyclophyllum_guillauminianum            28.87%    passed     92.02%
+  30  Pygmaeothamnus_sp_S516_L004             30.54%    passed     99.57%
+  31  Multidentia_exserta_S443_L004           41.84%    passed     58.04%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   11.81%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		32	1600	23	1504		atp1.fna
+2		27	585	4	570		atp4.fna
+3		28	826	4	736		atp6.fna
+4		31	1284	2	1224		atp8.fna
+5		38	204	7	188		atp9.fna
+6		32	498	3	488		ccmB.fna
+7		34	726	4	702		ccmC.fna
+8		33	24375	15	23871		ccmFC.fna
+9		34	1614	16	1568		ccmFN.fna
+10		32	1324	11	1302		cob.fna
+11		30	2537	19	2489		cox1.fna
+12		33	1181	4	1145		cox2.fna
+13		33	795	3	776		cox3.fna
+14		37	1859	15	1821		matR.fna
+15		28	387	2	362		nad1_exon_1.fna
+16		24	4687	26	4398		nad1_exon_2_3.fna
+17		19	3107	26	3052		nad1_exon_4_5.fna
+18		30	1699	7	1655		nad2_exon_1_2.fna
+19		25	2388	25	2343		nad2_exon_3_4_5.fna
+20		29	354	4	290		nad3.fna
+21		26	6071	29	5981		nad4.fna
+22		30	237	0	233		nad4L.fna
+WARNING: No parsimony-informative sites in partition nad4L.fna
+23		28	2465	13	2391		nad5_exon_1_2_3.fna
+24		38	2896	11	2858		nad5_exon_4_5.fna
+25		33	932	17	908		nad6.fna
+26		30	2922	12	2897		nad7.fna
+27		30	534	10	489		nad9.fna
+28		29	1121	2	1051		rpl10.fna
+29		31	615	3	591		rpl16.fna
+30		32	2132	19	2011		rpl2.fna
+31		31	508	8	434		rpl5.fna
+32		26	600	2	592		rps1.fna
+33		20	1406	11	1363		rps10.fna
+34		30	899	49	841		rps12.fna
+35		30	347	1	338		rps13.fna
+36		32	326	30	290		rps14.fna
+37		10	426	27	311		rps19.fna
+38		35	3227	17	3162		rps3.fna
+39		32	6992	113	6638		rps4.fna
+40		29	2628	3	2582		rps7.fna
+41		25	339	9	315		sdh3.fna
+42		34	6177	49	5943		sdh4.fna
+43		31	717	1	709		tatC.fna
+Degree of missing data: 0.334
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.034 seconds
+Measuring multi-threading efficiency up to 14 CPU cores
+Increase to 10 rounds for branch lengths
+18 trees examined
+Threads: 1 / Time: 14.710 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -167834
+Threads: 2 / Time: 9.894 sec / Speedup: 1.487 / Efficiency: 74% / LogL: -167834
+Threads: 3 / Time: 8.774 sec / Speedup: 1.676 / Efficiency: 56% / LogL: -167834
+Threads: 4 / Time: 9.459 sec / Speedup: 1.555 / Efficiency: 39% / LogL: -167834
+BEST NUMBER OF THREADS: 3
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -159670.335
+Current log-likelihood at step 1: -156161.670
+Current log-likelihood at step 2: -155794.547
+Current log-likelihood at step 3: -155781.554
+Current log-likelihood at step 4: -155777.443
+Parameters optimization took 3 rounds (1.727 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -155725.296
+Current log-likelihood at step 1: -155719.129
+Current log-likelihood at step 2: -155716.779
+Current log-likelihood at step 3: -155714.782
+Current log-likelihood at step 4: -155712.816
+Current log-likelihood at step 5: -155710.959
+Current log-likelihood at step 6: -155709.170
+Current log-likelihood at step 7: -155707.434
+Current log-likelihood at step 8: -155705.683
+Current log-likelihood at step 9: -155704.037
+Current log-likelihood at step 10: -155702.384
+Current log-likelihood at step 11: -155700.766
+Current log-likelihood at step 12: -155699.140
+Current log-likelihood at step 13: -155697.525
+Current log-likelihood at step 14: -155695.906
+Current log-likelihood at step 15: -155694.298
+Current log-likelihood at step 16: -155692.684
+Current log-likelihood at step 17: -155691.073
+Current log-likelihood at step 18: -155689.451
+Current log-likelihood at step 19: -155687.809
+Current log-likelihood at step 20: -155686.139
+Current log-likelihood at step 21: -155684.429
+Current log-likelihood at step 22: -155682.676
+Current log-likelihood at step 23: -155680.849
+Current log-likelihood at step 24: -155678.978
+Current log-likelihood at step 25: -155677.070
+Current log-likelihood at step 26: -155675.161
+Current log-likelihood at step 27: -155673.318
+Current log-likelihood at step 28: -155671.548
+Current log-likelihood at step 29: -155669.843
+Current log-likelihood at step 30: -155668.237
+Current log-likelihood at step 31: -155666.717
+Current log-likelihood at step 32: -155665.272
+Current log-likelihood at step 33: -155663.887
+Current log-likelihood at step 34: -155662.556
+Current log-likelihood at step 35: -155661.266
+Current log-likelihood at step 36: -155660.009
+Current log-likelihood at step 37: -155658.778
+Current log-likelihood at step 38: -155657.567
+Current log-likelihood at step 39: -155656.370
+Current log-likelihood at step 40: -155655.184
+Current log-likelihood at step 41: -155654.001
+Current log-likelihood at step 42: -155652.825
+Current log-likelihood at step 43: -155651.646
+Current log-likelihood at step 44: -155650.468
+Current log-likelihood at step 45: -155649.285
+Current log-likelihood at step 46: -155648.100
+Current log-likelihood at step 47: -155646.908
+Current log-likelihood at step 48: -155645.711
+Current log-likelihood at step 49: -155644.332
+Current log-likelihood at step 50: -155637.301
+Current log-likelihood at step 51: -155631.467
+Current log-likelihood at step 52: -155628.023
+Current log-likelihood at step 53: -155625.757
+Current log-likelihood at step 54: -155623.996
+Current log-likelihood at step 55: -155622.436
+Current log-likelihood at step 56: -155620.994
+Current log-likelihood at step 57: -155619.599
+Current log-likelihood at step 58: -155618.252
+Current log-likelihood at step 59: -155616.942
+Current log-likelihood at step 60: -155615.662
+Current log-likelihood at step 61: -155614.412
+Current log-likelihood at step 62: -155613.189
+Current log-likelihood at step 63: -155611.988
+Current log-likelihood at step 64: -155610.810
+Current log-likelihood at step 65: -155609.648
+Current log-likelihood at step 66: -155608.497
+Current log-likelihood at step 67: -155607.342
+Current log-likelihood at step 68: -155606.168
+Current log-likelihood at step 69: -155604.942
+Current log-likelihood at step 70: -155603.686
+Current log-likelihood at step 71: -155602.534
+Current log-likelihood at step 72: -155601.576
+Partition-specific rates:  1.064 0.162 0.435 8.354 0.269 0.066 0.092 0.932 0.102 0.085 0.173 0.120 0.085 0.086 0.079 0.966 0.150 0.138 0.198 0.181 0.121 0.080 0.166 0.134 0.436 0.062 0.338 0.429 0.230 0.307 0.547 0.040 0.327 0.454 0.077 0.283 21.311 0.156 0.586 0.387 0.582 5.519 0.039
+Parameters optimization took 71 rounds (16.613 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 20.960 seconds
+
+NOTE: ModelFinder requires 11 MB RAM!
+Selecting individual models for 43 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+   1 K3Pu+F       23137.274   0.175       rps4.fna
+   2 TPM2+F+R2    20378.061   2.810       sdh4.fna
+   3 F81+F+R2     6130.319    0.283       atp1.fna
+   4 HKY+F        71918.805   0.276       ccmFC.fna
+   5 JC+I         18709.031   0.023       nad4.fna
+   6 F81+F+I      4104.144    0.033       cob.fna
+   7 K3P+I        6022.537    0.028       matR.fna
+   8 K3P+I        8915.473    0.486       nad5_exon_4_5.fna
+   9 K3Pu+F       3511.872    0.142       atp6.fna
+  10 K3Pu+F+I     5426.853    0.047       ccmFN.fna	0h:0m:16s (0h:0m:52s left)
+  11 F81+F        2500.407    0.041       ccmC.fna	0h:0m:17s (0h:0m:50s left)
+  12 F81+F        3930.556    0.053       cox2.fna	0h:0m:18s (0h:0m:46s left)
+  13 HKY+F        8236.962    0.044       nad5_exon_1_2_3.fna	0h:0m:18s (0h:0m:43s left)
+  14 TPM3+F       2614.986    0.232       rpl5.fna	0h:0m:19s (0h:0m:40s left)
+  15 JC+I         8711.798    0.014       nad7.fna	0h:0m:19s (0h:0m:37s left)
+  16 K3P+R2       7707.453    0.126       rpl2.fna	0h:0m:21s (0h:0m:36s left)
+  17 F81+F+R2     3258.416    0.156       nad6.fna	0h:0m:22s (0h:0m:34s left)
+  18 K2P          4199.744    0.176       rpl10.fna	0h:0m:23s (0h:0m:32s left)
+  19 K2P+I        5560.254    0.040       nad2_exon_1_2.fna	0h:0m:24s (0h:0m:31s left)
+  20 TPM3+F+I     2615.588    0.037       cox3.fna	0h:0m:26s (0h:0m:30s left)
+  21 HKY+F+I+G4   4479.602    2.793       atp8.fna	0h:0m:26s (0h:0m:28s left)
+  22 JC           7971.719    0.158       rps7.fna	0h:0m:27s (0h:0m:26s left)
+  23 F81+F        1402.087    0.115       nad1_exon_1.fna	0h:0m:28s (0h:0m:24s left)
+  24 K2P          15804.223   0.258       nad1_exon_2_3.fna	0h:0m:29s (0h:0m:22s left)
+  25 HKY+F+I      8095.028    0.069       cox1.fna	0h:0m:32s (0h:0m:23s left)
+  26 K2P          2066.473    0.111       nad9.fna	0h:0m:32s (0h:0m:21s left)
+  27 HKY+F        3277.437    0.201       rps12.fna	0h:0m:33s (0h:0m:20s left)
+  28 K3Pu+F+I     10489.194   0.068       rps3.fna	0h:0m:33s (0h:0m:18s left)
+  29 F81+F        2151.298    0.014       tatC.fna	0h:0m:34s (0h:0m:16s left)
+  30 HKY+F        1554.457    0.029       ccmB.fna	0h:0m:35s (0h:0m:15s left)
+  31 K3Pu+F+I     2210.350    0.068       rpl16.fna	0h:0m:36s (0h:0m:14s left)
+  32 K2P          1841.426    0.017       rps1.fna	0h:0m:36s (0h:0m:12s left)
+  33 HKY+F        1527.006    0.519       nad3.fna	0h:0m:37s (0h:0m:11s left)
+  34 F81+F        1156.170    0.032       rps13.fna	0h:0m:37s (0h:0m:9s left)
+  35 HKY+F        4652.680    0.037       rps10.fna	0h:0m:37s (0h:0m:8s left)
+  36 JC           1913.235    0.032       atp4.fna	0h:0m:38s (0h:0m:7s left)
+  37 JC           864.688     0.127       atp9.fna	0h:0m:38s (0h:0m:6s left)
+  38 JC           1581.656    0.130       rps14.fna	0h:0m:39s (0h:0m:5s left)
+  39 F81+F        736.129     0.018       nad4L.fna	0h:0m:39s (0h:0m:4s left)
+  40 JC+I         9735.610    0.033       nad1_exon_4_5.fna	0h:0m:40s (0h:0m:3s left)
+  41 F81+F+I      7695.013    0.031       nad2_exon_3_4_5.fna	0h:0m:41s (0h:0m:2s left)
+  42 HKY+F+R2     2424.978    1.188       rps19.fna	0h:0m:41s (0h:0m:0s left)
+  43 HKY+F+I      1397.146    0.198       sdh3.fna	0h:0m:42s (0h:0m:0s left)
+Full partition model BIC score: 314449.772 (LnL: -155629.474  df:278)
+Partition information was printed to concat_mit.best_scheme.nex
+Partition information in Raxml format was printed to concat_mit.best_scheme
+
+All model information printed to concat_mit.model.gz
+CPU time for ModelFinder: 292.779 seconds (0h:4m:52s)
+Wall-clock time for ModelFinder: 106.980 seconds (0h:1m:46s)
+Generating 1000 samples for ultrafast bootstrap (seed: 670779)...
+
+NOTE: 29 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -161650.374
+Current log-likelihood at step 1: -156286.306
+Current log-likelihood at step 2: -155828.212
+Current log-likelihood at step 3: -155784.162
+Current log-likelihood at step 4: -155764.414
+Current log-likelihood at step 5: -155754.293
+Current log-likelihood at step 6: -155750.243
+Current log-likelihood at step 7: -155748.744
+Current log-likelihood at step 8: -155747.859
+Current log-likelihood at step 9: -155747.153
+Current log-likelihood at step 10: -155746.488
+Current log-likelihood at step 11: -155745.811
+Current log-likelihood at step 12: -155745.085
+Current log-likelihood at step 13: -155744.280
+Current log-likelihood at step 14: -155743.397
+Current log-likelihood at step 15: -155742.519
+Current log-likelihood at step 16: -155741.800
+Current log-likelihood at step 17: -155741.346
+Current log-likelihood at step 18: -155741.105
+Current log-likelihood at step 19: -155740.971
+Current log-likelihood at step 20: -155740.879
+Partition-specific rates:  0.754 0.160 0.409 5.913 0.260 0.067 0.091 0.903 0.100 0.087 0.155 0.125 0.082 0.083 0.077 0.955 0.145 0.134 0.184 0.141 0.119 0.084 0.164 0.126 0.348 0.062 0.329 0.412 0.215 0.328 0.539 0.041 0.321 0.448 0.079 0.278 26.769 0.147 0.580 0.368 0.489 5.923 0.040
+Parameters optimization took 19 rounds (1.871 sec)
+
+Computing ML distances based on estimated model parameters... 0.601 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.013 seconds
+Log-likelihood of BIONJ tree: -159761.887
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 2.954 second
+Computing log-likelihood of 98 initial trees ... 5.165 seconds
+Current best score: -155740.879
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155737.244
+Current log-likelihood at step 1: -155735.681
+Current log-likelihood at step 2: -155735.444
+Current log-likelihood at step 3: -155735.379
+Parameters optimization took 2 rounds (0.350 sec)
+
+BETTER TREE FOUND at iteration 1: -155735.379
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155733.635
+Current log-likelihood at step 1: -155733.575
+Parameters optimization took 0 rounds (0.071 sec)
+
+BETTER TREE FOUND at iteration 8: -155733.575
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155705.406
+Current log-likelihood at step 1: -155696.667
+Current log-likelihood at step 2: -155695.888
+Current log-likelihood at step 3: -155695.593
+Current log-likelihood at step 4: -155695.417
+Current log-likelihood at step 5: -155695.291
+Current log-likelihood at step 6: -155695.193
+Parameters optimization took 5 rounds (0.549 sec)
+
+BETTER TREE FOUND at iteration 10: -155695.193
+Iteration 10 / LogL: -155695.193 / Time: 0h:0m:36s
+Iteration 20 / LogL: -155754.382 / Time: 0h:1m:5s
+Finish initializing candidate tree set (20)
+Current best tree score: -155695.193 / CPU time: 60.794
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -155696.323 / Time: 0h:1m:22s (0h:3m:46s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155692.923
+Current log-likelihood at step 1: -155692.399
+Current log-likelihood at step 2: -155692.261
+Current log-likelihood at step 3: -155692.151
+Current log-likelihood at step 4: -155692.057
+Parameters optimization took 3 rounds (0.467 sec)
+
+BETTER TREE FOUND at iteration 34: -155692.057
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155691.760
+Current log-likelihood at step 1: -155691.682
+Parameters optimization took 0 rounds (0.076 sec)
+
+BETTER TREE FOUND at iteration 40: -155691.682
+Iteration 40 / LogL: -155691.682 / Time: 0h:1m:39s (0h:4m:14s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155691.615
+Current log-likelihood at step 1: -155691.581
+Parameters optimization took 0 rounds (0.096 sec)
+
+BETTER TREE FOUND at iteration 43: -155691.581
+Iteration 50 / LogL: -155691.723 / Time: 0h:1m:54s (0h:3m:37s left)
+Log-likelihood cutoff on original alignment: -155755.633
+UPDATE BEST LOG-LIKELIHOOD: -155691.580
+Iteration 60 / LogL: -155691.580 / Time: 0h:2m:9s (0h:3m:2s left)
+Iteration 70 / LogL: -155691.692 / Time: 0h:2m:27s (0h:2m:36s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155691.527
+Current log-likelihood at step 1: -155691.494
+Parameters optimization took 0 rounds (0.106 sec)
+
+UPDATE BEST LOG-LIKELIHOOD: -155691.494
+Iteration 80 / LogL: -155691.977 / Time: 0h:2m:46s (0h:2m:12s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155691.210
+Current log-likelihood at step 1: -155691.122
+Parameters optimization took 0 rounds (0.064 sec)
+
+BETTER TREE FOUND at iteration 83: -155691.122
+Iteration 90 / LogL: -155751.938 / Time: 0h:3m:8s (0h:3m:17s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155690.575
+Current log-likelihood at step 1: -155690.552
+Parameters optimization took 0 rounds (0.073 sec)
+
+BETTER TREE FOUND at iteration 98: -155690.552
+Iteration 100 / LogL: -155690.646 / Time: 0h:3m:32s (0h:3m:30s left)
+Log-likelihood cutoff on original alignment: -155755.633
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.975
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -155690.764 / Time: 0h:3m:54s (0h:3m:13s left)
+BETTER TREE FOUND at iteration 117: -155690.551
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155689.763
+Current log-likelihood at step 1: -155689.404
+Current log-likelihood at step 2: -155689.042
+Current log-likelihood at step 3: -155688.937
+Current log-likelihood at step 4: -155688.840
+Parameters optimization took 3 rounds (0.359 sec)
+
+BETTER TREE FOUND at iteration 119: -155688.840
+Iteration 120 / LogL: -155693.677 / Time: 0h:4m:20s (0h:3m:36s left)
+Iteration 130 / LogL: -155992.080 / Time: 0h:4m:37s (0h:3m:11s left)
+Iteration 140 / LogL: -155733.565 / Time: 0h:4m:55s (0h:2m:47s left)
+Iteration 150 / LogL: -155691.902 / Time: 0h:5m:14s (0h:2m:25s left)
+Log-likelihood cutoff on original alignment: -155755.633
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155688.680
+Current log-likelihood at step 1: -155688.656
+Parameters optimization took 0 rounds (0.063 sec)
+
+BETTER TREE FOUND at iteration 158: -155688.656
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -155688.562
+Current log-likelihood at step 1: -155688.550
+Parameters optimization took 0 rounds (0.087 sec)
+
+BETTER TREE FOUND at iteration 160: -155688.550
+Iteration 160 / LogL: -155688.550 / Time: 0h:5m:29s (0h:3m:27s left)
+Iteration 170 / LogL: -155690.348 / Time: 0h:5m:46s (0h:3m:4s left)
+BETTER TREE FOUND at iteration 173: -155688.548
+UPDATE BEST LOG-LIKELIHOOD: -155688.544
+Iteration 180 / LogL: -155688.683 / Time: 0h:6m:7s (0h:3m:10s left)
+Iteration 190 / LogL: -156026.796 / Time: 0h:6m:29s (0h:2m:51s left)
+WARNING: NNI search needs unusual large number of steps (46) to converge!
+Iteration 200 / LogL: -155688.571 / Time: 0h:6m:50s (0h:2m:30s left)
+Log-likelihood cutoff on original alignment: -155755.633
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.763
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+WARNING: NNI search needs unusual large number of steps (46) to converge!
+Iteration 210 / LogL: -155688.705 / Time: 0h:7m:10s (0h:3m:5s left)
+Iteration 220 / LogL: -155692.532 / Time: 0h:7m:28s (0h:2m:43s left)
+WARNING: NNI search needs unusual large number of steps (46) to converge!
+Iteration 230 / LogL: -155688.833 / Time: 0h:7m:45s (0h:2m:22s left)
+Iteration 240 / LogL: -155693.966 / Time: 0h:8m:2s (0h:2m:1s left)
+Iteration 250 / LogL: -155690.347 / Time: 0h:8m:21s (0h:1m:40s left)
+Log-likelihood cutoff on original alignment: -155752.715
+Iteration 260 / LogL: -155690.346 / Time: 0h:8m:46s (0h:1m:21s left)
+Iteration 270 / LogL: -155727.736 / Time: 0h:9m:2s (0h:1m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -155688.544
+Iteration 280 / LogL: -155690.489 / Time: 0h:9m:32s (0h:0m:41s left)
+Iteration 290 / LogL: -155695.084 / Time: 0h:9m:50s (0h:0m:20s left)
+Iteration 300 / LogL: -155688.982 / Time: 0h:10m:15s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -155752.715
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.950
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -155688.643 / Time: 0h:10m:40s (0h:3m:6s left)
+Iteration 320 / LogL: -155688.730 / Time: 0h:11m:0s (0h:2m:45s left)
+Iteration 330 / LogL: -155688.709 / Time: 0h:11m:17s (0h:2m:24s left)
+Iteration 340 / LogL: -155690.611 / Time: 0h:11m:36s (0h:2m:3s left)
+Iteration 350 / LogL: -155690.352 / Time: 0h:11m:58s (0h:1m:42s left)
+Log-likelihood cutoff on original alignment: -155752.715
+Iteration 360 / LogL: -155690.163 / Time: 0h:12m:22s (0h:1m:22s left)
+Iteration 370 / LogL: -155688.547 / Time: 0h:12m:44s (0h:1m:2s left)
+Iteration 380 / LogL: -155688.551 / Time: 0h:13m:4s (0h:0m:41s left)
+Iteration 390 / LogL: -155729.537 / Time: 0h:13m:21s (0h:0m:20s left)
+Iteration 400 / LogL: -155689.891 / Time: 0h:13m:38s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -155752.715
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.989
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 410 / LogL: -155688.645 / Time: 0h:13m:56s (0h:3m:4s left)
+Iteration 420 / LogL: -155690.511 / Time: 0h:14m:13s (0h:2m:42s left)
+Iteration 430 / LogL: -155691.400 / Time: 0h:14m:31s (0h:2m:22s left)
+Iteration 440 / LogL: -155689.102 / Time: 0h:14m:53s (0h:2m:2s left)
+Iteration 450 / LogL: -155688.566 / Time: 0h:15m:12s (0h:1m:41s left)
+Log-likelihood cutoff on original alignment: -155752.715
+Iteration 460 / LogL: -155690.346 / Time: 0h:15m:25s (0h:1m:20s left)
+Iteration 470 / LogL: -155689.717 / Time: 0h:15m:44s (0h:1m:0s left)
+Iteration 480 / LogL: -155688.555 / Time: 0h:16m:1s (0h:0m:40s left)
+Iteration 490 / LogL: -155688.876 / Time: 0h:16m:19s (0h:0m:20s left)
+Iteration 500 / LogL: -155727.827 / Time: 0h:16m:36s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -155752.715
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.990
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 510 / LogL: -155689.702 / Time: 0h:16m:53s (0h:2m:59s left)
+WARNING: NNI search needs unusual large number of steps (46) to converge!
+Iteration 520 / LogL: -155689.332 / Time: 0h:17m:14s (0h:2m:39s left)
+Iteration 530 / LogL: -155690.346 / Time: 0h:17m:32s (0h:2m:19s left)
+UPDATE BEST LOG-LIKELIHOOD: -155688.542
+Iteration 540 / LogL: -155688.542 / Time: 0h:17m:53s (0h:1m:59s left)
+Iteration 550 / LogL: -155688.593 / Time: 0h:18m:16s (0h:1m:39s left)
+Log-likelihood cutoff on original alignment: -155752.715
+Iteration 560 / LogL: -155690.346 / Time: 0h:18m:35s (0h:1m:19s left)
+Iteration 570 / LogL: -155688.886 / Time: 0h:18m:55s (0h:0m:59s left)
+Iteration 580 / LogL: -155688.776 / Time: 0h:19m:12s (0h:0m:39s left)
+Iteration 590 / LogL: -155688.559 / Time: 0h:19m:31s (0h:0m:19s left)
+Iteration 600 / LogL: -155690.340 / Time: 0h:19m:48s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -155752.715
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+TREE SEARCH COMPLETED AFTER 600 ITERATIONS / Time: 0h:19m:48s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -155688.542
+Current log-likelihood at step 1: -155688.536
+Partition-specific rates:  0.721 0.150 0.373 5.669 0.266 0.067 0.098 0.819 0.103 0.087 0.174 0.122 0.097 0.077 0.092 0.893 0.134 0.126 0.176 0.126 0.113 0.075 0.150 0.124 0.301 0.059 0.308 0.465 0.195 0.329 0.558 0.045 0.309 0.434 0.083 0.329 25.371 0.140 0.490 0.376 0.562 6.580 0.039
+Parameters optimization took 0 rounds (0.078 sec)
+
+Partition information was printed to concat_mit.best_model.nex
+BEST SCORE FOUND : -155688.536
+Creating bootstrap support values...
+Split supports printed to NEXUS file concat_mit.splits.nex
+Total tree length: 5.967
+
+Total number of iterations: 600
+CPU time used for tree search: 3481.274 sec (0h:58m:1s)
+Wall-clock time used for tree search: 1184.206 sec (0h:19m:44s)
+Total CPU time used: 3492.849 sec (0h:58m:12s)
+Total wall-clock time used: 1188.807 sec (0h:19m:48s)
+
+Computing bootstrap consensus tree...
+Reading input file concat_mit.splits.nex...
+46 taxa and 475 splits.
+Consensus tree written to concat_mit.contree
+Reading input trees file concat_mit.contree
+Log-likelihood of consensus tree: -155688.555
+
+Analysis results written to: 
+  IQ-TREE report:                concat_mit.iqtree
+  Maximum-likelihood tree:       concat_mit.treefile
+  Likelihood distances:          concat_mit.mldist
+  Best partitioning scheme:      concat_mit.best_scheme.nex
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          concat_mit.splits.nex
+  Consensus tree:                concat_mit.contree
+  Screen log file:               concat_mit.log
+
+Date and Time: Sun Oct 25 19:33:51 2026

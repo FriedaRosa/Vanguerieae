@@ -1,0 +1,164 @@
+#nexus
+begin sets;
+  charset accD.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/accD.fna: ;
+  charset atpA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/atpA.fna: ;
+  charset atpB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/atpB.fna: ;
+  charset atpE.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/atpE.fna: ;
+  charset atpF.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/atpF.fna: ;
+  charset atpH.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/atpH.fna: ;
+  charset atpI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/atpI.fna: ;
+  charset ccsA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ccsA.fna: ;
+  charset cemA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/cemA.fna: ;
+  charset clpP1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/clpP1.fna: ;
+  charset infA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/infA.fna: ;
+  charset matK.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/matK.fna: ;
+  charset ndhA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhA.fna: ;
+  charset ndhB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhB.fna: ;
+  charset ndhC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhC.fna: ;
+  charset ndhD.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhD.fna: ;
+  charset ndhE.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhE.fna: ;
+  charset ndhF.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhF.fna: ;
+  charset ndhG.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhG.fna: ;
+  charset ndhH.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhH.fna: ;
+  charset ndhI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhI.fna: ;
+  charset ndhJ.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhJ.fna: ;
+  charset ndhK.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ndhK.fna: ;
+  charset pafI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/pafI.fna: ;
+  charset pafII.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/pafII.fna: ;
+  charset pbf1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/pbf1.fna: ;
+  charset petA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/petA.fna: ;
+  charset petB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/petB.fna: ;
+  charset petD.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/petD.fna: ;
+  charset petG.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/petG.fna: ;
+  charset petL.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/petL.fna: ;
+  charset petN.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/petN.fna: ;
+  charset psaA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psaA.fna: ;
+  charset psaB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psaB.fna: ;
+  charset psaC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psaC.fna: ;
+  charset psaI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psaI.fna: ;
+  charset psaJ.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psaJ.fna: ;
+  charset psbA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbA.fna: ;
+  charset psbB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbB.fna: ;
+  charset psbC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbC.fna: ;
+  charset psbD.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbD.fna: ;
+  charset psbE.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbE.fna: ;
+  charset psbF.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbF.fna: ;
+  charset psbH.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbH.fna: ;
+  charset psbI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbI.fna: ;
+  charset psbJ.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbJ.fna: ;
+  charset psbK.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbK.fna: ;
+  charset psbL.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbL.fna: ;
+  charset psbM.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbM.fna: ;
+  charset psbT.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbT.fna: ;
+  charset psbZ.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/psbZ.fna: ;
+  charset rbcL.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rbcL.fna: ;
+  charset rpl14.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl14.fna: ;
+  charset rpl16.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl16.fna: ;
+  charset rpl2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl2.fna: ;
+  charset rpl20.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl20.fna: ;
+  charset rpl22.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl22.fna: ;
+  charset rpl23.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl23.fna: ;
+  charset rpl32.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl32.fna: ;
+  charset rpl33.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl33.fna: ;
+  charset rpl36.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpl36.fna: ;
+  charset rpoA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpoA.fna: ;
+  charset rpoB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpoB.fna: ;
+  charset rpoC1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpoC1.fna: ;
+  charset rpoC2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rpoC2.fna: ;
+  charset rps11.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps11.fna: ;
+  charset rps12_exon_1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps12_exon_1.fna: ;
+  charset rps12_exon_2_3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps12_exon_2_3.fna: ;
+  charset rps14.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps14.fna: ;
+  charset rps15.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps15.fna: ;
+  charset rps16.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps16.fna: ;
+  charset rps18.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps18.fna: ;
+  charset rps19.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps19.fna: ;
+  charset rps2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps2.fna: ;
+  charset rps3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps3.fna: ;
+  charset rps4.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps4.fna: ;
+  charset rps7.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps7.fna: ;
+  charset rps8.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/rps8.fna: ;
+  charset ycf1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ycf1.fna: ;
+  charset ycf2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/04_genes_flanked/ycf2.fna: ;
+  charpartition mymodels =
+    K3Pu{1.28375,0.388792}+F{0.319552,0.145404,0.218519,0.316524}+I{0.785875}: accD.fna{0.0800884},
+    HKY{4.6581}+F{0.300147,0.193569,0.225342,0.280942}: atpA.fna{0.045613},
+    HKY{2.07587}+F{0.303151,0.190743,0.22791,0.278196}+I{0.886339}: atpB.fna{0.0885744},
+    F81: atpE.fna{0.114445},
+    HKY{1.57372}+F{0.349132,0.142222,0.201101,0.307544}+R2{0.942139,0.172699,0.0578606,14.4709}: atpF.fna{0.324109},
+    K2P{10.0002}+FQ: atpH.fna{0.0288286},
+    F81: atpI.fna{0.0428355},
+    K3Pu{1.19857,0.531817}+F{0.301199,0.153495,0.169894,0.375412}+G4{0.247314}: ccsA.fna{0.153082},
+    HKY{2.39121}+F{0.303406,0.171057,0.164994,0.360544}: cemA.fna{0.158403},
+    K3Pu{1.54782,0.543405}+F{0.329928,0.151881,0.197969,0.320222}: clpP1.fna{0.0920456},
+    F81: infA.fna{0.148657},
+    K3Pu{1.00335,0.274636}+F{0.304135,0.166832,0.152409,0.376624}+G4{0.290541}: matK.fna{0.124419},
+    K3Pu{0.964571,0.220077}+F{0.320291,0.14765,0.178072,0.353987}+G4{0.156371}: ndhA.fna{0.0895057},
+    F81+I{0.967701}: ndhB.fna{0.042371},
+    K3Pu{0.92977,0.0001}+F{0.236401,0.130046,0.211828,0.421725}+I{0.922438}: ndhC.fna{0.0450859},
+    K3Pu{2.25391,0.31674}+F{0.269365,0.18208,0.172178,0.376377}+I{0.763257}: ndhD.fna{0.0774152},
+    F81: ndhE.fna{0.0857113},
+    K3Pu{1.50988,0.483651}+F{0.284678,0.149763,0.164297,0.401262}+G4{0.32424}: ndhF.fna{0.141718},
+    HKY{2.33762}+F{0.245061,0.17148,0.18522,0.398239}: ndhG.fna{0.113171},
+    TPM3{3.32176,5.15895}+F{0.316444,0.159048,0.222553,0.301956}: ndhH.fna{0.0505999},
+    HKY{2.18098}+F{0.310674,0.174829,0.182253,0.332245}: ndhI.fna{0.110764},
+    F81: ndhJ.fna{0.0343397},
+    F81: ndhK.fna{0.0680626},
+    K3Pu{1.48146,0.340145}+F{0.331627,0.168266,0.193015,0.307091}: pafI.fna{0.0803444},
+    HKY{2.63094}+F{0.26514,0.166576,0.215786,0.352498}+I{0.888943}: pafII.fna{0.0630412},
+    JC: pbf1.fna{0.0721485},
+    K3Pu{1.88912,0.143246}+F{0.309796,0.195355,0.20867,0.286179}+G4{0.22441}: petA.fna{0.122318},
+    HKY{5.92629}+F{0.243864,0.184906,0.217354,0.353876}: petB.fna{0.0941329},
+    HKY{4.47138}+F{0.269013,0.182949,0.195972,0.352066}: petD.fna{0.0752719},
+    HKY{8.26854}+F{0.242005,0.142899,0.177183,0.437914}: petG.fna{0.142245},
+    HKY{2.09381}+F{0.267818,0.226828,0.217124,0.28823}+R2{0.64443,0.00964943,0.35557,2.79489}: petL.fna{120.954},
+    K2P{3.01173}+FQ: petN.fna{0.237468},
+    HKY{3.29474}+F{0.256146,0.203655,0.222585,0.317614}+I{0.809958}: psaA.fna{0.0453353},
+    HKY{4.45644}+F{0.251329,0.192535,0.21543,0.340706}+I{0.842285}: psaB.fna{0.04065},
+    JC: psaC.fna{0.0387791},
+    HKY{2.33363}+F{0.228856,0.214376,0.159447,0.397322}+I{0.207268}: psaI.fna{4.15299},
+    HKY{3.61791}+F{0.224396,0.214041,0.198721,0.362842}+G4{1.1716}: psaJ.fna{1.88055},
+    HKY{2.70003}+F{0.236553,0.205217,0.214349,0.343881}+G4{0.164225}: psbA.fna{0.0704755},
+    HKY{3.24689}+F{0.23472,0.176152,0.262973,0.326154}+I{0.867236}: psbB.fna{0.0806394},
+    F81+I{0.893434}: psbC.fna{0.0553415},
+    F81: psbD.fna{0.0369871},
+    K2P{6.00663}+FQ: psbE.fna{0.0347746},
+    JC: psbF.fna{0.0180865},
+    JC: psbH.fna{0.0599148},
+    F81: psbI.fna{0.3428},
+    F81: psbJ.fna{0.132478},
+    F81: psbK.fna{0.308204},
+    F81: psbL.fna{0.0183252},
+    F81+I{0.60716}: psbM.fna{0.406943},
+    F81: psbT.fna{0.0291981},
+    HKY{12.3557}+F{0.214312,0.189239,0.176368,0.420081}: psbZ.fna{0.0455589},
+    HKY{1.89986}+F{0.270443,0.19193,0.249185,0.288442}+R2{0.973863,0.495052,0.0261372,19.8142}: rbcL.fna{0.112146},
+    JC: rpl14.fna{0.0605478},
+    HKY{4.3093}+F{0.338776,0.181451,0.239482,0.240292}: rpl16.fna{0.0450829},
+    HKY{4.60418}+F{0.327796,0.183882,0.241954,0.246368}+I{0.307168}+G4{0.0473488}: rpl2.fna{43.7793},
+    HKY{2.12301}+F{0.347473,0.160384,0.214731,0.277412}+G4{0.110458}: rpl20.fna{0.16149},
+    K3Pu{1.45715,0.195235}+F{0.388385,0.162429,0.176488,0.272697}: rpl22.fna{0.131713},
+    HKY{3.66606}+F{0.346522,0.158209,0.219433,0.275836}: rpl23.fna{0.124308},
+    HKY{1.6142}+F{0.316869,0.197759,0.201051,0.284321}+G4{0.585726}: rpl32.fna{2.12678},
+    JC+I{0.851288}: rpl33.fna{0.24826},
+    JC: rpl36.fna{0.0398262},
+    K3Pu{1.45364,0.266291}+F{0.360846,0.155924,0.184668,0.298563}+G4{0.111459}: rpoA.fna{0.135824},
+    K3Pu{2.04135,0.329123}+F{0.317909,0.166514,0.222354,0.293223}: rpoB.fna{0.0547534},
+    K3Pu{1.33831,0.140867}+F{0.318849,0.163383,0.212935,0.304834}+G4{0.131918}: rpoC1.fna{0.052882},
+    K3Pu{1.06363,0.263544}+F{0.329969,0.175293,0.196412,0.298326}+G4{0.179601}: rpoC2.fna{0.0566919},
+    K2P{5.6877}+FQ: rps11.fna{0.149969},
+    F81: rps12_exon_1.fna{0.218004},
+    F81: rps12_exon_2_3.fna{0.00845636},
+    F81: rps14.fna{0.103656},
+    F81: rps15.fna{0.109515},
+    TVM{0.625349,0.749673,0.586707,0.0001}+F{0.356728,0.148335,0.18089,0.314047}+R2{0.975357,0.560877,0.0246431,18.3802}: rps16.fna{0.142922},
+    F81+I{0.800658}: rps18.fna{0.102011},
+    HKY{3.92965}+F{0.394086,0.170512,0.164925,0.270477}+I{0.602937}: rps19.fna{0.552521},
+    F81: rps2.fna{0.039591},
+    K3Pu{1.6859,0.209156}+F{0.409131,0.153062,0.17371,0.264097}+I{0.839744}: rps3.fna{0.0795268},
+    K3Pu{1.4259,0.0743542}+F{0.343599,0.194343,0.183019,0.279039}: rps4.fna{0.0589527},
+    F81: rps7.fna{0.0263388},
+    HKY{2.39159}+F{0.356086,0.147531,0.214024,0.282359}+G4{0.340437}: rps8.fna{0.263672},
+    K3Pu{1.07075,0.271138}+F{0.409361,0.138199,0.155729,0.296712}+R2{0.972692,0.689328,0.0273083,12.0658}: ycf1.fna{0.148882},
+    K3Pu{1.32808,0.311654}+F{0.309381,0.187479,0.192374,0.310766}+I{0.920833}: ycf2.fna{0.0152848};
+end;
