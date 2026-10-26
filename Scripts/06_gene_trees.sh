@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 set -euo pipefail
 
 source /home/frieda/miniconda3/etc/profile.d/conda.sh
@@ -18,7 +19,7 @@ for aln in "$ALIGN"/*.fna; do
 
     iqtree2 \
         -s "$aln" \
-        -m MFP \
+        -m MFP+MERGE \
         --ufboot 1000 \
         -pre "$OUT/nuc_gene_trees/$gene" \
         -T AUTO

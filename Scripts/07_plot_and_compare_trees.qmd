@@ -1,4 +1,4 @@
-# Plot and compare trees from different data sources and processing steps
+# Plot and compare trees from different CleanedData sources and processing steps
 
 - mitochondrial tree (from 05_phylogeny/mitochondrial_tree.nwk)
 - plastid tree (from 05_phylogeny/plastid_tree.nwk)
@@ -12,31 +12,35 @@ library(ape)
 library(dplyr)
 ```
 ```{r}
-mit_tree <- read.tree("data/05_phylogeny/concat_mit.treefile") %>%
-root(outgroup = "Spondianthus_preussii") %>%
+mit_tree <- read.tree("CleanedData/05_phylogeny_flanking/concat_mit.treefile") %>%
+#root(outgroup = "Ixora_sp") %>%
 ladderize()
-plastid_tree <- read.tree("data/05_phylogeny/concat_ptd.treefile") %>%
-root(outgroup = "Spondianthus_preussii") %>%
+
+plastid_tree <- read.tree("CleanedData/05_phylogeny_flanking/concat_ptd.treefile") %>%
+root(outgroup = "Ixora_sp") %>%
 ladderize()
-species_tree_collapsed <- read.tree("data/05_phylogeny/species_tree_wASTRAL/wastral_species_tree_collapsed.nwk") %>%
-root(outgroup = "Spondianthus_preussii") %>%
+
+nuc_tree <- read.tree("CleanedData/05_phylogeny_flanking/concat_nuc.treefile") %>%
+root(outgroup = "Ixora_sp") %>%
 ladderize()
-species_tree_uncollapsed <- read.tree("data/05_phylogeny/species_tree_wASTRAL/wastral_species_tree.nwk") %>%
-root(outgroup = "Spondianthus_preussii") %>%
-ladderize()
+
 ```
 
 
 ```{r}
-par(mfrow = c(2, 2))
+par(mfrow = c(1, 2))
 plot(mit_tree, main="Mitochondrial Tree")
 nodelabels(mit_tree$node.label, cex=0.5)
 plot(plastid_tree, main="Plastid Tree")
 nodelabels(plastid_tree$node.label, cex=0.5)
-plot(species_tree_collapsed, main="Species Tree (Collapsed)")
-nodelabels(species_tree_collapsed$node.label, cex=0.5)
-plot(species_tree_uncollapsed, main="Species Tree (Uncollapsed)")
-nodelabels(species_tree_uncollapsed$node.label, cex=0.5)
+plot(nuc_tree, main="Nuclear Tree")
+nodelabels(nuc_tree$node.label, cex=0.5)
+
+
+# plot(species_tree_collapsed, main="Species Tree (Collapsed)")
+# nodelabels(species_tree_collapsed$node.label, cex=0.5)
+# plot(species_tree_uncollapsed, main="Species Tree (Uncollapsed)")
+# nodelabels(species_tree_uncollapsed$node.label, cex=0.5)
 
 ```
 
@@ -82,9 +86,142 @@ plot_linked_trees <- function(tree_left, tree_right,
 }
 
 plot_linked_trees(
-	ladderize(species_tree_uncollapsed),
-	ladderize(species_tree_collapsed),
-	left_title = "Species tree (Uncollapsed)",
-	right_title = "Species tree (Collapsed)"
+	ladderize(nuc_tree),
+	ladderize(plastid_tree),
+	left_title = "Species tree (nuclear)",
+	right_title = "Species tree (plastid)"
 )
+```
+
+
+```{r}
+#| fig-width: 40
+#| fig-height: 30
+
+library(phytools)
+
+nuc_ptd_cophylo <- cophylo(nuc_tree, plastid_tree, rotate = TRUE)
+
+plot(nuc_ptd_cophylo, lwd=3, fsize = 3)
+
+pdf(file = here("Plots/Nuc_Ptd_concat_cophylo.pdf"), width = 40, height = 30)
+plot(nuc_ptd_cophylo, lwd=3, fsize = 3)
+dev.off()
+```
+
+```{r}
+#| fig-width: 40
+#| fig-height: 30
+
+nuc_mit_cophylo <- cophylo(mit_tree, plastid_tree, rotate = TRUE)
+
+plot(nuc_mit_cophylo, lwd=3, fsize = 3)
+
+pdf(file = here::here("Plots/nuc_mit_concat_cophylo.pdf"), width = 40, height = 30)
+plot(nuc_ptd_cophylo, lwd=3, fsize = 3)
+dev.off()
+```
+
+```{r}
+#| fig-width: 40
+#| fig-height: 30
+
+
+nuc_mit_cophylo <- cophylo(nuc_tree, mit_tree, rotate = TRUE)
+
+plot(nuc_mit_cophylo, lwd=3, fsize = 3)
+
+pdf(file = here::here("Plots/nuc_mit_concat_cophylo.pdf"), width = 40, height = 30)
+plot(nuc_ptd_cophylo, lwd=3, fsize = 3)
+dev.off()
+```
+
+
+## Nuc tree with node labels
+```{r}
+library(ape)
+library(phytools)
+
+# Read tree
+tree <- nuc_tree
+
+# Plot tree
+plotTree(
+  tree,
+  ftype = "i",      # italic tip labels
+  fsize = 0.7,
+  lwd = 2
+)
+
+# Add node support values
+nodelabels(
+  text = tree$node.label,
+  node = (Ntip(tree) + 1):(Ntip(tree) + Nnode(tree)),
+  frame = "none",
+  cex = 0.6,
+  adj = c(-0.2, -0.2),
+  col = "red"
+)
+
+
+
+support <- as.numeric(tree$node.label)
+
+plotTree(tree, ftype = "i")
+
+cols <- ifelse(support >= 95, "darkgreen",
+        ifelse(support >= 80, "orange", "red"))
+
+nodelabels(
+  pch = 21,
+  bg = cols,
+  cex = 1.2
+)
+```
+
+### ggtree
+
+
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("ggtree")
+```
+
+
+```{r}
+library(ape)
+library(ggtree)
+library(ggplot2)
+
+# Read tree
+
+# Plot with support values
+p <- ggtree(tree) +
+  geom_tiplab(size = 3) +
+  geom_text2(
+    aes(subset = !isTip, label = label),
+    hjust = -0.3,
+    size = 2.5,
+    color = "red"
+  ) +
+  theme_tree2()
+
+p
+```
+
+
+```{r}
+
+ggtree(tree) +
+  geom_tiplab(align = TRUE, linetype = "dotted") +
+  geom_label2(
+    aes(
+      subset = !isTip &
+               as.numeric(label) >= 0.95,
+      label = round(as.numeric(label), 2)
+    ),
+    size = 2
+  )
 ```

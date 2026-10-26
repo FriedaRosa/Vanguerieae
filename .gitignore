@@ -58,7 +58,7 @@ CleanedData/02_assemblies/*/01_assembly/duplicate_clusters.tsv
 # Alignment and gene prediction intermediates
 *.psl
 *.gff
-*_scipio.yaml
+*_scipio*.yaml
 
 # IQ-TREE generated trees, models, and checkpoints
 *.bionj
@@ -84,3 +84,5 @@ fastqc_report.html
 .RData
 *.Rproj
 
+
+sync.ffs_db

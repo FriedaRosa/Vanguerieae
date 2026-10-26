@@ -25,7 +25,12 @@ collapse_support <- function(tr, threshold = 30) {
   di2multi(tr, tol = 1e-8)
 }
 
-trees_collapsed <- lapply(trees, collapse_support, threshold = 30)
+
+
+# Given best practices for ASTRAL (https://arxiv.org/pdf/1904.03826) it has been proposed that only collapsing VERY low support nodes (e.g., 5-20% Bootstrap) can increase accuracy while higher thresholds can increade error by a substantial margin
+
+
+trees_collapsed <- lapply(trees, collapse_support, threshold = 10)
 
 par(mfrow = c(2, 2))
 plot(trees[[1]], main = "Original")

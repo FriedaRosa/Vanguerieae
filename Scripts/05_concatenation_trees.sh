@@ -28,21 +28,21 @@ cd "$OUT"
 
 iqtree2 \
     -p "$ALIGN_NUC" \
-    -m MFP+MERGE \
+    -m MFP \
     --ufboot 1000 \
-    -pre concat \
+    -pre concat_nuc \
     -T AUTO
 
 iqtree2 \
     -p "$ALIGN_PTD" \
-    -m MFP+MERGE \
+    -m MFP \
     --ufboot 1000 \
     -pre concat_ptd \
     -T AUTO
 
 iqtree2 \
     -p "$ALIGN_MIT" \
-    -m MFP+MERGE \
+    -m MFP \
     --ufboot 1000 \
     -pre concat_mit \
     -T AUTO
