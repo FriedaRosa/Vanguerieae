@@ -19,7 +19,8 @@ cd "$OUT"
 
 #----------------------------------------------------#
 
-## 1. Concatenation species-tree using all loci and an edge-linked partition model (nuclear genes, mito genes, plastid genes)
+## 1. Concatenation species-tree using all loci (GF), extended model selection (MFP) and an edge-linked partition model with partition merging (MERGE)
+## Allows each loci to have it's own substitution model, but merges partitions with similar evolutionary patterns to reduce the number of parameters in the model.
 
 # Model search!
 
@@ -29,6 +30,5 @@ iqtree3 \
     --ufboot 1000 \
     -pre concat_nuc \
     -T AUTO
-
 
 conda deactivate

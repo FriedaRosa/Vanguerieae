@@ -4,8 +4,8 @@ set -euo pipefail
 source /home/frieda/miniconda3/etc/profile.d/conda.sh
 
 PROJ="$HOME/Projects/Vanguerieae"
-IQTREE="$PROJ/CleanedData/05_phylogeny_flanking/nuc_gene_trees/"
-ASTRAL="$PROJ/CleanedData/05_phylogeny_flanking/species_tree_wASTRAL"
+IQTREE="$PROJ/CleanedData/05_phylogeny_flanking_iqtree3/nuc_gene_trees/"
+ASTRAL="$PROJ/CleanedData/05_phylogeny_flanking_iqtree3/species_tree_wASTRAL"
 SPECIES_MAP="$PROJ/OriginalData/individual_to_species_map.txt"
 
 mkdir -p "$ASTRAL"
@@ -47,7 +47,7 @@ cat "$IQTREE"/*.treefile > "$IN_TREES"
 # 3. Run wASTRAL
 
 conda activate astral
-# IN_TREES="$ASTRAL/gene_trees_collapsed.nwk"
+IN_TREES="$ASTRAL/gene_trees_collapsed.nwk"
 
 
 # # with probability & likelihood support (x 1 n 0)
@@ -63,7 +63,7 @@ conda activate astral
 # IN_TREES2="$ASTRAL/all_gene_trees.nwk"
 
 
-# with bootstap support (created LPP support at nodes)
+# with bootstap support ? (created LPP support at nodes)
 wastral \
   -i "$IN_TREES" \
   -a "$SPECIES_MAP" \
@@ -71,7 +71,8 @@ wastral \
   -o "$ASTRAL/wastral_MSC_species_tree_mapped.nwk" \
   --thread 12 \
   --mode 1 \
-  -u 3 \
+  -u 2 \
+  --root "Ixora_sp" \
   2>$ASTRAL/all_gene_trees_wastral_mapped.log
 
 
@@ -81,7 +82,8 @@ wastral \
   -o "$ASTRAL/wastral_MSC_species_tree_no_map.nwk" \
   --thread 12 \
   --mode 1 \
-  -u 3 \
+  -u 2 \
+  --root "Ixora_sp" \
   2>$ASTRAL/all_gene_trees_wastral_no_map.log
 
 
