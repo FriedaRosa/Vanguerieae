@@ -107,3 +107,34 @@ while IFS= read -r url; do
     printf 'Renamed %s to %s\n' "$filename" "$new_filename"
 done < "$url_list"
 ```
+
+
+```{bash}
+## Create common folder for all sequences using symlinks:
+
+PROJ="$HOME/Projects/Vanguerieae"
+common="$PROJ/OriginalData/combined_sequences"
+sources=("$PROJ/OriginalData/sequences" "$PROJ/OriginalData/PAFTOL_raw")
+
+mkdir -p "$common"
+
+# Check for duplicate names or names already in the destination before linking
+declare -A seen=()
+for source_dir in "${sources[@]}"; do
+    while IFS= read -r -d '' file; do
+        name=$(basename -- "$file")
+        if [[ -n "${seen[$name]+x}" || -e "$common/$name" || -L "$common/$name" ]]; then
+            printf 'Filename conflict; no links created for this run: %s\n' "$name" >&2
+            exit 1
+        fi
+        seen["$name"]=1
+    done < <(find "$source_dir" -maxdepth 1 \( -type f -o -type l \) -print0)
+done
+
+# Create symlinks to the files from both folders
+for source_dir in "${sources[@]}"; do
+    while IFS= read -r -d '' file; do
+        ln -s -- "$file" "$common/$(basename -- "$file")"
+    done < <(find "$source_dir" -maxdepth 1 \( -type f -o -type l \) -print0)
+done
+```
