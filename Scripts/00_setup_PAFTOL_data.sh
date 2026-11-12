@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+################################################################################
+##                          SETUP PAFTOL DATA                                 ##
+################################################################################
+# The script below reads the download urls and accession names from the PAFTOL_accessions.txt file, downloads the files, renames them according to the species names provided in the look up file, and creates a common folder for all sequences (including the local ones) using symlinks.
+
 set -euo pipefail
 
 PROJ="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"

@@ -89,16 +89,17 @@ normalize_me <- function(x) {
 ```
 
 # To DOs:
+
 - Write introduction
 - Write lab methods
 - Re-do phylo inference in RevBayes
 - Figure out dating, fossils etc
 
+# Introduction
 
-# Introduction  
 - Info about Vanguerieae
 - Dioecy evolution!
-- Fossils for dating :) 
+- Fossils for dating :)
 
 # Materials & Methods
 
@@ -113,7 +114,6 @@ Note: Numbers of accepted species is based on @WFO2026
 | Subfamily | Dialypetalanthoideae Reveal            | 5,956            |
 | Tribe     | Vanguerieae Dumort.                    | 674              |
 
-
 ### Data summary:
 
 The project combines Angiosperm353 [@Johnson2019Angiosperms353] sequence data from three different sources. The tribe Vanguerieae comprises 28 currently accepted genera [@WFO2026].
@@ -121,7 +121,7 @@ The project combines Angiosperm353 [@Johnson2019Angiosperms353] sequence data fr
 > [***\[NOTE\] TO DO:***]{.underline} double-check number of genera in the data sets for ACCEPTED species names
 
 | ID | Dataset | \# Samples | \# Genera | Sampled species per genus | Samples per species | \% of all accepted genera |
-|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+|----|----|----|----|----|----|----|
 | 1 | Catarina | 30 | 17 \[check\] | 1-3 | A single replicate[^1]. | 60.7% |
 | 3 | PAFTOL | 31 | 28 \[check\] | 1-2 | single replicate | 90.3% |
 | 2 | Frieda | 17 | 16 \[check\] | 1 | single replicate | 57.1% |
@@ -149,8 +149,7 @@ Sequence data published through the European Nucelotide Archive (ENA) from the P
 
 #### [Trimming]{.underline}
 
-We used the [captus]{.smallcaps} function `captus clean` using the flag `--qc_program fastqc` . [captus]{.smallcaps} uses [bbduk.sh]{.smallcaps} from [BBTools]{.smallcaps} [@Bushnell2014BBMap] with specific settings that balance speed and accuracy. The [BBTools]{.smallcaps} approach in [Captus]{.smallcaps} has been compared to other frequently used software for trimming and was by far the fastest and most accurate approach. More accurate was only [Cutadapt]{.smallcaps} [@Martin2011Cutadapt] but it took more than 23x longer. The increase in accuracy using [Cutadapt]{.smallcaps} was minimal compared to [captus]{.smallcaps} (perfectly correct trimming of bases: 96.9 % vs. 95.1%) Faster was only [bbduk]{.smallcaps} with default setting but it was less accurate (93.9% perfectly correct trimming of bases). For details, please refer to their [documentation](https://edgardomortiz.github.io/captus.docs/assembly/clean/).
-Trimming was then evaluated using FastQC [@Andrews2019FastQC] as implemented in [Captus.]{.smallcaps}
+We used the [captus]{.smallcaps} function `captus clean` using the flag `--qc_program fastqc` . [captus]{.smallcaps} uses [bbduk.sh]{.smallcaps} from [BBTools]{.smallcaps} [@Bushnell2014BBMap] with specific settings that balance speed and accuracy. The [BBTools]{.smallcaps} approach in [Captus]{.smallcaps} has been compared to other frequently used software for trimming and was by far the fastest and most accurate approach. More accurate was only [Cutadapt]{.smallcaps} [@Martin2011Cutadapt] but it took more than 23x longer. The increase in accuracy using [Cutadapt]{.smallcaps} was minimal compared to [captus]{.smallcaps} (perfectly correct trimming of bases: 96.9 % vs. 95.1%) Faster was only [bbduk]{.smallcaps} with default setting but it was less accurate (93.9% perfectly correct trimming of bases). For details, please refer to their [documentation](https://edgardomortiz.github.io/captus.docs/assembly/clean/). Trimming was then evaluated using FastQC [@Andrews2019FastQC] as implemented in [Captus.]{.smallcaps}
 
 ### De-Novo Assembly
 
@@ -178,30 +177,23 @@ We used the aligned genes with flanking regions during phylogenomic inference of
 
 ### A) Summary trees using concatenation in IQ-TREE
 
-We used edge-linked proportional partition models [@Chernomor2016Terrace] and performed automated model selection for substitution models in [iqtree]{.smallcaps} version 3.1.4 [@Wong2026IQTREE3].Compared to the edge-linked equal branch-length partition model and the edge-unlinked partition model, the proportional branch-length model allows partitions to differ in their overall evolutionary rates while retaining proportional branch lengths across the shared tree, thereby creating a reasonable compromise between flexibility and parameter complexity. 
-We used the following flags for nuclear, plastid and mitochondrial markers: `-m MFP` `--ufboot 1000` which selects the extended model selection using [modelfinder]{.smallcaps} [@Kalyaanamoorthy2017ModelFinder] that also includes free rate models and is immediately followed by tree reconstruction using the best model. This was performed using ultra fast bootstrap (UFBoot) [@Hoang2018UFBoot2] with 1000 replicates.
-\
-As a second approach we performed a maximum likelihood phylogenetic analysis using automated model selection, partition merging, and ultra fast bootstrap support estimation. 
-For this we used the flags `-p` with the folder of individual alignments per extracted marker, `-m MFP+MERGE` for [modelfinder]{.smallcaps} comparison and partition merging, and `--ufboot 1000` to perform 1000 ultra fast bootstrap repetitions. [iqtree3]{.smallcaps} then combines the individual gene alignments into a supermatrix where each gene is then initially treated as a separate partition. Following assessment of the similarity of evolutionary patterns, the model then merges multiple partitions (i.e., loci) to perform model selection once, thereby reducing the number of parameters the model has to estimate. 
-\
-The benefits of partition merging is that it allows for different substitution rates across partitions (i.e., different genetic markers) while still assuming a shared underlying tree topology across the partitions. Different genes may be more or less evolutionarily conserved and thereby evolve under different processes. Assuming a single substitution model across these different regions of the genome may not adequately represent these differences. Our approach instead let's [modelfinder]{.smallcaps} as implemented in [iqtree3]{.smallcaps} evaluate a set of models for each partition (i.e., alignment file in the folder) while the merging algorithm evaluates whether partitions can be combined under the same substitution model to decrease the number of substitution models to estimate. Model selection was then performed using the Bayesian Information Criterion (BIC) to avoid over-fitting to more complex models. Overall this approach reduces over-parameterization by combining partitions with similar evolutionary characteristics, improves the computational efficiency because fewer partitions and model parameters reduce computational time and memory requirements, balances model complexity and statistical fit by aiming to retain biologically relevant differences while avoiding unnecessary complexity and is hence particularly valuable for concatenated datasets containing many genes. One drawback is that for the estimation of individual gene trees, the +MERGE flag has to be removed, else the model will merge similar loci and thereby create less than 353 gene trees. 
+We used edge-linked proportional partition models [@Chernomor2016Terrace] and performed automated model selection for substitution models in [iqtree]{.smallcaps} version 3.1.4 [@Wong2026IQTREE3].Compared to the edge-linked equal branch-length partition model and the edge-unlinked partition model, the proportional branch-length model allows partitions to differ in their overall evolutionary rates while retaining proportional branch lengths across the shared tree, thereby creating a reasonable compromise between flexibility and parameter complexity. We used the following flags for nuclear, plastid and mitochondrial markers: `-m MFP` `--ufboot 1000` which selects the extended model selection using [modelfinder]{.smallcaps} [@Kalyaanamoorthy2017ModelFinder] that also includes free rate models and is immediately followed by tree reconstruction using the best model. This was performed using ultra fast bootstrap (UFBoot) [@Hoang2018UFBoot2] with 1000 replicates.\
+As a second approach we performed a maximum likelihood phylogenetic analysis using automated model selection, partition merging, and ultra fast bootstrap support estimation. For this we used the flags `-p` with the folder of individual alignments per extracted marker, `-m MFP+MERGE` for [modelfinder]{.smallcaps} comparison and partition merging, and `--ufboot 1000` to perform 1000 ultra fast bootstrap repetitions. [iqtree3]{.smallcaps} then combines the individual gene alignments into a supermatrix where each gene is then initially treated as a separate partition. Following assessment of the similarity of evolutionary patterns, the model then merges multiple partitions (i.e., loci) to perform model selection once, thereby reducing the number of parameters the model has to estimate.\
+The benefits of partition merging is that it allows for different substitution rates across partitions (i.e., different genetic markers) while still assuming a shared underlying tree topology across the partitions. Different genes may be more or less evolutionarily conserved and thereby evolve under different processes. Assuming a single substitution model across these different regions of the genome may not adequately represent these differences. Our approach instead let's [modelfinder]{.smallcaps} as implemented in [iqtree3]{.smallcaps} evaluate a set of models for each partition (i.e., alignment file in the folder) while the merging algorithm evaluates whether partitions can be combined under the same substitution model to decrease the number of substitution models to estimate. Model selection was then performed using the Bayesian Information Criterion (BIC) to avoid over-fitting to more complex models. Overall this approach reduces over-parameterization by combining partitions with similar evolutionary characteristics, improves the computational efficiency because fewer partitions and model parameters reduce computational time and memory requirements, balances model complexity and statistical fit by aiming to retain biologically relevant differences while avoiding unnecessary complexity and is hence particularly valuable for concatenated datasets containing many genes. One drawback is that for the estimation of individual gene trees, the +MERGE flag has to be removed, else the model will merge similar loci and thereby create less than 353 gene trees.
 
 ### B) MSC-aware inference of a species tree from nuclear gene trees in wASTRAL
 
-First we inferred gene trees again using [iqtree3]{.smallcaps} and the flag `-s` and `-m MFP` (without +MERGE). We then prepared the individual gene trees for use in ASTER [@Zhang2025ASTER], namely we concatenated all gene `.treefile`s into a single newick file which was then used as input for ASTRAL/ASTER. 
+First we inferred gene trees again using [iqtree3]{.smallcaps} and the flag `-s` and `-m MFP` (without +MERGE). We then prepared the individual gene trees for use in ASTER [@Zhang2025ASTER], namely we concatenated all gene `.treefile`s into a single newick file which was then used as input for ASTRAL/ASTER.
 
 We used the weighted-ASTRAL algorithm via the `wastral` function in ASTER with `--mode 1` for hybrid weighing. Support values at the nodes indicate LPP. We first computed the species tree with samples at the tips to identify potential specimens that have been misidentified based on how samples clustered together with their own species. We then used the more sophisticated approach of mapping individual replicates to their species name and thereby estimating the phylogeny for a single tip per species that is based on the information provided by multiple replicates.
 
-> [NOTE]TO DO: Add more description about wastral, compare it to astral pro 4, and do a paralog analysis with Astral 3 pro!!
+> \[NOTE\]TO DO: Add more description about wastral, compare it to astral pro 4, and do a paralog analysis with Astral 3 pro!!
 
 ### Concordance factor analysis
 
-To quantify the genealogical concordance between individual genes and the species tree, we used the concordance factor analysis as implemented in [iqtree3]{.smallcaps} [@Mo2023SCF]. We performed site concordance analysis (sCF) for organellar genomes and both, site and gene concordance analysis (gCF) for the nuclear genes.
-Both metrics are reported for each branch in a common reference tree. The two metrics are defined as the percentage of decisive gene trees containing the branch (gCF), and as the percentage of decisive alignment sites supporting a branch (sCF). While gCF is useful when individual gene alignments are informative, sCF can recover concordance when individual gene trees are uncertain, or for organellar genomes where gene-wise comparison is not biologically meaningful. 
-Both CF measures are used together with classical support measures (e.g. ufboot) to complement the branch support with a full description of the underlying disagreement among loci and sites.
+To quantify the genealogical concordance between individual genes and the species tree, we used the concordance factor analysis as implemented in [iqtree3]{.smallcaps} [@Mo2023SCF]. We performed site concordance analysis (sCF) for organellar genomes and both, site and gene concordance analysis (gCF) for the nuclear genes. Both metrics are reported for each branch in a common reference tree. The two metrics are defined as the percentage of decisive gene trees containing the branch (gCF), and as the percentage of decisive alignment sites supporting a branch (sCF). While gCF is useful when individual gene alignments are informative, sCF can recover concordance when individual gene trees are uncertain, or for organellar genomes where gene-wise comparison is not biologically meaningful. Both CF measures are used together with classical support measures (e.g. ufboot) to complement the branch support with a full description of the underlying disagreement among loci and sites.
 
-For both measures,we used the concatenation-based species trees created in [iqtree3]{.smallcaps} under an edge-linked proportional partition model with 1000 ufboot replicates as reference tree to annotate CF values.
-For the gCF analysis on the nuclear phylogeny, we used the previously inferred gene trees and then calculated gCF for each branch of the species tree as a fraction of the decisive gene trees that are in agreement with this branch using the flag `–-gcf`.
+For both measures,we used the concatenation-based species trees created in [iqtree3]{.smallcaps} under an edge-linked proportional partition model with 1000 ufboot replicates as reference tree to annotate CF values. For the gCF analysis on the nuclear phylogeny, we used the previously inferred gene trees and then calculated gCF for each branch of the species tree as a fraction of the decisive gene trees that are in agreement with this branch using the flag `–-gcf`.
 
 Site concordance factors (SCF) estimation in iqtree3 with the flag `--scfl` is based on likelihood (as opposed to parsimony like gCF). We used the same reference species tree as for gCF and randomly sampled 1000 quartets around each branch to estimate sCF values. The program then again performs model selection and tree inference.
 
@@ -467,7 +459,6 @@ cleaning_summary2 %>% kbl()%>%
   kable_paper("striped", full_width = F)
 ```
 
-
 ## De-Novo Assembly
 
 Mean contig depth of coverage varied over four magnitudes (1,357.28x in *Afrocanthium munndianum* (dataset 3) to 9.04x in *Ixora sp*. (dataset 3)) with the overall median being close to 40x.
@@ -477,7 +468,6 @@ The shortest contigs varied from 137 bp to 248 bp, while the longest contigs wer
 ## Mapping and extracting reference markers
 
 Overall, recovery was high with exception of mitochondrial sequences which failed for 13 species, while recovery of plastome sequences only failed for 3 species.
-
 
 ```{r}
 #| label: extraction-stats
@@ -492,7 +482,6 @@ library(kableExtra)
 
 df <- extraction_stats
 ```
-
 
 ```{r}
 #| echo: false
@@ -613,7 +602,6 @@ df %>%
     coverage = median(ctg_mean_depth)
   )
 ```
-
 
 ```{r}
 #| echo: false
@@ -823,7 +811,6 @@ marker_plots <- unique(df_best$marker_type) %>%
 
 walk(marker_plots, print)
 ```
-
 
 ## Alignment
 
@@ -1356,8 +1343,7 @@ plot(mit_vs_nuc, lwd=3, fsize = 1)
 
 ## Concordance factor analysis
 
-Overall, the concordance factor analysis in [iqtree3]{.smallcaps} [@Mo2023SCF] revealed that 
-> _*[NOTE]TO DO*_: Write this!
+Overall, the concordance factor analysis in [iqtree3]{.smallcaps} [@Mo2023SCF] revealed that \> *\[NOTE\]TO DO*: Write this!
 
 ```{r}
 #| label: prepare-data-for-cf-analysis
@@ -1418,7 +1404,6 @@ cf_dat <-
 
 
 ```
-
 
 ```{r}
 #| echo: false
@@ -1598,7 +1583,6 @@ p +
   xlim(0, 30)
 ```
 
-
 #### B) gene concordance factors
 
 ```{r}
@@ -1669,10 +1653,6 @@ p +
   theme_tree(legend.position=c(0.15, 0.85)) +
   xlim(0, 30)
 ```
-
-
-
-
 
 ------------------------------------------------------------------------
 

@@ -2,7 +2,45 @@
 
 This repository contains the working scripts and analysis notes for a phylogenomic study of Vanguerieae (Rubiaceae). It combines locally generated sequence reads with PAFTOL data to recover nuclear, plastid, and mitochondrial loci, infer gene trees and concatenated trees, and estimate nuclear species trees with wASTRAL.
 
-The workflow uses Captus for read cleaning, de novo assembly, target extraction, and alignment; IQ-TREE for maximum-likelihood inference; and wASTRAL for species-tree estimation from nuclear gene trees. The scripts record the analysis settings, while the Quarto notebooks provide supporting notes and exploratory plots. This is a working analysis repository; the presence of an output directory does not establish that every analysis has completed.
+The workflow uses Captus for read cleaning, de novo assembly, target extraction, and alignment; IQ-TREE for maximum-likelihood inference; and wASTRAL for species-tree estimation from nuclear gene trees. 
+- The scripts (.sh, .R) record the analysis settings, while the Quarto notebooks (.qmd) provide supporting notes, data summaries and descriptions and exploratory plots. This is a working analysis repository and the analysis is not completed yet.
+
+## Goals:
+1) infer phylogenies for all genera in Vanguerieae:
+a) Maximum-likelihood multi-species coalesence (MSC) tree of nuclear markers with wASTRAL
+b) Maximum-likelihood multi-species coalescence (MSC) tree of nuclear markers aware of paralogs with Astral PRO 3
+c) Maximum-likelihood concatenation-based tree of nuclear markers  (iq-tree)
+d) Maximum-likelihood concatenation-based tree of mitochondrial markers (iq-tree)
+e) Maximum-likelihood concatenation-based tree of plastid markers (iq-tree)
+f) Bayesian concatenation-based tree of mitochondrial markers (RevBayes)
+g) Bayesian concatenation-based tree of plastid markers (RevBayes)
+2) Date the phylogeny - calibrate nodes with fossils (RevBayes)
+3) Simple evolutionary analysis of the evolution of functional dioecy  
+
+## Workflow:
+The folder Scripts contains all analysis steps and starts with folder and data set up to get the analysis going on my local machine. 
+
+*Setup:*
+The three 00_setup_* scripts create the folder structure of this project repository; create symlinks from the remote folder to the local project directory for the sequence data assembled by Catarina Rydin, downloads the PAFTOL data using urls that I previously compiled and creates symlinks for all sequence files into a common data folder. 
+
+*CAPTUS pipeline:*
+The scripts from 01_clean_reads.sh to 04_alignment.sh are all part of the CAPTUS pipeline. 
+
+*ML phylogeny inference:*
+The scripts 05, 05b, 05c are all concatenation-based tree inference methods for nuclear, plastome, mitochondrial markers.
+Scripts 06_gene_trees.sh and 06_species_tree_MSC.sh perform the MSC-aware tree inference for the nuclear genes.
+
+*Exploratory analyses:*
+The scripts 07 and 08 compare the topology between trees from different markers/methods and analyse the gene- or site-concordance for all branches in the trees.
+
+
+
+
+To Dos:
+- fossil calibration & dating 
+- match taxonomy against the currently accepted species and genera and double-check species numbers for datasets
+- compile information about the sexual systems (monoecy, dioecy, crytic dioecy)
+- make a conservative tree with more filtering and compare it to the unfiltered results
 
 # Data sources
 

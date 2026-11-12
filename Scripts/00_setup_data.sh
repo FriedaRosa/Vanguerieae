@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+
+################################################################################
+##                                  SETUP DATA                                ##
+################################################################################
+# The script below creates symbolic links for all fastq files in the remote folder to the local project folder. The symbolic links are named according to the species names provided in the look up file.
+
+
+
+
 set -euo pipefail
 
 # Project folder path
