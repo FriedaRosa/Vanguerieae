@@ -1,0 +1,164 @@
+#nexus
+begin sets;
+  charset accD.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/accD.fna: ;
+  charset atpA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/atpA.fna: ;
+  charset atpB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/atpB.fna: ;
+  charset atpE.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/atpE.fna: ;
+  charset atpF.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/atpF.fna: ;
+  charset atpH.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/atpH.fna: ;
+  charset atpI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/atpI.fna: ;
+  charset ccsA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ccsA.fna: ;
+  charset cemA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/cemA.fna: ;
+  charset clpP1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/clpP1.fna: ;
+  charset infA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/infA.fna: ;
+  charset matK.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/matK.fna: ;
+  charset ndhA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhA.fna: ;
+  charset ndhB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhB.fna: ;
+  charset ndhC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhC.fna: ;
+  charset ndhD.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhD.fna: ;
+  charset ndhE.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhE.fna: ;
+  charset ndhF.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhF.fna: ;
+  charset ndhG.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhG.fna: ;
+  charset ndhH.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhH.fna: ;
+  charset ndhI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhI.fna: ;
+  charset ndhJ.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhJ.fna: ;
+  charset ndhK.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ndhK.fna: ;
+  charset pafI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/pafI.fna: ;
+  charset pafII.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/pafII.fna: ;
+  charset pbf1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/pbf1.fna: ;
+  charset petA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/petA.fna: ;
+  charset petB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/petB.fna: ;
+  charset petD.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/petD.fna: ;
+  charset petG.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/petG.fna: ;
+  charset petL.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/petL.fna: ;
+  charset petN.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/petN.fna: ;
+  charset psaA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psaA.fna: ;
+  charset psaB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psaB.fna: ;
+  charset psaC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psaC.fna: ;
+  charset psaI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psaI.fna: ;
+  charset psaJ.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psaJ.fna: ;
+  charset psbA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbA.fna: ;
+  charset psbB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbB.fna: ;
+  charset psbC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbC.fna: ;
+  charset psbD.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbD.fna: ;
+  charset psbE.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbE.fna: ;
+  charset psbF.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbF.fna: ;
+  charset psbH.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbH.fna: ;
+  charset psbI.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbI.fna: ;
+  charset psbJ.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbJ.fna: ;
+  charset psbK.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbK.fna: ;
+  charset psbL.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbL.fna: ;
+  charset psbM.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbM.fna: ;
+  charset psbT.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbT.fna: ;
+  charset psbZ.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/psbZ.fna: ;
+  charset rbcL.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rbcL.fna: ;
+  charset rpl14.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl14.fna: ;
+  charset rpl16.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl16.fna: ;
+  charset rpl2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl2.fna: ;
+  charset rpl20.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl20.fna: ;
+  charset rpl22.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl22.fna: ;
+  charset rpl23.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl23.fna: ;
+  charset rpl32.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl32.fna: ;
+  charset rpl33.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl33.fna: ;
+  charset rpl36.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpl36.fna: ;
+  charset rpoA.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpoA.fna: ;
+  charset rpoB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpoB.fna: ;
+  charset rpoC1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpoC1.fna: ;
+  charset rpoC2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rpoC2.fna: ;
+  charset rps11.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps11.fna: ;
+  charset rps12_exon_1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps12_exon_1.fna: ;
+  charset rps12_exon_2_3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps12_exon_2_3.fna: ;
+  charset rps14.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps14.fna: ;
+  charset rps15.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps15.fna: ;
+  charset rps16.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps16.fna: ;
+  charset rps18.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps18.fna: ;
+  charset rps19.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps19.fna: ;
+  charset rps2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps2.fna: ;
+  charset rps3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps3.fna: ;
+  charset rps4.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps4.fna: ;
+  charset rps7.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps7.fna: ;
+  charset rps8.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/rps8.fna: ;
+  charset ycf1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ycf1.fna: ;
+  charset ycf2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/02_coding_PTD/02_NT/ycf2.fna: ;
+  charpartition mymodels =
+    K3Pu{1.30709,0.474425}+F{0.319796,0.1455,0.218644,0.31606}+G4{0.0903322}: accD.fna{0.0867679},
+    HKY{4.19559}+F{0.299906,0.193751,0.225752,0.280591}: atpA.fna{0.0450423},
+    F81+F{0.303035,0.19101,0.227948,0.278006}+I{0.867537}: atpB.fna{0.104363},
+    HKY{2.19608}+F{0.333133,0.169823,0.234858,0.262186}: atpE.fna{0.13095},
+    K3Pu{1.29724,0.0327762}+F{0.349923,0.141763,0.219867,0.288447}+R3{0.770259,5.78845e-16,0.220615,2.33308,0.00912586,53.177}: atpF.fna{0.152519},
+    HKY{10.4256}+F{0.22393,0.185452,0.290641,0.299976}: atpH.fna{0.0291493},
+    F81+F{0.253916,0.186839,0.198012,0.361232}: atpI.fna{0.032978},
+    K3Pu{1.15396,0.519416}+F{0.300932,0.152505,0.168781,0.377782}+G4{0.270083}: ccsA.fna{0.156991},
+    F81+F{0.304447,0.171398,0.163894,0.360261}+G4{0.155037}: cemA.fna{0.215371},
+    TPM3u{4.40778,5.73775}+F{0.290208,0.178122,0.234505,0.297165}+R3{0.787663,5.32969e-16,0.208912,3.5364,0.00342528,76.2577}: clpP1.fna{0.189435},
+    F81+F{0.340371,0.159332,0.228158,0.27214}: infA.fna{0.149797},
+    K3Pu{0.927107,0.391927}+F{0.304085,0.16686,0.152466,0.376589}+G4{0.454422}: matK.fna{0.126903},
+    HKY{1.88774}+F{0.279271,0.172944,0.181057,0.366729}+I{0.834113}: ndhA.fna{0.157241},
+    F81+F{0.277474,0.196343,0.175843,0.35034}: ndhB.fna{0.0345408},
+    K3Pu{0.933004,0.0001}+F{0.236403,0.130057,0.211832,0.421708}+I{0.922406}: ndhC.fna{0.0459342},
+    K3Pu{2.25371,0.347074}+F{0.269408,0.182067,0.172144,0.376381}+I{0.760097}: ndhD.fna{0.078231},
+    F81+F{0.280722,0.151174,0.17549,0.392614}: ndhE.fna{0.193205},
+    K3Pu{1.61335,0.57292}+F{0.28467,0.149781,0.164318,0.401231}+G4{0.454937}: ndhF.fna{0.149044},
+    HKY{1.61768}+F{0.245443,0.171772,0.185726,0.39706}: ndhG.fna{0.293032},
+    TPM3u{3.31603,4.98437}+F{0.316462,0.159053,0.222554,0.30193}: ndhH.fna{0.0488055},
+    F81+F{0.310771,0.174817,0.182186,0.332226}: ndhI.fna{0.115285},
+    HKY{3.90245}+F{0.267345,0.16096,0.239957,0.331739}: ndhJ.fna{0.0389461},
+    F81+F{0.306075,0.191761,0.184794,0.31737}: ndhK.fna{0.0834171},
+    F81+F{0.33665,0.180961,0.198273,0.284117}+R3{0.506697,7.131e-16,0.46906,0.458248,0.0242423,32.3836}: pafI.fna{0.220851},
+    F81+F{0.265139,0.16658,0.215788,0.352493}+I{0.876769}: pafII.fna{0.0615241},
+    JC: pbf1.fna{0.194807},
+    K3Pu{1.76782,0.106116}+F{0.30967,0.195991,0.209263,0.285076}+G4{0.146008}: petA.fna{0.108355},
+    HKY{6.7224}+F{0.244134,0.185023,0.216953,0.35389}: petB.fna{0.0388527},
+    HKY{3.73505}+F{0.269354,0.189365,0.196021,0.34526}: petD.fna{0.0824722},
+    HKY{8.1993}+F{0.242005,0.142899,0.177183,0.437912}: petG.fna{0.126113},
+    F81+F{0.271404,0.192773,0.168225,0.367598}: petL.fna{2.73362},
+    JC: petN.fna{0.278409},
+    HKY{3.62661}+F{0.254411,0.203651,0.221078,0.32086}+I{0.776425}: psaA.fna{0.0465773},
+    HKY{6.49241}+F{0.2514,0.191288,0.214896,0.342416}+I{0.90939}: psaB.fna{0.0424288},
+    F81+F{0.287118,0.197709,0.239305,0.275868}: psaC.fna{0.0383629},
+    F81+F{0.227863,0.210984,0.151519,0.409633}+I{0.29014}: psaI.fna{2.69949},
+    TN{0.727655,2.00081}+F{0.226887,0.219374,0.204349,0.34939}: psaJ.fna{2.06701},
+    K3Pu{1.75942,0.320631}+F{0.236554,0.205219,0.21435,0.343877}+G4{0.20683}: psbA.fna{0.0722217},
+    HKY{2.94026}+F{0.232109,0.177272,0.263038,0.327581}+I{0.869597}: psbB.fna{0.0871658},
+    F81+F{0.235099,0.197397,0.24862,0.318885}+I{0.874754}: psbC.fna{0.0602133},
+    F81+F{0.215332,0.201683,0.221632,0.361353}: psbD.fna{0.0382823},
+    HKY{7.2004}+F{0.253893,0.203495,0.20318,0.339432}: psbE.fna{0.0394456},
+    JC: psbF.fna{0.0183217},
+    JC: psbH.fna{0.264709},
+    F81+F{0.220947,0.242619,0.188864,0.347569}: psbI.fna{0.284057},
+    F81+F{0.209343,0.157733,0.231252,0.401672}: psbJ.fna{0.936555},
+    F81+F{0.184833,0.186333,0.173134,0.4557}: psbK.fna{0.416342},
+    F81+F{0.297084,0.180569,0.131428,0.390919}: psbL.fna{0.0185847},
+    JC: psbM.fna{0.33984},
+    F81+F{0.303333,0.180709,0.143274,0.372684}: psbT.fna{0.0296039},
+    HKY{12.0019}+F{0.214314,0.189243,0.176372,0.420071}: psbZ.fna{0.0445091},
+    HKY{1.96079}+F{0.270442,0.191932,0.249185,0.28844}+I{0.865476}: rbcL.fna{0.118582},
+    F81+F{0.329479,0.170896,0.242517,0.257108}: rpl14.fna{0.0788507},
+    F81+F{0.338342,0.182153,0.239317,0.240188}: rpl16.fna{0.117951},
+    HKY{2.7507}+F{0.327917,0.185892,0.255803,0.230388}+I{0.888688}: rpl2.fna{0.0681861},
+    TPM3u{2.53276,3.04241}+F{0.345956,0.160172,0.208725,0.285147}+R2{0.9639,0.568288,0.0360998,12.5271}: rpl20.fna{0.20492},
+    K3Pu{1.41034,0.274337}+F{0.38837,0.162439,0.176496,0.272694}: rpl22.fna{0.134062},
+    K3Pu{1.00784,0.214024}+F{0.346316,0.158225,0.219893,0.275566}: rpl23.fna{0.19708},
+    TN{1.13786,0.544798}+F{0.379625,0.16185,0.169486,0.289039}+R2{0.808612,0.371369,0.191388,3.65595}: rpl32.fna{4.0562},
+    F81+F{0.368939,0.154305,0.215382,0.261375}+I{0.792214}: rpl33.fna{0.178245},
+    F81+F{0.392893,0.148083,0.227691,0.231334}: rpl36.fna{0.420493},
+    K3Pu{1.4411,0.34822}+F{0.361403,0.15744,0.184166,0.29699}+G4{0.252444}: rpoA.fna{0.167791},
+    K3Pu{2.05295,0.319674}+F{0.317132,0.166671,0.222655,0.293542}+G4{0.235275}: rpoB.fna{0.0477512},
+    K3Pu{1.70963,0.203198}+F{0.318915,0.166622,0.217689,0.296774}: rpoC1.fna{0.0407885},
+    K3Pu{0.832419,0.284231}+F{0.329553,0.175551,0.196508,0.298388}+R3{0.600119,6.69451e-16,0.394263,1.51455,0.00561863,71.7025}: rpoC2.fna{0.112074},
+    HKY{4.65146}+F{0.284907,0.194551,0.271283,0.249259}: rps11.fna{0.151444},
+    F81+F{0.357133,0.237586,0.196277,0.209004}: rps12_exon_1.fna{0.330227},
+    GTR{0.183978,0.0786223,0.0545405,0.0001,0.0001}+F{0.309766,0.198435,0.226904,0.264894}+I{0.883824}+G4{0.0599598}: rps12_exon_2_3.fna{1.85149},
+    F81+F{0.359339,0.172729,0.225092,0.24284}: rps14.fna{0.0926083},
+    TPM3u{6.09406,6.37471}+F{0.36198,0.148332,0.190691,0.298997}: rps15.fna{0.125026},
+    K3Pu{1.65962,0.0938724}+F{0.32919,0.157937,0.200693,0.31218}: rps16.fna{0.121452},
+    F81+F{0.348652,0.166771,0.182559,0.302018}+I{0.829421}: rps18.fna{0.0788448},
+    HKY{1.58761}+F{0.393737,0.171525,0.16164,0.273099}: rps19.fna{0.901897},
+    F81+F{0.34363,0.163774,0.223097,0.2695}: rps2.fna{0.0412689},
+    K3Pu{1.52508,0.300042}+F{0.40905,0.153127,0.173729,0.264094}+G4{0.160239}: rps3.fna{0.0956407},
+    K3Pu{1.34157,0.0743741}+F{0.343592,0.194347,0.183024,0.279036}: rps4.fna{0.0575017},
+    F81+F{0.349716,0.199839,0.216323,0.234122}: rps7.fna{0.0378252},
+    HKY{2.25723}+F{0.356082,0.147536,0.214026,0.282357}: rps8.fna{0.206546},
+    K3Pu{1.03998,0.288708}+F{0.409232,0.138425,0.15567,0.296673}+R3{0.712935,0.208236,0.28431,2.58392,0.00275456,42.4409}: ycf1.fna{0.148516},
+    HKY{1.96206}+F{0.309557,0.187613,0.192173,0.310656}+I{0.913868}: ycf2.fna{0.0159796};
+end;

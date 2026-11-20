@@ -1,0 +1,90 @@
+#nexus
+begin sets;
+  charset atp1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/atp1.fna: ;
+  charset atp4.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/atp4.fna: ;
+  charset atp6.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/atp6.fna: ;
+  charset atp8.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/atp8.fna: ;
+  charset atp9.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/atp9.fna: ;
+  charset ccmB.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/ccmB.fna: ;
+  charset ccmC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/ccmC.fna: ;
+  charset ccmFC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/ccmFC.fna: ;
+  charset ccmFN.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/ccmFN.fna: ;
+  charset cob.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/cob.fna: ;
+  charset cox1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/cox1.fna: ;
+  charset cox2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/cox2.fna: ;
+  charset cox3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/cox3.fna: ;
+  charset matR.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/matR.fna: ;
+  charset nad1_exon_1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad1_exon_1.fna: ;
+  charset nad1_exon_2_3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad1_exon_2_3.fna: ;
+  charset nad1_exon_4_5.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad1_exon_4_5.fna: ;
+  charset nad2_exon_1_2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad2_exon_1_2.fna: ;
+  charset nad2_exon_3_4_5.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad2_exon_3_4_5.fna: ;
+  charset nad3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad3.fna: ;
+  charset nad4.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad4.fna: ;
+  charset nad4L.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad4L.fna: ;
+  charset nad5_exon_1_2_3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad5_exon_1_2_3.fna: ;
+  charset nad5_exon_4_5.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad5_exon_4_5.fna: ;
+  charset nad6.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad6.fna: ;
+  charset nad7.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad7.fna: ;
+  charset nad9.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/nad9.fna: ;
+  charset rpl10.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rpl10.fna: ;
+  charset rpl16.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rpl16.fna: ;
+  charset rpl2.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rpl2.fna: ;
+  charset rpl5.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rpl5.fna: ;
+  charset rps1.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps1.fna: ;
+  charset rps10.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps10.fna: ;
+  charset rps12.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps12.fna: ;
+  charset rps13.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps13.fna: ;
+  charset rps14.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps14.fna: ;
+  charset rps19.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps19.fna: ;
+  charset rps3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps3.fna: ;
+  charset rps4.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps4.fna: ;
+  charset rps7.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/rps7.fna: ;
+  charset sdh3.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/sdh3.fna: ;
+  charset sdh4.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/sdh4.fna: ;
+  charset tatC.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/03_coding_MIT/02_NT/tatC.fna: ;
+  charpartition mymodels =
+    F81+F: atp1.fna,
+    HKY+I: atp4.fna,
+    F81+F+G4: atp6.fna,
+    JC: atp8.fna,
+    JC: atp9.fna,
+    HKY+F: ccmB.fna,
+    F81+F: ccmC.fna,
+    F81+R3: ccmFC.fna,
+    F81+F+I: ccmFN.fna,
+    F81+F+I: cob.fna,
+    F81+F: cox1.fna,
+    HKY+F: cox2.fna,
+    F81+F+I: cox3.fna,
+    F81+I: matR.fna,
+    F81+F: nad1_exon_1.fna,
+    F81+F+I: nad1_exon_2_3.fna,
+    F81+F+I: nad1_exon_4_5.fna,
+    F81+F+I: nad2_exon_1_2.fna,
+    F81+F+I: nad2_exon_3_4_5.fna,
+    F81+F+I: nad3.fna,
+    HKY+F+R3: nad4.fna,
+    F81+F: nad4L.fna,
+    HKY+F: nad5_exon_1_2_3.fna,
+    F81+R2: nad5_exon_4_5.fna,
+    TPM3u+F+I+G4: nad6.fna,
+    JC+I: nad7.fna,
+    HKY: nad9.fna,
+    HKY: rpl10.fna,
+    K3P+I: rpl16.fna,
+    K3Pu+R3: rpl2.fna,
+    K3Pu+F: rpl5.fna,
+    JC: rps1.fna,
+    TPM3u+F+R2: rps10.fna,
+    HKY: rps12.fna,
+    F81+F: rps13.fna,
+    JC+G4: rps14.fna,
+    F81+F+R2: rps19.fna,
+    HKY+F+I: rps3.fna,
+    K3Pu+F+I: rps4.fna,
+    F81: rps7.fna,
+    HKY+F+I: sdh3.fna,
+    TN+F+R3: sdh4.fna,
+    F81+F: tatC.fna;
+end;

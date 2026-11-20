@@ -1,0 +1,710 @@
+#nexus
+begin sets;
+  charset 4471.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4471.fna: ;
+  charset 4527.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4527.fna: ;
+  charset 4691.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4691.fna: ;
+  charset 4724.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4724.fna: ;
+  charset 4744.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4744.fna: ;
+  charset 4757.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4757.fna: ;
+  charset 4793.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4793.fna: ;
+  charset 4796.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4796.fna: ;
+  charset 4802.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4802.fna: ;
+  charset 4806.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4806.fna: ;
+  charset 4848.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4848.fna: ;
+  charset 4889.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4889.fna: ;
+  charset 4890.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4890.fna: ;
+  charset 4893.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4893.fna: ;
+  charset 4932.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4932.fna: ;
+  charset 4942.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4942.fna: ;
+  charset 4951.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4951.fna: ;
+  charset 4954.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4954.fna: ;
+  charset 4989.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4989.fna: ;
+  charset 4992.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/4992.fna: ;
+  charset 5018.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5018.fna: ;
+  charset 5032.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5032.fna: ;
+  charset 5034.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5034.fna: ;
+  charset 5038.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5038.fna: ;
+  charset 5064.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5064.fna: ;
+  charset 5090.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5090.fna: ;
+  charset 5104.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5104.fna: ;
+  charset 5116.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5116.fna: ;
+  charset 5123.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5123.fna: ;
+  charset 5131.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5131.fna: ;
+  charset 5138.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5138.fna: ;
+  charset 5162.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5162.fna: ;
+  charset 5163.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5163.fna: ;
+  charset 5168.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5168.fna: ;
+  charset 5177.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5177.fna: ;
+  charset 5188.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5188.fna: ;
+  charset 5200.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5200.fna: ;
+  charset 5206.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5206.fna: ;
+  charset 5220.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5220.fna: ;
+  charset 5257.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5257.fna: ;
+  charset 5260.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5260.fna: ;
+  charset 5264.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5264.fna: ;
+  charset 5271.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5271.fna: ;
+  charset 5273.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5273.fna: ;
+  charset 5280.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5280.fna: ;
+  charset 5296.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5296.fna: ;
+  charset 5299.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5299.fna: ;
+  charset 5304.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5304.fna: ;
+  charset 5318.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5318.fna: ;
+  charset 5326.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5326.fna: ;
+  charset 5328.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5328.fna: ;
+  charset 5333.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5333.fna: ;
+  charset 5335.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5335.fna: ;
+  charset 5339.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5339.fna: ;
+  charset 5343.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5343.fna: ;
+  charset 5347.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5347.fna: ;
+  charset 5348.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5348.fna: ;
+  charset 5354.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5354.fna: ;
+  charset 5355.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5355.fna: ;
+  charset 5357.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5357.fna: ;
+  charset 5366.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5366.fna: ;
+  charset 5398.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5398.fna: ;
+  charset 5404.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5404.fna: ;
+  charset 5406.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5406.fna: ;
+  charset 5421.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5421.fna: ;
+  charset 5422.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5422.fna: ;
+  charset 5426.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5426.fna: ;
+  charset 5427.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5427.fna: ;
+  charset 5428.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5428.fna: ;
+  charset 5430.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5430.fna: ;
+  charset 5434.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5434.fna: ;
+  charset 5449.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5449.fna: ;
+  charset 5454.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5454.fna: ;
+  charset 5460.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5460.fna: ;
+  charset 5463.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5463.fna: ;
+  charset 5464.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5464.fna: ;
+  charset 5469.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5469.fna: ;
+  charset 5477.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5477.fna: ;
+  charset 5489.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5489.fna: ;
+  charset 5502.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5502.fna: ;
+  charset 5513.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5513.fna: ;
+  charset 5528.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5528.fna: ;
+  charset 5531.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5531.fna: ;
+  charset 5536.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5536.fna: ;
+  charset 5551.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5551.fna: ;
+  charset 5554.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5554.fna: ;
+  charset 5562.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5562.fna: ;
+  charset 5578.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5578.fna: ;
+  charset 5594.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5594.fna: ;
+  charset 5596.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5596.fna: ;
+  charset 5599.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5599.fna: ;
+  charset 5614.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5614.fna: ;
+  charset 5620.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5620.fna: ;
+  charset 5634.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5634.fna: ;
+  charset 5639.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5639.fna: ;
+  charset 5642.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5642.fna: ;
+  charset 5644.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5644.fna: ;
+  charset 5656.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5656.fna: ;
+  charset 5660.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5660.fna: ;
+  charset 5664.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5664.fna: ;
+  charset 5670.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5670.fna: ;
+  charset 5699.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5699.fna: ;
+  charset 5702.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5702.fna: ;
+  charset 5703.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5703.fna: ;
+  charset 5716.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5716.fna: ;
+  charset 5721.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5721.fna: ;
+  charset 5733.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5733.fna: ;
+  charset 5744.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5744.fna: ;
+  charset 5770.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5770.fna: ;
+  charset 5772.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5772.fna: ;
+  charset 5791.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5791.fna: ;
+  charset 5802.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5802.fna: ;
+  charset 5815.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5815.fna: ;
+  charset 5816.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5816.fna: ;
+  charset 5821.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5821.fna: ;
+  charset 5822.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5822.fna: ;
+  charset 5840.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5840.fna: ;
+  charset 5841.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5841.fna: ;
+  charset 5842.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5842.fna: ;
+  charset 5843.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5843.fna: ;
+  charset 5849.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5849.fna: ;
+  charset 5853.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5853.fna: ;
+  charset 5857.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5857.fna: ;
+  charset 5858.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5858.fna: ;
+  charset 5859.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5859.fna: ;
+  charset 5865.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5865.fna: ;
+  charset 5866.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5866.fna: ;
+  charset 5870.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5870.fna: ;
+  charset 5893.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5893.fna: ;
+  charset 5894.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5894.fna: ;
+  charset 5899.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5899.fna: ;
+  charset 5910.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5910.fna: ;
+  charset 5913.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5913.fna: ;
+  charset 5918.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5918.fna: ;
+  charset 5919.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5919.fna: ;
+  charset 5921.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5921.fna: ;
+  charset 5922.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5922.fna: ;
+  charset 5926.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5926.fna: ;
+  charset 5933.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5933.fna: ;
+  charset 5936.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5936.fna: ;
+  charset 5940.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5940.fna: ;
+  charset 5941.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5941.fna: ;
+  charset 5942.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5942.fna: ;
+  charset 5943.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5943.fna: ;
+  charset 5944.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5944.fna: ;
+  charset 5945.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5945.fna: ;
+  charset 5949.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5949.fna: ;
+  charset 5950.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5950.fna: ;
+  charset 5958.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5958.fna: ;
+  charset 5960.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5960.fna: ;
+  charset 5968.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5968.fna: ;
+  charset 5974.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5974.fna: ;
+  charset 5977.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5977.fna: ;
+  charset 5980.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5980.fna: ;
+  charset 5981.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5981.fna: ;
+  charset 5990.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/5990.fna: ;
+  charset 6000.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6000.fna: ;
+  charset 6003.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6003.fna: ;
+  charset 6004.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6004.fna: ;
+  charset 6016.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6016.fna: ;
+  charset 6026.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6026.fna: ;
+  charset 6029.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6029.fna: ;
+  charset 6034.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6034.fna: ;
+  charset 6036.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6036.fna: ;
+  charset 6038.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6038.fna: ;
+  charset 6041.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6041.fna: ;
+  charset 6048.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6048.fna: ;
+  charset 6050.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6050.fna: ;
+  charset 6051.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6051.fna: ;
+  charset 6056.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6056.fna: ;
+  charset 6064.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6064.fna: ;
+  charset 6068.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6068.fna: ;
+  charset 6072.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6072.fna: ;
+  charset 6098.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6098.fna: ;
+  charset 6110.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6110.fna: ;
+  charset 6114.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6114.fna: ;
+  charset 6119.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6119.fna: ;
+  charset 6128.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6128.fna: ;
+  charset 6130.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6130.fna: ;
+  charset 6139.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6139.fna: ;
+  charset 6148.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6148.fna: ;
+  charset 6150.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6150.fna: ;
+  charset 6164.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6164.fna: ;
+  charset 6175.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6175.fna: ;
+  charset 6176.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6176.fna: ;
+  charset 6198.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6198.fna: ;
+  charset 6216.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6216.fna: ;
+  charset 6221.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6221.fna: ;
+  charset 6226.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6226.fna: ;
+  charset 6227.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6227.fna: ;
+  charset 6238.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6238.fna: ;
+  charset 6258.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6258.fna: ;
+  charset 6265.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6265.fna: ;
+  charset 6270.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6270.fna: ;
+  charset 6274.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6274.fna: ;
+  charset 6282.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6282.fna: ;
+  charset 6284.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6284.fna: ;
+  charset 6295.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6295.fna: ;
+  charset 6298.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6298.fna: ;
+  charset 6299.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6299.fna: ;
+  charset 6303.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6303.fna: ;
+  charset 6318.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6318.fna: ;
+  charset 6320.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6320.fna: ;
+  charset 6363.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6363.fna: ;
+  charset 6366.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6366.fna: ;
+  charset 6373.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6373.fna: ;
+  charset 6376.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6376.fna: ;
+  charset 6378.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6378.fna: ;
+  charset 6379.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6379.fna: ;
+  charset 6383.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6383.fna: ;
+  charset 6384.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6384.fna: ;
+  charset 6387.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6387.fna: ;
+  charset 6389.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6389.fna: ;
+  charset 6393.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6393.fna: ;
+  charset 6398.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6398.fna: ;
+  charset 6401.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6401.fna: ;
+  charset 6404.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6404.fna: ;
+  charset 6405.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6405.fna: ;
+  charset 6406.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6406.fna: ;
+  charset 6407.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6407.fna: ;
+  charset 6412.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6412.fna: ;
+  charset 6420.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6420.fna: ;
+  charset 6430.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6430.fna: ;
+  charset 6432.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6432.fna: ;
+  charset 6439.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6439.fna: ;
+  charset 6447.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6447.fna: ;
+  charset 6448.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6448.fna: ;
+  charset 6449.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6449.fna: ;
+  charset 6450.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6450.fna: ;
+  charset 6454.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6454.fna: ;
+  charset 6457.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6457.fna: ;
+  charset 6458.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6458.fna: ;
+  charset 6459.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6459.fna: ;
+  charset 6460.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6460.fna: ;
+  charset 6462.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6462.fna: ;
+  charset 6483.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6483.fna: ;
+  charset 6487.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6487.fna: ;
+  charset 6488.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6488.fna: ;
+  charset 6492.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6492.fna: ;
+  charset 6494.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6494.fna: ;
+  charset 6496.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6496.fna: ;
+  charset 6498.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6498.fna: ;
+  charset 6500.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6500.fna: ;
+  charset 6506.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6506.fna: ;
+  charset 6507.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6507.fna: ;
+  charset 6514.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6514.fna: ;
+  charset 6526.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6526.fna: ;
+  charset 6527.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6527.fna: ;
+  charset 6528.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6528.fna: ;
+  charset 6531.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6531.fna: ;
+  charset 6532.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6532.fna: ;
+  charset 6533.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6533.fna: ;
+  charset 6538.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6538.fna: ;
+  charset 6540.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6540.fna: ;
+  charset 6544.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6544.fna: ;
+  charset 6550.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6550.fna: ;
+  charset 6552.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6552.fna: ;
+  charset 6557.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6557.fna: ;
+  charset 6559.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6559.fna: ;
+  charset 6563.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6563.fna: ;
+  charset 6565.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6565.fna: ;
+  charset 6570.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6570.fna: ;
+  charset 6572.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6572.fna: ;
+  charset 6601.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6601.fna: ;
+  charset 6620.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6620.fna: ;
+  charset 6631.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6631.fna: ;
+  charset 6636.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6636.fna: ;
+  charset 6639.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6639.fna: ;
+  charset 6641.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6641.fna: ;
+  charset 6649.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6649.fna: ;
+  charset 6652.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6652.fna: ;
+  charset 6660.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6660.fna: ;
+  charset 6667.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6667.fna: ;
+  charset 6679.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6679.fna: ;
+  charset 6685.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6685.fna: ;
+  charset 6689.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6689.fna: ;
+  charset 6705.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6705.fna: ;
+  charset 6713.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6713.fna: ;
+  charset 6717.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6717.fna: ;
+  charset 6732.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6732.fna: ;
+  charset 6733.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6733.fna: ;
+  charset 6738.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6738.fna: ;
+  charset 6746.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6746.fna: ;
+  charset 6779.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6779.fna: ;
+  charset 6780.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6780.fna: ;
+  charset 6782.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6782.fna: ;
+  charset 6785.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6785.fna: ;
+  charset 6791.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6791.fna: ;
+  charset 6792.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6792.fna: ;
+  charset 6797.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6797.fna: ;
+  charset 6825.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6825.fna: ;
+  charset 6848.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6848.fna: ;
+  charset 6854.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6854.fna: ;
+  charset 6859.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6859.fna: ;
+  charset 6860.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6860.fna: ;
+  charset 6864.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6864.fna: ;
+  charset 6865.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6865.fna: ;
+  charset 6875.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6875.fna: ;
+  charset 6882.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6882.fna: ;
+  charset 6883.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6883.fna: ;
+  charset 6886.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6886.fna: ;
+  charset 6893.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6893.fna: ;
+  charset 6909.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6909.fna: ;
+  charset 6913.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6913.fna: ;
+  charset 6914.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6914.fna: ;
+  charset 6924.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6924.fna: ;
+  charset 6933.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6933.fna: ;
+  charset 6946.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6946.fna: ;
+  charset 6947.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6947.fna: ;
+  charset 6954.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6954.fna: ;
+  charset 6955.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6955.fna: ;
+  charset 6958.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6958.fna: ;
+  charset 6961.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6961.fna: ;
+  charset 6962.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6962.fna: ;
+  charset 6968.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6968.fna: ;
+  charset 6969.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6969.fna: ;
+  charset 6977.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6977.fna: ;
+  charset 6978.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6978.fna: ;
+  charset 6979.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6979.fna: ;
+  charset 6992.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6992.fna: ;
+  charset 6995.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/6995.fna: ;
+  charset 7013.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7013.fna: ;
+  charset 7021.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7021.fna: ;
+  charset 7024.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7024.fna: ;
+  charset 7028.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7028.fna: ;
+  charset 7029.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7029.fna: ;
+  charset 7067.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7067.fna: ;
+  charset 7111.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7111.fna: ;
+  charset 7128.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7128.fna: ;
+  charset 7135.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7135.fna: ;
+  charset 7136.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7136.fna: ;
+  charset 7141.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7141.fna: ;
+  charset 7174.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7174.fna: ;
+  charset 7194.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7194.fna: ;
+  charset 7241.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7241.fna: ;
+  charset 7273.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7273.fna: ;
+  charset 7279.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7279.fna: ;
+  charset 7296.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7296.fna: ;
+  charset 7313.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7313.fna: ;
+  charset 7324.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7324.fna: ;
+  charset 7325.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7325.fna: ;
+  charset 7331.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7331.fna: ;
+  charset 7333.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7333.fna: ;
+  charset 7336.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7336.fna: ;
+  charset 7361.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7361.fna: ;
+  charset 7363.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7363.fna: ;
+  charset 7367.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7367.fna: ;
+  charset 7371.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7371.fna: ;
+  charset 7572.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7572.fna: ;
+  charset 7577.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7577.fna: ;
+  charset 7583.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7583.fna: ;
+  charset 7602.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7602.fna: ;
+  charset 7628.fna = /home/frieda/Projects/Vanguerieae/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked/7628.fna: ;
+  charpartition mymodels =
+    TPM3u{1.2767,3.40066}+F{0.267251,0.173084,0.18884,0.370825}+I{0.200061}+R2{0.684223,0.820701,0.115716,3.78907}: 4471.fna{2.03176},
+    TPM3u{1.24249,2.98497}+F{0.260084,0.171324,0.243166,0.325426}+G4{0.569351}: 4527.fna{1.92437},
+    HKY{2.2275}+F{0.258037,0.203103,0.224847,0.314013}+G4{0.659988}: 4691.fna{1.67018},
+    TPM3u{1.28046,2.74475}+F{0.280515,0.17674,0.203903,0.338842}+R3{0.450927,0.160012,0.42997,1.00182,0.119104,4.17363}: 4724.fna{2.49922},
+    TIM3{1.2711,3.74578,3.09631}+F{0.252326,0.1716,0.199018,0.377056}+I{0.212578}+R3{0.532364,0.331054,0.139521,2.16567,0.115538,4.51457}: 4744.fna{5.29994},
+    TPM2u{0.8061,2.18474}+F{0.275446,0.173242,0.213735,0.337578}+G4{0.623263}: 4757.fna{2.07303},
+    HKY{2.93549}+F{0.261871,0.169366,0.220512,0.348251}+R4{0.555778,0.0736422,0.215899,0.655571,0.133284,2.2681,0.0950398,5.42124}: 4793.fna{3.46875},
+    TIM3{1.41843,4.00298,3.07205}+F{0.263755,0.183479,0.208381,0.344384}+G4{0.608214}: 4796.fna{1.42232},
+    TPM3u{1.31284,2.55907}+F{0.26955,0.160003,0.210979,0.359469}+G4{0.68346}: 4802.fna{0.92856},
+    HKY{2.36976}+F{0.263288,0.169372,0.222237,0.345103}+R3{0.597483,0.204427,0.35751,1.55309,0.0450073,7.16806}: 4806.fna{1.9919},
+    HKY{2.77099}+F{0.268891,0.188047,0.22232,0.320741}+I{0.371441}+R2{0.554096,0.946882,0.0744632,6.3835}: 4848.fna{1.22386},
+    HKY{2.48557}+F{0.29236,0.149201,0.208157,0.350282}+G4{0.652923}: 4889.fna{1.97125},
+    TIM3{1.58193,3.41284,2.43104}+F{0.241454,0.188677,0.225813,0.344056}+G4{0.633901}: 4890.fna{1.58149},
+    TVM{1.08109,2.60387,0.782145,1.41049}+F{0.284093,0.164891,0.196984,0.354032}+G4{0.923475}: 4893.fna{1.42274},
+    TPM3u{1.33098,3.73707}+F{0.26875,0.174921,0.2154,0.340928}+I{0.468532}+R2{0.50894,1.61586,0.0225278,7.88473}: 4932.fna{0.559533},
+    TPM3u{1.25008,2.53311}+F{0.25316,0.207017,0.226947,0.312875}+G4{0.733228}: 4942.fna{1.1677},
+    HKY{3.14417}+F{0.279383,0.191507,0.225594,0.303516}+R3{0.634334,0.127383,0.264764,1.33521,0.100901,5.60626}: 4951.fna{3.23402},
+    TN{2.43689,3.13951}+F{0.272509,0.172768,0.258796,0.295927}+G4{0.591418}: 4954.fna{1.46428},
+    TPM3u{1.32253,3.17354}+F{0.293235,0.173598,0.215404,0.317763}+I{0.36206}+R2{0.601293,1.28697,0.0366479,6.17107}: 4989.fna{1.01116},
+    TPM3u{1.22358,2.92951}+F{0.286235,0.16259,0.197556,0.353618}+I{0.373096}+R2{0.567692,1.09863,0.0592126,6.35537}: 4992.fna{1.14839},
+    HKY{2.76565}+F{0.267832,0.182451,0.208262,0.341454}+I{0.289228}+R2{0.541736,0.736632,0.169036,3.55511}: 5018.fna{1.58216},
+    TPM2u{0.662226,2.63821}+F{0.294426,0.16702,0.208137,0.330417}+G4{0.75558}: 5032.fna{1.00375},
+    HKY{2.65334}+F{0.267961,0.194438,0.195647,0.341954}+I{0.290097}+R3{0.456509,0.314235,0.146872,1.43591,0.106523,6.0612}: 5034.fna{3.34159},
+    TN{2.74706,2.17592}+F{0.250003,0.17907,0.212262,0.358665}+R2{0.762854,0.358161,0.237146,3.06468}: 5038.fna{1.52089},
+    TIM2{0.759424,2.25579,1.64945}+F{0.274262,0.194156,0.205648,0.325934}+G4{0.502824}: 5064.fna{3.08664},
+    HKY{2.73554}+F{0.25833,0.210446,0.211596,0.319628}+I{0.180417}+R2{0.431701,0.389331,0.387882,2.14479}: 5090.fna{3.7572},
+    TN{3.22529,1.76287}+F{0.247983,0.231457,0.180695,0.339865}+G4{1.16965}: 5104.fna{1.90656},
+    TPM2u{0.719788,2.50001}+F{0.260198,0.17452,0.216834,0.348447}+G4{0.802186}: 5116.fna{1.06812},
+    HKY{2.71776}+F{0.259829,0.158846,0.225301,0.356024}+I{0.253626}+R2{0.676477,0.95888,0.0698968,5.02655}: 5123.fna{1.07352},
+    K3Pu{2.99159,1.20955}+F{0.256275,0.170378,0.243798,0.329549}+G4{0.347481}: 5131.fna{3.70883},
+    TPM2u{0.715628,2.22915}+F{0.275175,0.174413,0.201529,0.348883}+I{0.408512}+R2{0.557323,1.33841,0.0341647,7.43669}: 5138.fna{0.849798},
+    TPM2u{0.763974,2.52131}+F{0.276011,0.202794,0.203866,0.317329}+R2{0.819949,0.43275,0.180051,3.58324}: 5162.fna{0.822672},
+    HKY{2.70831}+F{0.274043,0.176155,0.207724,0.342078}+I{0.373061}+R2{0.506825,0.93381,0.120114,4.38518}: 5163.fna{1.24652},
+    HKY{2.32457}+F{0.262462,0.180868,0.229973,0.326698}+I{0.31524}+R2{0.552782,0.740636,0.131978,4.47493}: 5168.fna{1.61514},
+    HKY{3.15187}+F{0.246496,0.19669,0.235659,0.321155}+I{0.282462}+R2{0.623026,0.920815,0.0945122,4.51061}: 5177.fna{1.17925},
+    TIM3{1.31473,2.4415,2.98402}+F{0.281297,0.177819,0.239018,0.301865}+I{0.188623}+R2{0.457779,0.372455,0.353599,2.34587}: 5188.fna{2.45287},
+    HKY{2.55557}+F{0.257668,0.175599,0.215942,0.350791}+G4{0.871948}: 5200.fna{1.53711},
+    TPM2u{0.737943,2.27869}+F{0.283749,0.184557,0.190821,0.340873}+G4{0.964229}: 5206.fna{1.29576},
+    TPM2u{0.709019,2.32001}+F{0.292818,0.176654,0.19754,0.332988}+I{0.338683}+R2{0.629708,1.26799,0.031609,6.37595}: 5220.fna{0.72919},
+    HKY{2.48561}+F{0.290552,0.178078,0.219947,0.311423}+R3{0.537722,0.168449,0.406125,1.39461,0.0561534,6.10887}: 5257.fna{2.28863},
+    HKY{3.47195}+F{0.279551,0.230594,0.215323,0.274532}+G4{0.562398}: 5260.fna{1.22741},
+    TPM2u{0.76829,2.52749}+F{0.288681,0.188142,0.221467,0.30171}+G4{0.475113}: 5264.fna{0.642094},
+    TPM3u{1.30029,2.92192}+F{0.261972,0.164728,0.229237,0.344063}+R3{0.676506,0.253783,0.308603,1.93739,0.0148913,15.4741}: 5271.fna{1.65856},
+    HKY{2.91983}+F{0.272692,0.163627,0.221143,0.342538}+G4{0.867546}: 5273.fna{0.978133},
+    TPM2u{0.79216,2.81951}+F{0.279001,0.179536,0.193022,0.348441}+I{0.345603}+R2{0.61634,1.2615,0.0380568,5.84617}: 5280.fna{1.27956},
+    HKY{3.12645}+F{0.26589,0.166844,0.223538,0.343728}+G4{0.655348}: 5296.fna{0.831009},
+    HKY{2.40093}+F{0.26226,0.182634,0.193525,0.361582}+G4{0.559304}: 5299.fna{1.49041},
+    TPM3u{1.22256,2.72492}+F{0.277417,0.173744,0.198518,0.350322}+I{0.231644}+R2{0.67252,0.767719,0.0958359,5.0471}: 5304.fna{1.58698},
+    TPM3u{0.808676,2.50677}+F{0.267033,0.180892,0.203377,0.348699}+I{0.156131}+R3{0.41593,0.240768,0.258456,1.09357,0.169483,3.64177}: 5318.fna{5.48263},
+    HKY{2.67467}+F{0.248883,0.199036,0.245302,0.30678}+I{0.44709}+R2{0.46964,1.18074,0.0832698,5.3498}: 5326.fna{1.40683},
+    HKY{3.81774}+F{0.306529,0.134323,0.285414,0.273733}+I{0.427821}+R2{0.499453,0.985181,0.0727257,6.98444}: 5328.fna{1.73155},
+    HKY{3.61476}+F{0.283102,0.173512,0.230476,0.31291}+I{0.421375}+R2{0.532082,1.30427,0.0465435,6.57499}: 5333.fna{0.50796},
+    TPM2u{0.75121,2.27038}+F{0.267401,0.178299,0.197633,0.356667}+R3{0.543328,0.21128,0.426591,1.57416,0.0300811,7.10351}: 5335.fna{1.20544},
+    K3Pu{2.86126,1.31614}+F{0.263905,0.169102,0.20368,0.363314}+R3{0.622487,0.15676,0.213451,0.799322,0.164062,4.46052}: 5339.fna{3.42064},
+    HKY{2.88457}+F{0.271244,0.184899,0.233691,0.310166}+G4{0.601033}: 5343.fna{1.16571},
+    TPM3u{1.30202,3.06835}+F{0.260348,0.167496,0.209986,0.362169}+G4{1.12618}: 5347.fna{1.50761},
+    TPM2u{0.830304,2.59011}+F{0.276357,0.173063,0.208581,0.341999}+I{0.199445}+R2{0.597894,0.580858,0.202661,3.22069}: 5348.fna{2.4085},
+    HKY{2.19746}+F{0.259043,0.199061,0.211532,0.330364}+G4{0.466451}: 5354.fna{2.50101},
+    HKY{2.628}+F{0.292315,0.172873,0.226321,0.30849}+G4{0.909699}: 5355.fna{1.89813},
+    TPM2u{1.14275,2.92578}+F{0.244081,0.190065,0.217062,0.348792}+R3{0.362616,0.0640526,0.31202,0.447963,0.325364,2.5725}: 5357.fna{9.17221},
+    TPM3u{1.22494,3.05718}+F{0.26737,0.173596,0.203094,0.355939}+I{0.331708}+R2{0.599028,1.11873,0.0692637,4.76225}: 5366.fna{0.964032},
+    TVM{0.936201,2.70931,0.68608,1.27627}+F{0.288698,0.162878,0.198732,0.349692}+I{0.307493}+R2{0.617065,1.07248,0.075442,4.48302}: 5398.fna{1.1006},
+    GTR{0.914394,2.75136,0.63623,1.3403,2.1722}+F{0.264585,0.187963,0.194505,0.352947}+G4{0.680096}: 5404.fna{1.03608},
+    TPM2u{0.748978,2.37659}+F{0.263793,0.168971,0.213484,0.353752}+I{0.363843}+R2{0.577731,1.2527,0.0584263,4.72859}: 5406.fna{1.29674},
+    HKY{2.4518}+F{0.262534,0.179236,0.212309,0.345921}+G4{0.88532}: 5421.fna{0.989615},
+    TPM2u{0.718643,2.46593}+F{0.277076,0.169053,0.215479,0.338392}+G4{0.688466}: 5422.fna{1.08058},
+    TPM2u{0.805522,2.9382}+F{0.268205,0.183158,0.216595,0.332042}+I{0.401505}+R2{0.550693,1.29409,0.0478011,6.01139}: 5426.fna{1.07294},
+    TVM{0.941385,2.75566,0.749103,1.35069}+F{0.291422,0.167738,0.194978,0.345862}+I{0.236555}+R2{0.697044,1.01342,0.0664008,4.42163}: 5427.fna{1.34938},
+    HKY{2.45781}+F{0.250161,0.227079,0.22525,0.297509}+G4{0.470968}: 5428.fna{0.95593},
+    TIM3{1.30494,2.14198,2.98278}+F{0.290263,0.166106,0.211675,0.331955}+G4{0.736244}: 5430.fna{1.23894},
+    HKY{2.66107}+F{0.279503,0.161148,0.226596,0.332753}+I{0.28272}+R2{0.316097,0.280784,0.401183,2.27139}: 5434.fna{4.99049},
+    TPM3u{1.22794,4.15358}+F{0.270944,0.198638,0.222703,0.307715}+I{0.131452}+R3{0.349862,0.0478092,0.115271,0.220667,0.403415,2.37432}: 5449.fna{27.7937},
+    HKY{2.83345}+F{0.274568,0.184914,0.209896,0.330622}+I{0.323564}+R2{0.596393,0.913822,0.0800427,5.6845}: 5454.fna{1.47616},
+    HKY{2.91437}+F{0.277443,0.173344,0.204673,0.34454}+G4{0.829662}: 5460.fna{1.33973},
+    HKY{2.73689}+F{0.278854,0.16059,0.215032,0.345524}+R3{0.518878,0.105866,0.242917,0.670358,0.238206,3.28383}: 5463.fna{4.86059},
+    TPM3u{1.24645,2.82655}+F{0.283434,0.176758,0.206292,0.333515}+R3{0.638265,0.282479,0.338997,1.71297,0.0227376,10.5117}: 5464.fna{1.7237},
+    TPM3u{1.1147,3.14135}+F{0.269488,0.189955,0.214808,0.32575}+G4{0.979652}: 5469.fna{1.59918},
+    TPM3u{1.37676,2.65101}+F{0.252678,0.191294,0.205112,0.350917}+I{0.327102}+R2{0.640287,1.10662,0.0326109,8.93714}: 5477.fna{1.11269},
+    TPM3u{1.22644,2.41914}+F{0.269023,0.156195,0.218288,0.356495}+G4{0.630418}: 5489.fna{1.76705},
+    HKY{2.4609}+F{0.273939,0.181782,0.214114,0.330164}+R3{0.673765,0.22475,0.22643,1.4297,0.0998042,5.25874}: 5502.fna{2.02884},
+    TPM2u{0.701019,2.09457}+F{0.279304,0.194978,0.207722,0.317996}+R3{0.603879,0.262984,0.363764,1.67398,0.0323566,7.17804}: 5513.fna{1.35071},
+    TPM2u{0.729907,2.35622}+F{0.289817,0.172595,0.189709,0.34788}+I{0.266399}+R2{0.676807,0.972226,0.0567937,6.02162}: 5528.fna{0.783345},
+    HKY{2.59335}+F{0.270574,0.193559,0.204312,0.331555}+I{0.240231}+R2{0.600465,0.726432,0.159303,3.53918}: 5531.fna{1.66},
+    TIM3{1.39691,2.627,3.53537}+F{0.291952,0.157792,0.220631,0.329626}+G4{0.618971}: 5536.fna{1.40983},
+    K3Pu{3.45876,1.29769}+F{0.278906,0.171021,0.201577,0.348496}+R3{0.632103,0.109907,0.173493,0.830789,0.194405,4.04513}: 5551.fna{4.32265},
+    HKY{2.60644}+F{0.294427,0.17997,0.222813,0.30279}+R3{0.580594,0.0888792,0.220916,0.739926,0.198489,3.95455}: 5554.fna{4.93888},
+    TPM2u{0.770812,1.95887}+F{0.246519,0.19172,0.216432,0.345329}+G4{0.892636}: 5562.fna{2.03215},
+    TPM3u{1.53199,3.24585}+F{0.280362,0.173822,0.206545,0.33927}+G4{0.560844}: 5578.fna{1.55608},
+    TN{1.79337,2.42919}+F{0.280725,0.209749,0.254459,0.255067}+I{0.286431}+R2{0.488705,0.435319,0.224863,3.50105}: 5594.fna{3.52226},
+    K3Pu{2.43318,1.17796}+F{0.257784,0.185156,0.223156,0.333903}+I{0.492141}+R2{0.402948,0.544129,0.104911,7.44197}: 5596.fna{1.72456},
+    TPM3u{1.27402,2.93609}+F{0.268093,0.180398,0.208899,0.34261}+G4{0.702165}: 5599.fna{0.907401},
+    TIM2{0.864021,2.50121,2.91862}+F{0.267947,0.173647,0.218794,0.339612}+R3{0.535324,0.195385,0.410795,1.49021,0.0538806,5.25672}: 5614.fna{1.46566},
+    TIM3{1.44416,3.27525,4.84365}+F{0.292271,0.150101,0.269194,0.288434}+G4{0.634212}: 5620.fna{0.939982},
+    TPM2u{0.812218,2.57196}+F{0.257848,0.187368,0.200417,0.354367}+G4{0.74079}: 5634.fna{0.968778},
+    TVM{0.986852,2.4395,0.761603,1.25506}+F{0.284565,0.181274,0.20114,0.333021}+G4{0.772028}: 5639.fna{1.3444},
+    TIM2{0.605951,2.33693,1.70062}+F{0.268525,0.192018,0.182172,0.357286}+G4{0.700721}: 5642.fna{1.51941},
+    TPM2u{0.769226,2.34248}+F{0.256641,0.195569,0.191444,0.356346}+G4{0.894521}: 5644.fna{1.10225},
+    HKY{2.61176}+F{0.264989,0.183557,0.182323,0.369131}+G4{0.716661}: 5656.fna{1.83117},
+    HKY{2.86638}+F{0.275679,0.203777,0.227069,0.293476}+I{0.482567}+R2{0.437861,0.895492,0.0795718,7.63962}: 5660.fna{1.60615},
+    TVM{1.07036,2.82366,0.840218,1.62316}+F{0.271117,0.165266,0.214747,0.34887}+G4{0.653334}: 5664.fna{1.31748},
+    HKY{3.2088}+F{0.28317,0.175452,0.207918,0.33346}+I{0.432042}+R2{0.547472,1.51515,0.020486,8.32273}: 5670.fna{0.606661},
+    TIM2{0.829595,2.79342,2.25898}+F{0.269303,0.1761,0.184277,0.37032}+R3{0.466415,0.196806,0.44466,0.966382,0.0889253,5.38087}: 5699.fna{2.23117},
+    HKY{2.97397}+F{0.280387,0.167773,0.216724,0.335116}+G4{0.750892}: 5702.fna{1.33393},
+    TN{2.87096,2.05671}+F{0.246929,0.180551,0.185857,0.386663}+G4{0.644573}: 5703.fna{4.35622},
+    TPM3u{1.24177,2.90834}+F{0.276589,0.16856,0.216516,0.338335}+R2{0.804465,0.471413,0.195535,3.1747}: 5716.fna{0.752588},
+    TPM3u{1.33272,3.25962}+F{0.279633,0.167627,0.217768,0.334973}+G4{0.650299}: 5721.fna{1.14362},
+    K3Pu{3.36267,1.45963}+F{0.275999,0.19152,0.220869,0.311611}+G4{0.683994}: 5733.fna{1.04887},
+    TIM3{1.57866,3.36251,2.73414}+F{0.266573,0.198993,0.205016,0.329418}+I{0.161246}+R2{0.666055,0.496534,0.172699,3.87543}: 5744.fna{2.27649},
+    HKY{2.89864}+F{0.303915,0.173752,0.211386,0.310947}+R3{0.712503,0.296946,0.256231,1.64236,0.0312656,11.7574}: 5770.fna{1.3296},
+    TPM3u{1.31339,2.7021}+F{0.270805,0.18753,0.231933,0.309732}+G4{0.733955}: 5772.fna{1.50003},
+    TPM3u{1.26591,3.10786}+F{0.270793,0.181923,0.189904,0.35738}+I{0.287994}+R2{0.589598,0.797576,0.122409,4.32773}: 5791.fna{1.979},
+    TPM2u{0.573407,2.13983}+F{0.270156,0.195271,0.205447,0.329126}+G4{0.849404}: 5802.fna{0.882601},
+    TN{2.77608,2.36287}+F{0.252913,0.188467,0.218851,0.339769}+R4{0.443564,0.0971538,0.282855,0.515333,0.230863,2.43855,0.0427173,5.80959}: 5815.fna{4.35094},
+    TIM{2.68696,0.813416,2.04696}+F{0.261587,0.197299,0.192223,0.348891}+I{0.297995}+R2{0.569551,0.65658,0.132454,4.7265}: 5816.fna{1.74852},
+    HKY{2.46661}+F{0.264436,0.183526,0.21179,0.340248}+I{0.368887}+R2{0.561094,0.984407,0.0700192,6.39332}: 5821.fna{1.48895},
+    TPM3u{0.771106,1.84019}+F{0.288777,0.190035,0.22389,0.297298}+I{0.282118}+R2{0.535627,0.449006,0.182255,4.16724}: 5822.fna{2.32901},
+    TIM3{1.39809,3.05416,2.43566}+F{0.258656,0.219051,0.192375,0.329918}+G4{0.930067}: 5840.fna{1.12901},
+    TN{2.68153,2.2339}+F{0.247814,0.197884,0.198861,0.355441}+I{0.287541}+R2{0.553356,0.749623,0.159103,3.67806}: 5841.fna{1.96437},
+    TPM3u{1.2478,2.84354}+F{0.253776,0.183157,0.204954,0.358114}+G4{1.09659}: 5842.fna{1.24747},
+    TVM{0.687504,2.33035,0.738836,0.668144}+F{0.2557,0.177591,0.209441,0.357269}+R3{0.460638,0.0871977,0.303329,0.582431,0.236033,3.31804}: 5843.fna{5.67984},
+    HKY{2.04224}+F{0.270126,0.173934,0.202471,0.353469}+I{0.232616}+R2{0.568778,0.543902,0.198606,3.47744}: 5849.fna{3.48034},
+    TN{2.11897,3.28923}+F{0.323279,0.148553,0.228864,0.299304}+I{0.311533}+R2{0.640348,1.05984,0.0481196,6.67779}: 5853.fna{1.00369},
+    HKY{2.31521}+F{0.26649,0.199496,0.231631,0.302383}+G4{0.546488}: 5857.fna{2.42366},
+    TN{1.77416,2.59111}+F{0.297941,0.171452,0.213417,0.31719}+G4{0.506484}: 5858.fna{1.79905},
+    TIM2{0.754688,2.23882,1.70682}+F{0.241669,0.219293,0.224397,0.314641}+I{0.401516}+R2{0.497727,1.03866,0.100757,4.794}: 5859.fna{1.12494},
+    HKY{2.38435}+F{0.278941,0.170763,0.215245,0.335051}+G4{0.599077}: 5865.fna{1.87241},
+    HKY{2.12727}+F{0.277332,0.170223,0.215516,0.336928}+R3{0.658365,0.143469,0.241805,0.888793,0.0998308,6.91802}: 5866.fna{3.28045},
+    TIM{3.07199,0.72491,2.63036}+F{0.248621,0.177845,0.19583,0.377704}+I{0.299895}+R3{0.416146,0.3574,0.118851,1.0071,0.165108,4.43087}: 5870.fna{6.17495},
+    TIM2{0.723218,2.2663,1.47565}+F{0.249418,0.243965,0.201467,0.30515}+I{0.238678}+R2{0.654261,0.654821,0.107061,5.33879}: 5893.fna{1.65363},
+    TVM{1.20739,2.52551,0.710306,1.20934}+F{0.28936,0.172836,0.199148,0.338656}+I{0.230926}+R2{0.635545,0.826618,0.133529,3.55463}: 5894.fna{1.69428},
+    TPM2u{0.752606,2.41837}+F{0.27314,0.190291,0.206764,0.329806}+I{0.252345}+R2{0.601121,0.70526,0.146534,3.93118}: 5899.fna{1.63719},
+    HKY{3.38352}+F{0.264962,0.192373,0.247626,0.295039}+R3{0.476979,0.0697153,0.326648,0.630937,0.196373,3.87351}: 5910.fna{4.14899},
+    TPM3u{1.2276,3.27406}+F{0.283983,0.183156,0.220601,0.312259}+I{0.293864}+R2{0.566527,0.812268,0.139609,3.86671}: 5913.fna{1.95114},
+    TPM3u{1.24993,3.11105}+F{0.265928,0.180537,0.210194,0.343341}+I{0.249012}+R2{0.657146,0.925808,0.0938417,4.17308}: 5918.fna{1.18515},
+    HKY{3.56671}+F{0.280525,0.175299,0.230676,0.313499}+G4{0.697002}: 5919.fna{0.914443},
+    TPM3u{1.35656,2.96611}+F{0.296657,0.171128,0.211329,0.320885}+I{0.362542}+R2{0.570263,1.11639,0.0671953,5.4076}: 5921.fna{1.04106},
+    TPM3u{1.39379,3.15215}+F{0.271851,0.162172,0.207915,0.358062}+I{0.270292}+R2{0.637899,0.946091,0.0918091,4.31863}: 5922.fna{0.999927},
+    TN{3.08352,2.38935}+F{0.268908,0.192684,0.192504,0.345904}+R3{0.422316,0.147367,0.538193,1.28338,0.0394904,6.25616}: 5926.fna{2.43105},
+    TPM3u{1.33856,2.66384}+F{0.256132,0.213535,0.223693,0.30664}+I{0.276912}+R2{0.587777,0.793694,0.135311,3.94266}: 5933.fna{1.70964},
+    TN{3.06848,2.37732}+F{0.256951,0.182513,0.199952,0.360584}+G4{0.845508}: 5936.fna{0.924459},
+    TN{4.18161,2.40478}+F{0.248079,0.203021,0.177943,0.370957}+G4{0.587395}: 5940.fna{1.579},
+    HKY{2.16129}+F{0.277183,0.183671,0.202796,0.33635}+G4{0.910918}: 5941.fna{1.95108},
+    HKY{2.38043}+F{0.24614,0.252335,0.23436,0.267164}+G4{0.499039}: 5942.fna{1.37021},
+    TIM{3.16213,1.17868,3.51266}+F{0.269535,0.174538,0.211877,0.344051}+R3{0.50692,0.0825269,0.294295,0.596895,0.198786,3.93641}: 5943.fna{3.30869},
+    TN{2.86315,2.30589}+F{0.265683,0.179569,0.205135,0.349614}+G4{0.614528}: 5944.fna{1.22457},
+    HKY{2.34445}+F{0.26069,0.179673,0.212477,0.347159}+G4{0.67526}: 5945.fna{0.990746},
+    TPM3u{1.23086,2.86718}+F{0.262043,0.1803,0.206389,0.351268}+I{0.237646}+G4{1.53137}: 5949.fna{1.77793},
+    TPM3u{1.31123,3.22093}+F{0.270281,0.179572,0.19575,0.354397}+G4{0.83175}: 5950.fna{1.62234},
+    HKY{2.61804}+F{0.284571,0.196308,0.215818,0.303302}+R2{0.479617,0.129096,0.520383,1.80268}: 5958.fna{1.85063},
+    HKY{2.78988}+F{0.269183,0.180254,0.213674,0.33689}+G4{0.585525}: 5960.fna{1.81403},
+    HKY{2.45976}+F{0.273123,0.190278,0.196428,0.340171}+G4{0.758138}: 5968.fna{2.99953},
+    TPM2u{0.791213,2.37271}+F{0.283817,0.180323,0.19028,0.345579}+G4{0.776762}: 5974.fna{1.26285},
+    HKY{1.97766}+F{0.278613,0.172314,0.199931,0.349142}+I{0.248084}+R3{0.42421,0.227917,0.132305,0.819157,0.1954,4.06824}: 5977.fna{6.12417},
+    TPM2u{0.796148,2.72008}+F{0.284428,0.168919,0.203105,0.343548}+I{0.248106}+R2{0.631403,0.813227,0.12049,4.03788}: 5980.fna{1.53024},
+    TIM3{1.44788,3.79558,3.05971}+F{0.277149,0.182859,0.207464,0.332528}+I{0.312303}+R2{0.621766,1.11711,0.0659306,4.63241}: 5981.fna{1.35419},
+    HKY{2.63645}+F{0.294004,0.199257,0.209979,0.29676}+R3{0.643432,0.185219,0.317268,1.4471,0.0393004,10.7303}: 5990.fna{2.36347},
+    TPM3u{1.3064,2.89943}+F{0.271661,0.165819,0.205398,0.357123}+G4{0.823336}: 6000.fna{1.48269},
+    TPM3u{1.43252,3.16601}+F{0.302223,0.17169,0.209699,0.316388}+G4{0.841706}: 6003.fna{1.76522},
+    TIM3{1.40691,2.3745,3.07787}+F{0.291377,0.182026,0.235358,0.291239}+I{0.211391}+R2{0.599542,0.593089,0.189068,3.4084}: 6004.fna{2.56365},
+    TIM2{1.24419,3.15906,3.90133}+F{0.229827,0.184517,0.234869,0.350787}+I{0.274929}+R3{0.376432,0.2081,0.15058,0.989258,0.198058,3.90139}: 6016.fna{5.75636},
+    TIM3{1.13208,2.45124,2.82227}+F{0.281096,0.195477,0.203449,0.319977}+R3{0.445985,0.0979337,0.456085,1.01795,0.0979298,5.02455}: 6026.fna{5.55387},
+    HKY{2.66052}+F{0.273586,0.162015,0.204048,0.360351}+G4{0.739423}: 6029.fna{1.34461},
+    HKY{3.36606}+F{0.271521,0.179,0.205317,0.344161}+G4{0.836859}: 6034.fna{0.92594},
+    TPM2u{0.739863,2.37055}+F{0.289727,0.178315,0.218005,0.313952}+G4{0.583167}: 6036.fna{1.34814},
+    TPM3u{1.35686,3.1128}+F{0.253683,0.173633,0.213087,0.359597}+I{0.25088}+R2{0.6366,0.927249,0.11252,3.64124}: 6038.fna{1.50149},
+    TVM{1.17992,2.86086,0.879296,1.22989}+F{0.265296,0.180133,0.20664,0.347932}+R3{0.659532,0.166653,0.315632,1.02251,0.0248355,22.8443}: 6041.fna{2.63874},
+    TPM3u{1.32374,2.79136}+F{0.275339,0.174649,0.201849,0.348164}+G4{0.94435}: 6048.fna{1.61922},
+    TPM3u{1.49085,3.21012}+F{0.284784,0.175897,0.218472,0.320847}+G4{0.386144}: 6050.fna{0.895006},
+    K2P{2.69221}+FQ+G4{0.43718}: 6051.fna{0.928967},
+    TN{2.33597,3.07287}+F{0.269617,0.196372,0.232887,0.301124}+I{0.301757}+R2{0.567691,0.645086,0.130552,4.8547}: 6056.fna{2.55846},
+    HKY{2.33704}+F{0.2736,0.179471,0.224605,0.322325}+G4{0.710282}: 6064.fna{0.726155},
+    TPM2u{0.7172,2.19374}+F{0.262644,0.178986,0.198667,0.359703}+G4{0.885719}: 6068.fna{1.09003},
+    HKY{2.54016}+F{0.282704,0.174487,0.209492,0.333317}+G4{0.606005}: 6072.fna{2.30745},
+    TPM2u{0.776965,2.22373}+F{0.275857,0.191318,0.210711,0.322114}+I{0.323541}+R2{0.569219,0.894306,0.10724,4.57799}: 6098.fna{1.45083},
+    HKY{2.56359}+F{0.296882,0.199313,0.222947,0.280858}+G4{0.521856}: 6110.fna{1.8251},
+    TPM3u{0.576541,1.2954}+F{0.278969,0.178978,0.185545,0.356507}+I{0.205673}+R3{0.601029,0.174564,0.0345455,0.973459,0.158753,5.42638}: 6114.fna{6.11622},
+    HKY{2.98221}+F{0.283574,0.190971,0.211724,0.31373}+G4{0.713709}: 6119.fna{0.783067},
+    TIM3{1.59928,2.59406,3.57647}+F{0.301127,0.153974,0.244632,0.300267}+G4{1.08618}: 6128.fna{1.16687},
+    TN{2.8307,2.05152}+F{0.269805,0.179442,0.191085,0.359667}+R3{0.602387,0.140968,0.278101,1.0276,0.119513,5.26562}: 6130.fna{2.60239},
+    HKY{2.60895}+F{0.273283,0.198922,0.225289,0.302507}+I{0.308773}+R2{0.588501,0.860192,0.102726,4.80673}: 6139.fna{1.93943},
+    TN{2.55857,3.21547}+F{0.276888,0.185164,0.209563,0.328385}+G4{0.818105}: 6148.fna{1.72068},
+    TPM2u{0.729173,2.37797}+F{0.272166,0.181014,0.220233,0.326587}+I{0.378548}+R2{0.601568,1.36247,0.0198843,9.07164}: 6150.fna{1.03264},
+    HKY{2.26434}+F{0.253995,0.215363,0.195608,0.335033}+G4{1.16272}: 6164.fna{1.25053},
+    K3Pu{3.41975,1.26558}+F{0.281323,0.171424,0.200603,0.346649}+R3{0.533196,0.0868547,0.28621,0.760072,0.180594,4.07627}: 6175.fna{3.40614},
+    TN{2.88301,2.39543}+F{0.255291,0.180368,0.214354,0.349988}+G4{0.69618}: 6176.fna{0.827506},
+    TIM3{1.29968,2.26991,3.06267}+F{0.270871,0.175213,0.232652,0.321265}+R3{0.790353,0.352896,0.194174,2.46953,0.0154732,15.6122}: 6198.fna{1.3228},
+    HKY{2.93968}+F{0.284211,0.201806,0.199894,0.314089}+G4{0.988186}: 6216.fna{1.01259},
+    HKY{2.76491}+F{0.280313,0.192719,0.200384,0.326584}+I{0.274074}+R2{0.647914,0.890204,0.0780116,5.42515}: 6221.fna{1.0699},
+    TPM3u{1.32649,3.16382}+F{0.269039,0.163543,0.207443,0.359975}+G4{1.04505}: 6226.fna{1.93398},
+    TPM2u{1.58579,2.88815}+F{0.264722,0.210102,0.241077,0.284099}+R3{0.536539,0.143573,0.379264,1.22119,0.0841968,5.46118}: 6227.fna{2.56789},
+    HKY{2.58487}+F{0.266906,0.206425,0.213806,0.312863}+R2{0.746917,0.339405,0.253083,2.94959}: 6238.fna{1.4813},
+    TIM3{1.32292,3.594,2.51256}+F{0.260577,0.188327,0.189485,0.361612}+G4{0.754456}: 6258.fna{1.09349},
+    HKY{2.28912}+F{0.251425,0.163757,0.213242,0.371575}+I{0.152061}+R2{0.552912,0.32594,0.295027,2.77867}: 6265.fna{3.90096},
+    TPM3u{1.38318,2.57706}+F{0.280737,0.164405,0.211978,0.34288}+G4{0.661882}: 6270.fna{4.48898},
+    TPM2u{0.692303,2.31417}+F{0.292975,0.179378,0.190176,0.337471}+G4{0.98213}: 6274.fna{1.06062},
+    TPM2u{0.744539,2.37989}+F{0.276375,0.17701,0.220155,0.326461}+G4{0.782591}: 6282.fna{1.09258},
+    TIM3{1.27705,3.66525,2.6571}+F{0.242179,0.215874,0.210693,0.331253}+G4{0.742245}: 6284.fna{1.03269},
+    TPM3u{1.18891,3.21257}+F{0.277311,0.200394,0.214624,0.30767}+I{0.312026}+R2{0.343556,0.389603,0.344418,2.51482}: 6295.fna{2.24846},
+    TPM2u{0.834413,2.39546}+F{0.272936,0.181141,0.200317,0.345606}+G4{0.458976}: 6298.fna{4.74223},
+    TIM{2.76876,0.794554,1.9947}+F{0.257871,0.255589,0.198104,0.288437}+R3{0.588518,0.183507,0.307035,1.22027,0.104447,4.9531}: 6299.fna{2.78441},
+    TPM2u{0.760081,2.46663}+F{0.291999,0.157203,0.198531,0.352267}+G4{0.723275}: 6303.fna{1.10191},
+    TPM3u{1.3369,3.34407}+F{0.276389,0.159254,0.218968,0.345389}+G4{0.471163}: 6318.fna{0.915127},
+    TIM3{1.19566,2.63326,3.11841}+F{0.280257,0.171176,0.221014,0.327552}+I{0.248476}+R2{0.57276,0.734496,0.178763,3.24065}: 6320.fna{1.83826},
+    TPM2u{0.77699,2.52877}+F{0.279565,0.162736,0.208512,0.349187}+G4{0.666617}: 6363.fna{0.98823},
+    TN{2.99267,2.1012}+F{0.244483,0.199096,0.208028,0.348393}+I{0.28759}+R2{0.611979,0.902102,0.100431,4.4601}: 6366.fna{1.86808},
+    TIM3{1.33367,2.63434,3.21218}+F{0.280284,0.16761,0.215542,0.336563}+I{0.290732}+R2{0.632005,0.992612,0.0772631,4.82332}: 6373.fna{1.14968},
+    TPM3u{1.45095,2.92432}+F{0.25567,0.174218,0.200994,0.369118}+I{0.206566}+R2{0.696241,0.882083,0.0971931,3.97002}: 6376.fna{1.5644},
+    HKY{2.65435}+F{0.272273,0.193686,0.209936,0.324105}+I{0.377953}+R2{0.568974,0.970551,0.0530734,8.43704}: 6378.fna{1.44138},
+    TN{2.79896,1.83725}+F{0.270901,0.185031,0.195437,0.348631}+G4{1.23019}: 6379.fna{1.58361},
+    HKY{2.53297}+F{0.278858,0.180963,0.211604,0.328575}+I{0.235289}+R2{0.58441,0.676854,0.180301,3.35239}: 6383.fna{1.5681},
+    HKY{2.80597}+F{0.27266,0.180481,0.212818,0.334041}+G4{0.600214}: 6384.fna{1.31372},
+    TPM3u{1.36039,3.40592}+F{0.243878,0.191096,0.241661,0.323366}+I{0.439}+R2{0.419572,0.795112,0.141428,4.71189}: 6387.fna{1.61647},
+    TPM3u{1.2207,3.02886}+F{0.266699,0.182184,0.20027,0.350848}+I{0.273498}+R2{0.556923,0.627685,0.169579,3.83555}: 6389.fna{2.25302},
+    TPM3u{1.40045,3.21819}+F{0.27368,0.173589,0.195778,0.356954}+G4{0.967919}: 6393.fna{1.34798},
+    HKY{2.62248}+F{0.271161,0.179908,0.197324,0.351607}+I{0.248862}+R2{0.643111,0.720178,0.108028,4.96953}: 6398.fna{1.86835},
+    TPM3u{1.47416,3.50238}+F{0.264685,0.177419,0.220552,0.337343}+G4{0.830144}: 6401.fna{1.21153},
+    HKY{2.46258}+F{0.268164,0.163725,0.205179,0.362932}+R2{0.738089,0.409497,0.261911,2.66409}: 6404.fna{1.75147},
+    HKY{2.63108}+F{0.261118,0.230246,0.19092,0.317716}+I{0.250514}+R3{0.509383,0.361828,0.1642,1.90478,0.0759027,6.62592}: 6405.fna{3.26215},
+    HKY{2.63147}+F{0.281136,0.174143,0.205369,0.339351}+G4{0.691274}: 6406.fna{1.34949},
+    HKY{2.22066}+F{0.265444,0.193229,0.22728,0.314047}+G4{1.26893}: 6407.fna{1.44129},
+    TPM2u{0.722494,2.3366}+F{0.264465,0.207117,0.205158,0.323259}+I{0.407465}+R2{0.539786,1.30203,0.0527487,5.63388}: 6412.fna{1.06249},
+    HKY{2.44564}+F{0.268842,0.176995,0.214675,0.339488}+G4{0.769022}: 6420.fna{1.03436},
+    HKY{2.53878}+F{0.264495,0.206516,0.219805,0.309184}+G4{0.813363}: 6430.fna{2.65957},
+    TPM2u{0.719788,2.37226}+F{0.273499,0.171665,0.200618,0.354219}+G4{0.8811}: 6432.fna{0.94124},
+    TVM{0.990558,2.86324,0.87565,1.71784}+F{0.271124,0.172406,0.196619,0.35985}+G4{0.812543}: 6439.fna{2.26802},
+    TPM3u{1.31636,3.13559}+F{0.290293,0.192406,0.207562,0.30974}+G4{0.725007}: 6447.fna{1.91759},
+    TIM2{0.804678,2.63071,2.02177}+F{0.248488,0.1821,0.18464,0.384772}+R2{0.778737,0.466272,0.221263,2.87846}: 6448.fna{1.16004},
+    K3Pu{2.11116,0.699187}+F{0.278717,0.155301,0.202484,0.363498}+G4{0.399847}: 6449.fna{2.80285},
+    TPM3u{1.34668,2.89085}+F{0.284121,0.171825,0.199874,0.34418}+I{0.31348}+R2{0.586387,0.978423,0.100134,4.25697}: 6450.fna{1.63892},
+    TIM2{0.778727,2.55203,1.98926}+F{0.273227,0.164843,0.192853,0.369077}+I{0.233495}+R2{0.652551,0.853161,0.113955,3.88987}: 6454.fna{0.983937},
+    HKY{2.55553}+F{0.257069,0.189171,0.214657,0.339103}+I{0.494754}: 6457.fna{1.11128},
+    HKY{2.8371}+F{0.267759,0.18125,0.195906,0.355085}+R3{0.700801,0.190707,0.252245,1.5635,0.0469543,10.0517}: 6458.fna{1.66594},
+    TPM3u{1.26691,2.74081}+F{0.253816,0.191055,0.209421,0.345709}+I{0.214866}+R2{0.587991,0.567591,0.197142,3.3796}: 6459.fna{1.72949},
+    HKY{3.14959}+F{0.273209,0.18651,0.229483,0.310798}+G4{0.591406}: 6460.fna{1.18007},
+    TPM3u{1.29567,3.02951}+F{0.276969,0.165575,0.206679,0.350777}+I{0.254608}+R2{0.594407,0.74923,0.150985,3.67356}: 6462.fna{1.92747},
+    HKY{2.92422}+F{0.274562,0.178942,0.202633,0.343864}+R3{0.571692,0.299084,0.365637,1.5188,0.0626709,4.36705}: 6483.fna{1.59498},
+    TPM3u{1.28559,3.16569}+F{0.267566,0.182204,0.226959,0.323271}+G4{0.569644}: 6487.fna{0.684463},
+    TPM3u{0.773377,2.44843}+F{0.271952,0.220191,0.223139,0.284718}+R3{0.595497,0.151416,0.337626,1.01245,0.0668776,8.49317}: 6488.fna{2.33475},
+    HKY{2.49633}+F{0.28155,0.176706,0.221136,0.320608}+G4{0.621566}: 6492.fna{4.07014},
+    TPM3u{1.23812,3.03662}+F{0.275417,0.180218,0.202177,0.342188}+G4{0.797753}: 6494.fna{1.28436},
+    TIM3{0.797748,2.92996,2.43057}+F{0.252082,0.199688,0.199567,0.348663}+G4{0.409852}: 6496.fna{4.9889},
+    TPM3u{1.39487,2.53406}+F{0.247291,0.253844,0.215108,0.283758}+G4{0.511137}: 6498.fna{2.27758},
+    HKY{2.77013}+F{0.264153,0.181421,0.217691,0.336735}+R3{0.683615,0.306023,0.301123,2.19051,0.015262,8.59544}: 6500.fna{0.85009},
+    HKY{2.41766}+F{0.283726,0.181715,0.18555,0.349009}+R2{0.842826,0.556884,0.157174,3.37615}: 6506.fna{1.12871},
+    HKY{2.54243}+F{0.282533,0.173438,0.180318,0.363712}+G4{1.05298}: 6507.fna{1.95086},
+    HKY{2.24329}+F{0.276512,0.213658,0.222637,0.287194}: 6514.fna{4.39588},
+    TPM3u{1.43098,2.68197}+F{0.286583,0.183336,0.210479,0.319602}+I{0.380702}+R2{0.58223,1.13878,0.0370682,9.09048}: 6526.fna{1.61165},
+    TPM2u{0.7807,2.49703}+F{0.257556,0.175833,0.219681,0.34693}+I{0.308305}+R2{0.630691,1.06437,0.061004,5.38839}: 6527.fna{1.26597},
+    HKY{2.45259}+F{0.269893,0.198321,0.207964,0.323822}+G4{0.777201}: 6528.fna{2.0375},
+    TPM3u{1.40643,3.33656}+F{0.280121,0.160521,0.216974,0.342384}+G4{0.811814}: 6531.fna{0.751236},
+    HKY{2.63813}+F{0.281614,0.167693,0.201171,0.349522}+I{0.166632}+R2{0.471014,0.371436,0.362354,2.27691}: 6532.fna{4.63806},
+    TPM3u{1.24574,3.15089}+F{0.276691,0.162999,0.204723,0.355587}+I{0.261676}+R2{0.62191,0.870456,0.116414,3.93986}: 6533.fna{1.5527},
+    TPM2u{0.788822,2.07921}+F{0.307157,0.191658,0.181268,0.319917}+G4{0.833186}: 6538.fna{2.04453},
+    HKY{2.37674}+F{0.257885,0.185489,0.208036,0.34859}+I{0.161107}+R2{0.577614,0.453543,0.261279,2.82468}: 6540.fna{3.63169},
+    HKY{2.94136}+F{0.27635,0.180411,0.221104,0.322135}+I{0.307559}+R2{0.632202,1.00783,0.0602393,6.02347}: 6544.fna{1.15533},
+    HKY{2.21606}+F{0.303376,0.170027,0.210321,0.316276}+G4{0.440437}: 6550.fna{7.33908},
+    TPM2u{0.596047,2.13005}+F{0.273634,0.176945,0.199552,0.349869}+G4{0.828949}: 6552.fna{0.660616},
+    HKY{1.91015}+F{0.253451,0.225584,0.230793,0.290172}: 6557.fna{1.31442},
+    TPM3u{1.33311,3.33002}+F{0.268611,0.174016,0.207767,0.349606}+R2{0.838627,0.51567,0.161373,3.51697}: 6559.fna{0.964801},
+    HKY{2.54467}+F{0.276695,0.17162,0.219222,0.332462}+R2{0.837379,0.600124,0.162621,3.05906}: 6563.fna{1.0361},
+    HKY{2.04999}+F{0.242773,0.198859,0.219507,0.33886}+I{0.384906}: 6565.fna{1.04836},
+    TPM3u{1.4742,2.86924}+F{0.255845,0.182062,0.232904,0.329189}+G4{0.881097}: 6570.fna{1.05355},
+    TPM3u{1.33986,2.84625}+F{0.27702,0.184316,0.206649,0.332015}+G4{0.995873}: 6572.fna{1.22373},
+    HKY{2.31932}+F{0.271931,0.178385,0.212464,0.337219}+I{0.341323}+R2{0.585984,0.8563,0.0726935,6.85374}: 6601.fna{1.07817},
+    HKY{2.49412}+F{0.277404,0.184785,0.240637,0.297173}+G4{0.672881}: 6620.fna{1.85662},
+    TPM3u{1.35683,2.44492}+F{0.247136,0.189356,0.205027,0.358482}+G4{0.566945}: 6631.fna{3.67628},
+    TN{3.4433,2.60769}+F{0.254579,0.178938,0.206619,0.359864}+G4{0.851076}: 6636.fna{2.18406},
+    TPM3u{1.24048,2.48468}+F{0.249696,0.174307,0.211223,0.364775}+R2{0.756635,0.42996,0.243365,2.77229}: 6639.fna{1.64214},
+    HKY{2.23828}+F{0.268041,0.248437,0.190746,0.292776}+G4{1.00957}: 6641.fna{1.09211},
+    TPM2u{0.737354,2.29787}+F{0.287825,0.17851,0.216767,0.316899}+G4{0.752382}: 6649.fna{1.88565},
+    HKY{2.88536}+F{0.229412,0.20303,0.194429,0.37313}+I{0.276546}+R2{0.637856,0.977793,0.0855981,4.39623}: 6652.fna{0.975087},
+    HKY{2.49465}+F{0.275443,0.171918,0.220815,0.331824}+R3{0.690814,0.2537,0.257483,1.61898,0.0517027,7.88898}: 6660.fna{1.82647},
+    TPM3u{1.23329,3.04852}+F{0.270226,0.181238,0.218595,0.329942}+G4{0.555007}: 6667.fna{1.62728},
+    TIM2{0.795669,2.44455,1.98057}+F{0.251022,0.208374,0.195566,0.345039}+R3{0.66343,0.187666,0.232776,1.61376,0.103794,4.81584}: 6679.fna{3.62208},
+    TPM3u{1.24702,3.01241}+F{0.26708,0.17353,0.203395,0.355995}+I{0.310718}+R3{0.546756,0.561344,0.122357,1.66991,0.0201698,24.2322}: 6685.fna{1.89284},
+    TVM{1.19816,3.05967,1.32115,1.50443}+F{0.263343,0.167872,0.197102,0.371683}+I{0.193346}+R3{0.397211,0.2526,0.172497,0.808341,0.236946,3.20845}: 6689.fna{6.21309},
+    HKY{1.71604}+F{0.275859,0.219732,0.220996,0.283413}+R3{0.532042,0.229971,0.416833,1.32136,0.0511256,6.39328}: 6705.fna{2.16961},
+    TPM3u{1.31911,2.63371}+F{0.251745,0.161384,0.185908,0.400962}+G4{0.382192}: 6713.fna{3.04288},
+    TPM3u{1.45388,3.97345}+F{0.275136,0.156865,0.238973,0.329026}+G4{0.874831}: 6717.fna{0.890766},
+    HKY{2.63705}+F{0.289134,0.192286,0.206556,0.312024}+I{0.282725}+R2{0.645469,1.05809,0.0718068,4.41514}: 6732.fna{1.07861},
+    TPM2u{1.46685,2.112}+F{0.267448,0.193776,0.227925,0.31085}+R2{0.7926,0.250658,0.2074,3.86368}: 6733.fna{2.94942},
+    TPM2u{0.841024,2.21035}+F{0.271094,0.17605,0.224007,0.328849}+R2{0.513486,0.209257,0.486514,1.83458}: 6738.fna{2.81312},
+    HKY{2.41831}+F{0.251599,0.155182,0.211042,0.382176}+G4{1.08063}: 6746.fna{1.35825},
+    TPM3u{1.33069,3.05998}+F{0.279411,0.200598,0.197168,0.322823}+G4{0.647441}: 6779.fna{1.05},
+    TPM3u{1.4896,2.9779}+F{0.261927,0.16757,0.217434,0.353069}+I{0.251473}+R2{0.571217,0.665168,0.17731,3.49695}: 6780.fna{1.88125},
+    HKY{3.03418}+F{0.252538,0.169701,0.20686,0.3709}+G4{0.991516}: 6782.fna{1.23882},
+    TPM3u{1.37945,2.93982}+F{0.277197,0.174104,0.205905,0.342794}+G4{1.11115}: 6785.fna{1.34112},
+    TPM3u{1.52492,3.42722}+F{0.289613,0.178497,0.201951,0.329939}+G4{0.790345}: 6791.fna{1.22313},
+    TPM3u{1.29519,2.78231}+F{0.265343,0.195539,0.203689,0.335429}+G4{0.864764}: 6792.fna{1.29065},
+    TIM2{0.719277,1.77853,2.46086}+F{0.310145,0.158419,0.232622,0.298814}+G4{0.872669}: 6797.fna{1.1933},
+    TPM2u{0.763932,2.14101}+F{0.279195,0.204098,0.215081,0.301626}+I{0.252128}+R2{0.69784,1.04711,0.0500326,5.38216}: 6825.fna{1.31345},
+    HKY{2.51306}+F{0.272369,0.204257,0.226436,0.296938}+G4{1.21255}: 6848.fna{1.44838},
+    HKY{2.64739}+F{0.255483,0.186732,0.193334,0.36445}+G4{0.732287}: 6854.fna{1.04433},
+    TPM3u{1.38885,3.07321}+F{0.265729,0.189982,0.204852,0.339437}+G4{0.699521}: 6859.fna{1.57863},
+    TIM3{1.43941,2.9361,4.96292}+F{0.305565,0.149885,0.242796,0.301754}+I{0.263254}+R2{0.635975,0.882165,0.100771,4.35607}: 6860.fna{1.3067},
+    HKY{2.48633}+F{0.250547,0.195443,0.2261,0.327909}+R2{0.860589,0.342897,0.139411,5.05632}: 6864.fna{1.10239},
+    TPM2u{0.809195,2.44155}+F{0.268437,0.174941,0.188345,0.368277}+G4{0.811236}: 6865.fna{1.207},
+    K2P{2.63375}+FQ+G4{0.624772}: 6875.fna{0.74153},
+    TPM3u{0.865244,2.33335}+F{0.281249,0.205908,0.241558,0.271284}+G4{0.781572}: 6882.fna{1.65496},
+    TVM{1.03073,2.68734,0.907452,1.60516}+F{0.255467,0.177932,0.204973,0.361628}+I{0.274813}+R2{0.622517,0.886655,0.10267,4.36389}: 6883.fna{1.66926},
+    TPM3u{1.40271,2.69393}+F{0.259824,0.202312,0.194411,0.343453}+I{0.175486}+R2{0.487901,0.309177,0.336613,2.52263}: 6886.fna{3.48029},
+    HKY{2.37534}+F{0.269555,0.161946,0.20372,0.364779}+R2{0.590669,0.219564,0.409331,2.12618}: 6893.fna{2.68036},
+    TVM{0.633766,2.40521,0.92183,0.910688}+F{0.266058,0.183367,0.201972,0.348602}+R3{0.481959,0.059711,0.27864,0.482427,0.239401,3.49539}: 6909.fna{4.51232},
+    HKY{2.5871}+F{0.274348,0.183204,0.200851,0.341597}+I{0.300499}+R2{0.624668,1.02374,0.0748329,4.81744}: 6913.fna{1.6326},
+    HKY{2.43822}+F{0.283896,0.18549,0.218177,0.312438}+I{0.271998}+R3{0.470828,0.360122,0.21257,2.2293,0.0446042,7.99395}: 6914.fna{3.14919},
+    HKY{2.81805}+F{0.268017,0.173778,0.225124,0.333082}+G4{0.741305}: 6924.fna{1.26341},
+    TIM3{1.29771,2.63235,1.98766}+F{0.26354,0.168381,0.207627,0.360453}+G4{0.593601}: 6933.fna{1.34937},
+    K3Pu{2.11978,0.794171}+F{0.27168,0.164823,0.221006,0.342492}+G4{0.71232}: 6946.fna{2.37999},
+    TPM3u{1.43281,3.17939}+F{0.268707,0.172529,0.216412,0.342352}+R2{0.882539,0.616923,0.117461,3.87822}: 6947.fna{0.663444},
+    HKY{3.1184}+F{0.291449,0.174747,0.233583,0.300221}+G4{0.584107}: 6954.fna{0.96775},
+    TPM3u{1.5646,3.23391}+F{0.246967,0.190981,0.194373,0.36768}+G4{0.666672}: 6955.fna{1.96575},
+    TPM3u{1.47203,3.21408}+F{0.264859,0.166445,0.19975,0.368946}+G4{0.884194}: 6958.fna{1.01454},
+    TPM3u{1.25168,3.31337}+F{0.276654,0.177386,0.218885,0.327075}+R3{0.564806,0.33791,0.349109,1.24672,0.0860853,4.34342}: 6961.fna{1.85282},
+    TPM3u{1.31384,2.9573}+F{0.268923,0.198443,0.201585,0.331048}+R3{0.502358,0.134981,0.360546,0.863271,0.137096,4.52927}: 6962.fna{3.7784},
+    TIM3{1.24498,3.50103,2.57181}+F{0.256262,0.189603,0.198221,0.355915}+I{0.253853}+R2{0.594278,0.787732,0.151868,3.50217}: 6968.fna{1.71136},
+    HKY{3.24346}+F{0.26501,0.196816,0.19838,0.339795}+G4{0.603581}: 6969.fna{1.1008},
+    TN{3.02971,2.06516}+F{0.26352,0.204028,0.215222,0.317231}+G4{0.341979}: 6977.fna{2.7169},
+    HKY{2.37023}+F{0.267767,0.220923,0.208833,0.302477}+G4{0.503154}: 6978.fna{4.39653},
+    TN{3.09187,3.74327}+F{0.2914,0.171687,0.241666,0.295247}+I{0.223795}+R2{0.539488,0.350414,0.236717,3.42584}: 6979.fna{3.35835},
+    K3Pu{2.43165,0.799034}+F{0.30448,0.161105,0.187135,0.34728}+G4{0.837335}: 6992.fna{1.52272},
+    TN{3.24625,2.57925}+F{0.263852,0.189255,0.198615,0.348278}+G4{0.90798}: 6995.fna{1.62722},
+    TPM2u{0.661206,1.82484}+F{0.273984,0.193237,0.177688,0.355091}+I{0.283567}+R2{0.577474,0.575998,0.138959,4.80267}: 7013.fna{1.94762},
+    HKY{2.28208}+F{0.271533,0.173685,0.202785,0.351997}+R3{0.540074,0.135414,0.302712,0.925164,0.157214,4.11419}: 7021.fna{2.5246},
+    HKY{2.45296}+F{0.272143,0.187231,0.183978,0.356648}+G4{0.675688}: 7024.fna{1.41913},
+    TIM3{1.9115,2.01347,4.59309}+F{0.277102,0.192877,0.218649,0.311371}+I{0.164016}+G4{1.16056}: 7028.fna{5.37923},
+    GTR{1.09531,3.03337,0.774749,1.42585,2.34908}+F{0.257458,0.177041,0.202526,0.362974}+I{0.302017}+R2{0.619396,0.977474,0.0785869,5.02065}: 7029.fna{1.62834},
+    TPM3u{1.67495,3.70389}+F{0.289142,0.160239,0.222322,0.328297}+G4{0.537137}: 7067.fna{1.1636},
+    TPM3u{1.45394,3.03797}+F{0.269682,0.175801,0.206604,0.347913}+R3{0.57283,0.172453,0.367128,1.06103,0.0600421,8.52199}: 7111.fna{2.32624},
+    TPM3u{1.33602,3.11542}+F{0.279878,0.17862,0.213957,0.327545}+I{0.27955}+R2{0.662834,1.08846,0.057616,4.83426}: 7128.fna{1.03546},
+    TPM3u{1.33518,2.66552}+F{0.244235,0.1802,0.209192,0.366374}+I{0.221835}+R2{0.632503,0.680436,0.145663,3.91056}: 7135.fna{1.56338},
+    TIM3{2.1726,2.85162,4.40173}+F{0.288759,0.185997,0.197895,0.327349}+G4{0.542088}: 7136.fna{1.97829},
+    HKY{2.53302}+F{0.278624,0.201571,0.237607,0.282198}+G4{0.612143}: 7141.fna{1.24554},
+    TPM3u{1.37861,3.49667}+F{0.267778,0.169296,0.2103,0.352627}+I{0.208951}+R2{0.654533,0.77171,0.136516,3.62514}: 7174.fna{1.21463},
+    HKY{2.81872}+F{0.247646,0.18856,0.198306,0.365488}+G4{0.894834}: 7194.fna{0.575427},
+    TPM3u{1.33799,2.45135}+F{0.244721,0.231479,0.230922,0.292878}+R2{0.533058,0.14492,0.466942,1.97615}: 7241.fna{4.47317},
+    TIM3{1.43431,2.36657,3.55262}+F{0.308975,0.157482,0.201753,0.331791}+G4{0.898968}: 7273.fna{1.22044},
+    K3Pu{2.17231,0.639513}+F{0.287328,0.184874,0.19863,0.329168}+I{0.327725}+R2{0.612928,1.04649,0.0593477,6.04196}: 7279.fna{0.974364},
+    TIM2{0.646005,1.4875,2.1739}+F{0.320126,0.148993,0.186816,0.344065}+R2{0.82918,0.489014,0.17082,3.48039}: 7296.fna{0.96258},
+    HKY{3.1319}+F{0.241887,0.175404,0.242933,0.339777}+I{0.351941}+R2{0.579449,1.06085,0.0686101,5.61566}: 7313.fna{0.856495},
+    TPM2u{0.660419,2.27387}+F{0.291467,0.189313,0.201182,0.318038}+G4{0.649719}: 7324.fna{0.783472},
+    HKY{2.57996}+F{0.268389,0.214586,0.225342,0.291683}+R3{0.652242,0.118409,0.287223,1.25174,0.0605353,9.30433}: 7325.fna{2.70921},
+    TIM3{1.25495,3.32052,2.76703}+F{0.253224,0.18305,0.204017,0.359709}+G4{1.09523}: 7331.fna{1.14199},
+    TN{1.85344,3.13221}+F{0.269925,0.19184,0.302929,0.235306}+I{0.301491}+R2{0.617992,0.891928,0.0805175,5.57389}: 7333.fna{1.15631},
+    GTR{1.15321,1.68997,2.02754,0.856233,2.37742}+F{0.277319,0.203804,0.243393,0.275484}+I{0.230941}+G4{1.08674}: 7336.fna{5.95612},
+    TN{3.30956,1.95448}+F{0.268501,0.195843,0.186652,0.349004}+G4{0.828375}: 7361.fna{2.61738},
+    HKY{2.41706}+F{0.254661,0.187542,0.216506,0.341292}+R3{0.479165,0.19746,0.427065,1.21328,0.0937693,4.12965}: 7363.fna{3.70196},
+    TPM2u{0.697862,2.09111}+F{0.300575,0.186364,0.197348,0.315713}+G4{0.936569}: 7367.fna{1.51095},
+    HKY{2.93149}+F{0.288915,0.176963,0.217035,0.317087}+G4{0.505227}: 7371.fna{4.16871},
+    TN{3.2304,2.58362}+F{0.267247,0.196383,0.21476,0.32161}+I{0.328199}+R2{0.564406,0.835319,0.107396,4.92144}: 7572.fna{1.37055},
+    HKY{3.02742}+F{0.27219,0.198692,0.207502,0.321616}+G4{0.767963}: 7577.fna{0.733692},
+    TN{3.05534,1.69378}+F{0.23325,0.273541,0.196535,0.296673}+G4{0.540211}: 7583.fna{2.59423},
+    HKY{2.79812}+F{0.254106,0.198032,0.228872,0.318989}+G4{0.862908}: 7602.fna{1.14941},
+    TPM3u{0.805491,1.95299}+F{0.319471,0.146599,0.231324,0.302606}+R3{0.587267,0.0923622,0.275423,0.588803,0.13731,5.70673}: 7628.fna{4.57842};
+end;
