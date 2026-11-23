@@ -5,6 +5,9 @@ set -euo pipefail
 source /home/frieda/miniconda3/etc/profile.d/conda.sh
 conda activate captus
 
+################################################################################
+
+
 # set variables
 PROJ="$HOME/Projects/Vanguerieae"
 
@@ -12,11 +15,15 @@ PROJ="$HOME/Projects/Vanguerieae"
 ALIGN_NUC="$PROJ/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/04_genes_flanked"
 
 # output directory:
-OUT="$PROJ/CleanedData/05_phylogeny_flanking"
+OUT="$PROJ/CleanedData/05_phylogeny_flanking_noMerge"
 
 # Create output directory
-mkdir "$OUT"
+mkdir -p "$OUT"
 cd "$OUT"
+
+mkdir -p nuclear
+
+################################################################################
 
 
 # Maximum likelihood tree inference using IQ-TREE2 for nuclear genes (concatenation species-tree using all loci and an edge-linked partition model)
@@ -29,19 +36,24 @@ iqtree3 \
     -m MFP \
     --ufboot 1000 \
     -alrt 1000 \
-    -pre concat_nuc \
+    -pre nuclear/concat_nuc \
+    --runs 5 \
     -T AUTO
 
 
 # Extract best models for all genes using extract_model_stats.sh
-../../Scripts/helper/extract_model_stats.sh concat_nuc.model.gz best_models.tsv
+../../Scripts/helper/extract_model_stats.sh nuclear/concat_nuc.model.gz nuclear/best_models_nuc.tsv
+
+
+################################################################################
+
 
 # Get alignment stats
 iqtree3 \
-    -p concat_nuc.best_model.nex \
-    -te concat_nuc.treefile \
+    -p nuclear/concat_nuc.best_model.nex \
+    -te nuclear/concat_nuc.treefile \
     -alninfo \
-    --prefix aln_stats \
+    --prefix nuclear/aln_stats \
     -T AUTO
 
 
@@ -49,6 +61,15 @@ iqtree3 \
 ### 1. Inspect .log or .iqtree files for composition chi-square test of sequence composition heterogeinity.
 # run R script: filter_composition.py which creates two .tsv files:
 # check marker_decisions.tsv and taxon_decisions.tsv
+python ../../Scripts/filter_composition.py \
+  --alignments "$ALIGN_NUC" \
+  --logs "$OUT/nuclear/concat_nuc.log" \
+  --output "$PROJ/CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/05_composition_filtered"
+
+
+################################################################################
+
+
 
 ### 2. Run symmetry test of substitution model adequacy (SMA) for each partition
 # iqtree3 -s example.phy -p example.nex --symtest-only
@@ -56,36 +77,43 @@ iqtree3 \
 
 # make alignment_list.txt file 
 find "$ALIGN_NUC" -maxdepth 1 -type f -name '*.fna' -print |
-    LC_ALL=C sort > $OUT/alignment_list.txt
+    LC_ALL=C sort > $OUT/nuclear/alignment_list.txt
 
 phykit create_concatenation_matrix \
---alignment alignment_list.txt \
---prefix concat
+--alignment nuclear/alignment_list.txt \
+--prefix nuclear/concat
 
 # run symmetry test:
 iqtree \
 -p "$ALIGN_NUC" \
 --symtest-only \
 -T AUTO \
---prefix symmetry
+--prefix nuclear/symmetry
 
 # then run identify_problematic_partitions.R
 
+
+################################################################################
+
+
+
 ### 3. Likelihood mapping to assess phylogenetic signal in the concatenated alignment:
 iqtree2 \
-    -p $OUT/concat_nuc.best_model.nex \
+    -p $OUT/nuclear/concat_nuc.best_model.nex \
     -lmap 10000 \
     -n 0 \
     -T AUTO \
-    --prefix concat_nuc_lmap_test02 \
+    --prefix nuclear/concat_nuc_lmap \
     -redo
 
 # Inspect results
-# xdg-open concat_nuc_lmap_test02.lmap.svg
-# grep -A 40 "LIKELIHOOD MAPPING" concat_nuc_lmap_v2.iqtree
+# xdg-open nuclear/concat_nuc_lmap.lmap.svg
+# grep -A 40 "LIKELIHOOD MAPPING" nuclear/concat_nuc_lmap.iqtree
 # deactivate conda environment
 conda deactivate
 
+
+################################################################################
 
 
 ## Archive files - and save archive to backup folder in the cloud
