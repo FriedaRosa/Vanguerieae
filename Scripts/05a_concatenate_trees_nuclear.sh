@@ -24,13 +24,72 @@ cd "$OUT"
 # each file in the alignment directory is treated as a partition
 # ultrafast bootstrap approximation (UFBoot) with 1000 replicates to assess branch support
 
-iqtree2 \
+iqtree3 \
     -p "$ALIGN_NUC" \
     -m MFP \
     --ufboot 1000 \
+    -alrt 1000 \
     -pre concat_nuc \
     -T AUTO
 
 
+# Extract best models for all genes using extract_model_stats.sh
+../../Scripts/helper/extract_model_stats.sh concat_nuc.model.gz best_models.tsv
+
+# Get alignment stats
+iqtree3 \
+    -p concat_nuc.best_model.nex \
+    -te concat_nuc.treefile \
+    -alninfo \
+    --prefix aln_stats \
+    -T AUTO
+
+
+# check model violations with IQ-TREE2's model violation test (MVT) for each partition
+### 1. Inspect .log or .iqtree files for composition chi-square test of sequence composition heterogeinity.
+# run R script: filter_composition.py which creates two .tsv files:
+# check marker_decisions.tsv and taxon_decisions.tsv
+
+### 2. Run symmetry test of substitution model adequacy (SMA) for each partition
+# iqtree3 -s example.phy -p example.nex --symtest-only
+# conda install bioconda::phykit
+
+# make alignment_list.txt file 
+find "$ALIGN_NUC" -maxdepth 1 -type f -name '*.fna' -print |
+    LC_ALL=C sort > $OUT/alignment_list.txt
+
+phykit create_concatenation_matrix \
+--alignment alignment_list.txt \
+--prefix concat
+
+# run symmetry test:
+iqtree \
+-p "$ALIGN_NUC" \
+--symtest-only \
+-T AUTO \
+--prefix symmetry
+
+# then run identify_problematic_partitions.R
+
+### 3. Likelihood mapping to assess phylogenetic signal in the concatenated alignment:
+iqtree2 \
+    -p $OUT/concat_nuc.best_model.nex \
+    -lmap 10000 \
+    -n 0 \
+    -T AUTO \
+    --prefix concat_nuc_lmap_test02 \
+    -redo
+
+# Inspect results
+# xdg-open concat_nuc_lmap_test02.lmap.svg
+# grep -A 40 "LIKELIHOOD MAPPING" concat_nuc_lmap_v2.iqtree
 # deactivate conda environment
 conda deactivate
+
+
+
+## Archive files - and save archive to backup folder in the cloud
+Scripts/helper/archival_helper.sh \
+  --input "CleanedData/05_phylogeny_flanking" \
+  --output "CleanedData/05_phylo_nuc_concat_noMerge_gfl_20261123.tar.gz" \
+  --destination "../../../../../mnt/c/Users/frwo0304/Documents/ResearchData/Vanguerieae_phylogenomics_bckp/CleanedData/05_phylogenetic_trees/05_phylo_nuc_concat_noMerge_gfl_20261123.tar.gz"

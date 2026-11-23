@@ -28,14 +28,15 @@ cat "$IQTREE"/*.treefile > "$IN_TREES"
 
 #----------------------------------------------------#
 # load conda environment
-source /home/frieda/miniconda3/etc/profile.d/conda.sh
-conda activate astral
+# source /home/frieda/miniconda3/etc/profile.d/conda.sh
+# conda activate astral
+## There was a bug with wastral installed through conda, so I installed it manually. See issue https://github.com/chaoszhang/ASTER/issues/62
 #----------------------------------------------------#
 
 # 3. Run wASTRAL
 
 # with LPP support at nodes
-wastral \
+  ../ASTER-Linux/bin/wastral \
   -i "$IN_TREES" \
   -a "$SPECIES_MAP" \
   -S \
@@ -47,7 +48,7 @@ wastral \
   2>$ASTRAL/all_gene_trees_wastral_mapped.log
 
 
-wastral \
+  ../ASTER-Linux/bin/wastral \
   -i "$IN_TREES" \
   -S \
   -o "$ASTRAL/wastral_MSC_species_tree_no_map.nwk" \

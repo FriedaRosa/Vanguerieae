@@ -106,6 +106,35 @@ bash Scripts/03_extract_targets.sh
 bash Scripts/04_alignment.sh
 ```
 
+## Nuclear composition filtering
+
+After IQ-TREE gene-tree inference has produced one `.log` per nuclear locus, run:
+
+```bash
+python Scripts/filter_composition.py
+```
+
+The complete implementation is in [filter_composition.py](Scripts/filter_composition.py), with focused tests in [test_filter_composition.py](Scripts/test_filter_composition.py). It matches every `.fna` alignment to a per-locus IQ-TREE `.log` by marker filename, and checks that the taxa and failure count in the log agree with the alignment. It uses IQ-TREE's per-sequence `passed`/`failed` status at p < 0.05, rather than recalculating the decision from the rounded p-value printed in the log.
+
+The `TOTAL` line in an IQ-TREE log counts how many sequences failed; it is not a separate marker-level p-value. Here, a marker is excluded only when **more than 50%** of the sequences in that marker fail. A marker with exactly 50% failing is retained, and its failing sequences are removed. All passing sequences in retained markers remain. These decisions apply to sequence/taxon labels in each alignment; the reports contain one row per marker–taxon occurrence, not one row per unique biological species. The original alignments and logs are unchanged.
+
+### Filtering results
+
+The current run screened **353 nuclear markers** (18,519 marker–taxon occurrences). It retained **349 markers** and excluded four (`6139`, `6488`, `6882`, and `7363`) because more than half of the sequences in each failed. Within the retained markers, **1,041 failing marker–taxon sequences** were removed, leaving 17,265 sequences across the 349 filtered alignments.
+
+Filtered alignments are in `CleanedData/04_alignments/03_trimmed/06_informed/01_coding_NUC/05_composition_filtered/alignments/`. The matching audit tables are in the adjacent `reports/` directory:
+
+- `marker_decisions.tsv`: one row per marker, with total and failed sequence counts, failure percentage, and decision.
+- `taxon_decisions.tsv`: one row per marker–taxon occurrence, with IQ-TREE status, displayed p-value, decision, and reason. Rows in a whole-marker exclusion are labeled `excluded_marker`, including taxa that individually passed.
+
+Use the filtered `alignments/` directory as the nuclear input when running downstream analyses on this composition-filtered dataset. Existing phylogenetic scripts still point to the unfiltered alignments, so change their nuclear input path explicitly before rerunning them. The filter refuses to write into a non-empty output directory; move or rename the previous output before rerunning.
+
+### Suggested manuscript wording
+
+**Methods:** “We screened the 353 nuclear locus alignments using the per-sequence composition chi-square test reported by IQ-TREE, treating the reported `failed` status (p < 0.05) as a composition-test failure. We excluded loci when more than 50% of their sequences failed this test; in retained loci, we removed only the sequences that failed. Loci with exactly 50% failing sequences were retained. This produced a composition-filtered dataset for downstream analyses.”
+
+**Results:** “Of 353 nuclear loci screened, 349 were retained and four (6139, 6488, 6882, and 7363) were excluded because more than half of their sequences failed the composition test. We removed 1,041 failing sequences from the retained loci, leaving 17,265 sequences across 349 loci.”
+
 The phylogenetic scripts select trimmed, informed-filtered `04_genes_flanked` alignments from the nuclear, plastid, and mitochondrial marker directories. Their outputs are written under `CleanedData/05_phylogeny_flanking/`.
 
 The setup scripts reject existing destination links and filename conflicts. The concatenation script uses `mkdir` without `-p` for its output directory, which is also used by the gene-tree script; it stops if that directory already exists. Review existing outputs before rerunning stages.
